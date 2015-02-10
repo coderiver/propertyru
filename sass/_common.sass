@@ -83,17 +83,81 @@ $skype: #3e9dd7
 .btn
 	+border-radius(20px)
 	text-align: center
-	padding: 5px 0 
+	height: 30px  
 //font
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700")
 body
-	font-family: Arial, sans-serif 
+	font-family: "Open Sans", Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
 
-// common blocks      
+// common blocks
+.inn
+	width: 80%
+	margin: 0 auto        
 .header
+	width: 100%
+	&__menu
+		background-color: #333
+		position: relative
+		.inn
+			position: relative
+		+clr
+		.menu_i
+			display: inline-block
+			vertical-align: middle
+		.humb
+			background-color: #4d4d4d
+			padding: 9px 0
+			width: 42px 
+			div
+				width: 26px 
+				height: 3px 
+				margin: 4px auto
+				background-color: #fff 
+		.nav
+			position: absolute
+			right: 0 
+			top: 50%
+			+translate(0, -50%) 
+			li
+				display: inline-block
+				margin-left: 20px
+				a
+					color: #fff
+					font-size: 14px 
+					i
+						position: relative
+						top: 3px
+						display: inline-block
+						padding-right: 10px 
+				a.loc
+					i
+						+s(loc)
+				a.map
+					i
+						+s(map)
+				a.heart
+					i
+						+s(heart)
+		.menu_txt
+			color: #666 
+			font-size: 14px  
+.search
+	width: 230px 
+	color: #fff
+	padding: 0 10px 
+	text-align: justify
+	+placeholder-color(#666)
+	background-color: #292828
+	+box-shadow(0 0 4px #212020 inset)
+	border-bottom: 1px solid #3d3d3d
+	background-image: url('../img/icons/search.png')
+	background-repeat: no-repeat
+	background-position: 230px
+	text-indent: 5px 
 	
+		
 
 
 

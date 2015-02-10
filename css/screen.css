@@ -43,9 +43,31 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .btn_bg { background-color: transparent; border: 1px solid; }
 
-.btn { -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; text-align: center; padding: 5px 0; }
+.btn { -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; text-align: center; height: 30px; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+body { font-family: "Open Sans", Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+
+.inn { width: 80%; margin: 0 auto; }
+
+.header { width: 100%; }
+.header__menu { background-color: #333333; position: relative; *zoom: 1; }
+.header__menu .inn { position: relative; }
+.header__menu:after { content: " "; display: table; clear: both; }
+.header__menu .menu_i { display: inline-block; vertical-align: middle; }
+.header__menu .humb { background-color: #4d4d4d; padding: 9px 0; width: 42px; }
+.header__menu .humb div { width: 26px; height: 3px; margin: 4px auto; background-color: white; }
+.header__menu .nav { position: absolute; right: 0; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+.header__menu .nav li { display: inline-block; margin-left: 20px; }
+.header__menu .nav li a { color: white; font-size: 14px; }
+.header__menu .nav li a i { position: relative; top: 3px; display: inline-block; padding-right: 10px; }
+.header__menu .nav li a.loc i { background: url('../img/icons-se72c73b61f.png') 0 -186px no-repeat; width: 12px; height: 16px; }
+.header__menu .nav li a.map i { background: url('../img/icons-se72c73b61f.png') 0 -323px no-repeat; width: 16px; height: 15px; }
+.header__menu .nav li a.heart i { background: url('../img/icons-se72c73b61f.png') 0 -114px no-repeat; width: 16px; height: 14px; }
+.header__menu .menu_txt { color: #666666; font-size: 14px; }
+
+.search { width: 230px; color: white; padding: 0 10px; text-align: justify; background-color: #292828; -moz-box-shadow: 0 0 4px #212020 inset; -webkit-box-shadow: 0 0 4px #212020 inset; box-shadow: 0 0 4px #212020 inset; border-bottom: 1px solid #3d3d3d; background-image: url("../img/icons/search.png"); background-repeat: no-repeat; background-position: 230px; text-indent: 5px; }
+.search:-moz-placeholder, .search::-moz-placeholder { color: #666666; opacity: 1; }
+.search::-webkit-input-placeholder { color: #666666; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
