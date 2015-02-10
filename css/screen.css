@@ -1,10 +1,11 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
 body, html { height: 100%; }
 
 img, fieldset, a img { border: none; }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; border-radius: 0; }
+input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
 
 input[type="submit"], button { cursor: pointer; }
 input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
@@ -19,6 +20,30 @@ ul, ol { list-style-type: none; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+.txt_purple { color: #993399; }
+
+.txt_green { color: #96c833; }
+
+.caps { text-transform: uppercase; }
+
+.btn_purple { background-color: #993399; color: white; }
+
+.btn_green { background-color: #96c833; }
+
+.btn_skype { background-color: #3e9dd7; color: white; }
+
+.btn_w_145 { width: 145px; }
+
+.btn_w_170 { width: 170px; }
+
+.btn_w_250 { width: 250px; }
+
+.btn_w_300 { width: 300px; }
+
+.btn_bg { background-color: transparent; border: 1px solid; }
+
+.btn { -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; text-align: center; padding: 5px 0; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
