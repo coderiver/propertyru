@@ -83,7 +83,14 @@ $skype: #3e9dd7
 .btn
 	+border-radius(20px)
 	text-align: center
-	height: 30px  
+	height: 30px 
+// sprite
+i.loc
+	+s(loc)
+i.map
+	+s(map)
+i.heart
+	+s(heart) 
 //font
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700")
 body
@@ -110,6 +117,7 @@ body
 			background-color: #4d4d4d
 			padding: 9px 0
 			width: 42px 
+			cursor: pointer
 			div
 				width: 26px 
 				height: 3px 
@@ -123,23 +131,17 @@ body
 			li
 				display: inline-block
 				margin-left: 20px
+				color: #fff 
+				font-size: 14px 
+				i
+					display: inline-block
+					position: relative
+					top: 3px
+					display: inline-block
+					padding-right: 10px 
 				a
 					color: #fff
 					font-size: 14px 
-					i
-						position: relative
-						top: 3px
-						display: inline-block
-						padding-right: 10px 
-				a.loc
-					i
-						+s(loc)
-				a.map
-					i
-						+s(map)
-				a.heart
-					i
-						+s(heart)
 		.menu_txt
 			color: #666 
 			font-size: 14px  
