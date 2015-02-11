@@ -94,7 +94,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .btn_call { position: relative; text-align: right; padding-right: 15px; }
 .btn_call i { display: inline-block; position: absolute; left: 15px; background: url('../img/icons-s674b91ebc4.png') 0 -437px no-repeat; width: 16px; height: 16px; }
 
-.btn_skype { position: relative; width: 75px; text-align: left; vertical-align: middle; padding-left: 5px; }
+.btn_skype { position: relative; width: 75px; text-align: left; padding-left: 5px; }
 .btn_skype i { display: inline-block; position: absolute; top: 0; background: url('../img/icons-s674b91ebc4.png') 0 -371px no-repeat; width: 30px; height: 30px; }
 
 .search { width: 230px; color: white; padding: 0 10px; text-align: justify; background-color: #292828; -moz-box-shadow: 0 0 4px #212020 inset; -webkit-box-shadow: 0 0 4px #212020 inset; box-shadow: 0 0 4px #212020 inset; border-bottom: 1px solid #3d3d3d; background-image: url("../img/icons/search.png"); background-repeat: no-repeat; background-position: 230px; text-indent: 5px; }
@@ -118,7 +118,31 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
-.l .l-col1 { display: inline-block; width: 20%; }
-.l .l-col2 { display: inline-block; width: 20%; }
-.l .l-col3 { display: inline-block; width: 20%; }
-.l .l-col4 { display: inline-block; width: 20%; }
+.l .l-col1 { display: inline-block; width: 24%; }
+.l .l-col2 { display: inline-block; width: 24%; }
+.l .l-col3 { display: inline-block; width: 24%; }
+.l .l-col4 { display: inline-block; width: 24%; }
+
+.base { background-image: url("../img/base_bg.png"); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-bottom: 30px; }
+
+.base_h { font-size: 2.3em; text-align: center; font-weight: 100; color: white; padding: 50px 0; }
+.base_h b { font-weight: 700; }
+
+.base__form { background-color: white; -moz-box-shadow: 0px 0px 0 1px #cccccc inset; -webkit-box-shadow: 0px 0px 0 1px #cccccc inset; box-shadow: 0px 0px 0 1px #cccccc inset; }
+.base__form_nav { width: 100%; }
+.base__form_nav ul { width: 100%; display: table; }
+.base__form_nav ul li { display: table-cell; width: 25%; -moz-box-shadow: -1px -1px 0 0px #cccccc inset; -webkit-box-shadow: -1px -1px 0 0px #cccccc inset; box-shadow: -1px -1px 0 0px #cccccc inset; height: 45px; }
+.base__form_nav ul li:last-child a.is-active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+.base__form_nav ul li a { display: table-cell; width: 100%; padding-top: 5px; height: 100%; text-indent: 5%; color: #323232; display: inline-block; font-weight: 100; font-size: 2em; text-decoration: none; }
+.base__form_nav ul li a.is-active { background-color: #323232; color: white; position: relative; -moz-box-shadow: -1px 0px 0 0px #cccccc inset; -webkit-box-shadow: -1px 0px 0 0px #cccccc inset; box-shadow: -1px 0px 0 0px #cccccc inset; }
+.base__form_nav ul li a.is-active:after { content: ""; position: absolute; bottom: -8px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 0px; height: 0px; border-style: solid; border-width: 8px 8px 0 8px; border-color: #323232 transparent transparent transparent; }
+
+.base__form_main { margin-top: 55px; padding: 0 30px 33px; }
+.base__form_main .base_input_item { border: 0; -moz-box-shadow: 0 0 0 1px #cdcdcd; -webkit-box-shadow: 0 0 0 1px #cdcdcd; box-shadow: 0 0 0 1px #cdcdcd; height: 32px; text-indent: 5%; }
+.base__form_main .base_top { width: 100%; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.base__form_main .base_top:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.base__form_main .base_top .base_input_item { width: 22%; }
+.base__form_main .base_bottom { margin-top: 40px; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; width: 100%; }
+.base__form_main .base_bottom:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.base__form_main .base_bottom .base_input_item { width: 13%; }
+.base__form_main .base_bottom .form__submit { color: white; background-color: #333333; width: 8%; }
