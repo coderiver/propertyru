@@ -33,20 +33,24 @@
 		<div class="header__mid"><div class="inn">
 			<div class="header__mid-logo">
 				<div class="logo__img"></div>
-				<input type="button" value="Посмотреть презентацию" class="btn btn_purple btn_w_250">
+				<button class="btn btn_purple btn_w_250 btn_show"><i></i>Посмотреть презентацию</button>
 			</div>
 			<div class="header__mid-about">
 				<p class="txt_purple">Только лучшая коммерческая, городская и загородная недвижимость на нашем сайте!</p>
-				<input type="button" value="Собственникам" class="btn btn_green btn_w_145">
-				<input type="button" value="Спецпредложения" class="btn btn_green btn_w_145">
+				<div class="header__mid-about_btns">
+					<input type="button" value="Собственникам" class="btn btn_green btn_w_145 header__mid-about_btn">
+					<input type="button" value="Спецпредложения" class="btn btn_green btn_w_145 header__mid-about_btn">
+				</div>
 			</div>
 			<div class="header__mid-call">
 				<div class="number">
 					<p class="number__h">+7 495 <b class="txt_purple">669 94 91</b></p>
-					<p class="number__foo"></p>
+					<p class="number__foo">многоканальный телефон</p>
 				</div>
-				<input type="button" value="Обратный звонок " class="btn btn_purple btn_w_170">
-				<input type="button" value="Skype" class="btn btn_skype">
+				<div class="header__mid-call_btns">
+					<button class="btn btn_purple btn_w_170 btn_call"><i></i>Обратный звонок</button>
+					<button class="btn btn_skype">Skype<i></i></button>
+				</div>
 			</div>
 		</div></div>
 		<div class="header__foo"><div class="inn">
@@ -133,7 +137,7 @@
 			<div class="base__form_main">
 				<form action="">
 					<div class="base_top">
-						<div class="base_input search">
+						<div class="base_input base_input_search">
 							<input type="text" class="base_input_item base_input_item_w_260 base_search" placeholder="поиск по слову">
 						</div>
 						<div class="base_input param">
@@ -187,10 +191,10 @@
 								<option value="параметр 3">параметр 3</option>
 							</select>
 						</div>
-						<div class="base_input search">
+						<div class="base_input base_input_search">
 							<input type="text" class="base_input_item base_input_item_w_150 base_search" placeholder="параметр">
 						</div>
-						<div class="base_input search">
+						<div class="base_input base_input_search">
 							<input type="text" class="base_input_item base_input_item_w_150 base_search" placeholder="параметр">
 						</div>
 						<div class="base_input">
@@ -773,7 +777,7 @@
 	</div></div>
 	<!-- END about -->
 	<!-- BEGIN team  -->
-	<div class="team">
+	<div class="team"><div class="inn">
 	  <div class="advantages__heading">
 	  	<p class="heading_top">Наша профессиональная команда</p>
 	  	<p class="heading_bottom">Только лучшая коммерческая, городская и загородная недвижимость на нашем сайте!</p>
@@ -781,27 +785,27 @@
 	  <div class="team__slider">
 	  	<!-- ... -->
 	  </div>
-	</div>
+	</div></div>
 	<!-- END team -->
 	<!-- BEGIN call  -->
-	<div class="call">
+	<div class="call"><div class="inn">
 	  <div class="call__heading">
 	  	<p>НАЧИНАЕМ РАБОТАТЬ - ЗВОНИТЕ <b>+7 495 669 94 91</b></p>
 	  </div>
 	  <div class="call__btn">
-	  	<input type="button" class="btn_bd caps btn_w_300" value="перезвониет мне сами">
+	  	<input type="button" class="btn_bd caps btn_w_300" value="перезвоните мне сами">
 	  </div>
-	</div>
+	</div></div>
 	<!-- END call -->
 	<!-- BEGIN footer  -->
-	<div class="footer">
+	<div class="footer"><div class="inn">
 		<div class="logo__img"></div>
 		<div class="footer__copy">
-			<p>Copyright 2014 | ООО «АГЕНТСТВО НЕДВИЖИМОСТИ №1» Все права защищены.<br>Нелицензированное использование материалов сайта запрещено.</p>
+			<p class="txt_purple">Copyright 2014 | ООО «АГЕНТСТВО НЕДВИЖИМОСТИ №1» Все права защищены.<br>Нелицензированное использование материалов сайта запрещено.</p>
 		</div>
 		<div class="footer__share"></div>
 			<div class="pluso" data-background="transparent" data-options="medium,square,line,horizontal,nocounter,theme=04" data-services="vkontakte,facebook,twitter,google,odnoklassniki"></div>
-	</div>
+	</div></div>
 	<!-- END footer -->
 </div>
 <!-- END out-->
