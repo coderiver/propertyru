@@ -84,7 +84,7 @@ $skype: #3e9dd7
 	+border-radius(20px)
 	text-align: center
 	height: 30px
-	font-size: 14px  
+	font-size: 1.167em  
 	cursor: pointer 
 // sprite
 i.loc
@@ -95,9 +95,11 @@ i.heart
 	+s(heart) 
 //font
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700")
+html
+	font-size: 75% 
 body
 	font-family: "Open Sans", Arial, sans-serif 
-	font-size: 12px 
+	font-size: 1em
 	line-height: 1.4
 
 // common blocks
@@ -135,7 +137,7 @@ body
 		display: inline-block
 		margin-left: 20px
 		color: #fff 
-		font-size: 14px 
+		font-size: 1.167em 
 		i
 			display: inline-block
 			position: relative
@@ -144,11 +146,12 @@ body
 			padding-right: 10px 
 		a
 			color: #fff
-			font-size: 14px 
+			font-size: 1.167em 
 .menu_txt
 	color: #666 
-	font-size: 14px 
+	font-size: 1.167em 
 .header__mid
+	padding-bottom: 35px 
 	margin-top: 13px
 	+box-shadow(0 0 1)
 .header__mid-logo
@@ -157,10 +160,11 @@ body
 	float: left
 	button
 		margin-top: 35px
+		width: 90% 
 .btn_show
 	position: relative
 	padding-left: 15px 
-	font-size: 14px
+	font-size: 1.167em
 	i
 		display: inline-block
 		position: absolute
@@ -175,25 +179,26 @@ body
 	padding-left: 2% 
 	p
 		font-weight: 100 
-		font-size: 24px 
+		font-size: 2em 
 		line-height: 1.2em
 		margin-left: 0.7%  
 	&_btns
-		margin-top: 30px
+		margin-top: 34px
 		.header__mid-about_btn
-			margin-right: 10px 
+			margin-right: 2%
+			width: 28%  
 .header__mid-call
 	padding-top: 11px
 	display: table-cell
 	width: 24%
 	float: right
 	.number__h
-		font-size: 32px
+		font-size: 2.667em
 	.number__foo
-		font-size: 14px 
+		font-size: 1.167em 
 		color: #999b9e
 	&_btns
-		margin-top: 30px
+		margin-top: 36px
 .btn_call
 	position: relative
 	text-align: right
@@ -214,9 +219,6 @@ body
 		position: absolute
 		top: 0
 		+s(skype)
-
-
-
 .search
 	width: 230px 
 	color: #fff
@@ -230,117 +232,44 @@ body
 	background-repeat: no-repeat
 	background-position: 230px
 	text-indent: 5px 
+.logo_wrap
+	width: 100% 
 .logo__img
-	+s(logo)
+	// width: 100% !important
+	display: block
+	max-width: 100% 
+	height: 100% 
+	img
+		width: 100% 
+		max-width: 271px 	
+
+.header__foo
+	background-color: #ecf0f1
+	padding-bottom: 45px
+	padding-top: 35px
+	+box-shadow( 0 4px 4px -3px #d0d3d4 inset)
+	section
+		width: 24%
+		display: inline-block
+		vertical-align: top
+		h2
+			font-size: 2em
+			font-weight: 700
+			color: #333 
+			&:not(:first-child)
+				padding-top: 30px 
+		h5
+			padding-top: 30px 
+			font-size: 1.167em 
+		a
+			font-size: 1.167em 
+			color: #666666
+			text-decoration: none
+	
+
+		 	
+
 .footer
 	background-color: #ecf0f1
 	.logo__img, .footer__copy, .footer__shar
 		display: inline-block
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
