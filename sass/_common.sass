@@ -98,7 +98,7 @@ i.map
 i.heart
 	+s(heart) 
 //font
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700")
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,700")
 html
 	font-size: 75% 
 body
@@ -272,5 +272,22 @@ body
 			text-decoration: none
 .footer
 	background-color: #ecf0f1
-	.logo__img, .footer__copy, .footer__shar
-		display: inline-block
+	padding-top: 40px 
+	padding-bottom: 60px
+	.inn
+		display: table
+	.logo__img, .footer__copy, .footer__share
+		display: table-cell
+		vertical-align: bottom
+	.logo__img
+		width: 25%
+	.footer__copy
+		width: 55%
+		color: #333 
+		padding-left: 5% 
+	.footer__share
+		text-align: right
+		width: 20% 
+		font-size: 1.167em
+.logo__img
+	+s(logo)
