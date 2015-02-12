@@ -143,18 +143,32 @@
 	width: 100%
 	margin: 0 auto
 	// margin-left: -20px 
+	>div:first-child
+		.item
+			padding-left: 0 !important 
 	>div:last-child
 		.item
 			margin-right: 0 !important
 
 .entry
-	width: 100%
-// .entry_last
-// 	.item
-// 		margin-right: 0
+	width: 91%
+	padding-left: 3%
+	+clr
+.entry_first
+	float: left
+	padding-left: 0
+.entry_third
+	padding-left: 6% 
+.entry_last
+	float: right
+	padding: 0
+	// position: absolute
+	// right: 0
+	.item
+		// margin-right: 0
 .item
+	padding-left: 5% 
 	width: 270px
-	margin-right: 20px   
 	max-width: 270px 
 	background-color: #FFF 
 	margin-bottom: 20px 

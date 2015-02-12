@@ -166,11 +166,19 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .container__header .container__header_nav li a.loc_b i { background: url('../img/icons-s674b91ebc4.png') 0 -212px no-repeat; width: 15px; height: 20px; }
 
 .content { width: 100%; margin: 0 auto; }
+.content > div:first-child .item { padding-left: 0 !important; }
 .content > div:last-child .item { margin-right: 0 !important; }
 
-.entry { width: 100%; }
+.entry { width: 91%; padding-left: 3%; *zoom: 1; }
+.entry:after { content: " "; display: table; clear: both; }
 
-.item { width: 270px; margin-right: 20px; max-width: 270px; background-color: white; margin-bottom: 20px; }
+.entry_first { float: left; padding-left: 0; }
+
+.entry_third { padding-left: 6%; }
+
+.entry_last { float: right; padding: 0; }
+
+.item { padding-left: 5%; width: 270px; max-width: 270px; background-color: white; margin-bottom: 20px; }
 .item__img { width: 100%; position: relative; line-height: 0; *zoom: 1; }
 .item__img:after { content: " "; display: table; clear: both; }
 .item__img img { width: 100%; }
