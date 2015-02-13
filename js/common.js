@@ -65,11 +65,16 @@ head.ready(function() {
 	// };
 	$(document).ready(function() {
 		$('.slider__main_in').slick({
-			// slide: $('.slider__main_in .item'),
-			slideToShow: 3,
+			slidesToShow: 3,
+			slidesToScroll: 3,
 			arrows: true,
 			prevArrow: $('#arr_l-btn'),
 			nextArrow: $('#arr_r-btn'),
+		});
+		$('.item_about_add').click(function() {
+			$(this).find('i').removeClass('heart_b').addClass('heart_pr');
 		})
-	})
+	});
+
+	
 });

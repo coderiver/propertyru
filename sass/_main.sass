@@ -168,7 +168,7 @@
 	.item
 		// margin-right: 0
 .item
-	width: 270px
+	// max-width: 270px
 	background-color: #FFF 
 	margin-bottom: 20px 
 	&__img
@@ -252,11 +252,13 @@
 				padding-right: 5%
 				position: relative
 				top: 3px 
+				cursor: pointer 
 				i
 					display: inline-block
 					position: relative
 					top: 2px
-					+s(heart_b)
+					&.heart_b
+						+s(heart_b)
 
 .container__foo
 	text-align: center
@@ -296,8 +298,8 @@
 		display: table-cell
 		vertical-align: middle
 	.slider__main
-		max-width: 80%
-		max-width: 1000px 
+		// max-width: 80%
+		max-width: 900px 
 		overflow: hidden
 		// position: relative
 		&_in
@@ -407,6 +409,3 @@
 	.btn_bd
 		color: #FFF
 		border-color: #FFF  
-
-
-

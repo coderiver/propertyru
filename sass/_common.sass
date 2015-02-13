@@ -89,7 +89,7 @@ $skype: #3e9dd7
 	text-align: center
 	height: 30px
 	font-size: 1.167em  
-	cursor: pointer 
+	cursor: pointer
 // sprite
 i.loc
 	+s(loc)
@@ -97,8 +97,19 @@ i.map
 	+s(map)
 i.heart
 	+s(heart) 
+i.heart_b
+	+s(heart_b)
+i.heart_pr
+	+s(heart_pr) 
 //font
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,700")
+//media
+=tablet
+	+r(1024)
+		@content
+=mobile
+	+r(750)
+		@content
 html
 	font-size: 75% 
 body
@@ -110,7 +121,9 @@ body
 .inn
 	+clr
 	width: 85%
-	margin: 0 auto        
+	margin: 0 auto
+	+tablet
+		width: 100%         
 .header
 	width: 100%
 	&__menu
@@ -207,6 +220,7 @@ body
 	position: relative
 	text-align: right
 	padding-right: 15px 
+	// width: 70% 
 	i
 		display: inline-block
 		position: absolute
@@ -215,6 +229,7 @@ body
 .btn_skype
 	position: relative
 	width: 75px
+	// width: 30% 
 	text-align: left
 	padding-left: 5px 
 	i
@@ -289,5 +304,3 @@ body
 		text-align: right
 		width: 20% 
 		font-size: 1.167em
-.logo__img
-	+s(logo)
