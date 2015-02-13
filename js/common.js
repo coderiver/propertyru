@@ -70,6 +70,15 @@ head.ready(function() {
 			arrows: true,
 			prevArrow: $('#arr_l-btn'),
 			nextArrow: $('#arr_r-btn'),
+			responsive: [{
+				breakpoint: 320,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
+				}
+
+			}]
 		});
 		$('.item_about_add').click(function() {
 			$(this).find('i').removeClass('heart_b').addClass('heart_pr');

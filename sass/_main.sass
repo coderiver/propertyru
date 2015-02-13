@@ -27,6 +27,9 @@
 				&:last-child
 					a.is-active
 						+box-shadow(none)
+				+mobile
+					width: 100% 
+					display: inline-block
 				a
 					display: table-cell
 					width: 100% 
@@ -50,6 +53,8 @@
 							left: 50% 
 							+translate(-50%, 0)
 							+arr(16, 8, #323232, b)
+							+mobile
+								display: none
 .base__form_main
 	margin-top: 55px
 	padding: 0 30px 33px
@@ -63,16 +68,26 @@
 	+justify
 	.input_item
 		width: 22%
+		+mobile
+			width: 50% 
+			margin-bottom: 20px 
 .base_bottom
 	margin-top: 40px 
 	+justify
 	width: 100%
+	+mobile
 	.input_item
 		width: 13%
+		+mobile
+			width: 50%
+			// margin-right: 10px 
+			margin-bottom: 20px  
 	.form__submit
 		color: #FFF
 		background-color: #333333 
 		width: 8%
+		+mobile
+			width: 100% 
 .container
 	background-color: #ECF0F1
 	padding-bottom: 55px 
@@ -93,10 +108,27 @@
 			float: right
 		.input_item
 			width: 50%
-			// margin-left: 5% 
 			float: right
+			+tablet
+				width: 50%
+				// float: right
+				display: inline-block
+				float: none
+				margin-left: 10px 
+				// margin-left: -20px 
+			+mobile
+				width: 50%
+				float: right 
 	&_entry:first-child
 		// float: right
+	.container__header_entry_nav
+		+tablet
+			// padding-left: 15%
+			// float: left 
+			float: left
+		+mobile
+			padding-left: 0 
+			margin: 15px  0
 	.container__header_nav
 		display: inline-block
 		li
@@ -155,18 +187,33 @@
 	width: 91%
 	padding-left: 3%
 	+clr
+	+tablet
+		padding-left: 0
+		width: 92% 
+	+mobile
+		// margin: 0 auto 
+		width: 100% 
 .entry_first
 	float: left
 	padding-left: 0
+	+tablet
+		// padding-left: 0
+		// padding-left: 6% 
+		// width: 100% !important
+	+mobile
+		padding-left: 0
 .entry_third
 	padding-left: 6% 
+	+tablet
+		float: left
+		padding-left: 0
+	+mobile
+		padding-left: 0
 .entry_last
 	float: right
-	padding: 0
-	// position: absolute
-	// right: 0
-	.item
-		// margin-right: 0
+	padding-left: 0
+	+tablet
+		float: left
 .item
 	// max-width: 270px
 	background-color: #FFF 
@@ -312,6 +359,8 @@
 	.arr
 		width: 6%
 		text-align: left
+		+mobile
+			display: none
 	.slick-list
 		// width: 9999px 
 		+clr
@@ -341,12 +390,27 @@
 		padding-bottom: 60px 
 
 .advantages__main
+	+tablet
+		+clr
 	section
 		width: 33%
 		display: inline-block
 		padding-bottom: 60px 
 		&:nth-child(3n)
 			float: right
+			+tablet
+				float: none
+		+tablet
+			width: 40%
+			display: inline-block
+			padding-bottom: 30px
+			vertical-align: top
+			&:nth-child(even)
+				padding-left: 15% 
+		+mobile
+			width: 100% 
+			&:nth-child(even)
+				padding-left: 0 
 .major
 	display: table
 	.major__img
@@ -354,7 +418,6 @@
 		display: table-cell
 		vertical-align: top
 		padding-right: 7% 
-		
 		i
 			display: inline-block
 			+s(goal)
@@ -408,4 +471,4 @@
 			font-weight: 700 
 	.btn_bd
 		color: #FFF
-		border-color: #FFF  
+		border-color: #FFF 

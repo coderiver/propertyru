@@ -84,6 +84,7 @@ $skype: #3e9dd7
 	font-size: 1.3em 
 	width: 22% 
 	cursor: pointer
+	min-width: 250px 
 .btn
 	+border-radius(20px)
 	text-align: center
@@ -123,7 +124,7 @@ body
 	width: 85%
 	margin: 0 auto
 	+tablet
-		width: 100%         
+		width: 100% 
 .header
 	width: 100%
 	&__menu
@@ -150,6 +151,9 @@ body
 	right: 0 
 	top: 50%
 	+translate(0, -50%) 
+	+mobile
+		display: none
+		visibility: hidden 
 	li
 		display: inline-block
 		margin-left: 20px
@@ -175,9 +179,15 @@ body
 	display: table-cell
 	width: 25%
 	float: left
+	+tablet
+		width: 100% 
+		text-align: center
 	button
 		margin-top: 35px
 		width: 90% 
+		+tablet
+			width: 50%
+			
 .btn_show
 	position: relative
 	padding-left: 15px 
@@ -194,6 +204,9 @@ body
 	float: left
 	padding-top: 20px 
 	padding-left: 2% 
+	+tablet
+		width: 100% 
+		text-align: center
 	p
 		font-weight: 100 
 		font-size: 2em 
@@ -209,6 +222,9 @@ body
 	display: table-cell
 	width: 24%
 	float: right
+	+tablet
+		width: 100% 
+		text-align: center
 	.number__h
 		font-size: 2.667em
 	.number__foo
@@ -272,6 +288,14 @@ body
 		display: inline-block
 		vertical-align: top
 		overflow: hidden 
+		+tablet
+			width: 100%
+			margin: 0 auto 
+			text-align: center
+			&.banner
+				display: none
+
+
 		h2
 			font-size: 2em
 			font-weight: 700
@@ -291,16 +315,33 @@ body
 	padding-bottom: 60px
 	.inn
 		display: table
+		+mobile
+			display: block
 	.logo__img, .footer__copy, .footer__share
 		display: table-cell
 		vertical-align: bottom
+		+mobile
+			width: 100% !important
+			display: block
+			text-align: center
+			float: none
+			vertical-align: top
 	.logo__img
 		width: 25%
+		+mobile
+			width: 100% 
 	.footer__copy
 		width: 55%
 		color: #333 
 		padding-left: 5% 
+		+mobile
+			text-align: center
+			padding-left: 0
+			margin-top: 20px 
+			margin-bottom: 20px  
 	.footer__share
 		text-align: right
 		width: 20% 
 		font-size: 1.167em
+		+mobile
+			text-align: center
