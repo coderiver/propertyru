@@ -296,20 +296,40 @@
 		display: table-cell
 		vertical-align: middle
 	.slider__main
-		width: 80%
-		overflow: hidden 
+		max-width: 80%
+		max-width: 1000px 
+		overflow: hidden
+		// position: relative
+		&_in
+			// width: 9999px  
+			+clr
+			// width: auto
+			// position: relative
+			// position: absolute
+			// padding: 0 10px 
 	.arr
-		width: 5%
-	.item
-		display: inline-block
-		margin: 0 2% 
+		width: 6%
 		text-align: left
+	.slick-list
+		// width: 9999px 
+		+clr
+	.item
+		// display: inline-block
+		float: left
+		margin: 0 10px 
+		text-align: left
+		width: 270px 
+		&:first-child
+			margin-left: 0
 .l_arr
 	+s(l_arr)
 	cursor: pointer
+	// padding-right: 10px 
 .r_arr
 	+s(r_arr)
 	cursor: pointer
+	float: right
+	// padding-left: 10px 
 
 .advantages
 	padding-top: 40px 

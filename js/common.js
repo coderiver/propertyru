@@ -47,4 +47,29 @@ head.ready(function() {
 			});
 		});
 	})(jQuery);
+	// 	$('#arr_r').click(function() {
+	// 			moveR();
+	// 		return false;
+	// 	});
+	// 	$('#arr_l').click(function() {
+	// 			moveL();
+	// 		return false;
+	// 	});
+	// function moveR() {
+	// 	var step = $('.item').width();
+	// 	$('.slider__main_in').animate({left: '-'+step*3-50}, 500);
+	// };
+	// function moveL() {
+	// 	var step = $('.item').width();
+	// 	$('.slider__main_in').animate({left: step}, 500);
+	// };
+	$(document).ready(function() {
+		$('.slider__main_in').slick({
+			// slide: $('.slider__main_in .item'),
+			slideToShow: 3,
+			arrows: true,
+			prevArrow: $('#arr_l-btn'),
+			nextArrow: $('#arr_r-btn'),
+		})
+	})
 });
