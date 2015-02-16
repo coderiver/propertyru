@@ -92,6 +92,8 @@ $skype: #3e9dd7
 	font-size: 1.167em  
 	cursor: pointer
 // sprite
+i[class="mail"]
+	display: inline-block
 i.loc
 	+s(loc)
 i.map
@@ -102,6 +104,11 @@ i.heart_b
 	+s(heart_b)
 i.heart_pr
 	+s(heart_pr) 
+i.skype
+	+s(skype)
+	display: inline-block
+i.mail
+	+s(mail)
 //font
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic")
 //media
@@ -255,7 +262,6 @@ body
 		display: inline-block
 		position: absolute
 		top: 0
-		+s(skype)
 .search
 	width: 230px 
 	color: #fff
@@ -348,3 +354,4 @@ body
 		font-size: 1.167em
 		+mobile
 			text-align: center
+.pop-up-menu
