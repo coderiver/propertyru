@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
 body, html { height: 100%; }
@@ -73,6 +73,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 .nav { position: absolute; right: 0; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 @media only screen and (max-width: 750px) { .nav { display: none; visibility: hidden; } }
+@media only screen and (max-width: 970px) { .nav { display: none; visibility: hidden; } }
 .nav li { display: inline-block; margin-left: 20px; color: white; font-size: 1.167em; }
 .nav li i { display: inline-block; position: relative; top: 3px; display: inline-block; padding-right: 10px; }
 .nav li a { color: white; font-size: 1.167em; }
@@ -91,7 +92,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 .header__mid-about { display: table-cell; width: 48%; float: left; padding-top: 20px; padding-left: 2%; }
 @media only screen and (max-width: 1024px) { .header__mid-about { width: 100%; text-align: center; } }
-.header__mid-about p { font-weight: 100; font-size: 2em; line-height: 1.2em; margin-left: 0.7%; }
+.header__mid-about p { font-weight: 300; font-size: 2em; line-height: 1.2em; margin-left: 0.7%; }
 .header__mid-about_btns { margin-top: 34px; }
 .header__mid-about_btns .header__mid-about_btn { margin-right: 2%; width: 28%; }
 
@@ -154,7 +155,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 .base { background-image: url("../img/dot_bg.png"); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-bottom: 30px; }
 
-.base_h { font-size: 2.3em; text-align: center; font-weight: 100; color: white; padding: 50px 0; }
+.base_h { font-size: 2.3em; text-align: center; font-weight: 300; color: white; padding: 50px 0; }
 .base_h b { font-weight: 700; }
 
 .base__form { background-color: white; -moz-box-shadow: 0px 0px 0 1px #cccccc inset; -webkit-box-shadow: 0px 0px 0 1px #cccccc inset; box-shadow: 0px 0px 0 1px #cccccc inset; }
@@ -163,14 +164,14 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .base__form_nav ul li { display: table-cell; width: 25%; -moz-box-shadow: -1px -1px 0 0px #cccccc inset; -webkit-box-shadow: -1px -1px 0 0px #cccccc inset; box-shadow: -1px -1px 0 0px #cccccc inset; height: 45px; }
 .base__form_nav ul li:last-child a.is-active { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 @media only screen and (max-width: 750px) { .base__form_nav ul li { width: 100%; display: inline-block; } }
-.base__form_nav ul li a { display: table-cell; width: 100%; padding-top: 5px; height: 100%; text-indent: 5%; color: #323232; display: inline-block; font-weight: 100; font-size: 2em; text-decoration: none; }
+.base__form_nav ul li a { display: table-cell; width: 100%; padding-top: 5px; height: 100%; text-indent: 5%; color: #323232; display: inline-block; font-weight: 300; font-size: 2em; text-decoration: none; }
 .base__form_nav ul li a.is-active { background-color: #323232; color: white; position: relative; -moz-box-shadow: -1px 0px 0 0px #cccccc inset; -webkit-box-shadow: -1px 0px 0 0px #cccccc inset; box-shadow: -1px 0px 0 0px #cccccc inset; }
 .base__form_nav ul li a.is-active:after { content: ""; position: absolute; bottom: -8px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 0px; height: 0px; border-style: solid; border-width: 8px 8px 0 8px; border-color: #323232 transparent transparent transparent; }
 @media only screen and (max-width: 750px) { .base__form_nav ul li a.is-active:after { display: none; } }
 
 .base__form_main { margin-top: 55px; padding: 0 30px 33px; }
 
-.input_item { border: 0; -moz-box-shadow: 0 0 0 1px #cdcdcd; -webkit-box-shadow: 0 0 0 1px #cdcdcd; box-shadow: 0 0 0 1px #cdcdcd; height: 32px; text-indent: 5%; }
+.input_item { border: 0; -moz-box-shadow: 0 0 0 1px #cdcdcd; -webkit-box-shadow: 0 0 0 1px #cdcdcd; box-shadow: 0 0 0 1px #cdcdcd; height: 32px; text-indent: 5px; }
 
 .base_top { width: 100%; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
 .base_top:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
@@ -219,8 +220,10 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 @media only screen and (max-width: 1024px) { .entry_third { float: left; padding-left: 0; } }
 @media only screen and (max-width: 750px) { .entry_third { padding-left: 0; } }
 
+@media only screen and (max-width: 1024px) { .entry_second { float: right; } }
+
 .entry_last { float: right; padding-left: 0; }
-@media only screen and (max-width: 1024px) { .entry_last { float: left; } }
+@media only screen and (max-width: 1024px) { .entry_last { float: right; } }
 
 .item { background-color: white; margin-bottom: 20px; }
 .item__img { width: 100%; position: relative; line-height: 0; *zoom: 1; }
@@ -256,8 +259,8 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .slider { background-image: url("../img/slider_bg.png"); padding-top: 30px; padding-bottom: 50px; }
 
 .heading { width: 100%; text-align: center; }
-.heading_top { font-weight: 100; font-size: 2.5em; color: #333333; padding-bottom: 10px; }
-.heading_bottom { font-size: 1.167em; color: #929292; font-weight: 100; }
+.heading_top { font-weight: 300; font-size: 2.5em; color: #333333; padding-bottom: 10px; }
+.heading_bottom { font-size: 1.167em; color: #929292; font-weight: 300; }
 
 .slider__heading { padding-bottom: 40px; }
 .slider__heading .heading_top { color: white; }
@@ -294,11 +297,11 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .major { display: table; }
 .major .major__img { width: 20%; display: table-cell; vertical-align: top; padding-right: 7%; }
 .major .major__img i { display: inline-block; background: url('../img/icons-sdeff53b63a.png') 0 -56px no-repeat; width: 48px; height: 48px; }
-.major .major__txt { width: 80%; display: table-cell; vertical-align: top; font-weight: 100; padding-right: 7%; }
+.major .major__txt { width: 80%; display: table-cell; vertical-align: top; font-weight: 300; padding-right: 7%; }
 .major .major__txt_head { color: #333333; font-size: 2em; padding-bottom: 20px; }
 .major .major__txt_about { color: #999999; font-size: 1.167em; }
 
-.about { background-image: url("../img/about_bg.png"); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; text-align: center; font-weight: 100; color: white; padding-top: 55px; padding-bottom: 65px; }
+.about { background-image: url("../img/about_bg.png"); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; text-align: center; font-weight: 300; color: white; padding-top: 55px; padding-bottom: 65px; }
 .about__heading { font-size: 2.5em; padding-bottom: 45px; }
 .about__txt { font-size: 2em; padding-bottom: 60px; }
 .about .btn_bd { color: white; border-color: white; }
@@ -306,7 +309,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .team { padding: 45px 0; }
 
 .call { background-image: url("../img/dot_bg.png"); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding: 50px 0; text-align: center; }
-.call__heading { color: white; font-weight: 100; font-size: 3.9em; padding-bottom: 30px; }
+.call__heading { color: white; font-weight: 300; font-size: 3.9em; padding-bottom: 30px; }
 .call__heading b { font-weight: 700; }
 .call .btn_bd { color: white; border-color: white; }
 

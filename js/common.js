@@ -71,13 +71,17 @@ head.ready(function() {
 			prevArrow: $('#arr_l-btn'),
 			nextArrow: $('#arr_r-btn'),
 			responsive: [{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				},
 				breakpoint: 320,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					arrows: false
-				}
-
+				},
 			}]
 		});
 		$('.item_about_add').click(function() {

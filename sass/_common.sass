@@ -103,7 +103,7 @@ i.heart_b
 i.heart_pr
 	+s(heart_pr) 
 //font
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,700")
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic")
 //media
 =tablet
 	+r(1024)
@@ -152,6 +152,9 @@ body
 	top: 50%
 	+translate(0, -50%) 
 	+mobile
+		display: none
+		visibility: hidden 
+	+r(970)
 		display: none
 		visibility: hidden 
 	li
@@ -208,7 +211,7 @@ body
 		width: 100% 
 		text-align: center
 	p
-		font-weight: 100 
+		font-weight: 300 
 		font-size: 2em 
 		line-height: 1.2em
 		margin-left: 0.7%  
