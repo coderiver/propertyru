@@ -30,7 +30,7 @@
 				+mobile
 					width: 100% 
 					display: inline-block
-				a
+				span
 					display: table-cell
 					width: 100% 
 					padding-top: 5px 
@@ -65,29 +65,125 @@
 	text-indent: 5px 
 .base_top
 	width: 100%
-	+justify
 	.input_item
 		width: 22%
 		+mobile
 			width: 50% 
 			margin-bottom: 20px 
+	select
+		color: #666
+		font-size: 14px
+	&_text
+		width: 35% 
+		display: inline-block
+		vertical-align: top
+		p
+			display: inline-block
+			font-size: 1.5em
+			padding: 3px 7px
+			margin-right: 5px
+			cursor: pointer
+			&:last-child
+				margin-right: 0     
+			&.is-active  
+				color: #FFF !important
+				background-color: $purple
+	&_input
+		width: 64% 
+		display: inline-block
+		float: right
+		+justify
 .base_bottom
 	margin-top: 40px 
-	+justify
+	// +justify
 	width: 100%
 	+mobile
 	.input_item
-		width: 13%
+		// width: 13%
 		+mobile
 			width: 50%
 			// margin-right: 10px 
-			margin-bottom: 20px  
+			margin-bottom: 20px 
+	&_in
+		// +justify
+		width: 100% 
+		font-size: 1.167em 
+		color: #666 
+		+clr
+		position: relative
+		*
+			display: inline-block 
+	&_item
+		width: 33% 
+		.input_item
+			width: 16%
+	&_area
+		p
+			margin-right: 4%
+			&:last-child
+				margin-right: 0
+		.input_item
+			margin-right: 4%
+
+	&_price
+		// text-align: justify
+		// +justify
+		p
+			margin-right: 2%
+		.input_item
+			margin-right: 2% 
+		.input_curr
+			width: 20% 
+			margin-left: 1%
+			color: #666 
+			text-indent: 2px 
+		
+	&_search
+		.input_item
+			width: 60%
+	&_submit
+		+clr
+		float: right
+		.form__submit
+			float: right
+			+box-shadow(none)
+			width: 25% 
+		.input_item_search 
+			float: left
+			width: 40% 
+			// margin-left: 10%
+			+placeholder-color(#666)
+	
 	.form__submit
 		color: #FFF
 		background-color: #333333 
-		width: 8%
+		// width: 8%
+		width: 100px 
+		text-align: center
+		text-indent: 0 !important
 		+mobile
-			width: 100% 
+			width: 100%
+.form__alive
+	.base_bottom
+		&_submit
+			width: 64%
+			.input_item_search
+				width: 153px 
+				margin-left: 0 
+
+.form__garden
+	.base_top_text
+		width: 20%
+	.base_top_input
+		width: 78%
+	.base_top_area
+		display: inline-block
+		p
+			display: inline-block
+		.input_item
+			width: 20% 
+			display: inline-block
+			
 .container
 	background-color: #ECF0F1
 	padding-bottom: 55px 
@@ -255,10 +351,7 @@
 						top: 3px
 						padding-right: 5px  
 						+s(expand)
-					sup
-						position: relative
-						top: -0.7em
-						font-size: 0.5em 
+
 	&__about
 		padding-top: 16px 
 		padding-bottom: 28px
