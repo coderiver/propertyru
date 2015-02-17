@@ -47,22 +47,7 @@ head.ready(function() {
 			});
 		});
 	})(jQuery);
-	// 	$('#arr_r').click(function() {
-	// 			moveR();
-	// 		return false;
-	// 	});
-	// 	$('#arr_l').click(function() {
-	// 			moveL();
-	// 		return false;
-	// 	});
-	// function moveR() {
-	// 	var step = $('.item').width();
-	// 	$('.slider__main_in').animate({left: '-'+step*3-50}, 500);
-	// };
-	// function moveL() {
-	// 	var step = $('.item').width();
-	// 	$('.slider__main_in').animate({left: step}, 500);
-	// };
+
 	$(document).ready(function() {
 		$('.slider__main_in').slick({
 			slidesToShow: 3,
@@ -92,12 +77,12 @@ head.ready(function() {
 	$('.humb').click(function() {
 		if($popUpMenu.hasClass("is-visible")) {
 			$(this).css("background-color", "#4d4d4d");
-			$popUpMenu.removeClass("is-visible")
+			$popUpMenu.removeClass("is-visible");
 			
 		}
 		else {
 			$(this).css("background-color", "#96c833");
-			$popUpMenu.addClass("is-visible")
+			$popUpMenu.addClass("is-visible");
 		}
 	})
 	
