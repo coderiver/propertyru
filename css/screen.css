@@ -254,6 +254,11 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .form__garden .base_top_area .input_item:last-child { margin-right: 0; }
 .form__garden .base_bottom_submit .input_item_search { margin-left: 21%; }
 
+.form__newest .base_top_text { width: 24%; }
+.form__newest .base_top_input { width: 74%; }
+.form__newest .base_top_input .input_item { margin-right: 5%; }
+.form__newest .base_bottom_submit .input_item_search { margin-left: 20%; }
+
 .container { background-color: #ecf0f1; padding-bottom: 55px; }
 
 .container__header { width: 100%; padding: 30px 0; text-align: justify; vertical-align: middle; }
