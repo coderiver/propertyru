@@ -110,8 +110,10 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .header__mid-call .number__foo { font-size: 1.167em; color: #999b9e; }
 .header__mid-call_btns { margin-top: 36px; }
 
-.btn_call { position: relative; text-align: right; padding-right: 15px; width: 62%; }
+.btn_call { position: relative; text-align: right; padding-right: 15px; width: 62%; min-width: 160px; }
 .btn_call i { display: inline-block; position: absolute; left: 15px; background: url('../img/icons-s03d8c31ae4.png') 0 -649px no-repeat; width: 16px; height: 16px; }
+@media only screen and (max-width: 1024px) { .btn_call { text-align: center; padding-left: 3%; width: 25%; } }
+@media only screen and (max-width: 550px) { .btn_call i { display: none; } }
 
 .btn_skype { position: relative; width: 75px; text-align: left; padding-left: 5px; }
 .btn_skype i { display: inline-block; position: absolute; top: 0; }
@@ -208,17 +210,21 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 .input_item { border: 0; -moz-box-shadow: 0 0 0 1px #cdcdcd; -webkit-box-shadow: 0 0 0 1px #cdcdcd; box-shadow: 0 0 0 1px #cdcdcd; height: 32px; text-indent: 2px; }
 
-.base_top { width: 100%; }
+.base_top { width: 100%; *zoom: 1; }
+.base_top:after { content: " "; display: table; clear: both; }
 .base_top .input_item { width: 22%; }
+@media only screen and (max-width: 1024px) { .base_top .input_item { margin-bottom: 0 !important; } }
 @media only screen and (max-width: 550px) { .base_top .input_item { width: 50%; margin-bottom: 20px; } }
 .base_top select { color: #666666; font-size: 14px; }
 .base_top_text { width: 35%; display: inline-block; vertical-align: top; }
 .base_top_text p { display: inline-block; font-size: 1.5em; padding: 3px 7px; margin-right: 5px; cursor: pointer; }
 .base_top_text p:last-child { margin-right: 0; }
 .base_top_text p.is-active { color: white !important; background-color: #993399; }
-.base_top_input { width: 64%; display: inline-block; float: right; }
+.base_top_input { width: 64%; display: inline-block; float: right; margin-bottom: 0; }
 
 .base_bottom { margin-top: 40px; width: 100%; }
+.base_bottom .input_item_search { min-width: 153px; }
+@media only screen and (max-width: 1024px) { .base_bottom { margin-top: 0px !important; } }
 @media only screen and (max-width: 550px) { .base_bottom .input_item { width: 50%; margin-bottom: 20px; } }
 .base_bottom_in { width: 100%; font-size: 1.167em; color: #666666; *zoom: 1; position: relative; }
 .base_bottom_in:after { content: " "; display: table; clear: both; }
@@ -234,30 +240,70 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .base_bottom_search .input_item { width: 60%; }
 .base_bottom_submit { *zoom: 1; float: right; }
 .base_bottom_submit:after { content: " "; display: table; clear: both; }
-.base_bottom_submit .form__submit { float: right; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; width: 25%; }
+.base_bottom_submit .form__submit { float: right; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; width: 25%; max-width: 100px; }
 .base_bottom_submit .input_item_search { float: left; width: 40%; }
 .base_bottom_submit .input_item_search:-moz-placeholder, .base_bottom_submit .input_item_search::-moz-placeholder { color: #666666; opacity: 1; }
 .base_bottom_submit .input_item_search::-webkit-input-placeholder { color: #666666; }
 .base_bottom .form__submit { color: white; background-color: #333333; width: 100px; text-align: center; text-indent: 0 !important; }
 @media only screen and (max-width: 550px) { .base_bottom .form__submit { width: 100%; } }
 
+.form__commerce .base_top_input, .form__newest .base_top_input { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.form__commerce .base_top_input:after, .form__newest .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+@media only screen and (max-width: 1024px) { .form__commerce .base_top_input .input_item, .form__newest .base_top_input .input_item { width: 20%; margin-bottom: 20px; } }
+@media only screen and (max-width: 640px) { .form__commerce .base_top_input .input_item, .form__newest .base_top_input .input_item { width: 40%; } }
+
+.form__alive { display: none; }
+.form__alive .base_top_input { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.form__alive .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+@media only screen and (max-width: 1024px) { .form__alive .base_top_input { width: 100% !important; }
+  .form__alive .base_top_input .input_item { width: 20%; margin-right: 3%; }
+  .form__alive .base_top_area { padding-left: 0 !important; } }
 .form__alive .base_bottom_submit { width: 64%; }
 .form__alive .base_bottom_submit .input_item_search { width: 153px; margin-left: 0; }
 
+.form__garden { display: none; }
 .form__garden .base_top_text { width: 21%; }
 .form__garden .base_top_input { width: 78%; float: none; }
 .form__garden .base_top_input .input_item_type { margin-right: 2%; }
 .form__garden .base_top_area { display: inline-block; padding-left: 1%; }
+@media only screen and (max-width: 1024px) { .form__garden .base_top_area { padding-left: 0; margin-top: 20px; width: 100%; } }
 .form__garden .base_top_area p { display: inline-block; color: #666666; font-size: 1.167em; }
 .form__garden .base_top_area p:first-child { margin-right: 2%; }
 .form__garden .base_top_area .input_item { width: 15%; display: inline-block; margin: 0 2%; }
 .form__garden .base_top_area .input_item:last-child { margin-right: 0; }
 .form__garden .base_bottom_submit .input_item_search { margin-left: 21%; }
 
+.form__newest { display: none; }
 .form__newest .base_top_text { width: 24%; }
+@media only screen and (max-width: 1024px) { .form__newest .base_top_text { width: 100%; margin-bottom: 20px; } }
 .form__newest .base_top_input { width: 74%; }
+@media only screen and (max-width: 1024px) { .form__newest .base_top_input { width: 100%; } }
 .form__newest .base_top_input .input_item { margin-right: 5%; }
+@media only screen and (max-width: 1024px) { .form__newest .base_bottom .base_bottom_item { width: 100%; margin-bottom: 20px; } }
 .form__newest .base_bottom_submit .input_item_search { margin-left: 20%; }
+@media only screen and (max-width: 1024px) { .form__newest .base_bottom_submit .input_item_search { width: 20%; margin-left: 0; } }
+
+@media only screen and (max-width: 1024px) { .base_top_input { width: 100% !important; margin-bottom: 20px; }
+  .base_top_input .input_item { width: 40%; margin-right: 2%; margin-bottom: 20px; }
+  .base_top_input .base_top_area { width: 100% !important; } }
+@media only screen and (max-width: 642px) { .base_top_input .input_item { width: 40%; margin-bottom: 20px !important; }
+  .base_top_input .base_top_area { margin-top: 20px; margin-bottom: 0; } }
+@media only screen and (max-width: 550px) { .base_top_input .input_item { width: 48% !important; }
+  .base_top_input .input_item_way { margin-right: 0; } }
+
+@media only screen and (max-width: 550px) { .form__garden .base_top_area .input_item { width: 20% !important; } }
+
+@media only screen and (max-width: 640px) { .form__newest .base_top_input, .form__alive .base_top_input { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+  .form__newest .base_top_input:after, .form__alive .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+  .form__newest .base_top_input .input_item, .form__alive .base_top_input .input_item { width: 40%; margin-right: 0; } }
+
+@media only screen and (max-width: 1024px) { .base_top_text { width: 100% !important; margin-bottom: 20px; } }
+
+@media only screen and (max-width: 1024px) { .base_bottom { margin-top: 20px; }
+  .base_bottom .base_bottom_item { width: 100%; margin-bottom: 20px; } }
+@media only screen and (max-width: 642px) { .base_bottom { margin-top: 0; } }
+
+@media only screen and (max-width: 1024px) { .base_bottom_submit .input_item_search { width: 20%; margin-left: 0 !important; } }
 
 .container { background-color: #ecf0f1; padding-bottom: 55px; }
 

@@ -65,8 +65,12 @@
 	text-indent: 2px 
 .base_top
 	width: 100%
+	+clr
+
 	.input_item
 		width: 22%
+		+tablet
+			margin-bottom: 0 !important
 		+mobile
 			width: 50% 
 			margin-bottom: 20px 
@@ -92,14 +96,17 @@
 		width: 64% 
 		display: inline-block
 		float: right
+		margin-bottom: 0
 		// +justify
 .base_bottom
+	.input_item_search
+		min-width: 153px 
 	margin-top: 40px 
 	// +justify
 	width: 100%
-	+mobile
+	+tablet
+		margin-top: 0px !important
 	.input_item
-		// width: 13%
 		+mobile
 			width: 50%
 			// margin-right: 10px 
@@ -147,7 +154,8 @@
 		.form__submit
 			float: right
 			+box-shadow(none)
-			width: 25% 
+			width: 25%
+			max-width: 100px  
 		.input_item_search 
 			float: left
 			width: 40% 
@@ -157,21 +165,45 @@
 	.form__submit
 		color: #FFF
 		background-color: #333333 
-		// width: 8%
 		width: 100px 
 		text-align: center
 		text-indent: 0 !important
 		+mobile
 			width: 100%
+.form__commerce, .form__newest
+	.base_top_input
+		+justify
+		+tablet
+			.input_item
+				width: 20% 
+				margin-bottom: 20px
+		+r(640) 
+			.input_item
+				width: 40%
+				
+
+
 .form__alive
+	display: none
+	.base_top_input
+		+justify
+	+tablet
+		.base_top_input
+			// float: none
+			width: 100% !important 
+			.input_item
+				width: 20%
+				margin-right: 3%
+		.base_top_area
+			padding-left: 0 !important
 	.base_bottom
 		&_submit
 			width: 64%
 			.input_item_search
 				width: 153px 
 				margin-left: 0 
-
 .form__garden
+	display: none
 	.base_top_text
 		width: 21%
 	.base_top_input
@@ -183,12 +215,16 @@
 	.base_top_area
 		display: inline-block
 		padding-left: 1%
+		+tablet
+			padding-left: 0
+			margin-top: 20px 
+			width: 100% 
 		p
 			display: inline-block
 			color: #666 
 			font-size: 1.167em 
 			&:first-child
-				margin-right: 2% 
+				margin-right: 2%
 		.input_item
 			width: 15%
 			display: inline-block
@@ -199,16 +235,88 @@
 		.input_item_search
 			margin-left: 21%
 .form__newest
+	display: none
 	.base_top_text
-		width: 24% 
+		width: 24%
+		+tablet
+			width: 100%  
+			margin-bottom: 20px
 	.base_top_input
 		width: 74% 
 		// +justify
+		+tablet
+			width: 100% 
 		.input_item
 			margin-right: 5% 
+	.base_bottom
+		+tablet
+			.base_bottom_item
+				width: 100% 
+				margin-bottom: 20px 
+
 	.base_bottom_submit
 		.input_item_search
 			margin-left: 20%
+			+tablet
+				width: 20% 
+				margin-left: 0
+.base_top_input
+	+tablet
+		width: 100% !important
+		margin-bottom: 20px
+		.input_item
+			width: 40% 
+			margin-right: 2%
+			margin-bottom: 20px   
+		.base_top_area
+			width: 100% !important
+	+r(642)
+		.input_item
+			width: 40% 
+			margin-bottom: 20px  !important
+		.base_top_area
+			margin-top: 20px 
+			margin-bottom: 0
+	+mobile
+		.input_item
+			width: 48% !important
+			&_way
+				margin-right: 0
+.form__garden
+	// +tablet
+	// 	width: 100% 
+	+mobile
+		.base_top_area
+			.input_item
+				width: 20% !important
+.form__newest, .form__alive 
+	+r(640)
+		.base_top_input
+			+justify
+			.input_item
+				width: 40% 
+				margin-right: 0 
+		// +r(640)
+
+
+.base_top_text
+	+tablet
+		width: 100% !important
+		margin-bottom: 20px
+.base_bottom
+	+tablet
+		margin-top: 20px 
+		.base_bottom_item
+			width: 100% 
+			margin-bottom: 20px 
+	+r(642)
+		margin-top: 0 
+.base_bottom_submit
+	.input_item_search
+		+tablet
+			width: 20% 
+			margin-left: 0 !important
+			// margin-top: 20px  
 
 
 			
