@@ -119,7 +119,7 @@ i.mail
 	+r(1024)
 		@content
 =mobile
-	+r(750)
+	+r(550)
 		@content
 html
 	font-size: 75% 
@@ -151,6 +151,8 @@ body
 			padding: 9px 0
 			width: 42px 
 			cursor: pointer
+			// &:active
+			// 	background-color: $green 
 			div
 				width: 26px 
 				height: 3px 
@@ -205,12 +207,16 @@ body
 	position: relative
 	padding-left: 15px 
 	font-size: 1.167em
+	+mobile
+		padding-left: 0 
 	i
 		display: inline-block
 		position: absolute
 		left: 17px 
 		top: 6px 
 		+s(view)
+		+mobile
+			display: none
 .header__mid-about
 	display: table-cell
 	width: 48%
@@ -358,6 +364,15 @@ body
 		+mobile
 			text-align: center
 .pop-up-menu
+	position: absolute
+	display: none
+	width: 100%
+	top: 43px 
+	background-color: #FFF 
+	padding-bottom: 70px  
+	+box-shadow(0 7px 10px 0px  rgba(#555, .8)) 
+	+mobile
+		text-align: center
 	&__line
 		width: 100%
 		height: 15px
@@ -367,24 +382,29 @@ body
 	&__header
 		font-size: 1.5em 
 		color: #333 
-		padding: 35px 0  
+		padding: 35px 0 
+		+mobile
+			padding: 15px 0
 	a
 		text-decoration: none
 		font-size: 1.167em 
 		color: #333
 	.btn
 		width: 80%
+		+mobile
+			max-width: 200px 
 .pop-up-menu__company
 	ul
 		padding-bottom: 62px
+		+mobile
+			padding-bottom: 30px 
 .pop-up-menu__service
 	&_nav
-		padding-bottom: 55px 
+		padding-bottom: 25px 
 	&_foot
 		a
 			color: #666
 .pop-up-menu__contacts
-	// margin-right: -26px
 	.pop-up-menu__header
 		padding-bottom: 25px
 	&_phone
@@ -401,22 +421,16 @@ body
 		li
 			display: inline-block
 			margin-right: 5px 
-			a
 			i
 				padding-right: 5px 
 				position: relative
 				top: 9px 
-				&.skype_2
-					// top: 9px 
 				&.mail
 					top: 7px
 .pop-up-menu-entry__map
 	padding-top: 83px 
 	height: 215px 
 	iframe
-		max-width: 100%
+		padding-left: 5% 
+		max-width: 80%
 		height: 100%  
-					
-
-	  
-		

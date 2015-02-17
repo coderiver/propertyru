@@ -88,6 +88,9 @@ head.ready(function() {
 			$(this).find('i').removeClass('heart_b').addClass('heart_pr');
 		})
 	});
-
+	$('.humb').click(function() {
+		$(this).css("background-color", "#96c833");
+		$(".pop-up-menu").css("display", "block");
+	})
 	
 });
