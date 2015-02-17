@@ -88,9 +88,17 @@ head.ready(function() {
 			$(this).find('i').removeClass('heart_b').addClass('heart_pr');
 		})
 	});
+	var $popUpMenu = $(".pop-up-menu");
 	$('.humb').click(function() {
-		$(this).css("background-color", "#96c833");
-		$(".pop-up-menu").css("display", "block");
+		if($popUpMenu.hasClass("is-visible")) {
+			$(this).css("background-color", "#4d4d4d");
+			$popUpMenu.removeClass("is-visible")
+			
+		}
+		else {
+			$(this).css("background-color", "#96c833");
+			$popUpMenu.addClass("is-visible")
+		}
 	})
 	
 });
