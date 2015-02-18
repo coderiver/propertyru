@@ -55,6 +55,7 @@ head.ready(function() {
 			arrows: true,
 			prevArrow: $('#arr_l-btn'),
 			nextArrow: $('#arr_r-btn'),
+			variableWidth: true,
 			responsive: [
 		    {
 		      breakpoint: 1024,
