@@ -165,17 +165,20 @@ head.ready(function() {
 				}
 				else $(' .pop-up-menu__contacts .pop-up-menu_info').addClass('is-visible');
 			});
-	// 	.pop-up-menu__service .pop-up-menu__header').click(function() {
-	// 	if($('.pop-up-menu__service .pop-up-info').hasClass('is-visible')) {
-	// 		$('.pop-up-menu__service .pop-up-info').removeClass('is-visible');
-	// 	}
-	// 	else $('pop-up-menu__service .pop-up-info').addClass('is-visible');
-	// });
-	// 	$('.pop-up-menu__contacts .pop-up-menu__header').click(function() {
-	// 	if($('.pop-up-menu__contacts .pop-up-info').hasClass('is-vi$('sible')) {
-	// 		$('p.op-up-menu__contacts .pop-up-info').removeClass('is-visible');
-	// 	}
-	// 	else $('.pop-up-menu__contacts .pop-up-info').addClass('is-visible');
-	// });
-
+	$cover = $('.cover');
+	$popUpCallback = $('.pop-up-callback');
+	$('.btn_recall').click(function() {
+		$('.pop-up-callback').addClass('is-visible');
+		$cover.addClass('is-visible');
+	});
+	$cover.click(function() {
+		if($popUpCallback.hasClass('is-visible'))	closeCallback();
+	});
+	$('.pop-up-callback__header_close').click(function() {
+		closeCallback();
+	})
+	function closeCallback() {
+		$cover.removeClass('is-visible');
+		$popUpCallback.removeClass('is-visible');
+	}
 });

@@ -183,31 +183,33 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 @media only screen and (max-width: 550px) { .pop-up-menu_info { display: none; } }
 
-.pop-up-callback { position: absolute; max-width: 530px; background-color: white; padding: 10px 0; }
+.pop-up-callback { display: none; z-index: 5; position: fixed; max-width: 530px; width: 420px; top: 10px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); background-color: white; padding: 10px 0; }
 .pop-up-callback_in { padding: 2%; }
 .pop-up-callback__header { *zoom: 1; vertical-align: middle; padding-bottom: 20px; }
 .pop-up-callback__header:after { content: " "; display: table; clear: both; }
 .pop-up-callback__header_text { font-size: 2em; font-weight: 300; float: left; }
 .pop-up-callback__header_close { float: right; cursor: pointer; }
 .pop-up-callback__header_close p { position: relative; bottom: 10px; display: inline-block; padding-right: 10px; }
-.pop-up-callback__input_item { width: 100%; height: 43px; background-color: #e5e5e5; border: 0; padding: 0; text-indent: 5px; margin-bottom: 20px; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; font-family: "Open Sans"; font-size: 1.167em; }
+.pop-up-callback__input_item { width: 100%; height: 35px; background-color: #e5e5e5; border: 0; padding: 0; text-indent: 5px; margin-bottom: 20px; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; font-family: "Open Sans"; font-size: 1.167em; }
 .pop-up-callback__input_item:-moz-placeholder, .pop-up-callback__input_item::-moz-placeholder { color: #666666; opacity: 1; }
 .pop-up-callback__input_item::-webkit-input-placeholder { color: #666666; }
 .pop-up-callback__input_item_t-area { padding-top: 10px; height: 159px; resize: none; }
 .pop-up-callback__main_text { padding-bottom: 20px; color: #666666; }
 .pop-up-callback__main_captcha { *zoom: 1; padding-bottom: 20px; }
 .pop-up-callback__main_captcha:after { content: " "; display: table; clear: both; }
-.pop-up-callback__main_captcha > div { display: inline-block; width: 20%; height: 43px; vertical-align: middle; }
+.pop-up-callback__main_captcha > div { display: inline-block; width: 20%; height: 35px; vertical-align: middle; }
 .pop-up-callback__main_captcha_input { width: 40% !important; }
-.pop-up-callback__main_captcha_input input { max-width: 200px; }
-.pop-up-callback__main_captcha_numb { padding-left: 8%; }
+.pop-up-callback__main_captcha_input input { max-width: 200px; min-width: 170px; }
+.pop-up-callback__main_captcha_numb { padding-left: 8%; position: relative; bottom: 3px; }
 .pop-up-callback__main_captcha_numb p { font-size: 2.5em; }
 .pop-up-callback__main_captcha_refresh { padding-left: 5%; }
 .pop-up-callback__main_captcha_refresh input { height: 100%; font-size: 1.167em; text-decoration: underline; background-color: transparent; }
-.pop-up-callback__main_submit input { width: 40%; max-width: 200px; height: 43px; background-color: #993399; color: white; font-size: 1.5em; font-family: "Open Sans"; font-weight: 300; }
-.pop-up-callback__main_submit p { display: inline-block; padding-left: 3%; color: #666666; }
+.pop-up-callback__main_submit { *zoom: 1; }
+.pop-up-callback__main_submit:after { content: " "; display: table; clear: both; }
+.pop-up-callback__main_submit input { width: 40%; max-width: 200px; min-width: 170px; height: 35px; background-color: #993399; color: white; font-size: 1.4em; font-family: "Open Sans"; font-weight: 300; }
+.pop-up-callback__main_submit p { display: inline-block; float: right; color: #666666; line-height: 35px; }
 
-.cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); }
+.cover { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 4; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

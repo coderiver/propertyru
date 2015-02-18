@@ -481,11 +481,14 @@ body
 	+mobile
 		display: none
 .pop-up-callback
-	position: absolute
-	max-width: 530px 
-	// top: 50%
-	// left: 50%
-	// +translate(-50%, -50%)
+	display: none
+	z-index: 5 
+	position: fixed
+	max-width: 530px
+	width: 420px  
+	top: 10px
+	left: 50%
+	+translate(-50%,0) 
 	background-color: #FFF 
 	padding: 10px 0 
 	&_in
@@ -508,7 +511,7 @@ body
 				padding-right: 10px 
 	&__input_item
 		width: 100%
-		height: 43px
+		height: 35px
 		background-color: #E5E5E5 
 		border: 0
 		padding: 0
@@ -531,14 +534,17 @@ body
 		>div
 			display: inline-block
 			width: 20% 
-			height: 43px 
+			height: 35px 
 			vertical-align: middle
 		&_input
 			width: 40% !important
 			input
 				max-width: 200px
+				min-width: 170px 
 		&_numb
 			padding-left: 8% 
+			position: relative
+			bottom: 3px 
 			p
 				font-size: 2.5em
 		&_refresh
@@ -549,26 +555,31 @@ body
 				text-decoration: underline
 				background-color: transparent
 	&__main_submit
+		+clr
 		input
 			width: 40%
-			max-width: 200px  
-			height: 43px
+			max-width: 200px 
+			min-width: 170px  
+			height: 35px
 			background-color: $purple 
 			color: #FFF
-			font-size: 1.5em 
+			font-size: 1.4em 
 			font-family: 'Open Sans'   
 			font-weight: 300 
 		p
 			display: inline-block
-			padding-left: 3%
-			color: #666   
+			float: right
+			color: #666
+			line-height: 35px 
 .cover
-	position: absolute
+	display: none   			 
+	position: fixed
 	top: 0
 	left: 0
 	width: 100% 
 	height: 100%
-	background-color: rgba(0,0,0, .3)   			 
+	background-color: rgba(0,0,0, .3) 
+	z-index: 4
 			
 
 
