@@ -180,5 +180,57 @@ head.ready(function() {
 	function closeCallback() {
 		$cover.removeClass('is-visible');
 		$popUpCallback.removeClass('is-visible');
+	};
+	var $containerHeaderNav = $(".container__header_nav").find('span');
+	$(".container__header_nav_marked").click(function() {
+			if($containerHeaderNav.hasClass('is-active')) {
+				$containerHeaderNav.removeClass('is-active');
+			}
+			// $(this).find('i').removeClass('inf').addClass('inf_wh');
+			containerHeaderNav($(this));
+
+	});
+	$(".container__header_nav_cards").click(function() {
+		if($containerHeaderNav.hasClass('is-active')) {
+			$containerHeaderNav.removeClass('is-active');
+		}
+			// $(this).find('i').removeClass('sqr').addClass('sqr_wh');
+			containerHeaderNav($(this));
+
+	});
+	$(".container__header_nav_loc").click(function() {
+	if($containerHeaderNav.hasClass('is-active')) {
+		$containerHeaderNav.removeClass('is-active');
+	}
+		// $(this).find('i').removeClass('loc_b').addClass('loc_wh');
+		containerHeaderNav($(this));
+
+	});
+	function containerHeaderNav (el) {
+			el.find('span').addClass('is-active');
+
+
+			if($(".container__header_nav_marked span").hasClass('is-active')) {
+			$(".container__header_nav_marked span").find('i').removeClass('inf').addClass('inf_wh');
+			}
+			else  {
+				$(".container__header_nav_marked span").find('i').removeClass('inf_wh').addClass('inf');
+			}
+
+
+			if($(".container__header_nav_cards span").hasClass('is-active')) {
+			$(".container__header_nav_cards span").find('i').removeClass('sqr').addClass('sqr_wh');
+			}
+			else {
+				$(".container__header_nav_cards span").find('i').removeClass('sqr_wh').addClass('sqr');
+			}
+
+
+			if($(".container__header_nav_loc span").hasClass('is-active')) {
+			$(".container__header_nav_loc span").find('i').removeClass('loc_b').addClass('loc_wh');
+			}
+			else {
+				$(".container__header_nav_loc span").find('i').removeClass('loc_wh').addClass('loc_b');
+			}
 	}
 });
