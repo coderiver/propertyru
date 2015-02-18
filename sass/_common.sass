@@ -223,6 +223,7 @@ body
 	position: relative
 	padding-left: 15px 
 	font-size: 1.167em
+	min-width: 210px 
 	+mobile
 		padding-left: 0 
 	i
@@ -251,7 +252,8 @@ body
 		margin-top: 34px
 		.header__mid-about_btn
 			margin-right: 2%
-			width: 28%  
+			width: 28%
+			min-width: 130px  
 .header__mid-call
 	padding-top: 11px
 	display: table-cell
@@ -326,7 +328,7 @@ body
 	padding-bottom: 45px
 	padding-top: 35px
 	+box-shadow( 0 4px 4px -3px #d0d3d4 inset)
-
+	
 	section
 		width: 24%
 		display: inline-block
@@ -338,14 +340,24 @@ body
 			text-align: center
 			&.banner
 				display: none
-
-
+		.header__foo_drop
+			+tablet
+				display: none
 		h2
 			font-size: 2em
 			font-weight: 700
 			color: #333 
 			&:not(:first-child)
 				padding-top: 30px 
+			&.header__foo_main_header
+				+tablet
+					cursor: pointer
+					background-color: $purple
+					color: #FFF 
+					padding: 5px  0
+					margin: 1px 0 
+					// border-top: 1px solid #999
+
 		h5
 			padding-top: 30px 
 			font-size: 1.167em 
@@ -411,6 +423,7 @@ body
 		padding: 35px 0 
 		+mobile
 			padding: 15px 0
+			cursor: pointer
 	a
 		text-decoration: none
 		font-size: 1.167em 
@@ -422,8 +435,6 @@ body
 .pop-up-menu__company
 	ul
 		padding-bottom: 62px
-		+mobile
-			padding-bottom: 30px 
 .pop-up-menu__service
 	&_nav
 		padding-bottom: 52px 
@@ -464,4 +475,8 @@ body
 		iframe
 			width: 100% 
 			padding-left: 0
+.pop-up-info
+	+mobile
+		display: none
+			
 	  

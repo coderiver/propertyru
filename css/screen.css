@@ -95,7 +95,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .header__mid-logo button { margin-top: 35px; width: 90%; }
 @media only screen and (max-width: 1024px) { .header__mid-logo button { width: 50%; } }
 
-.btn_show { position: relative; padding-left: 15px; font-size: 1.167em; }
+.btn_show { position: relative; padding-left: 15px; font-size: 1.167em; min-width: 210px; }
 @media only screen and (max-width: 550px) { .btn_show { padding-left: 0; } }
 .btn_show i { display: inline-block; position: absolute; left: 17px; top: 6px; background: url('../img/icons-s03d8c31ae4.png') 0 -675px no-repeat; width: 16px; height: 16px; }
 @media only screen and (max-width: 550px) { .btn_show i { display: none; } }
@@ -104,7 +104,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 @media only screen and (max-width: 1024px) { .header__mid-about { width: 100%; text-align: center; } }
 .header__mid-about p { font-weight: 300; font-size: 2em; line-height: 1.2em; margin-left: 0.7%; }
 .header__mid-about_btns { margin-top: 34px; }
-.header__mid-about_btns .header__mid-about_btn { margin-right: 2%; width: 28%; }
+.header__mid-about_btns .header__mid-about_btn { margin-right: 2%; width: 28%; min-width: 130px; }
 
 .header__mid-call { padding-top: 11px; display: table-cell; width: 24%; float: right; }
 @media only screen and (max-width: 1024px) { .header__mid-call { width: 100%; text-align: center; } }
@@ -133,8 +133,10 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .header__foo section { width: 24%; display: inline-block; vertical-align: top; overflow: hidden; }
 @media only screen and (max-width: 1024px) { .header__foo section { width: 100%; margin: 0 auto; text-align: center; }
   .header__foo section.banner { display: none; } }
+@media only screen and (max-width: 1024px) { .header__foo section .header__foo_drop { display: none; } }
 .header__foo section h2 { font-size: 2em; font-weight: 700; color: #333333; }
 .header__foo section h2:not(:first-child) { padding-top: 30px; }
+@media only screen and (max-width: 1024px) { .header__foo section h2.header__foo_main_header { cursor: pointer; background-color: #993399; color: white; padding: 5px 0; margin: 1px 0; } }
 .header__foo section h5 { padding-top: 30px; font-size: 1.167em; }
 .header__foo section a { font-size: 1.167em; color: #666666; text-decoration: none; }
 
@@ -155,18 +157,18 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .pop-up-menu__line { width: 100%; height: 15px; background-color: #96c833; }
 .pop-up-menu-entry { position: relative; }
 .pop-up-menu__header { font-size: 1.5em; color: #333333; padding: 35px 0; }
-@media only screen and (max-width: 550px) { .pop-up-menu__header { padding: 15px 0; } }
+@media only screen and (max-width: 550px) { .pop-up-menu__header { padding: 15px 0; cursor: pointer; } }
 .pop-up-menu a { text-decoration: none; font-size: 1.167em; color: #333333; }
 .pop-up-menu .btn { width: 80%; }
 @media only screen and (max-width: 550px) { .pop-up-menu .btn { max-width: 200px; } }
 
 .pop-up-menu__company ul { padding-bottom: 62px; }
-@media only screen and (max-width: 550px) { .pop-up-menu__company ul { padding-bottom: 30px; } }
 
 .pop-up-menu__service_nav { padding-bottom: 52px; }
 .pop-up-menu__service_foot a { color: #666666; }
 
 .pop-up-menu__contacts .pop-up-menu__header { padding-bottom: 25px; }
+@media only screen and (max-width: 550px) { .pop-up-menu__contacts .pop-up-menu__header { cursor: pointer; } }
 .pop-up-menu__contacts_phone { padding-top: 10px; padding-bottom: 10px; }
 .pop-up-menu__contacts_phone p { font-weight: bold; font-size: 1.5em; text-align: center; }
 .pop-up-menu__contacts_place { color: #666666; font-size: 1.07em; }
@@ -177,6 +179,8 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .pop-up-menu-entry__map { padding-top: 83px; height: 221px; }
 .pop-up-menu-entry__map iframe { padding-left: 5%; max-width: 80%; height: 100%; }
 @media only screen and (max-width: 1024px) { .pop-up-menu-entry__map iframe { width: 100%; padding-left: 0; } }
+
+@media only screen and (max-width: 550px) { .pop-up-info { display: none; } }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
@@ -309,6 +313,8 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 @media only screen and (max-width: 642px) { .base_bottom { margin-top: 0; } }
 
 @media only screen and (max-width: 1024px) { .base_bottom_submit .input_item_search { width: 20%; margin-left: 0 !important; } }
+
+.input_curr { min-width: 70px !important; }
 
 .container { background-color: #ecf0f1; padding-bottom: 55px; }
 

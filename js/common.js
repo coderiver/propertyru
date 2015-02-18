@@ -64,14 +64,7 @@ head.ready(function() {
 		        slidesToScroll: 2,
 		        infinite: true,
 		        arrows: false
-		      }}
-				// breakpoint: 550,
-				// settings: {
-				// 	slidesToShow: 1,
-				// 	slidesToScroll: 1,
-				// 	arrows: false
-				// }}
-			]
+		      }}]
 		});
 		$('.item_about_add').click(function() {
 			$(this).find('i').removeClass('heart_b').addClass('heart_pr');
@@ -129,9 +122,57 @@ head.ready(function() {
 				$formMain.removeClass('is-visible');
 				$('.form__newest').addClass('is-visible');
 			}
-			
 		}
 	});
+	$('.commercial .header__foo_main_header').click(function() {
+		if($('.commercial_in').hasClass('is-visible')) {
+			$('.commercial_in').removeClass('is-visible');
+		}
+		else $('.commercial_in').addClass('is-visible');
+	});
+	$('.resident .header__foo_main_header').click(function() {
+	if($('.resident_in').hasClass('is-visible')) {
+		$('.resident_in').removeClass('is-visible');
+	}
+	else $('.resident_in').addClass('is-visible');
+});
+		$('.country .header__foo_main_header').click(function() {
+		if($('.country_in').hasClass('is-visible')) {
+			$('.country_in').removeClass('is-visible');
+		}
+		else $('.country_in').addClass('is-visible');
+	});
 
+
+		$('.pop-up-menu__company .pop-up-menu__header').click(function() {
+		if($('.pop-up-menu__company .pop-up-info').hasClass('is-visible')) {
+			$(' .pop-up-menu__company .pop-up-info').removeClass('is-visible');
+		}
+		else $(' .pop-up-menu__company .pop-up-info').addClass('is-visible');
+	});
+			$('.pop-up-menu__service .pop-up-menu__header').click(function() {
+			if($('.pop-up-menu__service .pop-up-info').hasClass('is-visible')) {
+				$(' .pop-up-menu__service .pop-up-info').removeClass('is-visible');
+			}
+			else $(' .pop-up-menu__service .pop-up-info').addClass('is-visible');
+		});
+				$('.pop-up-menu__contacts .pop-up-menu__header').click(function() {
+				if($('.pop-up-menu__contacts .pop-up-info').hasClass('is-visible')) {
+					$(' .pop-up-menu__contacts .pop-up-info').removeClass('is-visible');
+				}
+				else $(' .pop-up-menu__contacts .pop-up-info').addClass('is-visible');
+			});
+	// 	.pop-up-menu__service .pop-up-menu__header').click(function() {
+	// 	if($('.pop-up-menu__service .pop-up-info').hasClass('is-visible')) {
+	// 		$('.pop-up-menu__service .pop-up-info').removeClass('is-visible');
+	// 	}
+	// 	else $('pop-up-menu__service .pop-up-info').addClass('is-visible');
+	// });
+	// 	$('.pop-up-menu__contacts .pop-up-menu__header').click(function() {
+	// 	if($('.pop-up-menu__contacts .pop-up-info').hasClass('is-vi$('sible')) {
+	// 		$('p.op-up-menu__contacts .pop-up-info').removeClass('is-visible');
+	// 	}
+	// 	else $('.pop-up-menu__contacts .pop-up-info').addClass('is-visible');
+	// });
 
 });
