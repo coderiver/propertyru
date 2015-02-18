@@ -114,6 +114,8 @@ i.mail
 	+s(mail)
 i.close
 	+s(close)
+i.refresh
+	+s(refresh)
 //
 sup
 	position: relative
@@ -478,7 +480,7 @@ body
 			width: 100% 
 			padding-left: 0
 .pop-up-menu_info
-	+mobile
+	+r(445)
 		display: none
 .pop-up-callback
 	display: none
@@ -491,12 +493,17 @@ body
 	+translate(-50%,0) 
 	background-color: #FFF 
 	padding: 10px 0 
+	+r(400)
+		width: 90%
+		max-height: 93%  
 	&_in
 		padding: 2% 
 	&__header
 		+clr
 		vertical-align: middle
 		padding-bottom: 20px 
+		+r(400)
+			padding-bottom: 5px 
 		&_text
 			font-size: 2em
 			font-weight: 300 
@@ -509,6 +516,12 @@ body
 				bottom: 10px 
 				display: inline-block
 				padding-right: 10px 
+			+r(400)
+				position: absolute
+				top: 5px
+				right: 5px
+				p
+					display: none
 	&__input_item
 		width: 100%
 		height: 35px
@@ -521,21 +534,32 @@ body
 		+placeholder-color(#666)
 		font-family: 'Open Sans' 
 		font-size: 1.167em
+		+r(400)
+			margin-bottom: 10px 
 		&_t-area
 			padding-top: 10px 
 			height: 159px
 			resize: none
+			+r(400)
+				height: 70px 
+				margin-bottom: 5px 
 	&__main_text
 		padding-bottom: 20px
-		color: #666 
+		color: #666
+		+r(400)
+			padding-bottom: 10px
 	&__main_captcha
 		+clr
 		padding-bottom: 20px 
+		+r(400)
+			padding-bottom: 10px
 		>div
 			display: inline-block
 			width: 20% 
 			height: 35px 
 			vertical-align: middle
+			+r(400)
+				width: auto 
 		&_input
 			width: 40% !important
 			input
@@ -547,13 +571,29 @@ body
 			bottom: 3px 
 			p
 				font-size: 2.5em
+			+r(400)
+				padding-left: 21% 
+				
 		&_refresh
 			padding-left: 5% 
-			input
-				height: 100%
-				font-size: 1.167em
-				text-decoration: underline
+			+r(400)
+				padding-left: 3%
+			button
 				background-color: transparent
+				height: 100%
+				span
+					font-size: 1.167em
+					text-decoration: underline
+				i
+					display: none
+				+r(400)
+					span
+						display: none
+					i
+						display: inline-block
+						position: relative
+						top: 2px 
+				
 	&__main_submit
 		+clr
 		input
@@ -571,6 +611,9 @@ body
 			float: right
 			color: #666
 			line-height: 35px 
+			+r(400)
+				width: 100% 
+				line-height: 1.4em 
 .cover
 	display: none   			 
 	position: fixed
