@@ -232,5 +232,9 @@ head.ready(function() {
 			else {
 				$(".container__header_nav_loc span").find('i').removeClass('loc_wh').addClass('loc_b');
 			}
-	}
+	};
+	var $copyItems = $('.copy_box .item');
+	$('#show_more').click(function() {
+		$copyItems.clone().appendTo('.content');
+	});
 });

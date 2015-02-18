@@ -390,54 +390,52 @@
 
 .content
 	width: 100%
-	margin: 0 auto
-	>div:first-child
-		.item
-			padding-left: 0 !important 
-	>div:last-child
-		.item
-			margin-right: 0 !important
+	// margin: 0 auto
 
-.entry
-	width: 91%
-	padding-left: 3%
-	// max-width: 270px 
-	+clr
-	+tablet
-		padding-left: 0
-		width: 92% 
-		// margin: 0 auto 
-	+mobile
-		// margin: 0 auto 
-		width: 100% 
-.entry_first
-	float: left
-	padding-left: 0
-	+tablet
-		// padding-left: 0
-		// padding-left: 6% 
-		// width: 100% !important
-	+mobile
-		padding-left: 0
-.entry_third
-	padding-left: 6% 
-	+tablet
-		float: left
-		padding-left: 0
-	+mobile
-		padding-left: 0
-.entry_second
-	+tablet
-		float: right
-.entry_last
-	float: right
-	padding-left: 0
-	+tablet
-		float: right
+// .entry
+// 	width: 91%
+// 	padding-left: 3%
+// 	// max-width: 270px 
+// 	+clr
+// 	+tablet
+// 		padding-left: 0
+// 		width: 92% 
+// 		// margin: 0 auto 
+// 	+mobile
+// 		// margin: 0 auto 
+// 		width: 100% 
+// .entry_first
+// 	float: left
+// 	padding-left: 0
+// 	+tablet
+// 		// padding-left: 0
+// 		// padding-left: 6% 
+// 		// width: 100% !important
+// 	+mobile
+// 		padding-left: 0
+// .entry_third
+// 	padding-left: 6% 
+// 	+tablet
+// 		float: left
+// 		padding-left: 0
+// 	+mobile
+// 		padding-left: 0
+// .entry_second
+// 	+tablet
+// 		float: right
+// .entry_last
+// 	float: right
+// 	padding-left: 0
+// 	+tablet
+// 		float: right
 .item
-	// max-width: 270px
+	max-width: 270px
 	background-color: #FFF 
 	margin-bottom: 20px 
+	display: inline-block
+	margin-right: 1.66%
+	&:nth-child(4n)
+		margin-right: 0  
 	&__img
 		width: 100%
 		position: relative
