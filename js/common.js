@@ -55,24 +55,28 @@ head.ready(function() {
 			arrows: true,
 			prevArrow: $('#arr_l-btn'),
 			nextArrow: $('#arr_r-btn'),
-			responsive: [{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
-				},
-				breakpoint: 320,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					arrows: false
-				},
-			}]
+			responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite: true,
+		        arrows: false
+		      }}
+				// breakpoint: 550,
+				// settings: {
+				// 	slidesToShow: 1,
+				// 	slidesToScroll: 1,
+				// 	arrows: false
+				// }}
+			]
 		});
 		$('.item_about_add').click(function() {
 			$(this).find('i').removeClass('heart_b').addClass('heart_pr');
 		})
 	});
+	//popUpMenu
 	var $popUpMenu = $(".pop-up-menu");
 	$('.humb').click(function() {
 		if($popUpMenu.hasClass("is-visible")) {
@@ -84,6 +88,49 @@ head.ready(function() {
 			$(this).css("background-color", "#96c833");
 			$popUpMenu.addClass("is-visible");
 		}
-	})
-	
+	});
+	//baseTopP
+	var $baseTopP = $(".base_top_text").find('p');
+	$(".base_top_text p").click(function() {
+		if($baseTopP.hasClass('is-active')) {
+			$baseTopP.removeClass('is-active');
+		};
+		if(!$(this).hasClass('is-active')) {
+			$(this).addClass('is-active');
+		}
+	});
+	var $baseFormLi = $(".base__form_nav").find('li span');
+	var $commerceNav = $('#base_form_nav_commerce');
+	var $aliveNav = $('#base_form_nav_alive');
+	var $gardenNav = $('#base_form_nav_garden');
+	var $newestNav = $('#base_form_nav_newest');
+	var $formMain = $(".base__form_main").find('form');
+	$(".base__form_nav li span").click(function() {
+		if($baseFormLi.hasClass('is-active')) {
+			$baseFormLi.removeClass('is-active');
+		};
+		if(!$(this).hasClass('is-active')) {
+			$(this).addClass('is-active');
+
+			if($commerceNav.hasClass('is-active')) {
+				$formMain.removeClass('is-visible');
+				$('.form__commerce').addClass('is-visible')
+			}
+			else if($aliveNav.hasClass('is-active')) {
+				$formMain.removeClass('is-visible');
+				$('.form__alive').addClass('is-visible')
+			}
+			else if($gardenNav.hasClass('is-active')) {
+				$formMain.removeClass('is-visible');
+				$('.form__garden').addClass('is-visible')
+			}
+			else if($newestNav.hasClass('is-active')) {
+				$formMain.removeClass('is-visible');
+				$('.form__newest').addClass('is-visible');
+			}
+			
+		}
+	});
+
+
 });

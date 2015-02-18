@@ -22,6 +22,7 @@
 			li
 				display: table-cell
 				width: 25%
+				cursor: pointer 
 				+box-shadow(-1px -1px 0 0px #cccccc inset)
 				height: 45px 
 				&:last-child
@@ -182,10 +183,14 @@
 				width: 40%
 				
 
-
+.form__commerce
+	display: none
 .form__alive
 	display: none
+	.base_top_text
+		width: 18% 
 	.base_top_input
+		width: 81% 
 		+justify
 	+tablet
 		.base_top_input
@@ -205,9 +210,9 @@
 .form__garden
 	display: none
 	.base_top_text
-		width: 21%
+		width: 18%
 	.base_top_input
-		width: 78%
+		width: 81%
 		float: none
 		.input_item_type
 			margin-right: 2%  
@@ -237,29 +242,29 @@
 .form__newest
 	display: none
 	.base_top_text
-		width: 24%
+		width: 18%
 		+tablet
 			width: 100%  
 			margin-bottom: 20px
 	.base_top_input
-		width: 74% 
+		width: 81% 
 		// +justify
 		+tablet
 			width: 100% 
 		.input_item
 			margin-right: 5% 
-	.base_bottom
-		+tablet
-			.base_bottom_item
-				width: 100% 
-				margin-bottom: 20px 
+	// .base_bottom
+	// 	+tablet
+	// 		.base_bottom_item
+	// 			width: 100% 
+	// 			margin-bottom: 20px 
 
 	.base_bottom_submit
 		.input_item_search
 			margin-left: 20%
-			+tablet
-				width: 20% 
-				margin-left: 0
+	// 		+tablet
+	// 			width: 20% 
+	// 			margin-left: 0
 .base_top_input
 	+tablet
 		width: 100% !important
@@ -303,6 +308,8 @@
 	+tablet
 		width: 100% !important
 		margin-bottom: 20px
+	p
+		cursor: pointer
 .base_bottom
 	+tablet
 		margin-top: 20px 
@@ -574,7 +581,7 @@
 	.arr
 		width: 6%
 		text-align: left
-		+mobile
+		+tablet
 			display: none
 	.slick-list
 		// width: 9999px 
@@ -584,9 +591,10 @@
 		float: left
 		margin: 0 10px 
 		text-align: left
-		width: 270px 
+		max-width: 270px 
 		&:first-child
 			margin-left: 0
+
 .l_arr
 	+s(l_arr)
 	cursor: pointer
