@@ -185,7 +185,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 .pop-up-callback { position: absolute; max-width: 530px; background-color: white; padding: 10px 0; }
 .pop-up-callback_in { padding: 2%; }
-.pop-up-callback__header { *zoom: 1; vertical-align: middle; }
+.pop-up-callback__header { *zoom: 1; vertical-align: middle; padding-bottom: 20px; }
 .pop-up-callback__header:after { content: " "; display: table; clear: both; }
 .pop-up-callback__header_text { font-size: 2em; font-weight: 300; float: left; }
 .pop-up-callback__header_close { float: right; cursor: pointer; }
@@ -194,7 +194,20 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .pop-up-callback__input_item:-moz-placeholder, .pop-up-callback__input_item::-moz-placeholder { color: #666666; opacity: 1; }
 .pop-up-callback__input_item::-webkit-input-placeholder { color: #666666; }
 .pop-up-callback__input_item_t-area { padding-top: 10px; height: 159px; resize: none; }
-.pop-up-callback__main_captcha_input { max-width: 300px; display: inline-block; }
+.pop-up-callback__main_text { padding-bottom: 20px; color: #666666; }
+.pop-up-callback__main_captcha { *zoom: 1; padding-bottom: 20px; }
+.pop-up-callback__main_captcha:after { content: " "; display: table; clear: both; }
+.pop-up-callback__main_captcha > div { display: inline-block; width: 20%; height: 43px; vertical-align: middle; }
+.pop-up-callback__main_captcha_input { width: 40% !important; }
+.pop-up-callback__main_captcha_input input { max-width: 200px; }
+.pop-up-callback__main_captcha_numb { padding-left: 8%; }
+.pop-up-callback__main_captcha_numb p { font-size: 2.5em; }
+.pop-up-callback__main_captcha_refresh { padding-left: 5%; }
+.pop-up-callback__main_captcha_refresh input { height: 100%; font-size: 1.167em; text-decoration: underline; background-color: transparent; }
+.pop-up-callback__main_submit input { width: 40%; max-width: 200px; height: 43px; background-color: #993399; color: white; font-size: 1.5em; font-family: "Open Sans"; font-weight: 300; }
+.pop-up-callback__main_submit p { display: inline-block; padding-left: 3%; color: #666666; }
+
+.cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

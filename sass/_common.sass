@@ -493,6 +493,7 @@ body
 	&__header
 		+clr
 		vertical-align: middle
+		padding-bottom: 20px 
 		&_text
 			font-size: 2em
 			font-weight: 300 
@@ -521,10 +522,54 @@ body
 			padding-top: 10px 
 			height: 159px
 			resize: none
+	&__main_text
+		padding-bottom: 20px
+		color: #666 
 	&__main_captcha
+		+clr
+		padding-bottom: 20px 
+		>div
+			display: inline-block
+			width: 20% 
+			height: 43px 
+			vertical-align: middle
 		&_input
-			max-width: 300px
-			display: inline-block 
+			width: 40% !important
+			input
+				max-width: 200px
+		&_numb
+			padding-left: 8% 
+			p
+				font-size: 2.5em
+		&_refresh
+			padding-left: 5% 
+			input
+				height: 100%
+				font-size: 1.167em
+				text-decoration: underline
+				background-color: transparent
+	&__main_submit
+		input
+			width: 40%
+			max-width: 200px  
+			height: 43px
+			background-color: $purple 
+			color: #FFF
+			font-size: 1.5em 
+			font-family: 'Open Sans'   
+			font-weight: 300 
+		p
+			display: inline-block
+			padding-left: 3%
+			color: #666   
+.cover
+	position: absolute
+	top: 0
+	left: 0
+	width: 100% 
+	height: 100%
+	background-color: rgba(0,0,0, .3)   			 
+			
 
 
 				
