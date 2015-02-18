@@ -67,7 +67,10 @@ head.ready(function() {
 		      }}]
 		});
 		$('.item_about_add').click(function() {
-			$(this).find('i').removeClass('heart_b').addClass('heart_pr');
+			if($(this).find('i').hasClass('heart_pr')) {
+				$(this).find('i').removeClass('heart_pr').addClass('heart_b')
+			}
+			else	$(this).find('i').removeClass('heart_b').addClass('heart_pr');
 		})
 	});
 	//popUpMenu

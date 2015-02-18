@@ -481,5 +481,52 @@ body
 	+mobile
 		display: none
 .pop-up-callback
+	position: absolute
+	max-width: 530px 
+	// top: 50%
+	// left: 50%
+	// +translate(-50%, -50%)
+	background-color: #FFF 
+	padding: 10px 0 
+	&_in
+		padding: 2% 
+	&__header
+		+clr
+		vertical-align: middle
+		&_text
+			font-size: 2em
+			font-weight: 300 
+			float: left
+		&_close
+			float: right
+			cursor: pointer
+			p
+				position: relative
+				bottom: 10px 
+				display: inline-block
+				padding-right: 10px 
+	&__input_item
+		width: 100%
+		height: 43px
+		background-color: #E5E5E5 
+		border: 0
+		padding: 0
+		text-indent: 5px
+		margin-bottom: 20px 
+		+box-shadow(inset 0 0 5px #bcbcbc) 
+		+placeholder-color(#666)
+		font-family: 'Open Sans' 
+		font-size: 1.167em
+		&_t-area
+			padding-top: 10px 
+			height: 159px
+			resize: none
+	&__main_captcha
+		&_input
+			max-width: 300px
+			display: inline-block 
+
+
+				
 			
 	  
