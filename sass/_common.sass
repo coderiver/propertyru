@@ -635,12 +635,9 @@ body
 				width: 100% 
 				line-height: 1.4em 
 .pop-up-item
-	width: 60% 
+	// width: 60% 
 	background: #eee
-	// position: fixed
-	// top: 30%
-	// left: 50%
-	// +translate(-50%, -30%) 
+
 	&_in
 		display: table
 		width: 100% 
@@ -650,9 +647,58 @@ body
 		vertical-align: middle
 	&__main
 		+clr
-		width: 100% !important 
-		max-width: 100% 
+		// width: 100% !important 
+		width: 1035px 
+		// max-width: 100% 
 		background-color: #FFF 
+		position: relative
+		&_map
+			width: 100%
+			iframe
+				width: 100% 
+		&_slider
+			overflow: hidden 
+			padding: 10px 0
+			margin-bottom: 1px
+			background-color: #ecf0f1 
+			display: table
+			
+			&_main
+				display: table-cell
+				// width: 80%
+				max-width: 394px  
+				&_in
+					width: 74% 
+					overflow: hidden 
+					margin: 0 auto
+					// display: table-cell
+					position: relative
+					left: 10px 
+				.item__slider_img
+					padding-right: 10px
+					img
+						max-width: 80px !important
+			.pop-up-item__main_slider_arr-prev, .pop-up-item__main_slider_arr-next
+				display: table-cell
+				cursor: pointer
+				// width: 10% 
+				vertical-align: middle
+			.pop-up-item_prev_btn
+				+s(pop_up_prev)
+				cursor: pointer
+				position: relative
+				left: 10px 
+				// margin-left: 10px 
+			.pop-up-item_nxt_btn
+				+s(pop_up_next)
+				cursor: pointer
+				position: relative
+				right: 10px 
+
+			 
+		.item__slider_img
+			display: inline-block
+			  
 	&__img
 		float: left 
 		display: inline-block
