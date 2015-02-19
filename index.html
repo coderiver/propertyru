@@ -1458,7 +1458,7 @@
 		<div class="pop-up-callback__header_text">
 			<p class="txt_purple">Обратный звонок</p>
 		</div>
-		<div class="pop-up-callback__header_close ">
+		<div class="pop-up-callback__header_close close">
 			<p class=" txt_purple">закрыть</p><i class="close"></i>
 		</div>
 	</div>
@@ -1495,11 +1495,14 @@
 	</div>
 
 </div></div>
-<div class="pop-up-item">
-	<div class="pop-up-item__prev"></div>
+		
+<div class="pop-up-item"><div class="pop-up-item_in">
+	<div class="pop-up-item__prev">
+		<input type="button" class="l_arr">
+	</div>
 	<!-- BEGIN item  -->
-	<div class="item item-pop-up">
-		<div class="item__img">
+	<div class=" pop-up-item__main">
+		<div class="item__img pop-up-item__img">
 			<div class="item__info">
 				<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
 				<p class="item__info_share">спецпредложение</p>
@@ -1509,9 +1512,9 @@
 				</div>
 			</div>
 			<img class="item__img_main" src="img/item_big.jpg" alt="">
-			<div class="item-pop-up__slider">
-				<div class="item-pop-up__slider_arr-prev"></div>
-				<div class="item-pop-up__slider_main">
+			<div class="pop-up-item__main_slider">
+				<div class="pop-up-item__main_slider_arr-prev"></div>
+				<div class="pop-up-item__main_slider_main">
 					<img src="img/item_thumb.png" alt="">
 					<img src="img/item_thumb.png" alt="">
 					<img src="img/item_thumb.png" alt="">
@@ -1519,9 +1522,9 @@
 					<img src="img/item_thumb.png" alt="">
 					<img src="img/item_thumb.png" alt="">
 				</div>
-				<div class="item-pop-up__slider_arr-next"></div>
+				<div class="pop-up-item__main_slider_arr-next"></div>
 			</div>
-			<div class="item-pop-up__map">
+			<div class="pop-up-item__main_map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2245.3729660932454!2d37.617498999999995!3d55.752022999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sua!4v1424358662816" width="400" height="300" frameborder="0" style="border:0"></iframe>
 			</div>
 		</div>
@@ -1532,8 +1535,8 @@
 					<p class="caps">Аренда</p>
 					<p class="caps">Торговое помещение</p>
 				</div>
-				<div class="pop-up-item__about_up_close">
-					<p class=" txt_purple">закрыть</p><i class="close"></i>
+				<div class="pop-up-item__about_up_close close">
+					<p class="txt_purple">закрыть</p><i class="close"></i>
 				</div>
 			</div>
 			<div class="item__about_head txt_purple">
@@ -1575,8 +1578,10 @@
 		</div>
 	</div>
 	<!-- END item -->
-	<div class="pop-up-item__next"></div>
-</div>
+	<div class="pop-up-item__next">
+		<input type="button" class="r_arr">
+	</div>
+</div></div>
 <div class="cover"></div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 	<script type="text/javascript">(function() {
