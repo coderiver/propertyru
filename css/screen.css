@@ -396,7 +396,9 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 .content { width: 100%; }
 
-.item { max-width: 270px; background-color: white; margin-bottom: 20px; display: inline-block; margin-right: 1.66%; }
+.content.cards .item { width: 100%; }
+
+.item { width: 24%; min-width: 220px; background-color: white; margin-bottom: 20px; display: inline-block; margin-right: 1%; }
 .item:nth-child(4n) { margin-right: 0; }
 .item__img { width: 100%; position: relative; line-height: 0; *zoom: 1; }
 .item__img:after { content: " "; display: table; clear: both; }
@@ -416,12 +418,26 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .item__about_head { font-size: 1.167em; padding-bottom: 25px; }
 .item__about_head sup { font-size: 0.5em; position: relative; top: -0.7em; }
 .item__about_description { font-size: 1em; color: #333333; padding-bottom: 23px; }
+.item__about_description_cards { display: none; }
 .item__about_price { *zoom: 1; }
 .item__about_price:after { content: " "; display: table; clear: both; }
 .item__about_price_main { font-size: 1.5em; font-weight: 700; float: left; }
 .item__about_price .item_about_add { float: right; padding-right: 5%; position: relative; top: 3px; cursor: pointer; }
 .item__about_price .item_about_add i { display: inline-block; position: relative; top: 2px; }
 .item__about_price .item_about_add i.heart_b { background: url('../img/icons-sc5fe8bc122.png') 0 -180px no-repeat; width: 16px; height: 14px; }
+
+.content.list .item { width: 100%; }
+.content.list .item__img { max-width: 270px; float: left; }
+.content.list .item__about { padding-left: 25%; padding-bottom: 14px; }
+.content.list .item__about_description, .content.list .item__about_price { display: inline-block; margin-right: 10%; }
+@media only screen and (max-width: 1024px) { .content.list .item__about_description, .content.list .item__about_price { margin-right: 5%; } }
+@media only screen and (max-width: 800px) { .content.list .item__about_description, .content.list .item__about_price { margin-right: 0; } }
+.content.list .item__about_description_cards { display: inline-block; }
+.content.list .item__about_price { vertical-align: top; *zoom: 1; }
+.content.list .item__about_price:after { content: " "; display: table; clear: both; }
+.content.list .item__about_price_main { display: block; width: 100%; }
+.content.list .item__about_price .item_about_add { float: none; top: 10px; }
+.content.list .item__about_length, .content.list .item__about_area { display: inline-block; }
 
 .container__foo { text-align: center; margin-top: 30px; }
 .container__foo p { color: #333333; font-size: 1.167em; padding-bottom: 25px; }

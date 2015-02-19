@@ -212,9 +212,11 @@ head.ready(function() {
 
 			if($(".container__header_nav_marked span").hasClass('is-active')) {
 			$(".container__header_nav_marked span").find('i').removeClass('inf').addClass('inf_wh');
+			$('.content').addClass('list');
 			}
 			else  {
 				$(".container__header_nav_marked span").find('i').removeClass('inf_wh').addClass('inf');
+				$('.content').removeClass('list');
 			}
 
 

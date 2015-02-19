@@ -428,14 +428,36 @@
 // 	padding-left: 0
 // 	+tablet
 // 		float: right
+	.item
+		+mobile
+			margin: 0 auto
+			width: 100% !important 
+		+r(400)
+			width: 100% 
+		+r(1118)
+			width: 20% 
+		+tablet
+			width: 33%
+		&:nth-child(4n)
+			margin-right: 0
+			+tablet
+				// margin-right: 1.66%
+				// width: 100%   
+		
+.content.cards
+	.item
+		width: 100% 
+
 .item
-	max-width: 270px
+	// max-width: 270px
+	width: 24% 
+	min-width: 220px 
 	background-color: #FFF 
 	margin-bottom: 20px 
 	display: inline-block
-	margin-right: 1.66%
+	margin-right: 1%
 	&:nth-child(4n)
-		margin-right: 0  
+		margin-right: 0
 	&__img
 		width: 100%
 		position: relative
@@ -503,6 +525,8 @@
 			font-size: 1em
 			color: #333333
 			padding-bottom: 23px
+			&_cards
+				display: none
 		&_price
 			+clr
 			&_main
@@ -521,7 +545,35 @@
 					top: 2px
 					&.heart_b
 						+s(heart_b)
-
+.content.list
+	.item
+		width: 100%
+		&__img
+			max-width: 270px
+			float: left 
+		&__about
+			padding-left: 25%
+			padding-bottom: 14px
+			&_description, &_price
+				display: inline-block
+				margin-right: 10% 
+				+tablet
+					margin-right: 5%
+				+r(800)
+					margin-right: 0
+			&_description_cards
+				display: inline-block
+			&_price
+				vertical-align: top
+				+clr
+				&_main
+					display: block
+					width: 100%
+				.item_about_add
+					float: none
+					top: 10px
+			&_length, &_area
+				display: inline-block  
 .container__foo
 	text-align: center
 	margin-top: 30px 
