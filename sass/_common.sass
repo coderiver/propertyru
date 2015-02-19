@@ -635,9 +635,12 @@ body
 				width: 100% 
 				line-height: 1.4em 
 .pop-up-item
-	// width: 60% 
+	width: 80% 
 	background: #eee
-
+	z-index: 5 
+	// position: absolute
+	margin: 0 auto
+	 
 	&_in
 		display: table
 		width: 100% 
@@ -645,10 +648,15 @@ body
 	&__prev, &__next, &__main
 		display: table-cell
 		vertical-align: middle
+	&__prev
+		padding-right: 13px
+	&__next
+		padding-left: 13px
 	&__main
 		+clr
 		// width: 100% !important 
-		width: 1035px 
+		// width: 1035px 
+		width: 100% 
 		// max-width: 100% 
 		background-color: #FFF 
 		position: relative
@@ -661,19 +669,18 @@ body
 			padding: 10px 0
 			margin-bottom: 1px
 			background-color: #ecf0f1 
-			display: table
 			
 			&_main
 				display: table-cell
 				// width: 80%
-				max-width: 394px  
+				max-width: 365px  
 				&_in
 					width: 74% 
 					overflow: hidden 
 					margin: 0 auto
 					// display: table-cell
-					position: relative
-					left: 10px 
+					// position: relative
+					// left: 10px 
 				.item__slider_img
 					padding-right: 10px
 					img
@@ -698,6 +705,7 @@ body
 			 
 		.item__slider_img
 			display: inline-block
+			width: 20% 
 			  
 	&__img
 		float: left 
@@ -709,19 +717,66 @@ body
 		float: right 
 		display: inline-block
 		width: 50%
+		padding-right: 0.5%
+		padding-left: 0 !important
 		&_up
 			+clr
 			width: 100% 
+			position: relative
+			margin-bottom: 20px 
 			&_text
 				float: left
 				p
 					display: inline-block
-			// &_close
-				// float: right
-				// p
-					// display: inline-block
-					// vertical-align: middle 
+					font-weight: 700
+					color: #333  
+			&_close
+				position: absolute
+				top: -7px
+				right: 12px 
+		.item__about_head
+			p
+				font-weight: 700 
+				font-size: 1.5em 
+		.item__about_description 
+			li
+				font-size: 1.167em 
+				color: #333
+		.pop-up-item__description
+			p
+				font-size: 1.167em
+				&:first-child
+				padding: 20px 10px 0px 0
+				color: #666 
 
+			.tags
+				color: #333 
+		.pop-up-item__foot
+			margin-top: 20px
+			position: relative
+			&_more
+				width: 50% 
+				display: inline-block
+				input
+					width: 100% 
+					min-width: 225px
+					display: inline-block
+					height: 43px
+					background-color: $purple
+					color: #FFF   
+					font-family: 'Open Sans'
+					font-weight: 300
+					font-size: 1.5em 
+			&_share
+				display: inline-block
+				// float: right
+				vertical-align: middle
+				// position: absolute
+				// right: 6%
+				// top: 4px
+.tags
+	a
+		padding-left: 5px 				
 .cover
 	display: none   			 
 	position: fixed
