@@ -145,6 +145,12 @@ head.ready(function() {
 		}
 		else $('.country_in').addClass('is-visible');
 	});
+		$('.country .header__foo_main_header_new').click(function() {
+		if($('.newest_in').hasClass('is-visible')) {
+			$('.newest_in').removeClass('is-visible');
+		}
+		else $('.newest_in').addClass('is-visible');
+	});
 
 
 		$('.pop-up-menu__company .pop-up-menu__header').click(function() {

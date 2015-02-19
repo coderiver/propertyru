@@ -355,7 +355,8 @@ body
 			margin: 0 auto 
 			text-align: center
 			&.banner
-				display: none
+				width: 100%
+				margin-top: 10px  
 		.header__foo_drop
 			+tablet
 				display: none
@@ -365,7 +366,7 @@ body
 			color: #333 
 			&:not(:first-child)
 				padding-top: 30px 
-			&.header__foo_main_header
+			&.header__foo_main_header, &.header__foo_main_header_new 
 				+tablet
 					cursor: pointer
 					background-color: $purple
@@ -373,14 +374,20 @@ body
 					padding: 5px  0
 					margin: 1px 0 
 					// border-top: 1px solid #999
-
+			&.header__foo_main_header_new 
+				margin-top: 2px
 		h5
 			padding-top: 30px 
 			font-size: 1.167em 
+			+tablet
+				padding-top: 10px
 		a
 			font-size: 1.167em 
 			color: #666666
 			text-decoration: none
+		ul
+			+tablet
+				padding-bottom: 10px 
 .footer
 	background-color: #ecf0f1
 	padding-top: 40px 
@@ -497,7 +504,7 @@ body
 .pop-up-callback
 	display: none
 	z-index: 5 
-	position: absolute
+	position: fixed
 	max-width: 530px
 	width: 420px  
 	top: 10px
