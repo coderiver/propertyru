@@ -197,7 +197,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 
 @media only screen and (max-width: 445px) { .pop-up-menu_info { display: none; } }
 
-.pop-up-callback { display: none; z-index: 5; position: fixed; max-width: 530px; width: 420px; top: 10px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); background-color: white; padding: 10px 0; }
+.pop-up-callback { display: none; z-index: 5; position: absolute; max-width: 530px; width: 420px; top: 10px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); background-color: white; padding: 10px 0; }
 @media only screen and (max-width: 400px) { .pop-up-callback { width: 90%; max-height: 93%; } }
 .pop-up-callback_in { padding: 2%; }
 .pop-up-callback__header { *zoom: 1; vertical-align: middle; padding-bottom: 20px; }
@@ -400,7 +400,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 1em; line-height:
 .item:nth-child(4n) { margin-right: 0; }
 .item_cover { position: absolute; display: none; width: 100%; height: 100%; background-color: rgba(153, 51, 153, 0.8); z-index: 2; }
 .item_cover a, .item_cover p { margin-left: 24% !important; }
-.item_cover input { color: white; width: 60%; min-width: 100px; margin-left: 20%; display: block; margin-top: 45%; font-family: "Open Sans"; font-weight: 300; }
+.item_cover input { color: white; width: 60%; min-width: 100px; margin-left: 20%; display: block; margin-top: 50%; font-family: "Open Sans"; font-weight: 300; }
 .item_cover a { color: white; text-decoration: none; margin-top: 25%; margin-bottom: 5%; font-size: 1.167em; display: block; }
 .item_cover p { color: white; font-weight: 700; font-size: 2em; }
 .item:hover .item_cover { display: block; }
