@@ -415,6 +415,7 @@
 		position: relative
 		width: 24% 
 		margin-right: 1%
+		// max-width: 270px 
 		&:nth-child(4n)
 			margin-right: 0
 			+tablet
@@ -438,7 +439,6 @@
 			width: 45% 
 		
 .item
-	max-width: 270px
 	position: relative
 	min-width: 220px 
 	background-color: #FFF 
@@ -457,6 +457,7 @@
 		input
 			color: #FFF
 			width: 60% 
+			max-width: 200px 
 			min-width: 100px 
 			margin-left: 20%
 			// position: relative
@@ -464,6 +465,7 @@
 			// left: 50%
 			// +translate(-50%, 0)
 			margin-top: 50% 
+			// +translate(0, -50%)
 			font-family: 'Open Sans'
 			font-weight: 300  
 		a
@@ -576,9 +578,29 @@
 						+s(heart_b)
 .content.list
 	.item
-		width: 100%
+		width: 100% !important
+		margin-right: 0 
 		&_cover
-			display: none !important
+			a,input, p
+				margin-left: 0
+				margin-top: 0
+				position: absolute
+				+translate(-50%, 0)
+				margin-top: 0
+				left: 50%
+				margin-left: 0 !important
+			input
+				position: absolute
+				left: 50%
+				+translate(-50%, 0)
+				margin-top: 30px
+				// margin-left: 0
+			a
+				margin-bottom: 0
+				margin-top: 90px 
+			p
+				margin-top: 130px
+				 
 			
 		&__img
 			max-width: 270px
@@ -588,6 +610,7 @@
 		&__about
 			padding-left: 25%
 			padding-bottom: 14px
+			// display: inline-block
 			+mobile
 				padding-left: 5% 
 			&_description, &_price
