@@ -237,4 +237,9 @@ head.ready(function() {
 	$('#show_more').click(function() {
 		$copyItems.clone().appendTo('.content');
 	});
+	$('.circle').click(function() {
+			if($('.nav').hasClass('is-visible')) $('.nav').removeClass('is-visible')
+			else $('.nav').addClass('is-visible')
+	});
+
 });
