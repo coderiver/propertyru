@@ -91,6 +91,10 @@ $skype: #3e9dd7
 	height: 30px
 	font-size: 1.167em  
 	cursor: pointer
+// .select_im
+// 	+png(select)
+// 	display: inline-block
+
 // sprite
 i
 	display: inline-block
@@ -136,9 +140,24 @@ sup
 //
 select
 	+appearance(none)
-	+png(select)
 	background-position: right
 	background-color: #FFF
+label
+	position: relative
+	cursor: pointer
+	+clr
+	&:after
+		content: ' '
+		position: absolute
+		// top: 3px 
+		pointer-events: none
+		+translate(-30px,0)
+		background-color: #000 
+		display: inline-block
+		+png(select)
+	&.input_item
+		+box-shadow(0 0 0 0 )
+
 //conditions
 .is-visible
 	display: block !important
