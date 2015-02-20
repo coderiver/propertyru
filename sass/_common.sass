@@ -274,11 +274,14 @@ body
 	+tablet
 		width: 100% 
 		text-align: center
+		padding-left: 0
 	p
 		font-weight: 300 
 		font-size: 2em 
 		line-height: 1.2em
-		margin-left: 0.7%  
+		margin-left: 0.7% 
+		+tablet
+			margin-left: 0 
 	&_btns
 		margin-top: 34px
 		.header__mid-about_btn
@@ -638,6 +641,7 @@ body
 	width: 80% 
 	background: #eee
 	z-index: 5 
+	display: none
 	// position: absolute
 	margin: 0 auto
 	 

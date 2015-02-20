@@ -337,19 +337,29 @@
 	padding: 30px 0
 	text-align: justify
 	vertical-align: middle
+
 	h2
 		font-size: 1.9em !important
 		color: #333 
+		// +tablet
+		// 	padding-left: 4% 
 	&_entry
 		font-size: 1.167em
 		height: 30px  
 		line-height: 30px 
 		color: #333
+		+tablet
+			padding-left: 4% 
+			
 		&_nav
 			float: right
+			+tablet
+				padding-left: 4% 
 		.input_item
 			width: 50%
 			float: right
+			+tablet
+				margin-right: 4% 
 			+r(1032)
 				width: 50%
 				display: block
@@ -364,8 +374,8 @@
 	.container__header_entry_nav
 		+tablet
 			float: left
+			padding-left: 4%
 		+mobile
-			padding-left: 0 
 			margin: 15px  0
 	.container__header_nav
 		display: inline-block
@@ -394,6 +404,9 @@
 
 .content
 	width: 100%
+	&_in
+		+mobile
+			padding-left: 4%
 	.item
 		position: relative
 		width: 24% 
@@ -706,6 +719,8 @@
 				padding-left: 0 
 .major
 	display: table
+	+mobile
+		padding-left: 4% !important
 	.major__img
 		width: 20% 
 		display: table-cell
@@ -760,6 +775,9 @@
 		padding-bottom: 30px   
 		b
 			font-weight: 700 
+			+mobile
+				display: block
+				font-size: 0.8em 
 	.btn_bd
 		color: #FFF
 		border-color: #FFF 
