@@ -42,6 +42,7 @@
 	&__row
 		margin: 0 -15px
 		text-align: left 
+		display: inline-block
 		+clr
 	&__box
 		width: 50%
@@ -257,6 +258,7 @@
 .custom-combobox-input
 	margin: 0
 	padding: 5px 10px
+	+placeholder-color(#666)
 
 .v-select
 	+box-shadow(0 0 0 1px #cdcdcd)
@@ -308,6 +310,8 @@
 	cursor: default
 	margin: -1px
 	+box-shadow(0 0 0 1px #cdcdcd)
+	height: 190px 
+	overflow: auto 
 .ui-menu-item
 	cursor: pointer
 	font-size: 14px
