@@ -9,146 +9,6 @@
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-	  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-<script>
-	// (function( $ ) {
- //    $.widget( "custom.combobox", {
- //      _create: function() {
- //        this.wrapper = $( "<span>" )
- //          .addClass( "custom-combobox" )
- //          .insertAfter( this.element );
- 
- //        this.element.hide();
- //        this._createAutocomplete();
- //        this._createShowAllButton();
- //      },
- 
- //      _createAutocomplete: function() {
- //        var selected = this.element.children( ":selected" ),
- //          value = selected.val() ? selected.text() : "";
- 
- //        this.input = $( "<input>" )
- //          .appendTo( this.wrapper )
- //          .val( value )
- //          .attr( "title", "" )
- //          .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
- //          .autocomplete({
- //            delay: 0,
- //            minLength: 0,
- //            source: $.proxy( this, "_source" )
- //          })
- //          .tooltip({
- //            tooltipClass: "ui-state-highlight"
- //          });
- 
- //        this._on( this.input, {
- //          autocompleteselect: function( event, ui ) {
- //            ui.item.option.selected = true;
- //            this._trigger( "select", event, {
- //              item: ui.item.option
- //            });
- //          },
- 
- //          autocompletechange: "_removeIfInvalid"
- //        });
- //      },
- 
- //      _createShowAllButton: function() {
- //        var input = this.input,
- //          wasOpen = false;
- 
- //        $( "<a>" )
- //          .attr( "tabIndex", -1 )
- //          .attr( "title", "Show All Items" )
- //          .tooltip()
- //          .appendTo( this.wrapper )
- //          .button({
- //            icons: {
- //              primary: "ui-icon-triangle-1-s"
- //            },
- //            text: false
- //          })
- //          .removeClass( "ui-corner-all" )
- //          .addClass( "custom-combobox-toggle ui-corner-right" )
- //          .mousedown(function() {
- //            wasOpen = input.autocomplete( "widget" ).is( ":visible" );
- //          })
- //          .click(function() {
- //            input.focus();
- 
- //            // Close if already visible
- //            if ( wasOpen ) {
- //              return;
- //            }
- 
- //            // Pass empty string as value to search for, displaying all results
- //            input.autocomplete( "search", "" );
- //          });
- //      },
- 
- //      _source: function( request, response ) {
- //        var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
- //        response( this.element.children( "option" ).map(function() {
- //          var text = $( this ).text();
- //          if ( this.value && ( !request.term || matcher.test(text) ) )
- //            return {
- //              label: text,
- //              value: text,
- //              option: this
- //            };
- //        }) );
- //      },
- 
- //      _removeIfInvalid: function( event, ui ) {
- 
- //        // Selected an item, nothing to do
- //        if ( ui.item ) {
- //          return;
- //        }
- 
- //        // Search for a match (case-insensitive)
- //        var value = this.input.val(),
- //          valueLowerCase = value.toLowerCase(),
- //          valid = false;
- //        this.element.children( "option" ).each(function() {
- //          if ( $( this ).text().toLowerCase() === valueLowerCase ) {
- //            this.selected = valid = true;
- //            return false;
- //          }
- //        });
- 
- //        // Found a match, nothing to do
- //        if ( valid ) {
- //          return;
- //        }
- 
- //        // Remove invalid value
- //        this.input
- //          .val( "" )
- //          .attr( "title", value + " didn't match any item" )
- //          .tooltip( "open" );
- //        this.element.val( "" );
- //        this._delay(function() {
- //          this.input.tooltip( "close" ).attr( "title", "" );
- //        }, 2500 );
- //        this.input.autocomplete( "instance" ).term = "";
- //      },
- 
- //      _destroy: function() {
- //        this.wrapper.remove();
- //        this.element.show();
- //      }
- //    });
- //  })( jQuery );
- 
- //  $(function() {
- //    $( "#combobox" ).combobox();
-
- //  });
-</script>
-	  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 </head>
 <body onload="initialize()">
 <!-- BEGIN  out-->
@@ -297,28 +157,6 @@
 								<p class="txt_purple">Арендный бизнес</p>
 							</div>
 							<div class="base_top_input">
-<<<<<<< HEAD
-								<label class=""><select name="" id="" class="base_input_select input_item">
-									<option selected value="назначение">назначение</option>
-									<option value="параметр 2">параметр 2</option>
-									<option value="параметр 3">параметр 3</option>
-								</select></label>
-								<!-- <div class="item_wrap input_item"> -->
-								<input type="text" placeholder="округ" class="district input_item">
-								<input type="button" class="select_im">
-								<!-- </div> -->
-							<!-- 	<select name="" id="" class="input_item">
-									<option selected value="округ">округ</option>
-									<option value="параметр 2">параметр 2</option>
-									<option value="параметр 3">параметр 3</option>
-								</select> -->
-								<input type="text" placeholder="метро" class="subway input_item">
-<!-- 								<select name="" id="" class="input_item">
-									<option selected value="метро">метро</option>
-									<option value="параметр 2">параметр 2</option>
-									<option value="параметр 3">параметр 3</option>
-								</select> -->
-=======
 								<div class="ui-widget v-select">
 								  <select class="combobox" placeholder="назначение">
 								    <option value=""></option>
@@ -400,7 +238,6 @@
 								    <option value="Scheme">Scheme</option>
 								  </select>
 								</div>
->>>>>>> ad9e6f7419cd7be059052670cb8b9db775b1f2c5
 							</div>
 					</div>
 					<div class="base_bottom">
@@ -419,13 +256,12 @@
 								<input type="text" class="input_item input_from">
 								<p>до</p>
 								<input type="text" class="input_item input_from">
-								<label class="">
+
 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
 								</select>
-								</label>
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -442,32 +278,26 @@
 								<p class="txt_purple">Продажа</p>
 							</div>
 							<div class="base_top_input">
-							<label class="">
 								<select name="" id="" class="base_input_select input_item">
 									<option selected value="тип дома">тип дома</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select></label>
-								<label class="">
+								</select>
 								<select name="" id="" class="input_item">
 									<option selected value="кол-во комнат">кол-во комнат</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select></label>
-								<label class="">
-								<input type="text" placeholder="округ" class="district input_item"></label>
-<!-- 								<select name="" id="" class="input_item">
+								</select>
+								<select name="" id="" class="input_item">
 									<option selected value="округ">округ</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select> -->
-								<label class="">
-								<input type="text" placeholder="метро" class="subway input_item"></label>
-								<!-- <select name="" id="" class="input_item">
+								</select>
+								<select name="" id="" class="input_item">
 									<option selected value="метро">метро</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select> -->
+								</select>
 							</div>
 					</div>
 					<div class="base_bottom">
@@ -478,12 +308,12 @@
 								<input type="text" class="input_item input_from">
 								<p>до</p>
 								<input type="text" class="input_item input_from">
-								<label class="">
+
 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
-								</select></label>
+								</select>
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -500,18 +330,16 @@
 								<p class="txt_purple">Продажа</p>
 							</div>
 							<div class="base_top_input">
-							<label class="">
 								<select name="" id="" class="base_input_select input_item input_item_type">
 									<option selected value="тип дома">тип дома</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select></label>
-								<label class="">
+								</select>
 								<select name="" id="" class="base_input_select input_item input_item_way">
 									<option selected value="направление / шоссе">направление / шоссе</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select></label>
+								</select>
 								<div class="base_top_area">
 									<p>Площадь дома</p>
 									<p>от</p>
@@ -536,12 +364,12 @@
 								<input type="text" class="input_item input_from">
 								<p>до</p>
 								<input type="text" class="input_item input_from">
-								<label class="">
+
 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
-								</select></label>
+								</select>
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -558,52 +386,21 @@
 								<p class="txt_purple">Продажа</p>
 							</div>
 							<div class="base_top_input">
-							<label class="">
 								<select name="" id="" class="input_item">
 									<option selected value="кол-во комнат">кол-во комнат</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select></label>
-								<label class="">
-								<input type="text" placeholder="округ" class="district input_item"></label>
-								<!-- <button type="text" placeholder="округ" сlass="district input_item"></button> -->
-					<!-- 	<select id="combobox" class="input_item">
-						  <option value="">Select one...</option>
-						  <option value="ActionScript">ActionScript</option>
-						  <option value="AppleScript">AppleScript</option>
-						  <option value="Asp">Asp</option>
-						  <option value="BASIC">BASIC</option>
-						  <option value="C">C</option>
-						  <option value="C++">C++</option>
-						  <option value="Clojure">Clojure</option>
-						  <option value="COBOL">COBOL</option>
-						  <option value="ColdFusion">ColdFusion</option>
-						  <option value="Erlang">Erlang</option>
-						  <option value="Fortran">Fortran</option>
-						  <option value="Groovy">Groovy</option>
-						  <option value="Haskell">Haskell</option>
-						  <option value="Java">Java</option>
-						  <option value="JavaScript">JavaScript</option>
-						  <option value="Lisp">Lisp</option>
-						  <option value="Perl">Perl</option>
-						  <option value="PHP">PHP</option>
-						  <option value="Python">Python</option>
-						  <option value="Ruby">Ruby</option>
-						  <option value="Scala">Scala</option>
-						  <option value="Scheme">Scheme</option>
-						</select> -->
-					<!-- 			<select name="" id="" class="input_item">
+								</select>
+								<select name="" id="" class="input_item">
 									<option selected value="округ">округ</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select> -->
-								<label class="">
-								<input type="text" placeholder="метро" class="subway input_item"></label>
-		<!-- 						<select name="" id="" class="input_item">
+								</select>
+								<select name="" id="" class="input_item">
 									<option selected value="метро">метро</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select> -->
+								</select>
 							</div>
 					</div>
 					<div class="base_bottom">
@@ -621,12 +418,12 @@
 								<input type="text" class="input_item input_from">
 								<p>до</p>
 								<input type="text" class="input_item input_from">
-								<label class="">
+
 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
-								</select></label>
+								</select>
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -702,11 +499,10 @@
 				<div class="l-col3">
 					<div class="container__header_entry">
 					<span class="sort">Сортировать по</span>
-					<label class="">
 					<select name="" id="" class="input_item input_item_w_150">
 						<option value=""></option>
 						<option value="параметр">параметр</option>
-					</select></label>
+					</select>
 					</div>
 				</div>
 				<div class="l-col4">
@@ -723,12 +519,6 @@
 		</div>
 		<!-- BEGIN content  -->
 		<div class="content "><div class="content_in">
-			<div class="content__map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d143738.42671012788!2d37.64210798710937!3d55.742642028469376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LPRg9Cz0Lsg0LrQsNGA0YLRiyDQvNC-0YHQutCy0LA!5e0!3m2!1sru!2sua!4v1424444641914"  height="450" frameborder="0" style="border:0"></iframe>
-			</div>
-			<div class="content__items">
-				
-			
 			<!-- BEGIN item  -->
 			<div class="item">
 			<div class="item_cover">
@@ -1237,7 +1027,6 @@
 				</div>
 			</div>
 			<!-- END item -->
-			</div>
 		</div></div>
 		<!-- END content -->
 		<div class="container__foo">
@@ -2051,9 +1840,6 @@
 	</div>
 	<!-- END item -->
 </div>
-<<<<<<< HEAD
-
-=======
 <div class="popup-wrap js-wrap">
 	<div class="popup js-popup">
 		<div class="popup__row">
@@ -2198,6 +1984,5 @@
   }
  
 </script> 
->>>>>>> ad9e6f7419cd7be059052670cb8b9db775b1f2c5
 </body>
 </html>
