@@ -1,0 +1,38 @@
+.company
+	padding: 35px 0
+	color: #333
+	+clr
+	&__sidebar
+		width: percentage(300/1170) 
+		float: left
+	&__nav
+		.dropdown
+			margin-bottom: 35px
+			font-size: 0
+			span
+				padding-left: 35px 
+				font-weight: bold
+				font-size: 24px
+				+s(sb_arr_down)
+				.open
+					+s(sb_arr_up)
+	&__main
+		width: percentage(870/1170)
+		float: left
+		.breadcrumbs
+			a
+				font-size: 12px
+				text-decoration: none
+				color: #333
+				&:hover
+					text-decoration: underline
+	&__title
+		h5
+			margin: 25px 0
+			font-weight: bold
+			font-size: 24px
+		p
+			margin-bottom: 25px
+			text-align: justify
+			color: #666 
+			font-size: 14px
