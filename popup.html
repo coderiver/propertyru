@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body onload="initialize()">
+
+<!-- begin out  -->
+<div class="out">
+
+	<div class="popup-wrap">
+		<div class="popup">
+			<div class="popup__row">
+				<div class="popup__box is-right">
+					<div class="popup__text">
+						<div class="popup__top">
+							<a href="#" class="popup__close">
+								<span>закрыть</span>
+								<i></i>
+							</a>
+							<ul>
+								<li>Аренда</li>
+								<li>Торговое помещение </li>
+							</ul>
+						</div>
+						<h2>Аренда Торговое помещение. 371 м2 в 500 метрах от м. Киевская.ЗАО</h2>
+						<ul class="popup__list">
+							<li><span>Район:</span>ЦАО</li>
+							<li><span>Метро:</span>Пушкинская</li>
+							<li><span>Улица:</span>Тверская 18 к1</li>
+							<li><span>Кол-во комнат:</span>2</li>
+							<li><span>Тип недвижимости:</span>Торговое помещение</li>
+							<li><span>Общая площадь:</span>46м2</li>
+							<li><span>Этаж:</span>1</li>
+							<li><span>Кол-во этажей:</span>8</li>
+							<li><span>Тип дома:</span>Административное здание</li>
+						</ul>
+						<div class="popup__info">
+							<a href="#" class="popup__like">избранное</a>
+							<span class="popup__price">31 500 000 р.</span>
+						</div>
+						<p>Отличное предложение по продаже арендного бизнеса! В центре Столицы предлагаем к продаже помещение свободного назначения площадью 46 м2. Первый этаж административного здания. Первая линия домов.</p>
+						<div class="popup__tags">
+							<ul class="popup__list popup__list_mod">
+								<li><span>Теги:</span></li>
+								<li><a href="#">Ресторан</a></li>
+								<li><a href="#">Кафе</a></li>
+								<li><a href="#">Сауна</a></li>
+							</ul>
+						</div>
+						<div class="popup__btns">					
+							<a href="#" class="popup__btn">ПОДРОБНЕЕ ОБ ОБЪЕКТЕ</a>
+							<ul class="popup__social">
+								<li><a href="#" class="is-vk"></a></li>
+								<li><a href="#" class="is-fb"></a></li>
+								<li><a href="#" class="is-twitter"></a></li>
+								<li><a href="#" class="is-gp"></a></li>
+								<li><a href="#" class="is-od"></a></li>
+								<li><a href="#" class="is-plus"></a></li>
+							</ul>
+						</div>
+					</div>				
+				</div>
+				<div class="popup__box is-left">
+					<div class="popup__sticker">
+						<h2><span>Аренда</span> id: 934</h2>
+					</div>
+					<span class="popup__special">спецпредложение</span>
+					<!-- BEGIN CAROUSEL -->
+					<div class="p-slider">
+						<div class="p-slider__top">
+							<div class="p-slider__slides cycle-slideshow"
+								data-cycle-timeout="0"
+								data-cycle-fx="fade"
+								data-cycle-slides="> div"
+								data-cycle-prev=".p-slider__prev"
+								data-cycle-next=".p-slider__next"
+								data-cycle-caption=".p-slider__conter"
+								data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt=""/>
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="p-slider__bottom">
+							<a href="#" class="p-slider__prev"></a>
+							<a href="#" class="p-slider__next"></a>
+							<div class="p-slider__pager cycle-slideshow"
+								 data-cycle-timeout="0"
+								 data-cycle-fx="carousel"
+								 data-cycle-carousel-visible="3"
+								 data-cycle-carousel-fluid=true
+								 data-allow-wrap="false"
+								 data-cycle-slides="> div"
+								 >
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<!-- END CAROUSEL -->
+					<div class="popup__map">
+						<div id="map_canvas" class="p-map"></div>						
+					</div>
+				</div>			
+			</div>			
+		</div>
+	</div>
+
+</div>
+<!-- end out -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript"> 
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(55.7541655,37.6112452);
+    var myLatlng1 = new google.maps.LatLng(55.7542201,37.6168602);
+    var myLatlng2 = new google.maps.LatLng(55.7518895,37.6176702);
+    var myOptions = {
+		zoom: 14,
+		center: myLatlng,
+		mapTypeControl: false,
+		panControl: true,
+		panControlOptions: {
+			position: google.maps.ControlPosition.LEFT_TOP
+		},
+		zoomControl: true,
+		zoomControlOptions: {
+			style: google.maps.ZoomControlStyle.DEFAULT,
+			position: google.maps.ControlPosition.LEFT_BOTTOM
+		},
+		scaleControl: true,
+		streetViewControl: true,
+			streetViewControlOptions: {
+			position: google.maps.ControlPosition.LEFT_CENTER
+		}
+    }
+ 
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: '1',
+    });
+  }
+ 
+</script> 
+</body>
+</html>

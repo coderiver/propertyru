@@ -1,6 +1,6 @@
 head.load("js/lib/jquery.js", 
 					"js/lib/cycle.js",
-					"js/lib/cycle.js",
+					"js/lib/cycle.carousel.js",
 					"js/lib/slick.min.js",
 					"js/lib/jquery-ui.min.js",
 					"js/jquery.content_slider.min.js",
@@ -8,4 +8,5 @@ head.load("js/lib/jquery.js",
 					"js/jquery.prettyPhoto.js",
 					"js/jquery.animate-colors.js",
 					"js/additional_content.js",
+					"js/jquery-ui.min.js",
 					"js/common.js");
