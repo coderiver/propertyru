@@ -832,6 +832,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .company__main { float: none; width: 100%; } }
 .company__wrap h5 { margin: 25px 0; font-weight: bold; font-size: 24px; }
 .company__wrap p { margin-bottom: 25px; text-align: justify; color: #666666; font-size: 14px; }
+.company__wrap .content_slider_wrapper { height: 330px !important; }
 .company__btn { display: none; height: 50px; position: relative; background: white; border: 1px solid #333333; cursor: pointer; }
 .company__btn a { font-weight: bold; font-size: 24px; color: #333333; text-decoration: none; display: inline-block; margin: 7px 15px; }
 .company__btn button { position: absolute; top: 17px; right: 17px; background: url('../img/icons-s47e89edb8a.png') 0 -858px no-repeat; width: 21px; height: 17px; }
