@@ -706,8 +706,6 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .popup__btns { *zoom: 1; }
 .popup__btns:after { content: " "; display: table; clear: both; }
 .popup__btn { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 18px; color: white; background: #993399; padding: 9px 19px 10px; display: inline-block; text-decoration: none; margin-bottom: 20px; }
-.popup .popup__prev_btn, .popup .popup__next_btn { background-color: transparent; vertical-align: middle; }
-@media only screen and (max-width: 700px) { .popup .popup__prev_btn, .popup .popup__next_btn { display: none; } }
 .popup__social { font-size: 0; float: right; padding: 7px 0 4px; margin-bottom: 20px; }
 @media only screen and (max-width: 1100px) { .popup__social { float: none; } }
 .popup__social li { display: inline-block; margin: 0 0 3px 3px; }
@@ -724,6 +722,9 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .popup__sticker h2 span { color: #99ff00; }
 .popup__special { padding: 12px 0; width: 47%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 1; color: #333333; background: #ffff66; text-align: center; text-transform: uppercase; }
 @media only screen and (max-width: 550px) { .popup__special { width: 100%; } }
+
+.popup__prev_btn, .popup__next_btn { background-color: transparent; vertical-align: middle; }
+@media only screen and (max-width: 700px) { .popup__prev_btn, .popup__next_btn { display: none; } }
 
 .p-slider__top .p-slide { text-align: center; font-size: 0; }
 .p-slider__top .p-slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
@@ -770,6 +771,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content_box:after { content: " "; display: table; clear: both; }
 .content_box__nav { float: left; width: 25%; }
 .content_box__nav h3 { font-size: 24px; color: #333333; }
+.content_box__nav .banner_img { margin-bottom: 20px; }
 .content_box__main { float: right; width: 73%; }
 
 .content_box__main-way { margin-bottom: 25px; }
@@ -779,3 +781,5 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content_box__main-way li a { text-decoration: none; color: #333333; font-size: 14px; }
 .content_box__main-header h2 { font-size: 24px; color: #333333; }
 .content_box__main-about { color: #666666; }
+
+.content-box-catalog { margin-top: 63px; }
