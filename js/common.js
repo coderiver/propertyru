@@ -34,21 +34,40 @@ head.ready(function() {
 
 
 		$('.slider__main_in').slick({
-			slidesToShow: 3,
-			slidesToScroll: 3,
+			slidesToShow: 5,
+			slidesToScroll: 5,
 			arrows: true,
-			prevArrow: $('#arr_l-btn'),
-			nextArrow: $('#arr_r-btn'),
 			// variableWidth: true,
 			responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2,
-		        infinite: true,
-		        arrows: false
-		      }}]
+			    {
+			      breakpoint: 1700,
+			      settings: {
+			        slidesToShow: 4,
+			        slidesToScroll: 4,
+			      }
+			  	},
+			  	{
+			      breakpoint: 1400,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 3,
+			      }
+			  	},
+			  	{
+			      breakpoint: 900,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2,
+			      }
+			  	},
+			  	{
+			      breakpoint: 700,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			      }
+			  	}
+		    ]
 		 });
 
 		$('.pop-up-item__main_slider_main_in').slick({
@@ -239,7 +258,7 @@ head.ready(function() {
 	};
 	var $copyItems = $('.copy_box .item');
 	$('#show_more').click(function() {
-		$copyItems.clone().appendTo('.content .content__items');
+		$copyItems.clone('true').appendTo('.content .content__items');
 	});
 	$('.circle').click(function() {
 			if($('.nav').hasClass('is-visible')) $('.nav').removeClass('is-visible')
@@ -395,32 +414,19 @@ head.ready(function() {
 	  });
 
 	  $('.js-popup-open').on('click', function() {
-	  	$('.js-wrap').addClass('is-active');
-	  	return false;
-	  });
+    $('.js-wrap').addClass('is-active');
+      $('.popup').slick({
+ 				slidesToShow: 1,
+			  slidesToScroll: 1,
+   	   	arrows: true,
+			  prevArrow: $('.popup__prev_btn'),
+			  nextArrow: $('.popup__next_btn')
+   		});
+    return false;
+   });
 	  $('.js-popup-close').on('click', function() {
 	  	$('.js-wrap').removeClass('is-active');
 	  	return false;
 	  });
-	  $('.popup').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			// variableWidth: true,
-			arrows: true,
-			prevArrow: $('.popup__prev_btn'),
-			nextArrow: $('.popup__next_btn'),
-			// respondTo: 'min',
-			// slide: $('.item__slider_img'),
 
-
-			// responsive: [
-		 //    {
-		 //      breakpoint: 1024,
-		 //      settings: {
-		 //        slidesToShow: 2,
-		 //        slidesToScroll: 2,
-		 //        infinite: true,
-		 //        arrows: false
-		 //      }}]
-		 });
 });

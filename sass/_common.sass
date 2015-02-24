@@ -146,7 +146,6 @@ select
 //conditions
 .is-visible
 	display: block !important
-
 //
 .close
 	float: right
@@ -223,8 +222,7 @@ body
 	+mobile
 		// display: none 
 		// visibility: hidden 
-	+rh(970)
-		// display: none
+
 	+r(970)
 		// display: none !important
 		display: none
@@ -237,13 +235,15 @@ body
 			float: left
 		.t-right
 			text-align: right
-			margin-left: 0 !important 
+			margin-left: 0
 	+r(500)
-		margin-top: 109px 
+		margin-top: 105px 
 		li
 			width: 100%
-			text-align: center !important
-			margin: 0 !important
+			text-align: center
+			margin: 0
+		.t-right
+			text-align: center
 			  
 		
 	li
@@ -265,7 +265,7 @@ body
 			&:hover
 				color: $green
 		input[type="text"]
-			cursor: text !important
+			cursor: text
 .menu_txt
 	color: #666 
 	font-size: 14px 
@@ -282,8 +282,6 @@ body
 		text-align: center
 	button
 		margin-top: 35px
-		width: 90% 
-		
 		+tablet
 			// width: 50%
 			width: auto
@@ -296,7 +294,7 @@ body
 	padding-right: 10px 
 	font-size: 14px
 	min-width: 210px 
-	width: auto !important
+	width: auto
 	+mobile
 		padding-left: 0 
 	i
@@ -472,15 +470,6 @@ body
 		display: table
 		+mobile
 			display: block
-	.logo__img, .footer__copy, .footer__share
-		display: table-cell
-		vertical-align: bottom
-		+mobile
-			width: 100% !important
-			display: block
-			text-align: center
-			float: none
-			vertical-align: top
 	.logo__img
 		width: 25%
 		+mobile
@@ -500,6 +489,15 @@ body
 		font-size: 14px
 		+mobile
 			text-align: center
+	.logo__img, .footer__copy, .footer__share
+		display: table-cell
+		vertical-align: bottom
+		+mobile
+			width: 100%
+			display: block
+			text-align: center
+			float: none
+			vertical-align: top
 .pop-up-menu
 	position: fixed
 	z-index: 4 
@@ -651,13 +649,12 @@ body
 			padding-bottom: 10px
 		>div
 			display: inline-block
-			width: 20% 
 			height: 35px 
 			vertical-align: middle
 			+r(400)
 				width: auto 
 		&_input
-			width: 40% !important
+			width: 40%
 			input
 				max-width: 200px
 				min-width: 170px 
@@ -710,150 +707,8 @@ body
 			+r(400)
 				width: 100% 
 				line-height: 1.4em 
-.pop-up-item
-	width: 80% 
-	background: #eee
-	z-index: 5 
-	display: none
-	// position: absolute
-	margin: 0 auto
-	 
-	&_in
-		display: table
-		width: 100% 
-		
-	&__prev, &__next, &__main
-		display: table-cell
-		vertical-align: middle
-	&__prev
-		padding-right: 13px
-	&__next
-		padding-left: 13px
-	&__main
-		+clr
-		// width: 100% !important 
-		// width: 1035px 
-		width: 100% 
-		// max-width: 100% 
-		background-color: #FFF 
-		position: relative
-		&_map
-			width: 100%
-			iframe
-				width: 100% 
-		&_slider
-			overflow: hidden 
-			padding: 10px 0
-			margin-bottom: 1px
-			background-color: #ecf0f1 
+
 			
-			&_main
-				display: table-cell
-				// width: 80%
-				max-width: 365px  
-				&_in
-					width: 74% 
-					overflow: hidden 
-					margin: 0 auto
-					// display: table-cell
-					// position: relative
-					// left: 10px 
-				.item__slider_img
-					padding-right: 10px
-					img
-						max-width: 80px !important
-			.pop-up-item__main_slider_arr-prev, .pop-up-item__main_slider_arr-next
-				display: table-cell
-				cursor: pointer
-				// width: 10% 
-				vertical-align: middle
-			.pop-up-item_prev_btn
-				+s(pop_up_prev)
-				cursor: pointer
-				position: relative
-				left: 10px 
-				// margin-left: 10px 
-			.pop-up-item_nxt_btn
-				+s(pop_up_next)
-				cursor: pointer
-				position: relative
-				right: 10px 
-
-			 
-		.item__slider_img
-			display: inline-block
-			width: 20% 
-			  
-	&__img
-		float: left 
-		display: inline-block
-		width: 40% !important
-		iframe
-			max-width: 100% 
-	&__about
-		float: right 
-		display: inline-block
-		width: 50%
-		padding-right: 0.5%
-		padding-left: 0 !important
-		&_up
-			+clr
-			width: 100% 
-			position: relative
-			margin-bottom: 20px 
-			&_text
-				float: left
-				p
-					display: inline-block
-					font-weight: 700
-					color: #333  
-			&_close
-				position: absolute
-				top: -7px
-				right: 14px 
-		.item__about_head
-			p
-				font-weight: 700 
-				font-size: 18px 
-		.item__about_description 
-			li
-				font-size: 14px 
-				color: #333
-		.pop-up-item__description
-			p
-				font-size: 14px
-				&:first-child
-				padding: 20px 10px 0px 0
-				color: #666 
-
-			.tags
-				color: #333 
-		.pop-up-item__foot
-			margin-top: 20px
-			position: relative
-			&_more
-				width: 50% 
-				display: inline-block
-				input
-					width: 100% 
-					min-width: 225px
-					display: inline-block
-					height: 43px
-					background-color: $purple
-					color: #FFF   
-					font-family: 'Open Sans'
-					font-weight: 300
-					font-size: 18px 
-			&_share
-				display: inline-block
-				// float: right
-				vertical-align: middle
-				// position: absolute
-				// right: 6%
-				// top: 4px
-.tags
-	a
-		padding-left: 5px 				
 .cover
 	display: none   			 
 	position: fixed
@@ -883,11 +738,6 @@ body
 		
 
 
-.popup__prev_btn, .popup__next_btn
-	background-color: transparent !important
-	vertical-align: middle
-	+r(700)
-		display: none
 
 
 				
