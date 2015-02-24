@@ -150,6 +150,13 @@
 			font-size: 24px
 			font-weight: bold 
 			margin: 25px 0
+			overflow: hidden
+			+tablet
+				clear: both
+	.inn
+		+tablet
+			max-width: 500px
+			// margin: 0 auto
 .object
 	display: inline-block
 	vertical-align: middle
@@ -225,14 +232,52 @@
 				span
 					margin: 0
 	&__info
+		margin-top: 100px
 		+clr
-		margin-bottom: 40px
+		+tablet
+			margin-top: 0
+		.brocker
+			width: percentage(240/500)
+			margin-left: 20px
+			float: left
+			&__icon
+				display: inline-block
+				+s(brocker)
+			&__text
+				display: inline-block
+				font-size: 18px
+				width: 160px
+				margin-left: 15px
+				p
+					display: block
+				a
+					color: $purple 
+					display: block
+				span
+					color: $purple
+					font-weight: bold
+					display: block
+		.presentation
+			width: percentage(220/500)
+			float: right
+			&__icon
+				display: inline-block
+				+s(presentation)
+			&__text
+				display: inline-block
+				font-size: 18px
+				width: 140px
+				margin-left: 15px
+				a
+					color: $purple 
 	&__price
-		+p-bold
-		font-size: 30px
-		color: #993399
-		overflow: hidden 
-		display: block
+		margin-bottom: 40px
+		span
+			+p-bold
+			font-size: 30px
+			color: #993399
+			overflow: hidden 
+			display: block
 	&__tags
 		margin-bottom: -20px
 	&__btns
@@ -246,20 +291,15 @@
 		padding: 9px 19px 10px
 		display: inline-block
 		text-decoration: none 
-		margin-bottom: 20px
+		margin: 0 20px 20px 0
 		float: left
 		span
 			display: inline-block
-			&:before
-				content: "" 
-				position: absolute
-				top: 50%
-				right: 0
-				margin-top: -7px
-				+s(heart_p)
+			margin-right: 10px
+			+s(heart_p)
 	&__social
 		font-size: 0
-		float: right
+		float: left
 		padding: 7px 0 4px
 		margin-bottom: 20px
 		+r(1100)
@@ -344,6 +384,7 @@
 	height: 400px
 	
 .btn-object
-	position: absolute
-	top: 15px
-	right: 0
+	float: right
+	+tablet
+		float: none
+		margin-top: 25px
