@@ -8,4 +8,5 @@ head.load("js/lib/jquery.js",
 					"js/jquery.animate-colors.js",
 					"js/additional_content.js",
 					"js/jquery-ui.min.js",
+					"js/marina.js",
 					"js/common.js");

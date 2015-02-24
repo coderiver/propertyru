@@ -14,7 +14,7 @@
 	bottom: 0
 	left: 0
 	padding: 10px
-	+vertical
+	// +vertical
 	z-index: 999
 	overflow: auto 
 	+box
@@ -28,8 +28,7 @@
 			display: none
 
 .popup
-	display: inline-block
-	vertical-align: middle
+	margin: 0 auto
 	width: 100%
 	max-width: 1030px
 	background: #fff
@@ -54,7 +53,9 @@
 			float: right
 		&.is-left
 			float: left
+			font-size: 0
 	&__text
+		position: relative
 		padding: 24px 23px 15px 0 
 		+r(1100)
 			padding: 24px 23px 15px 23px 
@@ -86,7 +87,11 @@
 				text-transform: uppercase
 				margin-right: 15px
 	&__close
-		float: right
+		// float: right
+		text-decoration: none
+		position: absolute
+		top: 10px
+		right: 29px
 		+vertical
 		span, i
 			display: inline-block
@@ -158,6 +163,7 @@
 		display: inline-block
 		text-decoration: none 
 		margin-bottom: 20px
+		float: left
 	&__social
 		font-size: 0
 		float: right
@@ -165,6 +171,7 @@
 		margin-bottom: 20px
 		+r(1100)
 			float: none
+			clear: both
 		li
 			display: inline-block
 			margin: 0 0 3px 3px 

@@ -1,0 +1,136 @@
+// simple.html
+
+.company
+	padding: 35px 0
+	color: #333
+	+clr
+	+tablet
+		margin: 0 5% 
+	&__sidebar
+		width: percentage(300/1170) 
+		float: left
+		+tablet
+			float: none
+			width: 100%
+	&__nav
+		+tablet
+			display: none
+		&.is-open
+			+tablet
+				display: block
+				padding: 10px 20px
+				background: #FFF
+				border: 1px solid #333
+				border-top: none
+	&__item
+		margin-bottom: 35px
+		+tablet
+			margin-bottom: 10px
+		&.is-active span
+			&:before
+				content: ""
+				display: none
+			&:after
+				content: ""
+				display: inline-block
+	&__title
+		font-weight: bold
+		font-size: 24px
+		color: #333
+		text-decoration: none
+		span
+			display: inline-block
+			vertical-align: middle
+			padding-right: 10px
+			margin-bottom: -3px
+			&:before
+				content: ""
+				display: inline-block
+				+s(sb_arr_down)
+			&:after
+				content: ""
+				display: none
+				+s(sb_arr_up)
+		i
+			display: none
+			+arr(6, 3, #333, b)
+		+tablet
+			font-size: 14px
+			span
+				display: none
+			i
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5px
+	&__content
+		margin-left: 20px
+		display: none
+		li
+			width: percentage(165/300) 
+			padding: 2px 15px
+			+tablet
+				width: 100%
+				+box 
+			a
+				color: #333
+				font-weight: normal
+				text-decoration: none
+				font-size: 14px
+			&:hover
+				background: $purple
+				a
+					color: #FFF 
+	&__banner
+		font-size: 0
+		width: percentage(240/300) 
+		+tablet
+			margin: 20px auto
+			width: 100%
+			text-align: center 
+	&__main
+		width: percentage(870/1170)
+		float: left
+		.breadcrumbs
+			a
+				font-size: 12px
+				text-decoration: none
+				color: #333
+				&:hover
+					text-decoration: underline
+		+tablet
+			float: none
+			width: 100%
+	&__wrap
+		h5
+			margin: 25px 0
+			font-weight: bold
+			font-size: 24px
+		p
+			margin-bottom: 25px
+			text-align: justify
+			color: #666 
+			font-size: 14px
+		.content_slider_wrapper
+			height: 330px !important
+	&__btn
+		display: none
+		height: 50px
+		position: relative
+		background: #FFF
+		border: 1px solid #333
+		cursor: pointer
+		a
+			font-weight: bold
+			font-size: 24px
+			color: #333
+			text-decoration: none
+			display: inline-block
+			margin: 7px 15px
+		button
+			position: absolute
+			top: 17px
+			right: 17px
+			+s(nav_icon)
+		+tablet
+			display: block
+	
