@@ -258,7 +258,7 @@ head.ready(function() {
 	};
 	var $copyItems = $('.copy_box .item');
 	$('#show_more').click(function() {
-		$copyItems.clone().appendTo('.content .content__items');
+		$copyItems.clone('true').appendTo('.content .content__items');
 	});
 	$('.circle').click(function() {
 			if($('.nav').hasClass('is-visible')) $('.nav').removeClass('is-visible')

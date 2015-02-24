@@ -438,6 +438,7 @@
 		width: 25% 
 		padding: 0 20px
 		font-size: 12px 
+		vertical-align: top
 		+box
 		+r(1170)
 			width: 33%
@@ -452,13 +453,15 @@
 	min-width: 220px 
 	margin-bottom: 20px 
 	display: inline-block
+	&__inner
+		position: relative
 	&_cover
 		position: absolute
 		display: none
 		left: 0
 		right: 0
 		height: 100%
-		margin: 0 20px
+		// margin: 0 20px
 		background-color: rgba($purple, .8) 
 		z-index: 2
 		text-align: center

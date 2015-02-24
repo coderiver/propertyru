@@ -435,13 +435,14 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .content { width: 100%; }
 @media only screen and (max-width: 1024px) { .content_in { padding: 0 2%; } }
 .content__items { font-size: 0; margin: 0 -20px; }
-.content .item { position: relative; width: 25%; padding: 0 20px; font-size: 12px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.content .item { position: relative; width: 25%; padding: 0 20px; font-size: 12px; vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1170px) { .content .item { width: 33%; } }
 @media only screen and (max-width: 800px) { .content .item { width: 50%; } }
 @media only screen and (max-width: 550px) { .content .item { width: 100%; } }
 
 .item { position: relative; min-width: 220px; margin-bottom: 20px; display: inline-block; }
-.item_cover { position: absolute; display: none; left: 0; right: 0; height: 100%; margin: 0 20px; background-color: rgba(153, 51, 153, 0.8); z-index: 2; text-align: center; }
+.item__inner { position: relative; }
+.item_cover { position: absolute; display: none; left: 0; right: 0; height: 100%; background-color: rgba(153, 51, 153, 0.8); z-index: 2; text-align: center; }
 .item_cover a, .item_cover p { margin-left: 24%; text-align: left; color: white; }
 .item_cover input { color: white; width: auto; min-width: inherit; display: inline-block; padding: 0 20px; margin-top: 50%; font-family: "Open Sans"; font-weight: 300; }
 .item_cover a { text-decoration: none; margin-top: 25%; margin-bottom: 5%; font-size: 14px; display: block; }
