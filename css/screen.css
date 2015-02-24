@@ -818,5 +818,12 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content_box__main-header h2 { font-size: 24px; color: #333333; }
 .content_box__main-about { color: #666666; }
 
-.content-box-catalog { margin-top: 63px; }
-.content-box-catalog .content-box__main .item { width: 33%; }
+.content-box-catalog { padding-top: 63px; background-color: #ecf0f1; }
+.content-box-catalog .content_box__main .item { width: 33%; }
+.content-box-catalog .content_box__main .content.list .item { width: 100%; }
+.content-box-catalog .content_box__main .content.list .item__about { padding-left: 5%; }
+.content-box-catalog .company__sidebar .company__item { position: relative; margin: 0 0 35px 30px; }
+.content-box-catalog .company__sidebar .company__item span { position: absolute; left: -30px; }
+.content-box-catalog .company__sidebar .company__item .company__content { margin-left: 0; }
+.content-box-catalog .company__sidebar .company__item .company__content li.caps { padding-top: 20px; }
+.content-box-catalog .company__sidebar .company__item .company__content li.caps:hover { background-color: transparent; }
