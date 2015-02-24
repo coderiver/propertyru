@@ -822,8 +822,11 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content-box-catalog .content_box__main .item { width: 33%; }
 .content-box-catalog .content_box__main .content.list .item { width: 100%; }
 .content-box-catalog .content_box__main .content.list .item__about { padding-left: 5%; }
+.content-box-catalog .content_box__main .container__header_item { display: inline-block; width: 33%; font-size: 0; }
+.content-box-catalog .content_box__main .container__header_item .container__header_entry { line-height: 40px; }
 .content-box-catalog .company__sidebar .company__item { position: relative; margin: 0 0 35px 30px; }
 .content-box-catalog .company__sidebar .company__item span { position: absolute; left: -30px; }
 .content-box-catalog .company__sidebar .company__item .company__content { margin-left: 0; }
 .content-box-catalog .company__sidebar .company__item .company__content li.caps { padding-top: 20px; }
 .content-box-catalog .company__sidebar .company__item .company__content li.caps:hover { background-color: transparent; }
+.content-box-catalog .company__sidebar .company__banner { margin-bottom: 20px; }
