@@ -34,21 +34,40 @@ head.ready(function() {
 
 
 		$('.slider__main_in').slick({
-			slidesToShow: 3,
-			slidesToScroll: 3,
+			slidesToShow: 5,
+			slidesToScroll: 5,
 			arrows: true,
-			prevArrow: $('#arr_l-btn'),
-			nextArrow: $('#arr_r-btn'),
 			// variableWidth: true,
 			responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2,
-		        infinite: true,
-		        arrows: false
-		      }}]
+			    {
+			      breakpoint: 1700,
+			      settings: {
+			        slidesToShow: 4,
+			        slidesToScroll: 4,
+			      }
+			  	},
+			  	{
+			      breakpoint: 1400,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 3,
+			      }
+			  	},
+			  	{
+			      breakpoint: 900,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2,
+			      }
+			  	},
+			  	{
+			      breakpoint: 700,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			      }
+			  	}
+		    ]
 		 });
 
 		$('.pop-up-item__main_slider_main_in').slick({

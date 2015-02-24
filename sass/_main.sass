@@ -418,67 +418,49 @@
 	width: 100%
 	&_in
 		+tablet
-			padding-left: 2% 
-		+mobile
-			padding-left: 4%
+			padding: 0 2% 
 	&__items
 		font-size: 0
+		margin: 0 -20px
 	.item
 		position: relative
-		width: 24% 
-		margin-right: 1.3%
+		width: 25% 
+		padding: 0 20px
 		font-size: 12px 
-		// max-width: 270px 
-		&:nth-child(4n)
-			margin-right: 0
-			+tablet
-				margin-right: 1%
-			+r(1094)
-				margin-right: 1% !important
-		&:nth-child(4n)
-			margin-right: 0
-		+mobile
-			margin: 0 auto
-			width: 100% !important 
-		+r(400)
-			width: 100% 
-		// +r(1118)
-			// width: 20% 
-		+tablet
+		+box
+		+r(1170)
 			width: 33%
-		+r(1094)
-			width: 32%
-		+r(687)
-			width: 45% 
+		+r(800)	
+			width: 50% 	
+		+mobile
+			width: 100%
+
 		
 .item
 	position: relative
 	min-width: 220px 
-	background-color: #FFF 
 	margin-bottom: 20px 
 	display: inline-block
 	&_cover
 		position: absolute
 		display: none
-		width: 100%
+		left: 0
+		right: 0
 		height: 100%
+		margin: 0 20px
 		background-color: rgba($purple, .8) 
 		z-index: 2
-		// text-align: center
+		text-align: center
 		a, p
-			margin-left: 24% !important
+			margin-left: 24%
+			text-align: left
 		input
 			color: #FFF
-			width: 60% 
-			max-width: 200px 
-			min-width: 100px 
-			margin-left: 20%
-			// position: relative
-			display: block
-			// left: 50%
-			// +translate(-50%, 0)
+			width: auto
+			min-width: inherit
+			display: inline-block
+			padding: 0 20px
 			margin-top: 50% 
-			// +translate(0, -50%)
 			font-family: 'Open Sans'
 			font-weight: 300  
 		a
@@ -558,6 +540,7 @@
 		padding-top: 16px 
 		padding-bottom: 28px
 		padding-left: 5%  
+		background: #FFF 
 		&_head
 			font-size: 14px
 			padding-bottom: 25px 
@@ -685,17 +668,12 @@
 	.heading_top
 		color: #fff 
 .slider__content
-	display: table
-	text-align: center
+	position: relative
 	width: 100% 
-	.arr, .slider__main
-		display: table-cell
-		vertical-align: middle
+	padding: 0 50px
+	+box 
 	.slider__main
-		// max-width: 80%
-		max-width: 900px 
 		overflow: hidden
-		// position: relative
 		&_in
 			// width: 9999px  
 			+clr
@@ -703,32 +681,47 @@
 			// position: relative
 			// position: absolute
 			// padding: 0 10px 
-	.arr
-		width: 6%
-		text-align: left
-		+tablet
-			display: none
+	.slick-prev
+		+s(l_arr)
+		left: 0
+		+r(550)
+			left: 10px 
+			+arr(10, 20, #fff, l)
+	.slick-next
+		+s(r_arr)
+		right: 0
+		+r(550)
+			right: 10px 
+			+arr(10, 20, #fff, r)	
+	.slick-prev,
+	.slick-next
+		position: absolute
+		top: 50%
+		margin-top: -24px
+		cursor: pointer
+		font-size: 0
+		+r(550)
+			background: none
+			width: auto
+			height: auto  
+			margin-top: -10px 			
 	.slick-list
 		// width: 9999px 
 		+clr
 	.item
-		// display: inline-block
 		float: left
-		margin: 0 10px 
+		min-width: inherit 
+		margin: 0
 		text-align: left
-		max-width: 270px 
-		&:first-child
-			margin-left: 0
-
-.l_arr
-	+s(l_arr)
-	cursor: pointer
-	// padding-right: 10px 
-.r_arr
-	+s(r_arr)
-	cursor: pointer
-	float: right
-	// padding-left: 10px 
+		padding: 0 15px
+		background: none 
+		+r(550)
+			padding: 0 5px 
+	.item__inner
+		position: relative
+		background: #FFF 
+	.item_cover
+		margin: 0 		
 
 .advantages
 	padding-top: 40px 
