@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>Каталог скролл</title>
 	<meta name="viewport" content="initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <meta name="viewport" content="width=1200"> -->
@@ -56,700 +56,765 @@
 		<div class="content_box__main">
 			<div class="content "><div class="content_in">
 			<!-- BEGIN container  -->
-			<div class="container"><div class="inn">
-				<div class="container__header">
-					<div class="l">
-					<div class="l-col2">
-							<div class="container__header_entry">
-							<span>Всего: 12 объектов</span>
-							</div>
-						</div>
-						<div class="l-col3">
-							<div class="container__header_entry">
-							<span class="sort">Сортировать по</span>
-							<select name="" id="" class="input_item input_item_w_150">
-								<option value=""></option>
-								<option value="параметр">параметр</option>
-							</select>
-							</div>
-						</div>
-						<div class="l-col4">
-							<div class="container__header_entry container__header_entry_nav">
-							<ul class="container__header_nav">
-								<li class="container__header_nav_marked"><span><i class="inf"></i></span></li>
-								<li class="container__header_nav_cards"><span class="is-active"><i class="sqr_wh"></i></span></li>
-								<li class="container__header_nav_loc"><span><i class="loc_b"></i></span></li>
-							</ul>
-							<span>показать на карте</span>
-							</div>
-						</div>
+			<div class="container__header">
+			<div class="l">
+				<div class="l-col2">
+					<div class="container__header_entry">
+					<span>Всего: 12 объектов</span>
 					</div>
-				</div></div></div></div>
+				</div>
+				<div class="l-col3">
+					<div class="container__header_entry">
+					<span class="sort">Сортировать по</span>
+					<select name="" id="" class="input_item input_item_w_150">
+						<option value=""></option>
+						<option value="параметр">параметр</option>
+					</select>
+					</div>
+				</div>
+				<div class="l-col4">
+					<div class="container__header_entry container__header_entry_nav">
+					<ul class="container__header_nav">
+						<li class="container__header_nav_marked"><span><i class="inf"></i></span></li>
+						<li class="container__header_nav_cards"><span class="is-active"><i class="sqr_wh"></i></span></li>
+						<li class="container__header_nav_loc"><span><i class="loc_b"></i></span></li>
+					</ul>
+					<span>показать на карте</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- BEGIN content  -->
+		<div class="content "><div class="content_in">
 		<div class="content__map">
 				<div id="ymap"></div>
 			</div>
 			<div class="content__items">
-			<!-- BEGIN item  -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<p class="item__info_share">спецпредложение</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<p class="item__info_share">спецпредложение</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<p class="item__info_share">спецпредложение</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<p class="item__info_share">спецпредложение</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<p class="item__info_share">спецпредложение</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
-				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
-					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			<!-- BEGIN item  -->
+		<!-- END item -->
+<!-- BEGIN item  -->
 			<div class="item">
-			<div class="item_cover js-popup-open">
-				<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-				<a href="#">перейти на подробную <br> страницу объекта</a>
-				<p class="item_cover_id">id:934</p>
-			</div>
-				<div class="item__img">
-					<div class="item__info">
-						<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-						<div class="item__info_descr">
-							<p class="staff">Торговое помещение</p>
-							<p class="square"><i></i>371 м<sup>2</sup></p>
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 						</div>
 					</div>
-					<img src="img/item.jpg" alt="">
 				</div>
-				<div class="item__about">
-					<div class="item__about_head txt_purple">
-						<p class="item__about_main">Аренда Торговое помещение.</p>
-						<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-						<p class="item__about_area">ЗАО</p>
+			</div>
+		<!-- END item -->
+<!-- BEGIN item  -->
+			<div class="item">
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 					</div>
-					<ul class="item__about_description">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<ul class="item__about_description item__about_description_cards">
-						<li>Район: ЗАО</li>
-						<li>Метро: Киевская</li>
-						<li>Улица: Украинский б-р 6</li>
-						<li>Этаж: 1</li>
-					</ul>
-					<div class="item__about_price">
-					<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-					<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- END item -->
-			</div></div>
+		<!-- END item -->
+<!-- BEGIN item  -->
+			<div class="item">
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- END item -->
+<!-- BEGIN item  -->
+			<div class="item">
+				<div class="item__inner">
+					<div class="item_cover">
+						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на подробную <br> страницу объекта</a>
+						<p class="item_cover_id">id:934</p>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+					</div>
+					<div class="item__img">
+						<div class="item__info">
+							<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+							<p class="item__info_share">спецпредложение</p>
+							<div class="item__info_descr">
+								<p class="staff">Торговое помещение</p>
+								<p class="square"><i></i>371 м<sup>2</sup></p>
+							</div>
+						</div>
+						<img src="img/item.jpg" alt="">
+					</div>
+					<div class="item__about">
+						<div class="item__about_head txt_purple">
+							<p class="item__about_main">Аренда Торговое помещение.</p>
+							<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+							<p class="item__about_area">ЗАО</p>
+						</div>
+						<ul class="item__about_description">
+							<li>Район: ЗАО</li>
+							<li>Метро: Киевская</li>
+							<li>Улица: Украинский б-р 6</li>
+							<li>Этаж: 1</li>
+						</ul>
+						<div class="item__about_price">
+						<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- END item -->
 		</div>
-	</div></div>
+		<!-- END content -->
+		<div class="container__foo">
+			<p>Показано: 12 из 150</p>
+			<input type="button" value="Показать еще объекты" class="caps txt_purple btn_bd" id="show_more">
+		</div>
+		</div>
+	</div></div></div></div></div></div>
 	<!-- END content-box -->
-	<!-- BEGIN slide  -->
+<!-- BEGIN slide  -->
 	<div class="slider"><div class="inn">
-		<div class="slider__heading heading">
-			<p class="slider__heading_top heading_top">Только лучшая коммерческая, городская и загородная недвижимость!</p>
-			<p class="slider__heading_bottom heading_bottom">Только лучшая коммерческая, городская и загородная недвижимость на нашем сайте!</p>
-		</div>
-		<div class="slider__content">
-			<div class="arr arr_l slick-prev">
-				<input type="button" value="" class="l_arr" id="arr_l-btn">
-			</div>
-			<!-- BEGIN slider__main  -->
-			<div class="slider__main"><div class="slider__main_in">
-				<!-- BEGIN item  -->
-						<div class="item">
-						<div class="item_cover js-popup-open">
+	  <div class="slider__heading heading">
+	  	<p class="slider__heading_top heading_top">Только лучшая коммерческая, городская и загородная недвижимость!</p>
+	  	<p class="slider__heading_bottom heading_bottom">Только лучшая коммерческая, городская и загородная недвижимость на нашем сайте!</p>
+	  </div>
+	  <div class="slider__content">
+	  	<!-- BEGIN slider__main  -->
+	  	<div class="slider__main">
+	  		<div class="slider__main_in">
+	  	    <!-- BEGIN item  -->
+				<div class="item">
+					<div class="item__inner">
+						<div class="item_cover">
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 						</div>
-							<div class="item__img">
-								<div class="item__info">
-									<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-									<p class="item__info_share">спецпредложение</p>
-									<div class="item__info_descr">
-										<p class="staff">Торговое помещение</p>
-										<p class="square"><i></i>371 м<sup>2</sup></p>
-									</div>
-								</div>
-								<img src="img/item.jpg" alt="">
-							</div>
-							<div class="item__about">
-								<div class="item__about_head txt_purple">
-									<p class="item__about_main">Аренда Торговое помещение.</p>
-									<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-									<p class="item__about_area">ЗАО</p>
-								</div>
-								<ul class="item__about_description">
-									<li>Район: ЗАО</li>
-									<li>Метро: Киевская</li>
-									<li>Улица: Украинский б-р 6</li>
-									<li>Этаж: 1</li>
-								</ul>
-								<div class="item__about_price">
-								<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-								<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<div class="item__img">
+							<div class="item__info">
+								<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+								<p class="item__info_share">спецпредложение</p>
+								<div class="item__info_descr">
+									<p class="staff">Торговое помещение</p>
+									<p class="square"><i></i>371 м<sup>2</sup></p>
 								</div>
 							</div>
+							<img src="img/item.jpg" alt="">
 						</div>
-						<!-- END item -->
-						<!-- BEGIN item  -->
-						<div class="item">
-						<div class="item_cover js-popup-open">
+						<div class="item__about">
+							<div class="item__about_head txt_purple">
+								<p class="item__about_main">Аренда Торговое помещение.</p>
+								<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+								<p class="item__about_area">ЗАО</p>
+							</div>
+							<ul class="item__about_description">
+								<li>Район: ЗАО</li>
+								<li>Метро: Киевская</li>
+								<li>Улица: Украинский б-р 6</li>
+								<li>Этаж: 1</li>
+							</ul>
+							<div class="item__about_price">
+							<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- END item -->
+			<!-- BEGIN item  -->
+				<div class="item">
+					<div class="item__inner">
+						<div class="item_cover">
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 						</div>
-							<div class="item__img">
-								<div class="item__info">
-									<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-									<div class="item__info_descr">
-										<p class="staff">Торговое помещение</p>
-										<p class="square"><i></i>371 м<sup>2</sup></p>
-									</div>
-								</div>
-								<img src="img/item.jpg" alt="">
-							</div>
-							<div class="item__about">
-								<div class="item__about_head txt_purple">
-									<p class="item__about_main">Аренда Торговое помещение.</p>
-									<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-									<p class="item__about_area">ЗАО</p>
-								</div>
-								<ul class="item__about_description">
-									<li>Район: ЗАО</li>
-									<li>Метро: Киевская</li>
-									<li>Улица: Украинский б-р 6</li>
-									<li>Этаж: 1</li>
-								</ul>
-								<div class="item__about_price">
-								<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-								<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<div class="item__img">
+							<div class="item__info">
+								<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+								<p class="item__info_share">спецпредложение</p>
+								<div class="item__info_descr">
+									<p class="staff">Торговое помещение</p>
+									<p class="square"><i></i>371 м<sup>2</sup></p>
 								</div>
 							</div>
+							<img src="img/item.jpg" alt="">
 						</div>
-						<!-- END item -->
-						<!-- BEGIN item  -->
-						<div class="item">
-						<div class="item_cover js-popup-open">
+						<div class="item__about">
+							<div class="item__about_head txt_purple">
+								<p class="item__about_main">Аренда Торговое помещение.</p>
+								<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+								<p class="item__about_area">ЗАО</p>
+							</div>
+							<ul class="item__about_description">
+								<li>Район: ЗАО</li>
+								<li>Метро: Киевская</li>
+								<li>Улица: Украинский б-р 6</li>
+								<li>Этаж: 1</li>
+							</ul>
+							<div class="item__about_price">
+							<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- END item -->
+			<!-- BEGIN item  -->
+				<div class="item">
+					<div class="item__inner">
+						<div class="item_cover">
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+							<p class="item_cover_id">id:934</p>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 						</div>
-							<div class="item__img">
-								<div class="item__info">
-									<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-									<div class="item__info_descr">
-										<p class="staff">Торговое помещение</p>
-										<p class="square"><i></i>371 м<sup>2</sup></p>
-									</div>
-								</div>
-								<img src="img/item.jpg" alt="">
-							</div>
-							<div class="item__about">
-								<div class="item__about_head txt_purple">
-									<p class="item__about_main">Аренда Торговое помещение.</p>
-									<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-									<p class="item__about_area">ЗАО</p>
-								</div>
-								<ul class="item__about_description">
-									<li>Район: ЗАО</li>
-									<li>Метро: Киевская</li>
-									<li>Улица: Украинский б-р 6</li>
-									<li>Этаж: 1</li>
-								</ul>
-								<div class="item__about_price">
-								<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-								<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<div class="item__img">
+							<div class="item__info">
+								<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+								<p class="item__info_share">спецпредложение</p>
+								<div class="item__info_descr">
+									<p class="staff">Торговое помещение</p>
+									<p class="square"><i></i>371 м<sup>2</sup></p>
 								</div>
 							</div>
+							<img src="img/item.jpg" alt="">
 						</div>
-						<!-- END item -->
-						<!-- BEGIN item  -->
-						<div class="item">
-						<div class="item_cover js-popup-open">
+						<div class="item__about">
+							<div class="item__about_head txt_purple">
+								<p class="item__about_main">Аренда Торговое помещение.</p>
+								<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+								<p class="item__about_area">ЗАО</p>
+							</div>
+							<ul class="item__about_description">
+								<li>Район: ЗАО</li>
+								<li>Метро: Киевская</li>
+								<li>Улица: Украинский б-р 6</li>
+								<li>Этаж: 1</li>
+							</ul>
+							<div class="item__about_price">
+							<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- END item -->
+			<!-- BEGIN item  -->
+				<div class="item">
+					<div class="item__inner">
+						<div class="item_cover">
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+							<p class="item_cover_id">id:934</p>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 						</div>
-							<div class="item__img">
-								<div class="item__info">
-									<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-									<div class="item__info_descr">
-										<p class="staff">Торговое помещение</p>
-										<p class="square"><i></i>371 м<sup>2</sup></p>
-									</div>
-								</div>
-								<img src="img/item.jpg" alt="">
-							</div>
-							<div class="item__about">
-								<div class="item__about_head txt_purple">
-									<p class="item__about_main">Аренда Торговое помещение.</p>
-									<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-									<p class="item__about_area">ЗАО</p>
-								</div>
-								<ul class="item__about_description">
-									<li>Район: ЗАО</li>
-									<li>Метро: Киевская</li>
-									<li>Улица: Украинский б-р 6</li>
-									<li>Этаж: 1</li>
-								</ul>
-								<div class="item__about_price">
-								<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-								<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<div class="item__img">
+							<div class="item__info">
+								<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+								<p class="item__info_share">спецпредложение</p>
+								<div class="item__info_descr">
+									<p class="staff">Торговое помещение</p>
+									<p class="square"><i></i>371 м<sup>2</sup></p>
 								</div>
 							</div>
+							<img src="img/item.jpg" alt="">
 						</div>
-						<!-- END item -->
-						<!-- BEGIN item  -->
-						<div class="item">
-						<div class="item_cover js-popup-open">
+						<div class="item__about">
+							<div class="item__about_head txt_purple">
+								<p class="item__about_main">Аренда Торговое помещение.</p>
+								<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+								<p class="item__about_area">ЗАО</p>
+							</div>
+							<ul class="item__about_description">
+								<li>Район: ЗАО</li>
+								<li>Метро: Киевская</li>
+								<li>Улица: Украинский б-р 6</li>
+								<li>Этаж: 1</li>
+							</ul>
+							<div class="item__about_price">
+							<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- END item -->
+			<!-- BEGIN item  -->
+				<div class="item">
+					<div class="item__inner">
+						<div class="item_cover">
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+							<p class="item_cover_id">id:934</p>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 						</div>
-							<div class="item__img">
-								<div class="item__info">
-									<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-									<div class="item__info_descr">
-										<p class="staff">Торговое помещение</p>
-										<p class="square"><i></i>371 м<sup>2</sup></p>
-									</div>
-								</div>
-								<img src="img/item.jpg" alt="">
-							</div>
-							<div class="item__about">
-								<div class="item__about_head txt_purple">
-									<p class="item__about_main">Аренда Торговое помещение.</p>
-									<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-									<p class="item__about_area">ЗАО</p>
-								</div>
-								<ul class="item__about_description">
-									<li>Район: ЗАО</li>
-									<li>Метро: Киевская</li>
-									<li>Улица: Украинский б-р 6</li>
-									<li>Этаж: 1</li>
-								</ul>
-								<div class="item__about_price">
-								<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-								<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<div class="item__img">
+							<div class="item__info">
+								<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+								<p class="item__info_share">спецпредложение</p>
+								<div class="item__info_descr">
+									<p class="staff">Торговое помещение</p>
+									<p class="square"><i></i>371 м<sup>2</sup></p>
 								</div>
 							</div>
+							<img src="img/item.jpg" alt="">
 						</div>
-						<!-- END item -->
-						<!-- BEGIN item  -->
-						<div class="item">
-						<div class="item_cover js-popup-open">
+						<div class="item__about">
+							<div class="item__about_head txt_purple">
+								<p class="item__about_main">Аренда Торговое помещение.</p>
+								<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+								<p class="item__about_area">ЗАО</p>
+							</div>
+							<ul class="item__about_description">
+								<li>Район: ЗАО</li>
+								<li>Метро: Киевская</li>
+								<li>Улица: Украинский б-р 6</li>
+								<li>Этаж: 1</li>
+							</ul>
+							<div class="item__about_price">
+							<span class="item__about_price_main txt_purple">31 500 000 р.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- END item -->
+			<!-- BEGIN item  -->
+				<div class="item">
+					<div class="item__inner">
+						<div class="item_cover">
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+							<p class="item_cover_id">id:934</p>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 						</div>
-							<div class="item__img">
-								<div class="item__info">
-									<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-									<div class="item__info_descr">
-										<p class="staff">Торговое помещение</p>
-										<p class="square"><i></i>371 м<sup>2</sup></p>
-									</div>
-								</div>
-								<img src="img/item.jpg" alt="">
-							</div>
-							<div class="item__about">
-								<div class="item__about_head txt_purple">
-									<p class="item__about_main">Аренда Торговое помещение.</p>
-									<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-									<p class="item__about_area">ЗАО</p>
-								</div>
-								<ul class="item__about_description">
-									<li>Район: ЗАО</li>
-									<li>Метро: Киевская</li>
-									<li>Улица: Украинский б-р 6</li>
-									<li>Этаж: 1</li>
-								</ul>
-								<div class="item__about_price">
-								<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-								<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<div class="item__img">
+							<div class="item__info">
+								<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
+								<p class="item__info_share">спецпредложение</p>
+								<div class="item__info_descr">
+									<p class="staff">Торговое помещение</p>
+									<p class="square"><i></i>371 м<sup>2</sup></p>
 								</div>
 							</div>
+							<img src="img/item.jpg" alt="">
 						</div>
-						<!-- END item -->
-						<!-- BEGIN item  -->
-						<div class="item">
-						<div class="item_cover js-popup-open">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
-						</div>
-							<div class="item__img">
-								<div class="item__info">
-									<p class="item__info_id"><span class="txt_green">Аренда</span> id: 934</p>
-									<div class="item__info_descr">
-										<p class="staff">Торговое помещение</p>
-										<p class="square"><i></i>371 м<sup>2</sup></p>
-									</div>
-								</div>
-								<img src="img/item.jpg" alt="">
+						<div class="item__about">
+							<div class="item__about_head txt_purple">
+								<p class="item__about_main">Аренда Торговое помещение.</p>
+								<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
+								<p class="item__about_area">ЗАО</p>
 							</div>
-							<div class="item__about">
-								<div class="item__about_head txt_purple">
-									<p class="item__about_main">Аренда Торговое помещение.</p>
-									<p class="item__about_length">371 м<sup>2</sup> в 500 метрах от м. Киевская.</p>
-									<p class="item__about_area">ЗАО</p>
-								</div>
-								<ul class="item__about_description">
-									<li>Район: ЗАО</li>
-									<li>Метро: Киевская</li>
-									<li>Улица: Украинский б-р 6</li>
-									<li>Этаж: 1</li>
-								</ul>
-								<div class="item__about_price">
-								<span class="item__about_price_main txt_purple">31 500 000 р.</span>
-								<span id="add_h" class="txt_purple item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
-								</div>
+							<ul class="item__about_description">
+								<li>Район: ЗАО</li>
+								<li>Метро: Киевская</li>
+								<li>Улица: Украинский б-р 6</li>
+								<li>Этаж: 1</li>
+							</ul>
+							<div class="item__about_price">
+							<span class="item__about_price_main txt_purple">31 500 000 р.</span>
 							</div>
 						</div>
-						<!-- END item -->
-			</div></div>
-			<!-- END slider__main -->
-			<div class="arr arr_r slick-next" id="arr_r">
-				<input type="button" value="" class="r_arr" id="arr_r-btn">
-			</div>
-		</div>
+					</div>
+				</div>
+			<!-- END item -->
+	  		</div>
+	  	</div>
+	  	<!-- END slider__main -->
+	  </div>
 	</div></div>
 	<!-- END slide -->
 	<!-- BEGIN call  -->
@@ -777,225 +842,219 @@
 
 
 <div class="popup-wrap js-wrap">
-	<div class="popup__prev_btn popup__btn popup__bt"><input type="button" class="popup__prev l_arr"></div>
-	
-	<div class="popup js-popup">
-	<a href="#" class="popup__close js-popup-close">
-		<span>закрыть</span>
-		<i></i>
-	</a>
-		<div class="popup__row">
-			<div class="popup__box is-left">
-				<div class="popup__sticker">
-					<h2><span>Аренда</span> id: 934</h2>
+		<div class="popup js-popup">
+			<div class="popup__row">
+				<div class="popup__box is-right">
+					<div class="popup__text">
+						<div class="popup__top">
+							<a href="#" class="popup__close js-popup-close">
+								<span>закрыть</span>
+								<i></i>
+							</a>
+							<ul>
+								<li>Аренда</li>
+								<li>Торговое помещение </li>
+							</ul>
+						</div>
+						<h2>Аренда Торговое помещение. 371 м2 в 500 метрах от м. Киевская.ЗАО</h2>
+						<ul class="popup__list">
+							<li><span>Район:</span>ЦАО</li>
+							<li><span>Метро:</span>Пушкинская</li>
+							<li><span>Улица:</span>Тверская 18 к1</li>
+							<li><span>Кол-во комнат:</span>2</li>
+							<li><span>Тип недвижимости:</span>Торговое помещение</li>
+							<li><span>Общая площадь:</span>46м2</li>
+							<li><span>Этаж:</span>1</li>
+							<li><span>Кол-во этажей:</span>8</li>
+							<li><span>Тип дома:</span>Административное здание</li>
+						</ul>
+						<div class="popup__info">
+							<a href="#" class="popup__like">избранное</a>
+							<span class="popup__price">31 500 000 р.</span>
+						</div>
+						<p>Отличное предложение по продаже арендного бизнеса! В центре Столицы предлагаем к продаже помещение свободного назначения площадью 46 м2. Первый этаж административного здания. Первая линия домов.</p>
+						<div class="popup__tags">
+							<ul class="popup__list popup__list_mod">
+								<li><span>Теги:</span></li>
+								<li><a href="#">Ресторан</a></li>
+								<li><a href="#">Кафе</a></li>
+								<li><a href="#">Сауна</a></li>
+							</ul>
+						</div>
+						<div class="popup__btns">					
+							<a href="#" class="popup__btn">ПОДРОБНЕЕ ОБ ОБЪЕКТЕ</a>
+							<ul class="popup__social">
+								<li><a href="#" class="is-vk"></a></li>
+								<li><a href="#" class="is-fb"></a></li>
+								<li><a href="#" class="is-twitter"></a></li>
+								<li><a href="#" class="is-gp"></a></li>
+								<li><a href="#" class="is-od"></a></li>
+								<li><a href="#" class="is-plus"></a></li>
+							</ul>
+						</div>
+					</div>				
 				</div>
-				<span class="popup__special">спецпредложение</span>
-				<!-- BEGIN CAROUSEL -->
-				<div class="p-slider">
-					<div class="p-slider__top">
-						<div class="p-slider__slides cycle-slideshow"
-							data-cycle-timeout="0"
-							data-cycle-fx="fade"
-							data-cycle-slides="> div"
-							data-cycle-prev=".p-slider__prev"
-							data-cycle-next=".p-slider__next"
-							data-cycle-caption=".p-slider__conter"
-							data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt=""/>
+				<div class="popup__box is-left">
+					<div class="popup__sticker">
+						<h2><span>Аренда</span> id: 934</h2>
+					</div>
+					<span class="popup__special">спецпредложение</span>
+					<!-- BEGIN CAROUSEL -->
+					<div class="p-slider">
+						<div class="p-slider__top">
+							<div class="p-slider__slides cycle-slideshow"
+								data-cycle-timeout="0"
+								data-cycle-fx="fade"
+								data-cycle-slides="> div"
+								data-cycle-prev=".p-slider__prev"
+								data-cycle-next=".p-slider__next"
+								data-cycle-caption=".p-slider__conter"
+								data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt=""/>
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
 							</div>
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt="">
-							</div>
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt="">
-							</div>
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt="">
+						</div>
+						<div class="p-slider__bottom">
+							<a href="#" class="p-slider__prev"></a>
+							<a href="#" class="p-slider__next"></a>
+							<div class="p-slider__pager cycle-slideshow"
+								 data-cycle-timeout="0"
+								 data-cycle-fx="carousel"
+								 data-cycle-carousel-visible="3"
+								 data-cycle-carousel-fluid=true
+								 data-allow-wrap="false"
+								 data-cycle-slides="> div"
+								 >
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
 							</div>
 						</div>
 					</div>
-					<div class="p-slider__bottom">
-						<a href="#" class="p-slider__prev"></a>
-						<a href="#" class="p-slider__next"></a>
-						<div class="p-slider__pager cycle-slideshow"
-							 data-cycle-timeout="0"
-							 data-cycle-fx="carousel"
-							 data-cycle-carousel-visible="3"
-							 data-cycle-carousel-fluid=true
-							 data-allow-wrap="false"
-							 data-cycle-slides="> div"
-							 >
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+					<!-- END CAROUSEL -->
+					<div class="popup__map">
+						<div id="map_canvas" class="p-map"></div>						
+					</div>
+				</div>			
+			</div>
+			<div class="popup__row">
+				<div class="popup__box is-right">
+					<div class="popup__text">
+						<div class="popup__top">
+							<a href="#" class="popup__close js-popup-close">
+								<span>закрыть</span>
+								<i></i>
+							</a>
+							<ul>
+								<li>Аренда</li>
+								<li>Торговое помещение </li>
+							</ul>
 						</div>
-					</div>
-				</div>
-				<!-- END CAROUSEL -->
-				<div class="popup__map">
-					<div id="map_canvas" class="p-map"></div>						
-				</div>
-			</div>	
-			<div class="popup__box is-right">
-				<div class="popup__text">
-					<div class="popup__top">
-<!-- 						<a href="#" class="popup__close js-popup-close">
-							<span>закрыть</span>
-							<i></i>
-						</a> -->
-						<ul>
-							<li>Аренда</li>
-							<li>Торговое помещение </li>
+						<h2>Аренда Торговое помещение. 371 м2 в 500 метрах от м. Киевская.ЗАО</h2>
+						<ul class="popup__list">
+							<li><span>Район:</span>ЦАО</li>
+							<li><span>Метро:</span>Пушкинская</li>
+							<li><span>Улица:</span>Тверская 18 к1</li>
+							<li><span>Кол-во комнат:</span>2</li>
+							<li><span>Тип недвижимости:</span>Торговое помещение</li>
+							<li><span>Общая площадь:</span>46м2</li>
+							<li><span>Этаж:</span>1</li>
+							<li><span>Кол-во этажей:</span>8</li>
+							<li><span>Тип дома:</span>Административное здание</li>
 						</ul>
-					</div>
-					<h2>Аренда Торговое помещение. 371 м2 в 500 метрах от м. Киевская.ЗАО</h2>
-					<ul class="popup__list">
-						<li><span>Район:</span>ЦАО</li>
-						<li><span>Метро:</span>Пушкинская</li>
-						<li><span>Улица:</span>Тверская 18 к1</li>
-						<li><span>Кол-во комнат:</span>2</li>
-						<li><span>Тип недвижимости:</span>Торговое помещение</li>
-						<li><span>Общая площадь:</span>46м2</li>
-						<li><span>Этаж:</span>1</li>
-						<li><span>Кол-во этажей:</span>8</li>
-						<li><span>Тип дома:</span>Административное здание</li>
-					</ul>
-					<div class="popup__info">
-						<a href="#" class="popup__like">избранное</a>
-						<span class="popup__price">31 500 000 р.</span>
-					</div>
-					<p>Отличное предложение по продаже арендного бизнеса! В центре Столицы предлагаем к продаже помещение свободного назначения площадью 46 м2. Первый этаж административного здания. Первая линия домов.</p>
-					<div class="popup__tags">
-						<ul class="popup__list popup__list_mod">
-							<li><span>Теги:</span></li>
-							<li><a href="#">Ресторан</a></li>
-							<li><a href="#">Кафе</a></li>
-							<li><a href="#">Сауна</a></li>
-						</ul>
-					</div>
-					<div class="popup__btns">					
-						<a href="#" class="popup__btn">ПОДРОБНЕЕ ОБ ОБЪЕКТЕ</a>
-						<ul class="popup__social">
-							<li><a href="#" class="is-vk"></a></li>
-							<li><a href="#" class="is-fb"></a></li>
-							<li><a href="#" class="is-twitter"></a></li>
-							<li><a href="#" class="is-gp"></a></li>
-							<li><a href="#" class="is-od"></a></li>
-							<li><a href="#" class="is-plus"></a></li>
-						</ul>
-					</div>
-				</div>				
-			</div>		
-		</div>	
-		<div class="popup__row">
-			<div class="popup__box is-left">
-				<div class="popup__sticker">
-					<h2><span>Аренда</span> id: 934</h2>
+						<div class="popup__info">
+							<a href="#" class="popup__like">избранное</a>
+							<span class="popup__price">31 500 000 р.</span>
+						</div>
+						<p>Отличное предложение по продаже арендного бизнеса! В центре Столицы предлагаем к продаже помещение свободного назначения площадью 46 м2. Первый этаж административного здания. Первая линия домов.</p>
+						<div class="popup__tags">
+							<ul class="popup__list popup__list_mod">
+								<li><span>Теги:</span></li>
+								<li><a href="#">Ресторан</a></li>
+								<li><a href="#">Кафе</a></li>
+								<li><a href="#">Сауна</a></li>
+							</ul>
+						</div>
+						<div class="popup__btns">					
+							<a href="#" class="popup__btn">ПОДРОБНЕЕ ОБ ОБЪЕКТЕ</a>
+							<ul class="popup__social">
+								<li><a href="#" class="is-vk"></a></li>
+								<li><a href="#" class="is-fb"></a></li>
+								<li><a href="#" class="is-twitter"></a></li>
+								<li><a href="#" class="is-gp"></a></li>
+								<li><a href="#" class="is-od"></a></li>
+								<li><a href="#" class="is-plus"></a></li>
+							</ul>
+						</div>
+					</div>				
 				</div>
-				<span class="popup__special">спецпредложение</span>
-				<!-- BEGIN CAROUSEL -->
-				<div class="p-slider">
-					<div class="p-slider__top">
-						<div class="p-slider__slides cycle-slideshow"
-							data-cycle-timeout="0"
-							data-cycle-fx="fade"
-							data-cycle-slides="> div"
-							data-cycle-prev=".p-slider__prev"
-							data-cycle-next=".p-slider__next"
-							data-cycle-caption=".p-slider__conter"
-							data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt=""/>
-							</div>
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt="">
-							</div>
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt="">
-							</div>
-							<div class="p-slide">
-								<img src="http://placecage.com/500/330" alt="">
+				<div class="popup__box is-left">
+					<div class="popup__sticker">
+						<h2><span>Аренда</span> id: 934</h2>
+					</div>
+					<span class="popup__special">спецпредложение</span>
+					<!-- BEGIN CAROUSEL -->
+					<div class="p-slider">
+						<div class="p-slider__top">
+							<div class="p-slider__slides cycle-slideshow"
+								data-cycle-timeout="0"
+								data-cycle-fx="fade"
+								data-cycle-slides="> div"
+								data-cycle-prev=".p-slider__prev"
+								data-cycle-next=".p-slider__next"
+								data-cycle-caption=".p-slider__conter"
+								data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt=""/>
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
+								<div class="p-slide">
+									<img src="http://placecage.com/500/330" alt="">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="p-slider__bottom">
-						<a href="#" class="p-slider__prev"></a>
-						<a href="#" class="p-slider__next"></a>
-						<div class="p-slider__pager cycle-slideshow"
-							 data-cycle-timeout="0"
-							 data-cycle-fx="carousel"
-							 data-cycle-carousel-visible="3"
-							 data-cycle-carousel-fluid=true
-							 data-allow-wrap="false"
-							 data-cycle-slides="> div"
-							 >
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-							<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+						<div class="p-slider__bottom">
+							<a href="#" class="p-slider__prev"></a>
+							<a href="#" class="p-slider__next"></a>
+							<div class="p-slider__pager cycle-slideshow"
+								 data-cycle-timeout="0"
+								 data-cycle-fx="carousel"
+								 data-cycle-carousel-visible="3"
+								 data-cycle-carousel-fluid=true
+								 data-allow-wrap="false"
+								 data-cycle-slides="> div"
+								 >
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- END CAROUSEL -->
-				<div class="popup__map">
-					<div id="map_canvas" class="p-map"></div>						
-				</div>
-			</div>	
-			<div class="popup__box is-right">
-				<div class="popup__text">
-					<div class="popup__top">
-<!-- 						<a href="#" class="popup__close js-popup-close">
-							<span>закрыть</span>
-							<i></i>
-						</a> -->
-						<ul>
-							<li>Аренда</li>
-							<li>Торговое помещение </li>
-						</ul>
+					<!-- END CAROUSEL -->
+					<div class="popup__map">
+						<div id="map_canvas" class="p-map"></div>						
 					</div>
-					<h2>Аренда Торговое помещение. 371 м2 в 500 метрах от м. Киевская.ЗАО</h2>
-					<ul class="popup__list">
-						<li><span>Район:</span>ЦАО</li>
-						<li><span>Метро:</span>Пушкинская</li>
-						<li><span>Улица:</span>Тверская 18 к1</li>
-						<li><span>Кол-во комнат:</span>2</li>
-						<li><span>Тип недвижимости:</span>Торговое помещение</li>
-						<li><span>Общая площадь:</span>46м2</li>
-						<li><span>Этаж:</span>1</li>
-						<li><span>Кол-во этажей:</span>8</li>
-						<li><span>Тип дома:</span>Административное здание</li>
-					</ul>
-					<div class="popup__info">
-						<a href="#" class="popup__like">избранное</a>
-						<span class="popup__price">31 500 000 р.</span>
-					</div>
-					<p>Отличное предложение по продаже арендного бизнеса! В центре Столицы предлагаем к продаже помещение свободного назначения площадью 46 м2. Первый этаж административного здания. Первая линия домов.</p>
-					<div class="popup__tags">
-						<ul class="popup__list popup__list_mod">
-							<li><span>Теги:</span></li>
-							<li><a href="#">Ресторан</a></li>
-							<li><a href="#">Кафе</a></li>
-							<li><a href="#">Сауна</a></li>
-						</ul>
-					</div>
-					<div class="popup__btns">					
-						<a href="#" class="popup__btn">ПОДРОБНЕЕ ОБ ОБЪЕКТЕ</a>
-						<ul class="popup__social">
-							<li><a href="#" class="is-vk"></a></li>
-							<li><a href="#" class="is-fb"></a></li>
-							<li><a href="#" class="is-twitter"></a></li>
-							<li><a href="#" class="is-gp"></a></li>
-							<li><a href="#" class="is-od"></a></li>
-							<li><a href="#" class="is-plus"></a></li>
-						</ul>
-					</div>
-				</div>				
-			</div>		
-		</div>			
-	</div>
-	<div class="popup__next_btn popup__btn popup__bt"><input type="button" class="popup__next r_arr"></div>
+				</div>			
+			</div>			
+		</div>
+		
 </div>
 
 

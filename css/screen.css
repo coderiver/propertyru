@@ -819,3 +819,4 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content_box__main-about { color: #666666; }
 
 .content-box-catalog { margin-top: 63px; }
+.content-box-catalog .content-box__main .item { width: 33%; }
