@@ -73,6 +73,8 @@ i.loc_wh { background: url('../img/icons-s47e89edb8a.png') 0 -688px no-repeat; w
 
 i.down { background: url('../img/icons-s47e89edb8a.png') 0 -72px no-repeat; width: 24px; height: 24px; }
 
+i.select { background: url("../img/select.png") no-repeat 0 0; width: 30px; height: 32px; }
+
 sup { position: relative; top: -0.7em; font-size: 0.5em; }
 
 select { -moz-appearance: none; -webkit-appearance: none; background: url("../img/select.png") no-repeat 0 0; width: 30px; height: 32px; background-position: right; background-color: white; }
@@ -269,6 +271,18 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 @media only screen and (max-width: 970px) { .circle { display: block; } }
 .circle div { width: 10px; height: 10px; background-color: #eeeeee; display: inline-block; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin: 0 4px; }
 
+.select { position: relative; cursor: pointer; display: inline-block; vertical-align: top; text-align: left; background: white; }
+.select_mod { border: 1px solid #bcbcbc; box-shadow: none; }
+.select_mod .select__text { color: #7f7f7f; }
+.select_mod .select__list { border: 1px solid #bcbcbc; border-top: none; left: -1px; right: -1px; box-shadow: none; }
+.select_mod .select__list li { color: #7f7f7f; }
+.select i { position: absolute; display: inline-block; right: 0; }
+
+.select__text { display: inline-block; vertical-align: middle; line-height: 32px; color: #666666; }
+
+.select__list { position: absolute; top: 33px; display: none; z-index: 1; left: 0; right: 0; background-color: white; border-top: 0; overflow: hidden; -moz-box-shadow: 0 0 0 1px #cdcdcd; -webkit-box-shadow: 0 0 0 1px #cdcdcd; box-shadow: 0 0 0 1px #cdcdcd; }
+.select__list li { display: block; cursor: pointer; width: 100%; padding: 7px 0; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 25%; }
@@ -341,7 +355,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .base_bottom .form__submit { color: white; background-color: #333333; width: 100px; text-align: center; text-indent: 0; }
 @media only screen and (max-width: 550px) { .base_bottom .form__submit { width: 100%; } }
 
-.form__commerce .base_top_input, .form__newest .base_top_input { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.form__commerce .base_top_input, .form__newest .base_top_input { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; font-size: 14px; }
 .form__commerce .base_top_input:after, .form__newest .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 @media only screen and (max-width: 1024px) { .form__commerce .base_top_input .input_item, .form__newest .base_top_input .input_item { width: 20%; margin-bottom: 20px; } }
 @media only screen and (max-width: 640px) { .form__commerce .base_top_input .input_item, .form__newest .base_top_input .input_item { width: 40%; } }
@@ -353,7 +367,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .form__alive { display: none; }
 .form__alive .base_top_text { width: 18%; }
 @media only screen and (max-width: 1024px) { .form__alive .base_top_text { width: 100%; } }
-.form__alive .base_top_input { width: 81%; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.form__alive .base_top_input { width: 81%; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; font-size: 14px; }
 .form__alive .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 @media only screen and (max-width: 1024px) { .form__alive .base_top_input { margin-bottom: 0; width: 100%; }
   .form__alive .base_top_input .input_item { width: 20%; margin-right: 3%; }
@@ -391,7 +405,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 
 @media only screen and (max-width: 550px) { .form__garden .base_top_area .input_item { width: 20%; } }
 
-@media only screen and (max-width: 640px) { .form__newest .base_top_input, .form__alive .base_top_input { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+@media only screen and (max-width: 640px) { .form__newest .base_top_input, .form__alive .base_top_input { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; font-size: 14px; }
   .form__newest .base_top_input:after, .form__alive .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
   .form__newest .base_top_input .input_item, .form__alive .base_top_input .input_item { width: 40%; margin-right: 0; } }
 
@@ -753,9 +767,12 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .v-select .ui-button { position: absolute; top: 0; bottom: 0; right: 0; width: 30px; background: #f7f7f7; border-left: 1px solid #cdcdcd; text-align: center; font-size: 0; }
 .v-select .ui-button:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .v-select .ui-button span { display: inline-block; vertical-align: middle; }
-.v-select .ui-button .ui-icon { width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #cdcdcd transparent transparent transparent; }
+
+.ui-icon { width: 0px; height: 0px; border-style: solid; border-width: 4px 4px 0 4px; border-color: #cdcdcd transparent transparent transparent; }
 
 .ui-menu-item { background: white; }
+
+.ui-selectmenu-menu { width: 200px; overflow: hidden; }
 
 .ui-autocomplete { position: absolute; top: 0; left: 0; cursor: default; margin: -1px; -moz-box-shadow: 0 0 0 1px #cdcdcd; -webkit-box-shadow: 0 0 0 1px #cdcdcd; box-shadow: 0 0 0 1px #cdcdcd; height: 190px; overflow: auto; }
 

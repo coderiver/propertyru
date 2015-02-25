@@ -165,22 +165,6 @@
 								    <option value="BASIC">BASIC</option>
 								    <option value="C">C</option>
 								    <option value="C++">C++</option>
-								    <option value="Clojure">Clojure</option>
-								    <option value="COBOL">COBOL</option>
-								    <option value="ColdFusion">ColdFusion</option>
-								    <option value="Erlang">Erlang</option>
-								    <option value="Fortran">Fortran</option>
-								    <option value="Groovy">Groovy</option>
-								    <option value="Haskell">Haskell</option>
-								    <option value="Java">Java</option>
-								    <option value="JavaScript">JavaScript</option>
-								    <option value="Lisp">Lisp</option>
-								    <option value="Perl">Perl</option>
-								    <option value="PHP">PHP</option>
-								    <option value="Python">Python</option>
-								    <option value="Ruby">Ruby</option>
-								    <option value="Scala">Scala</option>
-								    <option value="Scheme">Scheme</option>
 								  </select>
 								</div>
 								<div class="ui-widget v-select">
@@ -412,12 +396,28 @@
 								<input type="text" class="input_item input_from">
 								<p>до</p>
 								<input type="text" class="input_item input_from">
-
+<!-- 
 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
-								</select>
+								</select> -->
+								<div class="input_item input_curr select js-select ">
+									<span class="select__text js-select-text">руб.</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">usd</li>
+										<li class="ui-menu-item" data-id="2">eur</li>
+									</ul>
+								</div>
+<!-- 								<div class="ui-widget v-select">
+								  <select class="combobox" placeholder="руб.">
+								    <option value="">руб.</option>
+								    <option value="ActionScript">usd</option>
+								    <option value="AppleScript">euro</option>
+								  </select>
+								</div> -->
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -434,16 +434,38 @@
 								<p class="txt_purple">Продажа</p>
 							</div>
 							<div class="base_top_input">
-								<select name="" id="" class="base_input_select input_item">
+<!-- 								<select name="" id="" class="base_input_select input_item">
 									<option selected value="тип дома">тип дома</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select>
-								<select name="" id="" class="input_item">
+								</select> -->
+								<div class="base_input_select input_item input_item_type select js-select ">
+									<span class="select__text js-select-text">тип дома</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">параметр 1</li>
+										<li class="ui-menu-item" data-id="2">параметр 2</li>
+										<li class="ui-menu-item" data-id="3">параметр 3</li>
+										<li class="ui-menu-item" data-id="4">параметр 4</li>
+									</ul>
+								</div>
+<!-- 								<select name="" id="" class="input_item">
 									<option selected value="кол-во комнат">кол-во комнат</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select>
+								</select> -->
+								<div class="input_item select js-select ">
+									<span class="select__text js-select-text">кол-во комнат</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">параметр 1</li>
+										<li class="ui-menu-item" data-id="2">параметр 2</li>
+										<li class="ui-menu-item" data-id="3">параметр 3</li>
+										<li class="ui-menu-item" data-id="4">параметр 4</li>
+									</ul>
+								</div>
 								<div class="ui-widget v-select">
 								  <select class="combobox" placeholder="округ">
 								    <option value=""></option>
@@ -666,11 +688,20 @@
 								<p>до</p>
 								<input type="text" class="input_item input_from">
 
-								<select name="" id="" class="input_item input_curr">
+<!-- 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
-								</select>
+								</select> -->
+								<div class="input_item input_curr select js-select ">
+									<span class="select__text js-select-text">руб.</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">usd</li>
+										<li class="ui-menu-item" data-id="2">eur</li>
+									</ul>
+								</div>
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -687,16 +718,38 @@
 								<p class="txt_purple">Продажа</p>
 							</div>
 							<div class="base_top_input">
-								<select name="" id="" class="base_input_select input_item input_item_type">
+<!-- 								<select name="" id="" class="base_input_select input_item input_item_type">
 									<option selected value="тип дома">тип дома</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select>
-								<select name="" id="" class="base_input_select input_item input_item_way">
+								</select> -->
+								<div class="base_input_select input_item input_item_type select js-select ">
+									<span class="select__text js-select-text">тип дома</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">параметр 1</li>
+										<li class="ui-menu-item" data-id="2">параметр 2</li>
+										<li class="ui-menu-item" data-id="3">параметр 3</li>
+										<li class="ui-menu-item" data-id="4">параметр 4</li>
+									</ul>
+								</div>
+								<!-- <select name="" id="" class="base_input_select input_item input_item_way">
 									<option selected value="направление / шоссе">направление / шоссе</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select>
+								</select> -->
+								<div class="base_input_select input_item input_item_way select js-select ">
+									<span class="select__text js-select-text">направление / шоссе</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">параметр 1</li>
+										<li class="ui-menu-item" data-id="2">параметр 2</li>
+										<li class="ui-menu-item" data-id="3">параметр 3</li>
+										<li class="ui-menu-item" data-id="4">параметр 4</li>
+									</ul>
+								</div>
 								<div class="base_top_area">
 									<p>Площадь дома</p>
 									<p>от</p>
@@ -722,11 +775,20 @@
 								<p>до</p>
 								<input type="text" class="input_item input_from">
 
-								<select name="" id="" class="input_item input_curr">
+<!-- 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
-								</select>
+								</select> -->
+								<div class="input_item input_curr select js-select ">
+									<span class="select__text js-select-text">руб.</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">usd</li>
+										<li class="ui-menu-item" data-id="2">eur</li>
+									</ul>
+								</div>
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -743,11 +805,22 @@
 								<p class="txt_purple">Продажа</p>
 							</div>
 							<div class="base_top_input">
-								<select name="" id="" class="input_item">
+<!-- 								<select name="" id="" class="input_item">
 									<option selected value="кол-во комнат">кол-во комнат</option>
 									<option value="параметр 2">параметр 2</option>
 									<option value="параметр 3">параметр 3</option>
-								</select>
+								</select> -->
+								<div class="input_item select js-select ">
+									<span class="select__text js-select-text">кол-во комнат</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">параметр 1</li>
+										<li class="ui-menu-item" data-id="2">параметр 2</li>
+										<li class="ui-menu-item" data-id="3">параметр 3</li>
+										<li class="ui-menu-item" data-id="4">параметр 4</li>
+									</ul>
+								</div>
 								<div class="ui-widget v-select">
 								  <select class="combobox" placeholder="округ">
 								    <option value=""></option>
@@ -977,11 +1050,20 @@
 								<p>до</p>
 								<input type="text" class="input_item input_from">
 
-								<select name="" id="" class="input_item input_curr">
+<!-- 								<select name="" id="" class="input_item input_curr">
 									<option selected value="метро">руб.</option>
 									<option value="параметр 2">usd</option>
 									<option value="параметр 3">euro</option>
-								</select>
+								</select> -->
+								<div class="input_item input_curr select js-select ">
+									<span class="select__text js-select-text">руб.</span>
+									<i class="select"></i>
+									<input type="hidden" class="js-select-input" value="0">
+									<ul class="select__list js-select-list">
+										<li class="ui-menu-item" data-id="0">usd</li>
+										<li class="ui-menu-item" data-id="2">eur</li>
+									</ul>
+								</div>
 							</div>
 							
 							<div class="base_bottom_submit base_bottom_item">
@@ -1057,10 +1139,21 @@
 				<div class="l-col3">
 					<div class="container__header_entry">
 					<span class="sort">Сортировать по</span>
-					<select name="" id="" class="input_item input_item_w_150">
+<!-- 					<select name="" id="" class="input_item input_item_w_150">
 						<option value=""></option>
 						<option value="параметр">параметр</option>
-					</select>
+					</select> -->
+					<div class="input_item select js-select ">
+						<span class="select__text js-select-text">сортировать по</span>
+						<i class="select"></i>
+						<input type="hidden" class="js-select-input" value="0">
+						<ul class="select__list js-select-list">
+							<li class="ui-menu-item" data-id="0">параметр 1</li>
+							<li class="ui-menu-item" data-id="2">параметр 2</li>
+							<li class="ui-menu-item" data-id="3">параметр 3</li>
+							<li class="ui-menu-item" data-id="4">параметр 4</li>
+						</ul>
+					</div>
 					</div>
 				</div>
 				<div class="l-col4">
