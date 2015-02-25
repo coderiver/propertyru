@@ -221,11 +221,25 @@
 		text-transform: uppercase
 		+r(550)
 			width: 100%
-.popup__prev_btn, .popup__next_btn
-	background-color: transparent
-	vertical-align: middle
-	+r(700)
-		display: none
+.popup-wrap
+	.slick-prev
+		+s(l_arr)
+		position: absolute
+		left: 20px
+		top: 50%
+		cursor: pointer
+		+r(550)
+			left: 10px 
+			+arr(10, 20, #fff, l)
+	.slick-next
+		+s(r_arr)
+		position: absolute
+		right: 20px
+		top: 50%
+		cursor: pointer
+		+r(550)
+			right: 10px 
+			+arr(10, 20, #fff, r)	
  		
 .p-slider
 	&__top
@@ -253,8 +267,12 @@
 	&__next
 		+s(pop_up_next)
 		right: 12px
-.p-map
+.popup__map
 	height: 261px
+	iframe
+		width: 100%
+		height: 100%  
+	
 	
 
 //
