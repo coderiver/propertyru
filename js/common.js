@@ -84,12 +84,12 @@ head.ready(function() {
 		if($popUpMenu.hasClass("is-visible")) {
 			$(this).css("background-color", "#4d4d4d");
 			$popUpMenu.removeClass("is-visible");
-			// $('.pop-up-menu-entry__map').addClass('is-hidden');
+			$('.pop-up-menu-entry__map').addClass('is-hidden');
 		}
 		else {
 			$(this).css("background-color", "#96c833");
 			$popUpMenu.addClass("is-visible");
-			// $('.pop-up-menu-entry__map').removeClass('is-hidden');
+			$('.pop-up-menu-entry__map').removeClass('is-hidden');
 		}
 	});
 	//baseTopP
