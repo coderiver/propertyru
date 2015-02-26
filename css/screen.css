@@ -736,9 +736,9 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .popup__special { padding: 12px 0; width: 47%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 1; color: #333333; background: #ffff66; text-align: center; text-transform: uppercase; }
 @media only screen and (max-width: 550px) { .popup__special { width: 100%; } }
 
-.popup-wrap .slick-prev { background: url('../img/icons-s47e89edb8a.png') 0 -574px no-repeat; width: 48px; height: 48px; position: absolute; left: 20px; top: 50%; cursor: pointer; }
+.popup-wrap .slick-prev { background: url('../img/icons-s120e75da38.png') 0 -648px no-repeat; width: 48px; height: 48px; position: absolute; left: 20px; top: 50%; cursor: pointer; }
 @media only screen and (max-width: 550px) { .popup-wrap .slick-prev { left: 10px; width: 0px; height: 0px; border-style: solid; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; } }
-.popup-wrap .slick-next { background: url('../img/icons-s47e89edb8a.png') 0 -937px no-repeat; width: 48px; height: 48px; position: absolute; right: 20px; top: 50%; cursor: pointer; }
+.popup-wrap .slick-next { background: url('../img/icons-s120e75da38.png') 0 -1087px no-repeat; width: 48px; height: 48px; position: absolute; right: 20px; top: 50%; cursor: pointer; }
 @media only screen and (max-width: 550px) { .popup-wrap .slick-next { right: 10px; width: 0px; height: 0px; border-style: solid; border-width: 10px 0 10px 10px; border-color: transparent transparent transparent white; } }
 
 .p-slider__top .p-slide { text-align: center; font-size: 0; }
