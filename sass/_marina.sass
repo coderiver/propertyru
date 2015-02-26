@@ -143,6 +143,9 @@
 .object-wrap
 	background: #ECF0F1 
 	padding: 25px 0 60px
+	+tablet
+		margin: 0 2% 
+		text-align: center
 	&__top
 		position: relative
 		h3
@@ -236,10 +239,14 @@
 		+clr
 		+tablet
 			margin-top: 0
+			text-align: center
 		.brocker
 			width: percentage(240/500)
 			margin-left: 20px
 			float: left
+			+tablet
+				float: none
+				display: inline-block
 			&__icon
 				display: inline-block
 				vertical-align: top
@@ -247,8 +254,13 @@
 			&__text
 				display: inline-block
 				font-size: 18px
-				width: percentage(160/290)
+				width: percentage(190/290)
 				margin-left: 15px
+				+tablet
+					margin: 0
+					width: 100% 
+					display: block
+					text-align: center
 				p
 					display: block
 				a
@@ -261,6 +273,9 @@
 		.presentation
 			width: percentage(220/500)
 			float: right
+			+tablet
+				float: none
+				display: inline-block
 			&__icon
 				display: inline-block
 				+s(presentation)
@@ -269,6 +284,11 @@
 				font-size: 18px
 				width: percentage(140/250)
 				margin-left: 15px
+				+tablet
+					margin: 0
+					width: 100% 
+					display: block
+					text-align: center
 				a
 					color: $purple 
 	&__price

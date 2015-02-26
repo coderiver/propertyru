@@ -828,6 +828,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .breadcrumbs a:hover { text-decoration: underline; }
 
 .object-wrap { background: #ecf0f1; padding: 25px 0 60px; }
+@media only screen and (max-width: 1024px) { .object-wrap { margin: 0 2%; text-align: center; } }
 .object-wrap__top { position: relative; }
 .object-wrap__top h3 { color: #993399; font-size: 24px; font-weight: bold; margin: 25px 0; overflow: hidden; }
 @media only screen and (max-width: 1024px) { .object-wrap__top h3 { clear: both; } }
@@ -857,16 +858,20 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .object__list_mod li span { margin: 0; }
 .object__info { margin-top: 100px; *zoom: 1; }
 .object__info:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 1024px) { .object__info { margin-top: 0; } }
+@media only screen and (max-width: 1024px) { .object__info { margin-top: 0; text-align: center; } }
 .object__info .brocker { width: 48%; margin-left: 20px; float: left; }
+@media only screen and (max-width: 1024px) { .object__info .brocker { float: none; display: inline-block; } }
 .object__info .brocker__icon { display: inline-block; vertical-align: top; background: url('../img/icons-s120e75da38.png') 0 0 no-repeat; width: 64px; height: 64px; }
-.object__info .brocker__text { display: inline-block; font-size: 18px; width: 55.17241%; margin-left: 15px; }
+.object__info .brocker__text { display: inline-block; font-size: 18px; width: 65.51724%; margin-left: 15px; }
+@media only screen and (max-width: 1024px) { .object__info .brocker__text { margin: 0; width: 100%; display: block; text-align: center; } }
 .object__info .brocker__text p { display: block; }
 .object__info .brocker__text a { color: #993399; display: block; }
 .object__info .brocker__text span { color: #993399; font-weight: bold; display: block; }
 .object__info .presentation { width: 44%; float: right; }
+@media only screen and (max-width: 1024px) { .object__info .presentation { float: none; display: inline-block; } }
 .object__info .presentation__icon { display: inline-block; background: url('../img/icons-s120e75da38.png') 0 -1011px no-repeat; width: 51px; height: 66px; }
 .object__info .presentation__text { display: inline-block; font-size: 18px; width: 56.0%; margin-left: 15px; }
+@media only screen and (max-width: 1024px) { .object__info .presentation__text { margin: 0; width: 100%; display: block; text-align: center; } }
 .object__info .presentation__text a { color: #993399; }
 .object__price { margin-bottom: 40px; }
 .object__price span { font-family: "Open Sans", Arial, sans-serif; font-weight: bold; font-size: 30px; color: #993399; overflow: hidden; display: block; }
