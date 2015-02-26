@@ -470,7 +470,7 @@ head.ready(function() {
    // 		console.log(z);
    //
 	$(document).ready(function() {
-		$(document).mouseover(function() {
+		$('body').mouseover(function() {
    if($('.subw .chosen-choices').find('li').hasClass('search-choice')) {
    	$('.subw').find('i').hide();
    	console.log('sssssss');
@@ -479,4 +479,8 @@ head.ready(function() {
    	
 	})
 		 })
+	$('.subw').find('i').click(function(){
+		$('.search-field').click();
+	})
+	
 });
