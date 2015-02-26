@@ -70,27 +70,7 @@ head.ready(function() {
 		    ]
 		 });
 
-		$('.pop-up-item__main_slider_main_in').slick({
-			slidesToShow: 3,
-			slidesToScroll: 3,
-			// variableWidth: true,
-			arrows: true,
-			prevArrow: $('.pop-up-item_prev_btn'),
-			nextArrow: $('.pop-up-item_nxt_btn'),
-			// respondTo: 'min',
-			// slide: $('.item__slider_img'),
-
-
-			responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2,
-		        infinite: true,
-		        arrows: false
-		      }}]
-		 });
+		
 		$('.item_about_add').click(function() {
 			if($(this).find('i').hasClass('heart_pr')) {
 				$(this).find('i').removeClass('heart_pr').addClass('heart_b')
@@ -104,10 +84,12 @@ head.ready(function() {
 		if($popUpMenu.hasClass("is-visible")) {
 			$(this).css("background-color", "#4d4d4d");
 			$popUpMenu.removeClass("is-visible");
+			$('.pop-up-menu-entry__map').addClass('is-hidden');
 		}
 		else {
 			$(this).css("background-color", "#96c833");
 			$popUpMenu.addClass("is-visible");
+			$('.pop-up-menu-entry__map').removeClass('is-hidden');
 		}
 	});
 	//baseTopP
@@ -419,8 +401,8 @@ head.ready(function() {
  				slidesToShow: 1,
 			  slidesToScroll: 1,
    	   	arrows: true,
-			  prevArrow: $('.popup__prev_btn'),
-			  nextArrow: $('.popup__next_btn')
+			  prevArrow: $('.popup-wrap .slick-prev'),
+			  nextArrow: $('.popup-wrap .slick-next')
    		});
     return false;
    });
@@ -428,5 +410,45 @@ head.ready(function() {
 	  	$('.js-wrap').removeClass('is-active');
 	  	return false;
 	  });
-
+	  //select
+	$(".js-select-list").hide();
+  $(".js-select").removeClass("is-active");
+	$(document).ready(function() {
+	    $(document).click(function() {
+				$(".js-select-list").hide();
+	      $(".js-select").removeClass("is-active");
+	    });
+	    function selectList() {
+	        var select = $(".js-select");
+	        var select_list = $(".js-select-list");
+	        $("body").on("click", ".js-select", function(event){
+	            if ($(this).hasClass("is-active")) {
+	                select.removeClass("is-active");
+	                select_list.hide();
+	            }
+	            else {
+	                select.removeClass("is-active");
+	                select_list.hide();
+	                $(this).find(".js-select-list").show();
+	                $(this).addClass("is-active");
+	            }
+	            event.stopPropagation();
+	        });
+	        $("body").on("click", ".js-select-list li", function(event){
+	            var id = $(this).attr("data-id");
+	            var text = $(this).text();
+	            $(this).parents(".js-select").find(".js-select-text").text(text);
+	            $(this).parents(".js-select").find(".js-select-input").val(id);
+	            $(this).parent().hide();
+	            $(this).parents(".js-select").removeClass("is-active");
+	            event.stopPropagation();
+	        });
+	    }  
+	    
+	    selectList();
+	    $("body").on("click", ".js-select", function(event){
+	        event.stopPropagation();
+	    });
+	    
+	});
 });

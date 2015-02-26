@@ -175,7 +175,9 @@
 			width: 100%
 .form__commerce, .form__newest
 	.base_top_input
+		// text-align: justify
 		+justify
+		font-size: 14px
 		+tablet
 			.input_item
 				width: 20% 
@@ -200,6 +202,7 @@
 	.base_top_input
 		width: 81% 
 		+justify
+		font-size: 14px
 	+tablet
 		.base_top_input
 			// float: none
@@ -311,6 +314,7 @@
 	+r(640)
 		.base_top_input
 			+justify
+			font-size: 14px
 			.input_item
 				width: 40% 
 				margin-right: 0 
@@ -739,6 +743,8 @@
 
 .advantages
 	padding-top: 40px 
+	+tablet
+		padding: 0 2%
 	&__heading
 		width: 100% 
 		text-align: center
@@ -747,31 +753,39 @@
 .advantages__main
 	+tablet
 		+clr
+
 	section
 		width: 33%
 		display: inline-block
 		padding-bottom: 60px 
 		font-size: 0
-		// &:nth-child(3n)
-		// 	float: right
-		// 	+tablet
-		// 		float: none
 		+tablet
-			width: 40%
+			width: 49%
 			display: inline-block
 			padding-bottom: 30px
 			vertical-align: top
 			&:nth-child(even)
-				padding-left: 15% 
+				float: right
+				+r(820)
+					float: none
+
+
 		+mobile
-			width: 100% 
-			&:nth-child(even)
-				padding-left: 0 
+			width: 100%
+			float: none 
+
 .major
-	display: table
+	// display: table
+	display: inline-block
 	vertical-align: top
-	+tablet
-		padding-left: 4%
+	font-size: 0
+	width: 33% 
+	// +tablet
+	// 	// padding-left: 4%
+	// 	width: 50%
+	// +mobile
+	// 	width: 100% 
+	// 	padding-left: 5% 
 	.major__img
 		width: 20% 
 		display: table-cell
