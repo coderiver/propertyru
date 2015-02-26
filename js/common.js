@@ -461,4 +461,22 @@ head.ready(function() {
     for (var selector in config) {
       $(selector).chosen(config[selector]);
     }
+   //  var z=0;
+   // $('.subw').click(function() {
+   // 		z++;
+   // 		if(z>=2) {
+   // 			$(this).find('i').hide();
+   // 		}
+   // 		console.log(z);
+   //
+	$(document).ready(function() {
+		$(document).mouseover(function() {
+   if($('.subw .chosen-choices').find('li').hasClass('search-choice')) {
+   	$('.subw').find('i').hide();
+   	console.log('sssssss');
+   }
+		else {$('.subw').find('i').show(); console.log('qqqq');}
+   	
+	})
+		 })
 });
