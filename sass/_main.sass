@@ -479,13 +479,13 @@
 			min-width: inherit
 			display: inline-block
 			padding: 0 20px
-			margin-top: 50% 
+			margin-top: 150px
 			font-family: 'Open Sans'
 			font-weight: 300  
 		a
 			text-decoration: none 
-			margin-top: 25%
-			margin-bottom: 5% 
+			margin-top: 25px
+			margin-bottom: 10px 
 			font-size: 14px 
 			display: block
 		p
@@ -494,9 +494,9 @@
 		.item_about_add
 			cursor: pointer
 			display: block
-			position: absolute
-			bottom: 30px
-			right: 15px  
+			text-align: left
+			margin-left: 24%
+			margin-top: 25px			 
 			color: #FFF  
 			i
 				display: inline-block
@@ -594,28 +594,6 @@
 	.item
 		width: 100%
 		margin-right: 0 
-		&_cover
-			a,input, p
-				margin-left: 0
-				margin-top: 0
-				position: absolute
-				+translate(-50%, 0)
-				margin-top: 0
-				left: 50%
-				margin-left: 0 
-			input
-				position: absolute
-				left: 50%
-				+translate(-50%, 0)
-				margin-top: 30px
-				// margin-left: 0
-			a
-				margin-bottom: 0
-				margin-top: 90px 
-			p
-				margin-top: 130px
-				 
-			
 		&__img
 			max-width: 270px
 			float: left 
@@ -655,6 +633,9 @@
 						top: 0
 			&_length, &_area
 				display: inline-block  
+		// &_cover
+		// 	+r_min(1000)
+		// 		display: none
 .container__foo
 	text-align: center
 	margin-top: 30px 
