@@ -83,7 +83,7 @@ select { -moz-appearance: none; -webkit-appearance: none; background: url("../im
 
 .is-hidden { visibility: hidden; }
 
-.is-fixed { position: fixed; }
+.is-fixed { position: fixed; top: 45px; z-index: 1; }
 
 .close { float: right; cursor: pointer; }
 .close p { position: relative; display: inline-block; padding-right: 10px; top: 8px; }
@@ -793,6 +793,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .company { margin: 0 5%; } }
 .company__sidebar { width: 25.64103%; float: left; }
 @media only screen and (max-width: 1024px) { .company__sidebar { float: none; width: 100%; } }
+.company__sidebar.is-fixed { width: 24%; }
 @media only screen and (max-width: 1024px) { .company__nav { display: none; } }
 @media only screen and (max-width: 1024px) { .company__nav.is-open { display: block; padding: 10px 20px; background: white; border: 1px solid #333333; border-top: none; } }
 .company__item { margin-bottom: 35px; }
@@ -947,6 +948,11 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry select { display: inline-block; } }
 @media only screen and (max-width: 550px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry select { display: block; } }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry { line-height: 1.4em; } }
+.content-box-catalog .content_box__main .base__form_open { width: 100%; height: 40px; background-color: #666666; *zoom: 1; }
+.content-box-catalog .content_box__main .base__form_open:after { content: " "; display: table; clear: both; }
+.content-box-catalog .content_box__main .base__form_open .base__open_wrap { background-color: white; padding: 9px 0; width: 42px; cursor: pointer; float: right; }
+.content-box-catalog .content_box__main .base__form_open .base__open_wrap div { width: 26px; height: 3px; margin: 4px auto; background-color: #333333; }
+.content-box-catalog .content_box__main .base__form.is-fixed { width: 61.5%; }
 .content-box-catalog .content_box__main .base__form_main { margin-top: 20px; }
 .content-box-catalog .content_box__main .base__form .base_top_text { width: 100%; }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_top_text { width: 100%; } }

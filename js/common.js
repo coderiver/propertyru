@@ -449,22 +449,21 @@ head.ready(function() {
 	$('.subw').find('i').click(function(){
 		$('.search-field').click();
 	})
-	// if ($("body").scrollTop()) {console.log('scroll')}
-	// $('window').scroll(function() {
-	// 	console.log('scroll');
-	// 	if ($("body").scrollTop() >= $('.js-fix').offset().top) {
-	// 	   $('.js-fix').addClass("is-fixed");
-	// 	   console.log('fix')
-	// 	    } 
-	// 	    else {
-	// 	   $('.js-fix').removeClass("is-fixed");
-	// 	    }
-	// })
-$(document).ready(function() {
-	if ($("body").scrollTop()) {
-		console.log('scroll');
+
+
+$(function(){
+	$(window).scroll(function() {    
+	     var scroll = $(window).scrollTop();
+	     if ($('.js-wrap').length>0) {
+	      if (scroll+43 >= $('.js-wrap').offset().top) {
+	          $(".js-fixed").addClass("is-fixed");
+	      } else {
+	          $(".js-fixed").removeClass("is-fixed");
+	      };
+	     };
+	 });
+});
+	$('.js-open-base').click(function) {
+		
 	}
-	
-})
-	
 });

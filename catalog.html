@@ -63,7 +63,8 @@
 	<!-- BEGIN content-box  -->
 	<div class="content-box content-box-catalog"><div class="inn">
 		<!--begin company__sidebar -->
-		<div class="company__sidebar js-fix">
+		<div class="js-wrap">
+		<div class="company__sidebar js-fixed">
 			<div class="company__btn">
 				<a href="#">Меню</a>
 				<button></button>
@@ -129,11 +130,20 @@
 				</li>
 			</ul>
 		</div>
+		</div>
 		<!--end company__sidebar -->
 		<!-- begin content_box__main -->
 		<div class="content_box__main">
 			<!-- begin base -->
-			<div class="base__form js-fix">
+			<div class="js-wrap">
+			<div class="js-fixed base__form_open">
+				<div class="base__open_wrap js-open-base">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="base__form js-fixed">
 				<div class="base__form_nav">
 					<ul>
 						<li><span class="is-active" id="base_form_nav_commerce">Коммерческая</span></li>
@@ -1019,6 +1029,7 @@
 					</form>
 				</div>
 				<!--end base__form_main -->
+			</div>
 			</div>
 			<!-- END base  -->
 			<!-- BEGIN content  -->
