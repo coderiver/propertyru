@@ -83,6 +83,8 @@ select { -moz-appearance: none; -webkit-appearance: none; background: url("../im
 
 .is-hidden { visibility: hidden; }
 
+.is-fixed { position: fixed; }
+
 .close { float: right; cursor: pointer; }
 .close p { position: relative; display: inline-block; padding-right: 10px; top: 8px; }
 @media only screen and (max-width: 400px) { .close { position: absolute; top: 5px; right: 5px; }
@@ -945,6 +947,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry select { display: inline-block; } }
 @media only screen and (max-width: 550px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry select { display: block; } }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry { line-height: 1.4em; } }
+.content-box-catalog .content_box__main .base__form_main { margin-top: 20px; }
 .content-box-catalog .content_box__main .base__form .base_top_text { width: 100%; }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_top_text { width: 100%; } }
 .content-box-catalog .content_box__main .base__form .base_top_input { width: 100%; margin-top: 20px; }
@@ -952,7 +955,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content-box-catalog .content_box__main .base__form .base_bottom { margin-top: 20px; }
 .content-box-catalog .content_box__main .base__form .base_bottom_item { width: 49%; margin-bottom: 20px; }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_bottom_item { width: 100%; } }
-.content-box-catalog .content_box__main .base__form .base_bottom_submit { width: 100%; }
+.content-box-catalog .content_box__main .base__form .base_bottom_submit { width: 100%; margin-bottom: 0; }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_bottom_submit { width: 100%; } }
 .content-box-catalog .content_box__main .base__form .base_bottom_submit .input_item_search { max-width: 150px; margin-left: 0; }
 .content-box-catalog .company__sidebar .company__item { position: relative; margin: 0 0 35px 30px; }
