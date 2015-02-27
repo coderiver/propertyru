@@ -451,18 +451,24 @@ head.ready(function() {
 	})
 
 
-$(function(){
 	$(window).scroll(function() {    
 	     var scroll = $(window).scrollTop();
+	     var botpos = $('.slider').offset().top;
+	     var ww = $('.company__nav').height();
 	     if ($('.js-wrap').length>0) {
 	      if (scroll+43 >= $('.js-wrap').offset().top) {
 	          $(".js-fixed").addClass("is-fixed");
+	          if(scroll>botpos-ww - 43 - 35){
+	          	$(".js-fixed").addClass('is-abs');
+	          }
+	          else{
+	          	$(".js-fixed").removeClass('is-abs').addClass("is-fixed");
+	          }
 	      } else {
 	          $(".js-fixed").removeClass("is-fixed");
 	      };
 	     };
 	 });
-});
 	// $('.js-open-base').click(function) {
 		
 	// }

@@ -633,9 +633,17 @@
 						top: 0
 			&_length, &_area
 				display: inline-block  
-		// &_cover
-		// 	+r_min(1000)
-		// 		display: none
+		&_cover
+			input
+				+r_min(550)
+					margin-top: 20px 
+			.item_about_add
+				+r_min(550)
+					position: absolute
+					top: 6px 
+					right: 20px 
+			// +r_min(1000)
+			// 	display: none
 .container__foo
 	text-align: center
 	margin-top: 30px 
