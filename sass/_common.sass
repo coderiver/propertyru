@@ -155,7 +155,14 @@ select
 	position: fixed
 	top: 45px 
 	z-index: 1 
+	&.is-abs
+		position: absolute
+		bottom: 0
+		left: 0
+		top: auto  
 //
+.inn
+	position: relative
 .close
 	float: right
 	cursor: pointer
@@ -601,12 +608,12 @@ body
 	z-index: 5 
 	position: fixed
 	max-width: 530px
-	width: 420px  
+	width: 530px  
 	top: 10px
 	left: 50%
 	+translate(-50%,0) 
 	background-color: #FFF 
-	padding: 10px 0 
+	padding: 10px 20px
 	+r(400)
 		width: 90%
 		max-height: 93%  
