@@ -107,6 +107,8 @@
 .base_bottom
 	.input_item_search
 		min-width: 153px 
+		padding-left: 14px 
+		font-family: 'Open Sans'
 	margin-top: 40px 
 	// +justify
 	width: 100%
@@ -166,6 +168,7 @@
 		.input_item_search 
 			float: left
 			width: 40% 
+			font-size: 14px
 			// margin-left: 10%
 			+placeholder-color(#666)
 	
@@ -190,10 +193,6 @@
 				width: 20% 
 				margin-bottom: 20px
 		+r(640) 
-			float: none
-			width: auto 
-			display: block
-			text-align: center
 			.input_item
 				width: 40%
 				
@@ -204,6 +203,13 @@
 		width: 35%
 		+tablet
 			width: 100% 
+		+r(640) 
+			float: none
+			width: auto 
+			display: block
+			text-align: center
+			.input_item
+				width: 40%
 .form__alive
 	display: none
 	.base_top_text
@@ -358,10 +364,6 @@
 			width: 20% 
 			margin-left: 0
 			// margin-top: 20px  
-.input_curr
-	min-width: 70px
-
-			
 .container
 	background-color: #ECF0F1
 	padding-bottom: 55px 
@@ -389,7 +391,7 @@
 			+tablet
 				padding-left: 4% 
 		.input_item
-			width: 50%
+			width: 55%
 			float: right
 			+tablet
 				margin-right: 4% 
