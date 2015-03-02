@@ -41,52 +41,51 @@
 						display: block
 				+tablet
 					line-height: 1.4em 
-					
-		.base__form_open
-			width: 100%
-			background-color: #666 
-			+clr
-			.base__open_wrap
-				background-color: #fff
-				padding: 9px 0
-				width: 42px 
-				cursor: pointer
-				float: right
-				div
-					width: 26px 
-					height: 3px 
-					margin: 4px auto
-					background-color: #333
+			
 		.base__form
 			&.is-fixed
 				width: 61.5%
 			&_main
 				margin-top: 20px 
-			.base_top_text
-				width: 100%
-				+tablet
-					width: 100%
+				padding: 35px 20px
+			.input_item
+				font-family: 'Open Sans'
+				font-size: 14px 
+			.input_ind
+				text-indent: 5% 
+			.select__text
+				color: #999 
 			.base_top_input
 				width: 100%
-				margin-top: 20px
+				+justify
 				+tablet
 					width: 100%
 			.base_bottom
-				margin-top: 20px
+				margin-top: 35px
+				&_in
+					+justify
+					// width: 100%
+					font-size: 0
+					padding-left: 0 
+					.input_item
+						width: 20%  
+						
+					.form__submit
+						width: 10%
+						+box-shadow(0 0 0 1px #333) 
 			.base_bottom_item
-				width: 49%
-				margin-bottom: 20px
 				+tablet
 					width: 100%
+			
 			.base_bottom_submit
-				width: 100% 
-				margin-bottom: 0 
+				// width: 100% 
+				// margin-bottom: 0 
 				+tablet
 					width: 100%
 				.input_item_search
 					// width: auto
-					max-width: 150px 
-					margin-left: 0
+					// max-width: 150px 
+					// margin-left: 0
 	.company__sidebar
 		.company__item
 			position: relative
