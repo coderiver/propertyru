@@ -456,10 +456,8 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .container__header .container__header_nav li span.is-active { background-color: #993399; }
 .container__header .container__header_nav li span i { display: inline-block; position: absolute; top: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.content__map { display: none; }
-
-.content.map .content__map { display: block; margin-bottom: 20px; }
-.content.map .content__map > div { height: 400px; }
+.content__map { display: none; margin-bottom: 20px; }
+.content__map > div { height: 400px; }
 
 .content { width: 100%; }
 @media only screen and (max-width: 1024px) { .content_in { padding: 0 2%; } }
