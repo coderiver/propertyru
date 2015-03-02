@@ -376,7 +376,8 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .form__commerce .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 .form__commerce .base_top_input .input_item { font-size: 14px; }
 @media only screen and (max-width: 1024px) { .form__commerce .base_top_input .input_item { width: 20%; margin-bottom: 20px; } }
-@media only screen and (max-width: 640px) { .form__commerce .base_top_input .input_item { width: 40%; } }
+@media only screen and (max-width: 640px) { .form__commerce .base_top_input { float: none; width: auto; display: block; text-align: center; }
+  .form__commerce .base_top_input .input_item { width: 40%; } }
 
 .form__commerce { display: none; }
 .form__commerce .base_top_text { width: 35%; }
@@ -508,9 +509,9 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .item__about_price_main { font-size: 18px; font-weight: 700; float: left; }
 
 .content.list .item { width: 100%; margin-right: 0; }
-.content.list .item__img { max-width: 270px; float: left; }
-@media only screen and (max-width: 550px) { .content.list .item__img { float: none; } }
-.content.list .item__about { padding-left: 25%; padding-bottom: 14px; }
+.content.list .item__img { max-width: 270px; width: 270px; float: left; }
+@media only screen and (max-width: 550px) { .content.list .item__img { float: none; width: auto; float: none; max-width: 1000px; } }
+.content.list .item__about { padding-left: 28%; padding-left: 290px; padding-bottom: 14px; }
 @media only screen and (max-width: 550px) { .content.list .item__about { padding-left: 5%; } }
 .content.list .item__about_description, .content.list .item__about_price { display: inline-block; margin-right: 10%; }
 @media only screen and (max-width: 1024px) { .content.list .item__about_description, .content.list .item__about_price { margin-right: 5%; } }
