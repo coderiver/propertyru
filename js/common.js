@@ -6,35 +6,35 @@ head.ready(function() {
 			arrows: true,
 			// variableWidth: true,
 			responsive: [
-			    {
-			      breakpoint: 1700,
-			      settings: {
-			        slidesToShow: 4,
-			        slidesToScroll: 4,
-			      }
-			  	},
-			  	{
-			      breakpoint: 1400,
-			      settings: {
-			        slidesToShow: 3,
-			        slidesToScroll: 3,
-			      }
-			  	},
-			  	{
-			      breakpoint: 900,
-			      settings: {
-			        slidesToShow: 2,
-			        slidesToScroll: 2,
-			      }
-			  	},
-			  	{
-			      breakpoint: 700,
-			      settings: {
-			        slidesToShow: 1,
-			        slidesToScroll: 1,
-			      }
-			  	}
-		    ]
+					{
+						breakpoint: 1700,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 4,
+						}
+					},
+					{
+						breakpoint: 1400,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3,
+						}
+					},
+					{
+						breakpoint: 900,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+						}
+					},
+					{
+						breakpoint: 700,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						}
+					}
+				]
 		 });
 
 		
@@ -216,258 +216,266 @@ head.ready(function() {
 
 	//galleries synchronize (ITEM)
 	var slideshows = $('.cycle-slideshow').on('cycle-next cycle-prev', function(e, opts) {
-	  slideshows.not(this).cycle('goto', opts.currSlide);
+		slideshows.not(this).cycle('goto', opts.currSlide);
 	});
 
 	$('.p-slider__pager .p-slide').click(function() {
-	  var index = $('.p-slider__pager').data('cycle.API').getSlideIndex(this);
-	  console.log(index);
-	  slideshows.cycle('goto', index);
+		var index = $('.p-slider__pager').data('cycle.API').getSlideIndex(this);
+		console.log(index);
+		slideshows.cycle('goto', index);
 	});
 
 	(function( $ ) {
-	    $.widget( "custom.combobox", {
-	      _create: function() {
-	        this.wrapper = $( "<span>" )
-	          .addClass( "custom-combobox" )
-	          .insertAfter( this.element );
+			$.widget( "custom.combobox", {
+				_create: function() {
+					this.wrapper = $( "<span>" )
+						.addClass( "custom-combobox" )
+						.insertAfter( this.element );
 	 
-	        this.element.hide();
-	        this._createAutocomplete();
-	        this._createShowAllButton();
-	         this.input.attr("placeholder", this.element.attr('placeholder'));
-	      },
+					this.element.hide();
+					this._createAutocomplete();
+					this._createShowAllButton();
+					 this.input.attr("placeholder", this.element.attr('placeholder'));
+				},
 	 
-	      _createAutocomplete: function() {
-	        var selected = this.element.children( ":selected" ),
-	          value = selected.val() ? selected.text() : "";
+				_createAutocomplete: function() {
+					var selected = this.element.children( ":selected" ),
+						value = selected.val() ? selected.text() : "";
 	 
-	        this.input = $( "<input>" )
-	          .appendTo( this.wrapper )
-	          .val( value )
-	          .attr( "title", "" )
-	          .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
-	          .autocomplete({
-	            delay: 0,
-	            minLength: 0,
-	            source: $.proxy( this, "_source" )
-	          })
-	          .tooltip({
-	            tooltipClass: "ui-state-highlight"
-	          });
+					this.input = $( "<input>" )
+						.appendTo( this.wrapper )
+						.val( value )
+						.attr( "title", "" )
+						.addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
+						.autocomplete({
+							delay: 0,
+							minLength: 0,
+							source: $.proxy( this, "_source" )
+						})
+						.tooltip({
+							tooltipClass: "ui-state-highlight"
+						});
 	 
-	        this._on( this.input, {
-	          autocompleteselect: function( event, ui ) {
-	            ui.item.option.selected = true;
-	            this._trigger( "select", event, {
-	              item: ui.item.option
-	            });
-	          },
+					this._on( this.input, {
+						autocompleteselect: function( event, ui ) {
+							ui.item.option.selected = true;
+							this._trigger( "select", event, {
+								item: ui.item.option
+							});
+						},
 	 
-	          autocompletechange: "_removeIfInvalid"
-	        });
-	      },
+						autocompletechange: "_removeIfInvalid"
+					});
+				},
 	 
-	      _createShowAllButton: function() {
-	        var input = this.input,
-	          wasOpen = false;
+				_createShowAllButton: function() {
+					var input = this.input,
+						wasOpen = false;
 	 
-	        $( "<a>" )
-	          .attr( "tabIndex", -1 )
-	          // .attr( "title", "Show All Items" )
-	          .tooltip()
-	          .appendTo( this.wrapper )
-	          .button({
-	            icons: {
-	              primary: "ui-icon-triangle-1-s"
-	            },
-	            text: false
-	          })
-	          .removeClass( "ui-corner-all" )
-	          .addClass( "custom-combobox-toggle ui-corner-right" )
-	          .mousedown(function() {
-	            wasOpen = input.autocomplete( "widget" ).is( ":visible" );
-	          })
-	          .click(function() {
-	            input.focus();
+					$( "<a>" )
+						.attr( "tabIndex", -1 )
+						// .attr( "title", "Show All Items" )
+						.tooltip()
+						.appendTo( this.wrapper )
+						.button({
+							icons: {
+								primary: "ui-icon-triangle-1-s"
+							},
+							text: false
+						})
+						.removeClass( "ui-corner-all" )
+						.addClass( "custom-combobox-toggle ui-corner-right" )
+						.mousedown(function() {
+							wasOpen = input.autocomplete( "widget" ).is( ":visible" );
+						})
+						.click(function() {
+							input.focus();
 	 
-	            // Close if already visible
-	            if ( wasOpen ) {
-	              return;
-	            }
+							// Close if already visible
+							if ( wasOpen ) {
+								return;
+							}
 	 
-	            // Pass empty string as value to search for, displaying all results
-	            input.autocomplete( "search", "" );
-	          });
-	      },
+							// Pass empty string as value to search for, displaying all results
+							input.autocomplete( "search", "" );
+						});
+				},
 	 
-	      _source: function( request, response ) {
-	        var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
-	        response( this.element.children( "option" ).map(function() {
-	          var text = $( this ).text();
-	          if ( this.value && ( !request.term || matcher.test(text) ) )
-	            return {
-	              label: text,
-	              value: text,
-	              option: this
-	            };
-	        }) );
-	      },
+				_source: function( request, response ) {
+					var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
+					response( this.element.children( "option" ).map(function() {
+						var text = $( this ).text();
+						if ( this.value && ( !request.term || matcher.test(text) ) )
+							return {
+								label: text,
+								value: text,
+								option: this
+							};
+					}) );
+				},
 	 
-	      _removeIfInvalid: function( event, ui ) {
+				_removeIfInvalid: function( event, ui ) {
 	 
-	        // Selected an item, nothing to do
-	        if ( ui.item ) {
-	          return;
-	        }
+					// Selected an item, nothing to do
+					if ( ui.item ) {
+						return;
+					}
 	 
-	        // Search for a match (case-insensitive)
-	        var value = this.input.val(),
-	          valueLowerCase = value.toLowerCase(),
-	          valid = false;
-	        this.element.children( "option" ).each(function() {
-	          if ( $( this ).text().toLowerCase() === valueLowerCase ) {
-	            this.selected = valid = true;
-	            return false;
-	          }
-	        });
+					// Search for a match (case-insensitive)
+					var value = this.input.val(),
+						valueLowerCase = value.toLowerCase(),
+						valid = false;
+					this.element.children( "option" ).each(function() {
+						if ( $( this ).text().toLowerCase() === valueLowerCase ) {
+							this.selected = valid = true;
+							return false;
+						}
+					});
 	 
-	        // Found a match, nothing to do
-	        if ( valid ) {
-	          return;
-	        }
+					// Found a match, nothing to do
+					if ( valid ) {
+						return;
+					}
 	 
-	        // Remove invalid value
-	        this.input
-	          .val( "" )
-	          .attr( "title", value + " didn't match any item" )
-	          .tooltip( "open" );
-	        this.element.val( "" );
-	        this._delay(function() {
-	          this.input.tooltip( "close" ).attr( "title", "" );
-	        }, 2500 );
-	        this.input.autocomplete( "instance" ).term = "";
-	      },
+					// Remove invalid value
+					this.input
+						.val( "" )
+						.attr( "title", value + " didn't match any item" )
+						.tooltip( "open" );
+					this.element.val( "" );
+					this._delay(function() {
+						this.input.tooltip( "close" ).attr( "title", "" );
+					}, 2500 );
+					this.input.autocomplete( "instance" ).term = "";
+				},
 	 
-	      _destroy: function() {
-	        this.wrapper.remove();
-	        this.element.show();
-	      }
-	    });
-	  })( jQuery );
-	  $(function() {
-	    $( ".combobox" ).combobox();
-	    $( ".toggle" ).click(function() {
-	      $( ".combobox" ).toggle();
-	    });
-	  });
+				_destroy: function() {
+					this.wrapper.remove();
+					this.element.show();
+				}
+			});
+		})( jQuery );
+		$(function() {
+			$( ".combobox" ).combobox();
+			$( ".toggle" ).click(function() {
+				$( ".combobox" ).toggle();
+			});
+		});
 
-	  $('.js-popup-open').on('click', function() {
-    $('.js-wrap').addClass('is-active');
-      $('.popup').slick({
- 				slidesToShow: 1,
-			  slidesToScroll: 1,
-   	   	arrows: true,
-			  prevArrow: $('.popup-wrap .slick-prev'),
-			  nextArrow: $('.popup-wrap .slick-next')
-   		});
-    return false;
-   });
-	  $('.js-popup-close').on('click', function() {
-	  	$('.js-wrap').removeClass('is-active');
-	  	return false;
-	  });
-	  //select
+		$('.js-popup-open').on('click', function() {
+		$('.js-wrap').addClass('is-active');
+			$('.popup').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				prevArrow: $('.popup-wrap .slick-prev'),
+				nextArrow: $('.popup-wrap .slick-next')
+			});
+		return false;
+	 });
+		$('.js-popup-close').on('click', function() {
+			$('.js-wrap').removeClass('is-active');
+			return false;
+		});
+		//select
 	$(".js-select-list").hide();
-  $(".js-select").removeClass("is-active");
+	$(".js-select").removeClass("is-active");
 	$(document).ready(function() {
-	    $(document).click(function() {
+			$(document).click(function() {
 				$(".js-select-list").hide();
-	      $(".js-select").removeClass("is-active");
-	    });
-	    function selectList() {
-	        var select = $(".js-select");
-	        var select_list = $(".js-select-list");
-	        $("body").on("click", ".js-select", function(event){
-	            if ($(this).hasClass("is-active")) {
-	                select.removeClass("is-active");
-	                select_list.hide();
-	            }
-	            else {
-	                select.removeClass("is-active");
-	                select_list.hide();
-	                $(this).find(".js-select-list").show();
-	                $(this).addClass("is-active");
-	            }
-	            event.stopPropagation();
-	        });
-	        $("body").on("click", ".js-select-list li", function(event){
-	            var id = $(this).attr("data-id");
-	            var text = $(this).text();
-	            $(this).parents(".js-select").find(".js-select-text").text(text);
-	            $(this).parents(".js-select").find(".js-select-input").val(id);
-	            $(this).parent().hide();
-	            $(this).parents(".js-select").removeClass("is-active");
-	            event.stopPropagation();
-	        });
-	    }  
-	    
-	    selectList();
-	    $("body").on("click", ".js-select", function(event){
-	        event.stopPropagation();
-	    });
-	    
+				$(".js-select").removeClass("is-active");
+			});
+			function selectList() {
+					var select = $(".js-select");
+					var select_list = $(".js-select-list");
+					$("body").on("click", ".js-select", function(event){
+							if ($(this).hasClass("is-active")) {
+									select.removeClass("is-active");
+									select_list.hide();
+							}
+							else {
+									select.removeClass("is-active");
+									select_list.hide();
+									$(this).find(".js-select-list").show();
+									$(this).addClass("is-active");
+							}
+							event.stopPropagation();
+					});
+					$("body").on("click", ".js-select-list li", function(event){
+							var id = $(this).attr("data-id");
+							var text = $(this).text();
+							$(this).parents(".js-select").find(".js-select-text").text(text);
+							$(this).parents(".js-select").find(".js-select-input").val(id);
+							$(this).parent().hide();
+							$(this).parents(".js-select").removeClass("is-active");
+							event.stopPropagation();
+					});
+			}  
+			
+			selectList();
+			$("body").on("click", ".js-select", function(event){
+					event.stopPropagation();
+			});
+			
 	});
-    var config = {
-      '.chosen-select'           : {},
-      '.chosen-select-deselect'  : {allow_single_deselect:true},
-      '.chosen-select-no-single' : {disable_search_threshold:10},
-      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-      '.chosen-select-width'     : {width:"95%"}
-    }
-    for (var selector in config) {
-      $(selector).chosen(config[selector]);
-    }
-   //  var z=0;
-   // $('.subw').click(function() {
-   // 		z++;
-   // 		if(z>=2) {
-   // 			$(this).find('i').hide();
-   // 		}
-   // 		console.log(z);
-   //
+		var config = {
+			'.chosen-select'           : {},
+			'.chosen-select-deselect'  : {allow_single_deselect:true},
+			'.chosen-select-no-single' : {disable_search_threshold:10},
+			'.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+			'.chosen-select-width'     : {width:"95%"}
+		}
+		for (var selector in config) {
+			$(selector).chosen(config[selector]);
+		}
+	 //  var z=0;
+	 // $('.subw').click(function() {
+	 // 		z++;
+	 // 		if(z>=2) {
+	 // 			$(this).find('i').hide();
+	 // 		}
+	 // 		console.log(z);
+	 //
 	$(document).ready(function() {
 		$('body').mouseover(function() {
-   if($('.subw .chosen-choices').find('li').hasClass('search-choice')) {
-   	$('.subw').find('i').hide();
-   	console.log('sssssss');
-   }
-		else {$('.subw').find('i').show(); console.log('qqqq');}
-   	
+	 if($('.subw .chosen-choices').find('li').hasClass('search-choice')) {
+		$('.subw').find('i').hide();
+	 }
+		else {$('.subw').find('i').show();}
+		if($('.region .chosen-choices').find('li').hasClass('search-choice')) {
+			$('.region').find('i').hide();
+		 }
+			else {$('.region').find('i').show();}
+		
 	})
 		 })
 	$('.subw').find('i').click(function(){
-		$('.search-field').click();
+		$('.subw .search-field').click();
+	})
+
+		$('.region').find('i').click(function(){
+		$('.region .search-field').click();
 	})
 
 
+
 	$(window).scroll(function() {    
-	     var scroll = $(window).scrollTop();
-	     var botpos = $('.slider').offset().top;
-	     var ww = $('.company__nav').height();
-	     if ($('.js-wrap').length>0) {
-	      if (scroll+43 >= $('.js-wrap').offset().top) {
-	          $(".js-fixed").addClass("is-fixed");
-	          if(scroll>botpos-ww - 43 - 35){
-	          	$(".js-fixed").addClass('is-abs');
-	          }
-	          else{
-	          	$(".js-fixed").removeClass('is-abs').addClass("is-fixed");
-	          }
-	      } else {
-	          $(".js-fixed").removeClass("is-fixed");
-	      };
-	     };
+			 var scroll = $(window).scrollTop();
+			 var botpos = $('.slider').offset().top;
+			 var ww = $('.company__nav').height();
+			 if ($('.js-wrap').length>0) {
+				if (scroll+43 >= $('.js-wrap').offset().top) {
+						$(".js-fixed").addClass("is-fixed");
+						if(scroll>botpos-ww - 43 - 35){
+							$(".js-fixed").addClass('is-abs');
+						}
+						else{
+							$(".js-fixed").removeClass('is-abs').addClass("is-fixed");
+						}
+				} else {
+						$(".js-fixed").removeClass("is-fixed");
+				};
+			 };
 	 });
 	// $('.js-open-base').click(function) {
 		

@@ -70,7 +70,6 @@
 	width: 100%
 	font-size: 0
 	+clr
-
 	.input_item
 		width: 22%
 		+tablet
@@ -162,7 +161,7 @@
 		float: right
 		.form__submit
 			float: right
-			+box-shadow(none)
+			+box-shadow(0 0 0 1px #333)
 			width: 25%
 			max-width: 100px  
 		.input_item_search 
@@ -181,8 +180,12 @@
 		+mobile
 			width: 100%
 .form__commerce
+	display: none
+	.base_top_text
+		width: 35%
+		+tablet
+			width: 100% 
 	.base_top_input
-		// text-align: justify
 		float: right
 		width: 63%
 		+justify
@@ -197,12 +200,6 @@
 				width: 40%
 				
 
-.form__commerce
-	display: none
-	.base_top_text
-		width: 35%
-		+tablet
-			width: 100% 
 .form__alive
 	display: none
 	.base_top_text
@@ -345,9 +342,9 @@
 		cursor: pointer
 .base_bottom
 	+tablet
-		margin-top: 20px 
+		// margin-top: 20px 
 		.base_bottom_item
-			width: 100% 
+			width: 49% 
 			margin-bottom: 20px 
 	+r(642)
 		margin-top: 0 
