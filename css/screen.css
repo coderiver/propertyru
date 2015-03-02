@@ -153,11 +153,11 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .header__mid-call .number__foo { font-size: 14px; color: #999b9e; }
 .header__mid-call_btns { margin-top: 36px; }
 
-.btn_call { position: relative; min-width: 160px; padding-left: 25px; margin-bottom: 10px; }
-.btn_call i { display: inline-block; position: absolute; left: 15px; background: url('../img/icons-s72f93595c7.png') 0 -1516px no-repeat; width: 16px; height: 16px; }
+.btn_call { position: relative; min-width: 160px; width: 60%; padding-left: 25px; padding-right: 6px; margin-bottom: 10px; }
+.btn_call i { display: inline-block; position: absolute; left: 11px; top: 6px; background: url('../img/icons-s72f93595c7.png') 0 -1516px no-repeat; width: 16px; height: 16px; }
 
-.btn_skype { position: relative; width: 75px; text-align: left; padding-left: 5px; }
-.btn_skype i { display: inline-block; position: absolute; top: 0; }
+.btn_skype { position: relative; width: 30%; min-width: 72px; text-align: left; padding: 0 12px; }
+.btn_skype i { display: inline-block; position: absolute; top: 0; right: 0; }
 @media only screen and (max-width: 1024px) { .btn_skype { margin-left: 10px; } }
 
 .search { width: 230px; color: white; padding: 0 10px; text-align: justify; background-color: #292828; -moz-box-shadow: 0 0 4px #212020 inset; -webkit-box-shadow: 0 0 4px #212020 inset; box-shadow: 0 0 4px #212020 inset; border-bottom: 1px solid #3d3d3d; background-image: url("../img/icons/search.png"); background-repeat: no-repeat; background-position: 230px; text-indent: 5px; }
