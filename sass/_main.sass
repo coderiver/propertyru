@@ -243,20 +243,19 @@
 			width: 100% 
 		+mobile
 			margin-bottom: 0
-			.v-select
-				width: 100% 
-	.base_bottom
-		+mobile 
-			.base_bottom_submit
-				width: 100% 
-			.base_bottom_area, .base_bottom_price
-				width: 100%
-			.base_bottom_area
-				.input_item
-					width: 19% 
-			.base_bottom_submit
-				.input_item
-					width: 100% 
+
+	// .base_bottom
+	// 	+mobile 
+	// 		.base_bottom_submit
+	// 			width: 100% 
+	// 		.base_bottom_area, .base_bottom_price
+	// 			width: 100%
+	// 		.base_bottom_area
+	// 			.input_item
+	// 				width: 19% 
+	// 		.base_bottom_submit
+	// 			.input_item
+	// 				width: 100% 
 				 
 
 	+r(1030)
@@ -266,11 +265,6 @@
 			width: 38% 
 		.base_bottom_area
 			width: 30% 
-
-
-
-				
-
 .form__alive
 	display: none
 	.base_top_text
@@ -302,6 +296,7 @@
 				// width: 153px 
 				max-width: 140px 
 				margin-left: 0 
+
 .form__garden
 	display: none
 	.base_top_text
@@ -352,11 +347,13 @@
 		.input_item, .v-select
 			margin-right: 5% 
 		
-	// .base_bottom
-	// 	+tablet
-	// 		.base_bottom_item
-	// 			width: 100% 
-	// 			margin-bottom: 20px 
+	.base_bottom
+		+tablet
+			.base_bottom_item
+				width: 100% 
+				margin-bottom: 20px 
+	
+
 
 	.base_bottom_submit
 		.input_item_search
@@ -389,18 +386,18 @@
 .form__garden
 	// +tablet
 	// 	width: 100% 
-	+mobile
-		.base_top_area
-			.input_item
-				width: 20%
+	// +mobile
+	// 	.base_top_area
+	// 		.input_item
+	// 			width: 20%
 .form__newest, .form__alive 
-	+r(640)
-		.base_top_input
-			+justify
-			.input_item
-				font-size: 14px
-				width: 40% 
-				margin-right: 0 
+	// +r(640)
+	// 	.base_top_input
+	// 		+justify
+	// 		.input_item
+	// 			font-size: 14px
+	// 			width: 40% 
+	// 			margin-right: 0 
 		// +r(640)
 
 
@@ -425,7 +422,59 @@
 		+tablet
 			// width: 20% 
 			// margin-left: 0
-			// margin-top: 20px  
+			// margin-top: 20px 
+.base_top
+	+mobile
+		margin-bottom: 0
+		.base_top_input
+			width: 100% 
+			// padding-left: 0
+			padding: 1px 1px 
+			
+			.v-select, .input_item, .base_top_area, .base_top_price
+				width: 100%
+				// padding1px  
+			.base_top_area, .base_top_price
+				margin-top: 0
+				.input_item
+					width: 22.6% 
+.base_bottom
+	+mobile 
+		&_in
+			padding-left: 0
+		.base_bottom_submit
+			width: 100% 
+		.base_bottom_area, .base_bottom_price
+			width: 100%
+		.base_bottom_area
+			p
+				margin-right: 2% 
+			.input_item
+				width: 17% 
+				&:last-child
+					margin-right: 0
+		.input_curr
+			width: 22% 
+		.base_bottom_submit
+			.input_item
+				width: 100%
+				max-width: 100%
+				margin-left: 0 !important 
+.form__newest
+	+mobile
+		.base_bottom_area
+			.input_item
+				width: 20%
+				margin-bottom: 0
+		.base_bottom_price
+			.input_item
+				margin-bottom: 0
+.form__commerce
+	+mobile
+		.base_bottom_area
+			.input_item
+				width: 26.5%
+
 .container
 	background-color: #ECF0F1
 	padding-bottom: 55px 
