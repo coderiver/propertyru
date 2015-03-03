@@ -332,6 +332,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 @media only screen and (max-width: 550px) { .base__form_nav ul li span.is-active:after { display: none; } }
 
 .base__form_main { margin-top: 39px; padding: 0 18px 53px; }
+@media only screen and (max-width: 550px) { .base__form_main { padding: 0 0 53px; } }
 .base__form_main .base_bottom_area .input_item, .base__form_main .base_bottom_price .input_item, .base__form_main .base_top_area .input_item, .base__form_main .base_top_price .input_item { text-align: center; font-family: "Open Sans"; }
 .base__form_main .base_bottom_area .input_curr, .base__form_main .base_bottom_price .input_curr, .base__form_main .base_top_area .input_curr, .base__form_main .base_top_price .input_curr { text-align: left; }
 
@@ -431,31 +432,32 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
   .base_top .base_top_input { width: 73%; margin-bottom: 20px; } }
 @media only screen and (max-width: 768px) { .base_top .base_top_input { width: 65%; margin-bottom: 20px; } }
 @media only screen and (max-width: 550px) { .base_top { margin-bottom: 0; }
-  .base_top .base_top_text { width: 100%; margin-bottom: 20px; }
+  .base_top .base_top_text { width: 100%; margin-bottom: 20px; padding-left: 4%; }
   .base_top .base_top_input { width: 100%; margin-bottom: 0; padding: 1px; }
   .base_top .base_top_input .v-select, .base_top .base_top_input .input_item, .base_top .base_top_input .base_top_area, .base_top .base_top_input .base_top_price { width: 100%; }
   .base_top .base_top_input .base_top_area, .base_top .base_top_input .base_top_price { margin-bottom: 20px; }
-  .base_top .base_top_input .base_top_area .input_item, .base_top .base_top_input .base_top_price .input_item { width: 22.6%; } }
+  .base_top .base_top_input .base_top_area .input_item, .base_top .base_top_input .base_top_price .input_item { width: 24.8%; } }
 
 @media only screen and (max-width: 550px) { .base_bottom_in { padding-left: 0; }
   .base_bottom .base_bottom_submit { width: 100%; }
   .base_bottom .base_bottom_area, .base_bottom .base_bottom_price { width: 100%; }
   .base_bottom .base_bottom_area p { margin-right: 2%; }
-  .base_bottom .base_bottom_area .input_item { width: 17%; }
+  .base_bottom .base_bottom_area .input_item { width: 20%; }
   .base_bottom .base_bottom_area .input_item:last-child { margin-right: 0; }
+  .base_bottom .base_bottom_price .input_from { width: 16%; }
   .base_bottom .input_curr { width: 22%; }
   .base_bottom .base_bottom_submit .input_item { width: 100%; max-width: 100%; margin-left: 0 !important; } }
 
 @media only screen and (max-width: 1024px) { .form__newest .base_bottom_price { width: 35%; }
   .form__newest .base_bottom_submit { width: 30%; } }
-@media only screen and (max-width: 550px) { .form__newest .base_bottom_area .input_item { width: 20%; margin-bottom: 20px; }
+@media only screen and (max-width: 550px) { .form__newest .base_bottom_area .input_item { width: 22.7%; margin-bottom: 20px; }
   .form__newest .base_bottom_price { width: 100%; }
   .form__newest .base_bottom_price .input_item { margin-bottom: 20px; }
   .form__newest .base_bottom_submit { width: 100%; } }
 
 @media only screen and (max-width: 1024px) { .form__commerce .base_top_input { width: 60%; } }
 @media only screen and (max-width: 550px) { .form__commerce .base_top_input { width: 100%; }
-  .form__commerce .base_bottom_area .input_item { width: 26.5%; } }
+  .form__commerce .base_bottom_area .input_item { width: 28.6%; } }
 
 .container { background-color: #ecf0f1; padding-bottom: 55px; }
 
