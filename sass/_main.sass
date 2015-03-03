@@ -105,7 +105,7 @@
 
 .base_bottom
 	.input_item_search
-		min-width: 153px 
+		// min-width: 153px 
 		padding-left: 14px 
 		font-family: 'Open Sans'
 	margin-top: 40px 
@@ -128,7 +128,7 @@
 		*
 			display: inline-block 
 	&_item
-		width: 31% 
+		width: 33% 
 		.input_item
 			width: 14%
 	&_area
@@ -142,15 +142,19 @@
 	&_price
 		// text-align: justify
 		// +justify
+		font-size: 0
 		p
 			margin-right: 2%
+			font-size: 14px
 		.input_item
 			margin-right: 3% 
+			font-size: 14px
 		.input_curr
 			width: 20% 
 			margin-left: 1%
 			margin-right: 0
 			color: #666 
+			font-size: 14px
 			// text-indent: 2px 
 		
 	&_search
@@ -182,22 +186,50 @@
 .form__commerce
 	display: none
 	.base_top_text
-		width: 35%
-		+tablet
+		width: 37%
+		+r(1290)
+			min-width: 205px 
+			width: 20% 
+			float: left
+		+r(1030)
 			width: 100% 
+			margin-bottom: 20px
+		+tablet
+			width: auto
+			float: left
 	.base_top_input
 		float: right
 		width: 63%
 		+justify
+		+r(1290)
+			width: 75% 
+		+r(1030)
+			width: 100% 
 		.input_item
 			font-size: 14px
 		+tablet
-			.input_item
-				width: 20% 
-				margin-bottom: 20px
+			width: 50% 
+			// width: auto 
+			overflow: hidden
+			padding: 1px
+			.v-select
+				width: 30% 
+			+r(835)
+				// width: 392px 
+				width: 100% 
 		+r(640) 
-			.input_item
-				width: 40%
+			// .input_item
+			// 	width: 40%
+	+r(1030)
+		.base_bottom_submit
+			width: 30%
+		.base_bottom_price
+			width: 38% 
+		.base_bottom_area
+			width: 30% 
+
+
+
 				
 
 .form__alive
@@ -228,7 +260,8 @@
 		&_submit
 			width: 64%
 			.input_item_search
-				width: 153px 
+				// width: 153px 
+				max-width: 140px 
 				margin-left: 0 
 .form__garden
 	display: none
@@ -344,15 +377,15 @@
 	+tablet
 		// margin-top: 20px 
 		.base_bottom_item
-			width: 49% 
-			margin-bottom: 20px 
+			// width: 49% 
+			// margin-bottom: 20px 
 	+r(642)
 		margin-top: 0 
 .base_bottom_submit
 	.input_item_search
 		+tablet
-			width: 20% 
-			margin-left: 0
+			// width: 20% 
+			// margin-left: 0
 			// margin-top: 20px  
 .container
 	background-color: #ECF0F1
