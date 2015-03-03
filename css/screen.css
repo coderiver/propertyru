@@ -332,6 +332,8 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 @media only screen and (max-width: 550px) { .base__form_nav ul li span.is-active:after { display: none; } }
 
 .base__form_main { margin-top: 39px; padding: 0 18px 53px; }
+.base__form_main .base_bottom_area .input_item, .base__form_main .base_bottom_price .input_item, .base__form_main .base_top_area .input_item, .base__form_main .base_top_price .input_item { text-align: center; font-family: "Open Sans"; }
+.base__form_main .base_bottom_area .input_curr, .base__form_main .base_bottom_price .input_curr, .base__form_main .base_top_area .input_curr, .base__form_main .base_top_price .input_curr { text-align: left; }
 
 .input_item { border: 0; -moz-box-shadow: 0 0 0 1px #cdcdcd; -webkit-box-shadow: 0 0 0 1px #cdcdcd; box-shadow: 0 0 0 1px #cdcdcd; height: 32px; }
 
@@ -385,8 +387,11 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .form__commerce .base_top_input .input_item { font-size: 14px; }
 @media only screen and (max-width: 1024px) { .form__commerce .base_top_input { width: 50%; overflow: hidden; padding: 1px; }
   .form__commerce .base_top_input .v-select { width: 30%; } }
-@media only screen and (max-width: 1024px) and (max-width: 835px) { .form__commerce .base_top_input { width: 100%; } }
-
+@media only screen and (max-width: 835px) { .form__commerce .base_top_input { width: 100%; } }
+@media only screen and (max-width: 550px) { .form__commerce .base_top_input { margin-bottom: 0; } }
+@media only screen and (max-width: 550px) { .form__commerce .base_bottom .base_bottom_submit { width: 100%; }
+  .form__commerce .base_bottom .base_bottom_area, .form__commerce .base_bottom .base_bottom_price { width: 100%; }
+  .form__commerce .base_bottom .base_bottom_area .input_item { width: 19%; } }
 @media only screen and (max-width: 1030px) { .form__commerce .base_bottom_submit { width: 30%; }
   .form__commerce .base_bottom_price { width: 38%; }
   .form__commerce .base_bottom_area { width: 30%; } }

@@ -61,6 +61,12 @@
 .base__form_main
 	margin-top: 39px
 	padding: 0 18px 53px
+	.base_bottom_area, .base_bottom_price, .base_top_area, .base_top_price
+		.input_item
+			text-align: center
+			font-family: 'Open Sans'
+		.input_curr
+			text-align: left
 .input_item
 	border: 0 
 	+box-shadow(0 0 0 1px #cdcdcd)
@@ -214,12 +220,22 @@
 			padding: 1px
 			.v-select
 				width: 30% 
-			+r(835)
-				// width: 392px 
+		+r(835)
+			// width: 392px 
+			width: 100% 
+		+mobile
+			margin-bottom: 0
+	.base_bottom
+		+mobile 
+			.base_bottom_submit
 				width: 100% 
-		+r(640) 
-			// .input_item
-			// 	width: 40%
+			.base_bottom_area, .base_bottom_price
+				width: 100%
+			.base_bottom_area
+				.input_item
+					width: 19% 
+				 
+
 	+r(1030)
 		.base_bottom_submit
 			width: 30%
