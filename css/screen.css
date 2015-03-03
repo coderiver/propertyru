@@ -449,10 +449,13 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 @media only screen and (max-width: 1024px) { .form__newest .base_bottom_price { width: 35%; }
   .form__newest .base_bottom_submit { width: 30%; } }
 @media only screen and (max-width: 550px) { .form__newest .base_bottom_area .input_item { width: 20%; margin-bottom: 20px; }
-  .form__newest .base_bottom_price .input_item { margin-bottom: 20px; } }
+  .form__newest .base_bottom_price { width: 100%; }
+  .form__newest .base_bottom_price .input_item { margin-bottom: 20px; }
+  .form__newest .base_bottom_submit { width: 100%; } }
 
 @media only screen and (max-width: 1024px) { .form__commerce .base_top_input { width: 60%; } }
-@media only screen and (max-width: 550px) { .form__commerce .base_bottom_area .input_item { width: 26.5%; } }
+@media only screen and (max-width: 550px) { .form__commerce .base_top_input { width: 100%; }
+  .form__commerce .base_bottom_area .input_item { width: 26.5%; } }
 
 .container { background-color: #ecf0f1; padding-bottom: 55px; }
 
@@ -931,9 +934,9 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .object__special { padding: 12px 0; width: 47%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 1; color: #333333; background: #ffff66; text-align: center; text-transform: uppercase; }
 @media only screen and (max-width: 550px) { .object__special { width: 100%; } }
 
-.obj-slider__top .obj-slide { text-align: center; font-size: 0; }
+.obj-slider__top .obj-slide { width: 100% !important; text-align: center; font-size: 0; }
 .obj-slider__top .obj-slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.obj-slider__top .obj-slide img { display: inline-block; vertical-align: middle; max-height: 100%; max-width: 100%; }
+.obj-slider__top .obj-slide img { display: inline-block; vertical-align: middle; max-height: 100%; max-width: 100%; width: 100%; }
 .obj-slider__bottom { padding: 20px 17px 25px; position: relative; }
 .obj-slider__bottom .obj-slide { text-align: center; min-width: 156px; }
 .obj-slider__prev, .obj-slider__next { position: absolute; top: 55px; z-index: 200; }
@@ -999,7 +1002,6 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_bottom_item { width: 100%; } }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_bottom_submit { width: 100%; } }
 .content-box-catalog .company__sidebar .company__btn { z-index: 5; }
-.content-box-catalog .company__sidebar.is-fixed .company__btn a { display: none; }
 .content-box-catalog .company__sidebar .company__item { position: relative; margin: 0 0 35px 30px; }
 .content-box-catalog .company__sidebar .company__item span { position: absolute; left: -30px; }
 .content-box-catalog .company__sidebar .company__item .company__content { margin-left: 0; }
