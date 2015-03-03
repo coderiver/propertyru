@@ -182,21 +182,21 @@
 			+placeholder-color(#666)
 			+mobile
 				width: 100%
-	+mobile
-		.base_bottom_submit
-			width: 100% 
-		.base_bottom_area, .base_bottom_price
-			width: 100%
-		.base_bottom_area
-			.input_item
-				width: 19% 
-		.base_bottom_submit
-			.input_item
-				width: 100%
-		.input_item_search 
-			margin-left: 0
-		.form__submit
-			max-width: 100%  
+	// +mobile
+	// 	.base_bottom_submit
+	// 		width: 100% 
+	// 	.base_bottom_area, .base_bottom_price
+	// 		width: 100%
+	// 	.base_bottom_area
+	// 		.input_item
+	// 			width: 19% 
+	// 	.base_bottom_submit
+	// 		.input_item
+	// 			width: 100%
+	// 	.input_item_search 
+	// 		margin-left: 0
+	// 	.form__submit
+	// 		max-width: 100%  
 				 
 	
 	.form__submit
@@ -311,10 +311,10 @@
 	.base_top_area
 		width: 40% 
 		display: inline-block
-		+tablet
-			padding-left: 0
-			margin-top: 20px 
-			width: 100% 
+		// +tablet
+		// 	padding-left: 0
+		// 	margin-top: 20px 
+		// 	width: 100% 
 		p
 			display: inline-block
 			color: #666 
@@ -334,24 +334,24 @@
 	display: none
 	.base_top_text
 		width: 18%
-		+tablet
-			width: 100%  
-			margin-bottom: 20px
+		// +tablet
+		// 	width: 100%  
+		// 	margin-bottom: 20px
 	.base_top_input
 		padding-left: 2%  
 		width: 80% 
 		// +justify
-		+tablet
-			width: 100% 
-			margin-bottom: 0
+		// +tablet
+		// 	width: 100% 
+		// 	margin-bottom: 0
 		.input_item, .v-select
 			margin-right: 5% 
 		
 	.base_bottom
-		+tablet
-			.base_bottom_item
-				width: 100% 
-				margin-bottom: 20px 
+		// +tablet
+		// 	.base_bottom_item
+		// 		width: 100% 
+		// 		margin-bottom: 20px 
 	
 
 
@@ -362,59 +362,35 @@
 	// 			width: 20% 
 	// 			margin-left: 0
 .base_top_input
-	+tablet
-		width: 100% 
-		margin-bottom: 20px
-		.input_item
-			width: 40% 
-			margin-right: 2%
-			margin-bottom: 20px   
-		.base_top_area
-			width: 100%
-	+r(642)
-		.input_item
-			width: 40% 
-			margin-bottom: 20px
-		.base_top_area
-			margin-top: 20px 
-			margin-bottom: 0
-	+mobile
-		.input_item
-			width: 48%
-			&_way
-				margin-right: 0
-.form__garden
 	// +tablet
 	// 	width: 100% 
-	// +mobile
+	// 	margin-bottom: 20px
+	// 	.input_item
+	// 		width: 40% 
+	// 		margin-right: 2%
+	// 		margin-bottom: 20px   
 	// 	.base_top_area
-	// 		.input_item
-	// 			width: 20%
-.form__newest, .form__alive 
-	// +r(640)
-	// 	.base_top_input
-	// 		+justify
-	// 		.input_item
-	// 			font-size: 14px
-	// 			width: 40% 
-	// 			margin-right: 0 
-		// +r(640)
+	// 		width: 100%
+	// +r(642)
+	// 	.input_item
+	// 		width: 40% 
+	// 		margin-bottom: 20px
+	// 	.base_top_area
+	// 		margin-top: 20px 
+	// 		margin-bottom: 0
+	// +mobile
+	// 	.input_item
+	// 		width: 48%
+	// 		&_way
+	// 			margin-right: 0
+
 
 
 .base_top_text
 	width: 18% 
-	+tablet
-		width: 100%
-		margin-bottom: 20px
-
 	p
 		cursor: pointer
 .base_bottom
-	+tablet
-		// margin-top: 20px 
-		.base_bottom_item
-			// width: 49% 
-			// margin-bottom: 20px 
 	+r(642)
 		margin-top: 0 
 .base_bottom_submit
@@ -424,21 +400,38 @@
 			// margin-left: 0
 			// margin-top: 20px 
 .base_top
+	+tablet
+		.base_top_text
+			width: 25% 
+		.base_top_input
+			width: 73% 
+			margin-bottom: 20px
+	+r(768)
+		.base_top_text
+			width: auto
+		.base_top_input
+			width: 65% 
+			margin-bottom: 20px
 	+mobile
 		margin-bottom: 0
+		.base_top_text
+			width: 100%
+			margin-bottom: 20px
 		.base_top_input
 			width: 100% 
 			// padding-left: 0
-			padding: 1px 1px 
+			margin-bottom: 0
+			padding: 1px 
 			
 			.v-select, .input_item, .base_top_area, .base_top_price
 				width: 100%
 				// padding1px  
 			.base_top_area, .base_top_price
-				margin-top: 0
+				margin-bottom: 20px
 				.input_item
 					width: 22.6% 
 .base_bottom
+	// +tablet
 	+mobile 
 		&_in
 			padding-left: 0
@@ -461,14 +454,20 @@
 				max-width: 100%
 				margin-left: 0 !important 
 .form__newest
+	+tablet
+		.base_bottom_price 
+			width: 35%
+		.base_bottom_submit
+			width: 30% 
 	+mobile
 		.base_bottom_area
 			.input_item
 				width: 20%
-				margin-bottom: 0
+				margin-bottom: 20px
 		.base_bottom_price
 			.input_item
-				margin-bottom: 0
+				margin-bottom: 20px
+
 .form__commerce
 	+mobile
 		.base_bottom_area
