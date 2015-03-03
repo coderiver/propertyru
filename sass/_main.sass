@@ -402,13 +402,11 @@
 .base_top
 	+tablet
 		.base_top_text
-			width: 25% 
+			width: auto
 		.base_top_input
 			width: 73% 
 			margin-bottom: 20px
 	+r(768)
-		.base_top_text
-			width: auto
 		.base_top_input
 			width: 65% 
 			margin-bottom: 20px
@@ -419,19 +417,15 @@
 			margin-bottom: 20px
 		.base_top_input
 			width: 100% 
-			// padding-left: 0
 			margin-bottom: 0
 			padding: 1px 
-			
 			.v-select, .input_item, .base_top_area, .base_top_price
 				width: 100%
-				// padding1px  
 			.base_top_area, .base_top_price
 				margin-bottom: 20px
 				.input_item
 					width: 22.6% 
 .base_bottom
-	// +tablet
 	+mobile 
 		&_in
 			padding-left: 0
@@ -469,6 +463,9 @@
 				margin-bottom: 20px
 
 .form__commerce
+	+tablet
+		.base_top_input
+			width: 60% 
 	+mobile
 		.base_bottom_area
 			.input_item

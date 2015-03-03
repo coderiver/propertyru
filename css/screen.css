@@ -427,10 +427,9 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 
 @media only screen and (max-width: 642px) { .base_bottom { margin-top: 0; } }
 
-@media only screen and (max-width: 1024px) { .base_top .base_top_text { width: 25%; }
+@media only screen and (max-width: 1024px) { .base_top .base_top_text { width: auto; }
   .base_top .base_top_input { width: 73%; margin-bottom: 20px; } }
-@media only screen and (max-width: 768px) { .base_top .base_top_text { width: auto; }
-  .base_top .base_top_input { width: 65%; margin-bottom: 20px; } }
+@media only screen and (max-width: 768px) { .base_top .base_top_input { width: 65%; margin-bottom: 20px; } }
 @media only screen and (max-width: 550px) { .base_top { margin-bottom: 0; }
   .base_top .base_top_text { width: 100%; margin-bottom: 20px; }
   .base_top .base_top_input { width: 100%; margin-bottom: 0; padding: 1px; }
@@ -452,6 +451,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 @media only screen and (max-width: 550px) { .form__newest .base_bottom_area .input_item { width: 20%; margin-bottom: 20px; }
   .form__newest .base_bottom_price .input_item { margin-bottom: 20px; } }
 
+@media only screen and (max-width: 1024px) { .form__commerce .base_top_input { width: 60%; } }
 @media only screen and (max-width: 550px) { .form__commerce .base_bottom_area .input_item { width: 26.5%; } }
 
 .container { background-color: #ecf0f1; padding-bottom: 55px; }
