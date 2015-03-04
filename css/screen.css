@@ -1496,12 +1496,12 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .btn-object { float: none; margin-top: 25px; } }
 
 .news { max-width: 930px; }
-.news__item { margin-bottom: 40px; width: 74.19355%; }
-.news__item p { display: block; font-size: 12px; color: black; }
-.news__item h3 { display: block; margin: 10px 0 20px 0; font-size: 18px; font-weight: normal; color: #993399; }
+.news__item { margin-bottom: 40px; }
+.news__date { display: block; font-size: 12px; color: black; }
+.news__title { display: block; margin: 10px 0 20px 0; font-size: 18px; font-weight: normal; color: #993399; }
 .news__post { font-size: 0; }
 .news__post img { display: inline-block; margin-right: 30px; }
-.news__post p { display: inline-block; text-align: justify; padding-top: 10px; font-size: 14px; color: #666666; }
+.news__post p { display: inline-block; width: 74.19355%; text-align: justify; padding-top: 10px; font-size: 14px; color: #666666; }
 .news__post p span { text-decoration: underline; }
 
 .out.team .header__mid { -moz-box-shadow: 0 4px 4px -3px #d0d3d4; -webkit-box-shadow: 0 4px 4px -3px #d0d3d4; box-shadow: 0 4px 4px -3px #d0d3d4; }
