@@ -101,13 +101,6 @@
 			margin: 25px 0
 			font-weight: bold
 			font-size: 24px
-		p
-			margin-bottom: 25px
-			text-align: justify
-			color: #666 
-			font-size: 14px
-		.content_slider_wrapper
-			height: 330px !important
 	&__btn
 		display: none
 		height: 50px
@@ -129,6 +122,15 @@
 			+s(nav_icon)
 		+tablet
 			display: block
+.content_slider_text_block_wrap
+	p
+		display: block
+		margin-top: 20px 
+		margin-bottom: 25px
+		padding-right: 40px
+		text-align: justify
+		color: #666 
+		font-size: 14px
 .breadcrumbs
 	a
 		font-size: 12px
@@ -405,41 +407,74 @@
 		right: 12px
 .obj-map
 	height: 400px
-	
+
 .btn-object
 	float: right
 	+tablet
 		float: none
 		margin-top: 25px
+	
+.popup-wrap
+	+vertical	
+.popup-out
+	position: relative
+	display: inline-block
+	vertical-align: middle
+.popup__prev_btn .slick-prev
+	left: -80px
+.popup__next_btn .slick-next
+	right: -80px
 		
 
 // news.html
 
 .news
 	max-width: 930px
+	h5
+		margin: 25px 0
+		font-size: 24px
+		font-weight: bold
+		color: #333
 	&__item
 		margin-bottom: 40px
-	&__date
-		display: block
-		font-size: 12px
-		color: #000
-	&__title
-		display: block
-		margin: 10px 0 20px 0 
-		font-size: 18px
-		font-weight: normal
-		color: $purple 
-	&__post
-		font-size: 0
-		img
-			display: inline-block
-			margin-right: 30px
 		p
-			display: inline-block
-			width: percentage(690/930) 
+			display: block
+			font-size: 12px
+			color: #000
+		h4
+			display: block
+			margin: 5px 0 20px 0 
+			font-size: 18px
+			font-weight: normal
+			color: $purple 
+	&__post
+		+clr
+		img
+			float: left
+			margin-right: 30px
+			+mobile
+				width: 100% 
+		p
+			float: left
+			width: percentage(670/930) 
 			text-align: justify
 			padding-top: 10px
 			font-size: 14px
 			color: #666
 			span
-				text-decoration: underline			
+				text-decoration: underline	
+			+mobile
+				width: 100% 	
+	&__text
+		p
+			width: 100% 
+			text-align: justify
+			padding-top: 10px
+			font-size: 14px
+			color: #666
+		img
+			float: left
+			margin-right: 30px	
+			+mobile
+				width: 100% 
+				margin-bottom: 20px
