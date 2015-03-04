@@ -463,7 +463,7 @@ $(function(){
 	     };
 	 });
 });
-	$('.js-open-base').click(function) {
+	// $('.js-open-base').click(function) {
 		
-	}
+	// }
 });
