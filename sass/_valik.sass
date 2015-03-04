@@ -279,6 +279,7 @@
 .custom-combobox
 	position: relative
 	display: inline-block
+	+box-shadow(0px 0px 0px 1px #CDCDCD)
 .custom-combobox-toggle
 	position: absolute
 	top: 0
@@ -288,7 +289,8 @@
 .custom-combobox-input
 	margin: 0
 	padding: 5px 10px
-	+placeholder-color(#666)
+	color: #666 
+	+placeholder-color(#999)
 
 .v-select
 	+box-shadow(0 0 0 1px #cdcdcd)
@@ -297,6 +299,8 @@
 	display: inline-block
 	vertical-align: top
 	position: relative
+	font-family: 'Open Sans' 
+	font-size: 14px 
 	+tablet
 		// margin-bottom: 0 !important
 	+mobile
@@ -357,3 +361,6 @@
 		margin: -1px 0 
 		position: relative
 		z-index: 1 
+.custom-combobox input
+	+placeholder-color(#666)
+

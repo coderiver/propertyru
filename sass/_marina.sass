@@ -12,8 +12,6 @@
 		+tablet
 			float: none
 			width: 100%
-		&.is-fixed
-			width: 24% 
 	&__nav
 		+tablet
 			display: none
@@ -147,7 +145,7 @@
 	padding: 25px 0 60px
 	+tablet
 		margin: 0 2% 
-		text-align: center
+		text-align: left
 	&__top
 		position: relative
 		h3
@@ -249,6 +247,8 @@
 			+tablet
 				float: none
 				display: inline-block
+				margin-left: 0
+				width: percentage(260/500)
 			&__icon
 				display: inline-block
 				vertical-align: top
@@ -411,3 +411,35 @@
 	+tablet
 		float: none
 		margin-top: 25px
+		
+
+// news.html
+
+.news
+	max-width: 930px
+	&__item
+		margin-bottom: 40px
+		width: percentage(690/930) 
+		p
+			display: block
+			font-size: 12px
+			color: #000
+		h3
+			display: block
+			margin: 10px 0 20px 0 
+			font-size: 18px
+			font-weight: normal
+			color: $purple 
+	&__post
+		font-size: 0
+		img
+			display: inline-block
+			margin-right: 30px
+		p
+			display: inline-block
+			text-align: justify
+			padding-top: 10px
+			font-size: 14px
+			color: #666
+			span
+				text-decoration: underline			
