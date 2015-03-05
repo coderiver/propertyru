@@ -476,8 +476,22 @@ head.ready(function() {
 						$(".js-fixed").removeClass("is-fixed");
 				};
 			 };
+			  if ($('.js-wrap-form').length>0) {
+			 	if (scroll+40 >= $('.js-wrap-form').offset().top) {
+			 			$(".js-fixed-form").addClass("is-fixed");
+			 			if(scroll>botpos- ww - 43 - 35){
+			 				$(".js-fixed-form").addClass('is-abs');
+			 			}
+			 			else{
+			 				$(".js-fixed-form").removeClass('is-abs').addClass("is-fixed");
+			 			}
+			 	} else {
+			 			$(".js-fixed-form").removeClass("is-fixed");
+			 	};
+			  };
 	 });
 	// $('.js-open-base').click(function) {
 		
 	// }
+	$(".js-sticky").sticky({topSpacing:50});
 });

@@ -1,116 +1,3 @@
-// <<<<<<< HEAD
-.content-box-catalog
-	padding-top: 63px 
-	background-color: #ecf0f1 
-	+box-shadow(0 4px 4px -3px #d0d3d4 inset)
-	.content_box__main
-		+tablet
-			width: 100% 
-		.item
-			width: 33% 
-			+r(1170)
-				width: 33%
-			+r(800)	
-				width: 50% 	
-			+mobile
-				width: 100%
-		.content.list
-			.item
-				width: 100%
-				&__about
-					padding-left: 5%
-		.container__header_item
-			display: inline-block
-			width: 33%
-			font-size: 0
-			+clr
-			margin-top: 10px
-			+tablet
-				width: 49% 
-			+mobile
-				width: 100% 
-			.container__header_entry
-				line-height: 40px
-				select
-					max-width: 150px
-					+tablet
-						display: inline-block
-					+mobile
-						display: block
-				+tablet
-					line-height: 1.4em 
-					
-		.base__form_open
-			width: 100%
-			background-color: #666 
-			+clr
-			.base__open_wrap
-				background-color: #fff
-				padding: 9px 0
-				width: 42px 
-				cursor: pointer
-				float: right
-				div
-					width: 26px 
-					height: 3px 
-					margin: 4px auto
-					background-color: #333
-		.base__form
-			&.is-fixed
-				width: 61.5%
-			&_main
-				margin-top: 20px 
-			.base_top_text
-				width: 100%
-				+tablet
-					width: 100%
-			.base_top_input
-				width: 100%
-				margin-top: 20px
-				+tablet
-					width: 100%
-			.base_bottom
-				margin-top: 20px
-			.base_bottom_item
-				width: 49%
-				margin-bottom: 20px
-				+tablet
-					width: 100%
-			.base_bottom_submit
-				width: 100% 
-				margin-bottom: 0 
-				+tablet
-					width: 100%
-				.input_item_search
-					// width: auto
-					max-width: 150px 
-					margin-left: 0
-	.company__sidebar
-		.company__item
-			position: relative
-			margin: 0 0 35px 30px 
-			span
-				position: absolute
-				left: -30px 
-			.company__content
-				margin-left: 0
-				li.caps
-					padding-top: 20px
-					&:hover
-						background-color: transparent 
-		.company__banner
-			margin-bottom: 20px
-	.content-box-catalog__text
-		padding-top: 50px
-		p
-			color: #333
-			text-align: justify
-			padding-bottom: 20px 
-		p.content-box-catalog__text_heading
-			font-size: 24px
-			font-weight: 700 
-			text-align: left
-// =======
 .content-box-catalog
 	padding-top: 63px 
 	background-color: #ecf0f1 
@@ -119,13 +6,14 @@
 	.content_box__main
 		+tablet
 			width: 100% 
-		.breadcrumbs
-			margin-top: 20px
-			padding: 0 4% 
+			.breadcrumbs
+				margin-top: 20px
+				padding: 0 4% 
 		.content_box__main_header
 			font-size: 24px 
 			margin: 25px 0 
-			padding: 0 4% 
+			+tablet
+				padding: 0 4% 
 		.item
 			width: 33% 
 			+r(1170)
@@ -138,7 +26,7 @@
 			.item
 				width: 100%
 				&__about
-					padding-left: 5%
+					// padding-left: 5%
 		.container__header_item
 			display: inline-block
 			width: 33%
@@ -163,9 +51,15 @@
 		.base__form
 			&.is-fixed
 				width: 61.5%
+				z-index: 3
+				.base__form_main
+					padding: 20px 20px 
+					margin-top: 0 
 			&_main
 				margin-top: 20px 
 				padding: 35px 20px
+			.base_top_text
+				width: 35%
 			.input_item
 				font-family: 'Open Sans'
 				font-size: 14px 
@@ -174,12 +68,21 @@
 			.select__text
 				color: #999 
 			.base_top_input
-				width: 100%
+				// width: 65% 
+				width: 100% 
 				+justify
 				+tablet
 					width: 100%
 			.base_bottom
 				margin-top: 35px
+				&_item
+					font-size: 14px
+				&_price
+					width: 47% 
+					.input_item
+						// width: 16%
+				&_submit
+					// width: 20% 
 				&_in
 					+justify
 					// width: 100%
@@ -213,9 +116,10 @@
 			z-index: 5 
 			+mobile
 		&.is-fixed
+			width: 21% 
 			.company__btn
 				a
-					// display: none 
+					display: none 
 		.company__item
 			position: relative
 			margin: 0 0 35px 30px 
@@ -240,5 +144,5 @@
 			font-size: 24px
 			font-weight: 700 
 			text-align: left
->>>>>>> 7ee96cbe810ac7b364a215de4d384910ae433f0e
-			
+.js-wrap-form
+	position: relative

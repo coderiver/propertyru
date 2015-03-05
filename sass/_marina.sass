@@ -12,6 +12,8 @@
 		+tablet
 			float: none
 			width: 100%
+		&.is-fixed
+			width: 24% 
 	&__nav
 		+tablet
 			display: none
@@ -101,12 +103,22 @@
 			margin: 25px 0
 			font-weight: bold
 			font-size: 24px
+		p
+			margin-bottom: 25px
+			text-align: justify
+			color: #666 
+			font-size: 14px
+		.content_slider_wrapper
+			// height: 330px 
+			// +mobile
+				// height: auto
 	&__btn
 		display: none
 		height: 50px
 		position: relative
 		background: #FFF
-		border: 1px solid #333
+		// border: 1px solid #333
+		+box-shadow(0 0 0 1px #333)
 		cursor: pointer
 		a
 			font-weight: bold
@@ -383,12 +395,14 @@
 .obj-slider
 	&__top
 		.obj-slide
+			width: 100% !important  
 			+vertical
 			img
 				display: inline-block
 				vertical-align: middle
 				max-height: 100%
 				max-width: 100%  
+				width: 100%  
 	&__bottom
 		padding: 20px 17px 25px
 		position: relative
