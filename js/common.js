@@ -44,6 +44,10 @@ head.ready(function() {
 			}
 			else	$(this).find('i').removeClass('heart_b').addClass('heart_pr');
 		})
+		$('.popup__like').click(function(event) {
+			$(this).toggleClass('is-active');
+			return false;
+		});
 	// });
 	//popUpMenu
 	var $popUpMenu = $(".pop-up-menu");

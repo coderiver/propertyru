@@ -385,6 +385,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 @media only screen and (max-width: 550px) { .base_bottom .form__submit { width: 100%; } }
 
 .form__commerce { display: none; }
+@media only screen and (max-width: 550px) { .form__commerce { width: 90%; } }
 .form__commerce .base_top_text { width: 37%; }
 @media only screen and (max-width: 1290px) { .form__commerce .base_top_text { min-width: 205px; width: 20%; float: left; } }
 @media only screen and (max-width: 1030px) { .form__commerce .base_top_text { width: 100%; margin-bottom: 20px; } }
@@ -618,6 +619,32 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .team__slider { max-height: 330px; }
 @media only screen and (max-width: 550px) { .team__slider { max-height: none; } }
 
+.form_catalog .base_top { *zoom: 1; }
+.form_catalog .base_top:after { content: " "; display: table; clear: both; }
+.form_catalog .base_top_text { vertical-align: middle; width: 35%; }
+@media only screen and (max-width: 650px) { .form_catalog .base_top_text { width: auto !important; display: block !important; text-align: left; margin-bottom: 15px; } }
+.form_catalog .base_top_input { vertical-align: middle; width: 60% !important; }
+@media only screen and (max-width: 650px) { .form_catalog .base_top_input { width: auto !important; display: block !important; } }
+.form_catalog .base_bottom_in { *zoom: 1; }
+.form_catalog .base_bottom_in:after { content: " "; display: table; clear: both; }
+.form_catalog .base_bottom_area { float: left; }
+@media only screen and (max-width: 650px) { .form_catalog .base_bottom_area { float: none; width: auto !important; display: block; } }
+.form_catalog .base_bottom_area input { width: 15% !important; }
+.form_catalog .base_bottom_price { float: left; }
+@media only screen and (max-width: 650px) { .form_catalog .base_bottom_price { float: none; margin-top: 15px; width: auto !important; } }
+.form_catalog .base_bottom_price input { width: 12% !important; }
+@media only screen and (max-width: 650px) { .form_catalog .base_bottom { margin-top: 0 !important; } }
+.form_catalog .base_bottom_submit { width: 20% !important; }
+@media only screen and (max-width: 650px) { .form_catalog .base_bottom_submit { float: none; display: block !important; text-align: left; width: auto !important; margin-top: 15px; } }
+.form_catalog .base_bottom_submit .input_item_search { width: 100px !important; display: none; }
+@media only screen and (max-width: 650px) { .form_catalog .base_bottom_submit .input_item_search { display: block; } }
+.form_catalog .base_bottom_submit .form__submit { width: 100px !important; }
+@media only screen and (max-width: 650px) { .form_catalog .base_bottom_submit .form__submit { float: none; margin-left: 20px !important; } }
+
+@media only screen and (max-width: 650px) { .base__form.is-fixed { position: static; width: auto !important; } }
+
+@media only screen and (max-width: 650px) { .company__sidebar.js-fixed.is-fixed { position: static; width: auto !important; } }
+
 .call { background-image: url("../img/dot_bg.png"); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding: 50px 0; text-align: center; }
 .call__heading { color: white; font-weight: 300; font-size: 46px; padding-bottom: 30px; }
 .call__heading b { font-weight: 700; }
@@ -767,6 +794,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .popup__like { float: right; padding-right: 26px; font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px; color: #993399; position: relative; text-decoration: none; margin: 11px 0; }
 @media only screen and (max-width: 550px) { .popup__like { float: none; display: inline-block; } }
 .popup__like:before { content: ""; position: absolute; top: 50%; right: 0; margin-top: -7px; background: url('../img/icons-s7d34548c3b.png') 0 -444px no-repeat; width: 16px; height: 14px; }
+.popup__like.is-active:before { background: url('../img/icons-s7d34548c3b.png') 0 -468px no-repeat; width: 16px; height: 14px; }
 .popup__price { font-family: "Open Sans", Arial, sans-serif; font-weight: bold; font-size: 30px; color: #993399; overflow: hidden; display: block; }
 .popup__tags { padding-bottom: 18px; }
 .popup__btns { *zoom: 1; }
@@ -1039,7 +1067,6 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content-box-catalog .content_box__main .base__form .select__text { color: #999999; }
 .content-box-catalog .content_box__main .base__form .base_top_input { width: 100%; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
 .content-box-catalog .content_box__main .base__form .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
-@media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_top_input { width: 100%; } }
 .content-box-catalog .content_box__main .base__form .base_bottom { margin-top: 35px; }
 .content-box-catalog .content_box__main .base__form .base_bottom_item { font-size: 14px; }
 .content-box-catalog .content_box__main .base__form .base_bottom_price { width: 47%; }
@@ -1047,10 +1074,6 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .content-box-catalog .content_box__main .base__form .base_bottom_in:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 .content-box-catalog .content_box__main .base__form .base_bottom_in .input_item { width: 20%; }
 .content-box-catalog .content_box__main .base__form .base_bottom_in .form__submit { width: 10%; -moz-box-shadow: 0 0 0 1px #333333; -webkit-box-shadow: 0 0 0 1px #333333; box-shadow: 0 0 0 1px #333333; }
-@media only screen and (max-width: 550px) { .content-box-catalog .content_box__main .base__form .base_bottom { margin-top: 0px; }
-  .content-box-catalog .content_box__main .base__form .base_bottom .input_item { width: 100%; } }
-@media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_bottom_item { width: 100%; } }
-@media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form .base_bottom_submit { width: 100%; } }
 .content-box-catalog .company__sidebar .company__btn { z-index: 5; }
 .content-box-catalog .company__sidebar.is-fixed { width: 21%; }
 .content-box-catalog .company__sidebar.is-fixed .company__btn a { display: none; }
