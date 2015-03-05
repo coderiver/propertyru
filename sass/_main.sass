@@ -3,6 +3,7 @@
 	background-image: url('../img/dot_bg.png') 
 	+background-size(cover)
 	padding-bottom: 30px 
+
 .base_h
 	font-size: 27px 
 	text-align: center
@@ -11,7 +12,7 @@
 	padding: 50px 0
 	b
 		font-weight: 700 
-
+		
 .base__form
 	background-color: #FFF
 	+box-shadow(0px 0px 0 1px #cccccc inset)
@@ -58,17 +59,26 @@
 							+mobile
 								display: none
 .base__form_main
-	margin-top: 55px
-	padding: 0 30px 33px
+	margin-top: 39px
+	padding: 0 18px 53px
+	///////////////////
+	+mobile
+		padding: 0 0 53px 
+	.base_bottom_area, .base_bottom_price, .base_top_area, .base_top_price
+		.input_item
+			text-align: center
+			font-family: 'Open Sans'
+		.input_curr
+			text-align: left
 .input_item
 	border: 0 
 	+box-shadow(0 0 0 1px #cdcdcd)
 	height: 32px 
-	text-indent: 2px 
+	// text-indent: 2px 
 .base_top
 	width: 100%
+	font-size: 0
 	+clr
-
 	.input_item
 		width: 22%
 		+tablet
@@ -86,7 +96,7 @@
 		p
 			display: inline-block
 			font-size: 18px
-			padding: 3px 7px
+			padding: 3px 13px
 			margin-right: 5px
 			cursor: pointer
 			&:last-child
@@ -95,15 +105,18 @@
 				color: #FFF !important
 				background-color: $purple
 	&_input
-		width: 64% 
+		
 		display: inline-block
-		float: right
 		margin-bottom: 0
+		font-size: 0
+		
 		// +justify
 
 .base_bottom
 	.input_item_search
-		min-width: 153px 
+		// min-width: 153px 
+		text-indent: 14px 
+		font-family: 'Open Sans'
 	margin-top: 40px 
 	// +justify
 	width: 100%
@@ -116,9 +129,9 @@
 			margin-bottom: 20px 
 	&_in
 		// +justify
-		width: 100% 
 		font-size: 14px 
 		color: #666 
+		padding-left: 0.8% 
 		+clr
 		position: relative
 		*
@@ -126,27 +139,32 @@
 	&_item
 		width: 33% 
 		.input_item
-			width: 16%
+			width: 14%
 	&_area
 		p
 			margin-right: 4%
 			&:last-child
 				margin-right: 0
 		.input_item
-			margin-right: 4%
+			margin-right: 2%
 
 	&_price
 		// text-align: justify
 		// +justify
+		font-size: 0
 		p
 			margin-right: 2%
+			font-size: 14px
 		.input_item
-			margin-right: 2% 
+			margin-right: 3% 
+			font-size: 14px
 		.input_curr
 			width: 20% 
 			margin-left: 1%
+			margin-right: 0
 			color: #666 
-			text-indent: 2px 
+			font-size: 14px
+			// text-indent: 2px 
 		
 	&_search
 		.input_item
@@ -156,14 +174,33 @@
 		float: right
 		.form__submit
 			float: right
-			+box-shadow(none)
+			+box-shadow(0 0 0 1px #333)
 			width: 25%
-			max-width: 100px  
+			max-width: 100px
 		.input_item_search 
 			float: left
 			width: 40% 
+			font-size: 14px
 			// margin-left: 10%
 			+placeholder-color(#666)
+			+mobile
+				width: 100%
+	// +mobile
+	// 	.base_bottom_submit
+	// 		width: 100% 
+	// 	.base_bottom_area, .base_bottom_price
+	// 		width: 100%
+	// 	.base_bottom_area
+	// 		.input_item
+	// 			width: 19% 
+	// 	.base_bottom_submit
+	// 		.input_item
+	// 			width: 100%
+	// 	.input_item_search 
+	// 		margin-left: 0
+	// 	.form__submit
+	// 		max-width: 100%  
+				 
 	
 	.form__submit
 		color: #FFF
@@ -173,26 +210,64 @@
 		text-indent: 0
 		+mobile
 			width: 100%
-.form__commerce, .form__newest
-	.base_top_input
-		// text-align: justify
-		+justify
-		font-size: 14px
-		+tablet
-			.input_item
-				width: 20% 
-				margin-bottom: 20px
-		+r(640) 
-			.input_item
-				width: 40%
-				
-
 .form__commerce
 	display: none
 	.base_top_text
-		width: 35%
-		+tablet
+		width: 37%
+		+r(1290)
+			min-width: 205px 
+			width: 20% 
+			float: left
+		+r(1030)
 			width: 100% 
+			margin-bottom: 20px
+		+tablet
+			width: auto
+			float: left
+	.base_top_input
+		float: right
+		width: 63%
+		+justify
+		+r(1290)
+			width: 75% 
+		+r(1030)
+			width: 100% 
+		.input_item
+			font-size: 14px
+		+tablet
+			width: 50% 
+			// width: auto 
+			overflow: hidden
+			padding: 1px
+			.v-select
+				width: 30% 
+		+r(835)
+			// width: 392px 
+			width: 100% 
+		+mobile
+			margin-bottom: 0
+
+	// .base_bottom
+	// 	+mobile 
+	// 		.base_bottom_submit
+	// 			width: 100% 
+	// 		.base_bottom_area, .base_bottom_price
+	// 			width: 100%
+	// 		.base_bottom_area
+	// 			.input_item
+	// 				width: 19% 
+	// 		.base_bottom_submit
+	// 			.input_item
+	// 				width: 100% 
+				 
+
+	+r(1030)
+		.base_bottom_submit
+			width: 30%
+		.base_bottom_price
+			width: 38% 
+		.base_bottom_area
+			width: 30% 
 .form__alive
 	display: none
 	.base_top_text
@@ -200,9 +275,11 @@
 		+tablet
 			width: 100% 
 	.base_top_input
-		width: 81% 
+		width: 80% 
+		float: right
 		+justify
-		font-size: 14px
+		// .input_item
+			// font-size: 14px
 	+tablet
 		.base_top_input
 			// float: none
@@ -219,26 +296,28 @@
 		&_submit
 			width: 64%
 			.input_item_search
-				width: 153px 
+				// width: 153px 
+				max-width: 140px 
 				margin-left: 0 
+
 .form__garden
 	display: none
 	.base_top_text
 		// width: 18%
 	.base_top_input
-		width: 81%
+		padding-left: 2% 
+		width: 80%
 		float: none
-		.input_item_type
-			margin-right: 2%  
+		.input_item_type, .input_item
+			margin-right: 5%  
 
 	.base_top_area
-		width: 48% 
+		width: 40% 
 		display: inline-block
-		padding-left: 5%
-		+tablet
-			padding-left: 0
-			margin-top: 20px 
-			width: 100% 
+		// +tablet
+		// 	padding-left: 0
+		// 	margin-top: 20px 
+		// 	width: 100% 
 		p
 			display: inline-block
 			color: #666 
@@ -253,100 +332,163 @@
 				margin-right: 0 
 	.base_bottom_submit
 		.input_item_search
-			margin-left: 21%
+			margin-left: 4%
 .form__newest
 	display: none
 	.base_top_text
 		width: 18%
-		+tablet
-			width: 100%  
-			margin-bottom: 20px
+		// +tablet
+		// 	width: 100%  
+		// 	margin-bottom: 20px
 	.base_top_input
-		width: 81% 
+		padding-left: 2%  
+		width: 80% 
 		// +justify
-		+tablet
-			width: 100% 
-			margin-bottom: 0
-		.input_item
+		// +tablet
+		// 	width: 100% 
+		// 	margin-bottom: 0
+		.input_item, .v-select
 			margin-right: 5% 
-	// .base_bottom
-	// 	+tablet
-	// 		.base_bottom_item
-	// 			width: 100% 
-	// 			margin-bottom: 20px 
+		
+	.base_bottom
+		// +tablet
+		// 	.base_bottom_item
+		// 		width: 100% 
+		// 		margin-bottom: 20px 
+	
+
 
 	.base_bottom_submit
 		.input_item_search
-			margin-left: 20%
+			margin-left: 4%
 	// 		+tablet
 	// 			width: 20% 
 	// 			margin-left: 0
 .base_top_input
-	+tablet
-		width: 100% 
-		margin-bottom: 20px
-		.input_item
-			width: 40% 
-			margin-right: 2%
-			margin-bottom: 20px   
-		.base_top_area
-			width: 100%
-	+r(642)
-		.input_item
-			width: 40% 
-			margin-bottom: 20px
-		.base_top_area
-			margin-top: 20px 
-			margin-bottom: 0
-	+mobile
-		.input_item
-			width: 48%
-			&_way
-				margin-right: 0
-.form__garden
 	// +tablet
 	// 	width: 100% 
-	+mobile
-		.base_top_area
-			.input_item
-				width: 20%
-.form__newest, .form__alive 
-	+r(640)
-		.base_top_input
-			+justify
-			font-size: 14px
-			.input_item
-				width: 40% 
-				margin-right: 0 
-		// +r(640)
+	// 	margin-bottom: 20px
+	// 	.input_item
+	// 		width: 40% 
+	// 		margin-right: 2%
+	// 		margin-bottom: 20px   
+	// 	.base_top_area
+	// 		width: 100%
+	// +r(642)
+	// 	.input_item
+	// 		width: 40% 
+	// 		margin-bottom: 20px
+	// 	.base_top_area
+	// 		margin-top: 20px 
+	// 		margin-bottom: 0
+	// +mobile
+	// 	.input_item
+	// 		width: 48%
+	// 		&_way
+	// 			margin-right: 0
+
 
 
 .base_top_text
 	width: 18% 
-	+tablet
-		width: 100%
-		margin-bottom: 20px
-
 	p
 		cursor: pointer
 .base_bottom
-	+tablet
-		margin-top: 20px 
-		.base_bottom_item
-			width: 100% 
-			margin-bottom: 20px 
 	+r(642)
 		margin-top: 0 
 .base_bottom_submit
 	.input_item_search
 		+tablet
-			width: 20% 
-			margin-left: 0
-			// margin-top: 20px  
-.input_curr
-	min-width: 70px
+			// width: 20% 
+			// margin-left: 0
+			// margin-top: 20px 
+.base_top
+	+tablet
+		.base_top_text
+			width: auto
+		.base_top_input
+			width: 73% 
+			margin-bottom: 20px
+	+r(768)
+		.base_top_input
+			width: 65% 
+			margin-bottom: 20px
+	+mobile
+		margin-bottom: 0
+		.base_top_text
+			width: 100%
+			margin-bottom: 20px
+			padding-left: 4%
+		.base_top_input
+			width: 100% 
+			margin-bottom: 0
+			padding: 1px 
+			.v-select, .input_item, .base_top_area, .base_top_price
+				width: 100%
+			.base_top_area, .base_top_price
+				margin-bottom: 20px
+				.input_item
+					// width: 22.6%
+					width: 24.8%  
+.base_bottom
+	+mobile 
+		&_in
+			padding-left: 0
+		.base_bottom_submit
+			width: 100% 
+		.base_bottom_area, .base_bottom_price
+			width: 100%
+		.base_bottom_area
+			p
+				margin-right: 2% 
+			.input_item
+				// width: 17% 
+				width: 20% 
+				&:last-child
+					margin-right: 0
+		.base_bottom_price
+			.input_from
+				width: 16% 
+		.input_curr
+			width: 22% 
+		.base_bottom_submit
+			.input_item
+				width: 100%
+				max-width: 100%
+				margin-left: 0 !important 
+.form__newest
+	+tablet
+		.base_bottom_price 
+			width: 35%
+		.base_bottom_submit
+			width: 30% 
+	+mobile
+		.base_bottom_area
+			.input_item
+				// width: 20%
+				width: 22.7% 
+				margin-bottom: 20px
+		.base_bottom_price
+			width: 100%
+			.input_item
+				margin-bottom: 20px
+		.base_bottom_submit
+			width: 100% 
 
-			
+.form__commerce
+	+tablet
+		.base_top_input
+			width: 60% 
+	+mobile
+		width: 90%
+		margin: 0 auto  
+		.base_top_input
+			width: 100% 
+		.base_bottom_area
+			.input_item
+				width: 28.6%
+
+
 .container
 	background-color: #ECF0F1
 	padding-bottom: 55px 
@@ -368,16 +510,21 @@
 		color: #333
 		+tablet
 			padding-left: 4% 
+		
 			
 		&_nav
 			float: right
 			+tablet
 				padding-left: 4% 
 		.input_item
-			width: 50%
+			+tablet
+				
+		.input_item
+			width: 55%
 			float: right
 			+tablet
 				margin-right: 4% 
+				
 			+r(1032)
 				width: 50%
 				display: block
@@ -385,6 +532,8 @@
 				// margin-left: 10px
 				position: relative
 				bottom: 5px 
+				bottom: 0 !important
+				margin-top: 4px  
 
 			+mobile
 				width: 50%
@@ -423,12 +572,9 @@
 					+translate(-50%, -50%)
 .content__map
 	display: none
-.content.map
-	.content__map
-		display: block
-		margin-bottom: 20px
-		>div
-			height: 400px
+	margin-bottom: 20px
+	>div
+		height: 400px
 .content
 	width: 100%
 	&_in
@@ -468,15 +614,14 @@
 		background-color: rgba($purple, .8) 
 		z-index: 2
 		text-align: center
+		text-align: left
 		a, p
-			margin-left: 50px
+			margin-left: 24%
 			text-align: left
 			color: #FFF
-			+tablet
-				margin-left: 65px
-			+mobile
-				margin-left: 175px
-			
+		.btn_bd
+			margin-left: 24%
+			+transform(translate(-20px,0))
 		input
 			color: #FFF
 			width: auto
@@ -499,13 +644,9 @@
 			cursor: pointer
 			display: block
 			text-align: left
-			margin-left: 50px
+			margin-left: 24%
 			margin-top: 25px			 
-			color: #FFF 
-			+tablet
-				margin-left: 65px
-			+mobile
-				margin-left: 175px
+			color: #FFF  
 			i
 				display: inline-block
 				position: relative
@@ -549,6 +690,9 @@
 				right: 0
 				background-color: #FF6
 				color: #333
+				overflow: hidden
+				-ms-text-overflow: ellipsis
+				text-overflow: ellipsis
 			&_descr
 				width: 100%
 				height: 30px
@@ -562,7 +706,8 @@
 				p.staff
 					float: left
 					padding-left: 5% 
-					
+					+r(500)
+						font-size: 11px 
 				p.square
 					float: right
 					padding-right: 5% 
@@ -607,8 +752,11 @@
 			float: left 
 			+mobile
 				float: none
+			+r(550)
+				max-width: 1000px 
 		&__about
 			padding-left: 25%
+			padding-left: 280px 
 			padding-bottom: 14px
 			// display: inline-block
 			+mobile
@@ -641,9 +789,21 @@
 						top: 0
 			&_length, &_area
 				display: inline-block  
-		// &_cover
-		// 	+r_min(1000)
-		// 		display: none
+		&_cover
+			text-align: left
+			input
+				+r_min(550)
+					margin-top: 20px 
+			.btn_bd
+				margin-left: 24%
+				+transform(translate(-20px,0)) 
+			.item_about_add
+				+r_min(550)
+					position: absolute
+					top: 6px 
+					right: 20px 
+			// +r_min(1000)
+			// 	display: none
 .container__foo
 	text-align: center
 	margin-top: 30px 
@@ -674,20 +834,11 @@
 	padding-bottom: 40px 
 	.heading_top
 		color: #fff 
-		+tablet
-			text-align: left
-			margin-left: 10px
-	.heading_bottom
-		+tablet
-			text-align: left
-			margin-left: 10px
 .slider__content
 	position: relative
 	width: 100% 
 	padding: 0 50px
 	+box 
-	+tablet
-		padding: 0 25px 
 	.slider__main
 		overflow: hidden
 		&_in
@@ -852,3 +1003,16 @@
 	img
 		width: 100%
 		height: 100%  
+.breadcrumbs__mod
+	a
+		&:after
+			content: ' >'
+			display: inline-block
+			padding-left: 5px
+		&:last-child:after
+			display: none
+
+.js-sticky,.is-sticky
+	z-index: 1000 
+	.base__form_main
+		margin-top: 0 !important 

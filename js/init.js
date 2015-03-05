@@ -10,4 +10,5 @@ head.load("js/lib/jquery.js",
 					"js/additional_content.js",
 					"js/jquery-ui.min.js",
 					"js/marina.js",
+					"js/lib/sticky.js",
 					"js/common.js");
