@@ -48,6 +48,17 @@ head.ready(function() {
 			$(this).toggleClass('is-active');
 			return false;
 		});
+
+		function isTouchDevice() {
+		   var el = document.createElement('div');
+		   el.setAttribute('ongesturestart', 'return;'); // or try "ontouchstart"
+		   return typeof el.ongesturestart === "function";
+		}
+		if(isTouchDevice()){
+			$('.item').click(function(event) {
+				$(this).addClass("is-touched");
+			});
+		}
 	// });
 	//popUpMenu
 	var $popUpMenu = $(".pop-up-menu");

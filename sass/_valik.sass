@@ -25,7 +25,8 @@
 		display: block
 	&:before
 		+r(1100)
-			display: none
+			display: none !important
+	
 
 .popup
 	margin: 0 auto
@@ -103,6 +104,11 @@
 			line-height: 18px
 			color: #993399
 			margin-right: 18px 
+		+r(600)
+			right: 10px 
+			top: 20px 
+			span
+				display: none
 	&__list
 		margin-bottom: 35px
 		li
