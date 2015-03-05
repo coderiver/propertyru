@@ -480,5 +480,4 @@ head.ready(function() {
 	// $('.js-open-base').click(function) {
 		
 	// }
-	$(".js-sticky").sticky({topSpacing:50});
 });

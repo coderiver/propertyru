@@ -3,6 +3,7 @@
 .company
 	padding: 35px 0
 	color: #333
+	background: #ECF0F1 
 	+clr
 	+tablet
 		margin: 0 5% 
@@ -12,8 +13,6 @@
 		+tablet
 			float: none
 			width: 100%
-		&.is-fixed
-			width: 24% 
 	&__nav
 		+tablet
 			display: none
@@ -103,20 +102,12 @@
 			margin: 25px 0
 			font-weight: bold
 			font-size: 24px
-		p
-			margin-bottom: 25px
-			text-align: justify
-			color: #666 
-			font-size: 14px
-		.content_slider_wrapper
-			height: 330px !important
 	&__btn
 		display: none
 		height: 50px
 		position: relative
 		background: #FFF
-		// border: 1px solid #333
-		+box-shadow(0 0 0 1px #333)
+		border: 1px solid #333
 		cursor: pointer
 		a
 			font-weight: bold
@@ -393,14 +384,12 @@
 .obj-slider
 	&__top
 		.obj-slide
-			width: 100% !important  
 			+vertical
 			img
 				display: inline-block
 				vertical-align: middle
 				max-height: 100%
 				max-width: 100%  
-				width: 100%  
 	&__bottom
 		padding: 20px 17px 25px
 		position: relative
@@ -465,15 +454,13 @@
 			margin-right: 30px
 			+mobile
 				width: 100% 
-		p
+		p 
 			text-align: justify
 			padding-top: 10px
 			font-size: 14px
 			color: #666
-			span
-				text-decoration: underline	
-			+mobile
-				width: 100% 	
+			a
+				color: #666	
 	&__text
 		p
 			width: 100% 
@@ -487,3 +474,189 @@
 			+mobile
 				width: 100% 
 				margin-bottom: 20px
+.btn_news
+	text-align: center
+	
+
+// faq.html
+
+.faq
+	h5
+		font-size: 24px
+		font-weight: bold
+		color: #333
+		margin: 25px 0
+	&__item
+		p
+			display: block
+			font-size: 14px
+			color: #000 
+		h4
+			display: block
+			font-size: 18px
+			color: $purple
+			font-weight: normal
+			margin-bottom: 30px
+		span
+			display: block
+			text-align: justify
+			font-size: 14px
+			color: #666
+			margin-bottom: 30px
+	&__question
+		width: 475px
+		margin-bottom: 40px
+		h4
+			font-size: 24px
+			color: $purple
+			font-weight: normal
+			margin-bottom: 20px
+		.question
+			line-height: 45px
+			p
+				display: inline-block
+				height: 45px
+			&__input
+				input
+					width: 100% 
+					height: 45px 
+					background-color: #E5E5E5
+					margin-bottom: 20px 
+					padding-left: 15px 
+					+box-shadow(inset 0 0 5px #bcbcbc) 
+					+placeholder-color(#666)
+					+box
+					+r(400)
+						margin-bottom: 10px
+				textarea
+					width: 100%  
+					height: 160px
+					resize: none
+					padding: 10px 0 0 15px
+					border: none 
+					background-color: #E5E5E5
+					+box-shadow(inset 0 0 5px #bcbcbc) 
+					+placeholder-color(#666)
+					+box
+					+placeholder
+						font-family: 'Open Sans'
+					+r(400)
+						height: 70px 
+						margin-bottom: 5px 
+			&__captcha
+				input
+					width: 40% 
+					display: inline-block
+					height: 45px
+					background-color: #E5E5E5
+					margin-bottom: 20px 
+					padding-left: 15px 
+					+box-shadow(inset 0 0 5px #bcbcbc) 
+					+placeholder-color(#666)
+					+box
+				p
+					font-size: 30px
+					vertical-align: top
+					margin: 0 50px
+				button
+					display: inline-block
+					height: 45px
+					background-color: transparent
+					height: 100%
+					span
+						font-size: 14px
+						text-decoration: underline
+					i
+						display: none
+					+r(400)
+						span
+							display: none
+						i
+							display: inline-block
+							position: relative
+							top: 2px 
+			&__submit
+				+clr
+				input
+					width: 40%
+					display: inline-block
+					height: 45px
+					background-color: $purple 
+					color: #FFF
+				p
+					float: right
+					
+
+// newbuilding.html
+
+.newbuilding
+	section
+		h5
+			margin: 25px 0
+			font-size: 24px
+			font-weight: bold
+			color: $purple 
+	&__slider
+		.newbuilding-slider
+			position: relative
+			.slick-prev, .slick-next
+				font-size: 0
+				position: absolute
+				top: 50%
+				cursor: pointer
+			.slick-prev
+				+s(l_arr)
+				left: 50px
+				+r(550)
+					left: -20px 
+					+arr(10, 20, #fff, l)
+			.slick-next
+				+s(r_arr)
+				right: 50px
+				+r(550)
+					right: -20px 
+					+arr(10, 20, #fff, r)
+			&__inn
+				overflow: hidden
+				+clr
+				.slide
+					position: relative
+					float: left
+					width: inherit
+					font-size: 0
+					img
+						width: 100% 
+					&__text
+						position: absolute
+						right: 0
+						bottom: 0
+						left: 0
+						height: 50px
+						line-height: 45px
+						background: #000
+						opacity: 0.7
+						p
+							vertical-align: middle
+							text-align: left
+							font-size: 14px
+							color: #FFF
+							padding-left: 15px
+	&__property
+		p
+			margin-bottom: 25px
+			text-align: justify
+			font-size: 14px
+			color: #666
+	&__objects
+		.objects-wrap
+			margin: 0 -15px
+			.item
+				padding: 0 15px
+				width: 33%
+				+box
+				+tablet
+					width: 50%
+				+mobile
+					width: 100% 					
+.item__favourite
+	float: right

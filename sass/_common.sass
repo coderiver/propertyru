@@ -1,3 +1,51 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 24px * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
 
 //color
 $purple: #993399
@@ -21,6 +69,14 @@ $skype: #3e9dd7
 .btn_skype
 	background-color: $skype 
 	color: #fff
+// .btn_w_145
+// 	width: 145px
+// .btn_w_170
+// 	width: 170px  
+// .btn_w_250
+// 	width: 250px 
+// .btn_w_300
+// 	width: 300px
 .btn_bd
 	background-color: transparent
 	border: 1px solid 
@@ -89,8 +145,6 @@ select
 	+png(select)
 	background-position: right
 	background-color: #FFF
-	+placeholder-color(#666)
-	color: #666 
 	
 //conditions
 .is-visible
@@ -101,14 +155,7 @@ select
 	position: fixed
 	top: 45px 
 	z-index: 1 
-	&.is-abs
-		position: absolute
-		bottom: 0
-		left: 0
-		top: auto  
 //
-.inn
-	position: relative
 .close
 	float: right
 	cursor: pointer
@@ -195,23 +242,12 @@ body
 			width: 48%
 			padding: 10px 0
 			float: left
-		.t-right
-			text-align: right
-			margin-left: 0
-			+r(500)
-				text-align: left
 	+r(500)
 		margin-top: 105px 
 		li
 			width: 100%
-			text-align: center
 			text-align: left
 			margin: 0
-		.t-right
-			text-align: center
-			+r(500)
-				text-align: left
-				margin-left: 20px 
 	li
 		display: inline-block
 		margin-left: 20px
@@ -228,17 +264,15 @@ body
 		a
 			color: #fff
 			font-size: 14px 
-			position: relative
-			padding-left: 26px 
-			i
-				position: absolute
-				left: 0 
-				&.loc
-					left: 3px 
 			&:hover
 				color: $green
 		input[type="text"]
 			cursor: text
+		+tablet
+			margin-left: 60px
+		&.nav__search
+			text-align: center
+			margin: 0
 .menu_txt
 	color: #666 
 	font-size: 14px 
@@ -321,32 +355,32 @@ body
 		margin-top: 36px
 .btn_call
 	position: relative
-	width: 160px 
-	// width: 60% 
+	// width: 62% 
+	// maxw
+	min-width: 160px 
 	padding-left: 25px 
-	padding-right: 6px 	
+	// max-width: 100% 
+	// width: auto
+	
 	margin-bottom: 10px
 	i
 		display: inline-block
 		position: absolute
-		left: 11px
-		top: 6px 
+		left: 15px
 		+s(user)
 
 	
 
 .btn_skype
 	position: relative
-	width: 80px 
-	// width: 30%
-	// max-width: 80px 
+	width: 75px
+	// width: 30% 
 	text-align: left
-	padding: 0 12px 
+	padding-left: 5px 
 	i
 		display: inline-block
 		position: absolute
 		top: 0
-		right: 0
 	+tablet
 		margin-left: 10px 
 
@@ -391,14 +425,13 @@ body
 			text-align: center
 			&.banner
 				width: 100%
-				margin-top: 10px 
+				margin-top: 40px 
 
 		.header__foo_drop
+			text-align: left
+			margin-left: 20px
 			+tablet
 				display: none
-				padding-bottom: 20px 
-				text-align: left
-				padding-left: 20px 
 		h2
 			font-size: 24px
 			font-weight: 700
@@ -484,7 +517,7 @@ body
 	padding-bottom: 70px  
 	+box-shadow(0 7px 10px 0px  rgba(#555, .8)) 
 	+mobile
-		text-align: center
+		text-align: left
 	+tablet
 		padding-bottom: 10px
 	&__line
@@ -493,6 +526,7 @@ body
 		background-color: $green  
 	&-entry
 		position: relative
+		margin-left: 20px
 	&__header
 		font-size: 18px 
 		color: #333 
@@ -515,7 +549,7 @@ body
 	ul
 		padding-bottom: 62px
 		+tablet
-			padding-bottom: 10px 
+			padding-bottom: 10px
 .pop-up-menu__service
 	&_nav
 		padding-bottom: 52px 
@@ -551,6 +585,8 @@ body
 					top: 7px
 .pop-up-menu-entry__map
 	padding-top: 83px 
+	text-align: center
+	margin: 0
 	height: 221px 
 	+tablet
 		padding-top: 20px 
@@ -712,14 +748,13 @@ body
 		+border-radius(50%)
 		margin: 0 4px
 		
-.select, .subw, .region
+.select, .subw
 	position: relative
 	cursor: pointer
 	display: inline-block
 	vertical-align: top
 	text-align: left
-	background: #fff
-	font-size: 14px  
+	background: #fff 
 	// overflow: hidden 
 	&_mod
 		border: 1px solid #bcbcbc
@@ -738,7 +773,6 @@ body
 		position: absolute
 		display: inline-block  
 		right: 0
-		top: 0
 		z-index: 1 
 
 .select__text
@@ -746,8 +780,6 @@ body
 	vertical-align: middle
 	line-height: 32px
 	color: #666
-	padding-left: 6%
-	white-space: nowrap
 .select__list
 	position: absolute
 	top: 33px 
@@ -765,12 +797,3 @@ body
 		cursor: pointer
 		width: 100% 
 		padding: 7px 0 
-
-.custom-combobox
-	+placeholder-color(#666)
-	color: #666 
-.custom-combobox-input
-	+placeholder-color(#666)
-	color: #666
-
-
