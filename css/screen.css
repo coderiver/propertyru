@@ -995,7 +995,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .object__special { padding: 12px 0; width: 47%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 1; color: #333333; background: #ffff66; text-align: center; text-transform: uppercase; }
 @media only screen and (max-width: 550px) { .object__special { width: 100%; } }
 
-.obj-slider__top .obj-slide { text-align: center; font-size: 0; }
+.obj-slider__top .obj-slide { width: 100%; text-align: center; font-size: 0; }
 .obj-slider__top .obj-slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .obj-slider__top .obj-slide img { display: inline-block; vertical-align: middle; max-height: 100%; max-width: 100%; }
 .obj-slider__bottom { padding: 20px 17px 25px; position: relative; }
@@ -1024,12 +1024,12 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .news__item h4 { display: block; margin: 5px 0 20px 0; font-size: 18px; font-weight: normal; color: #993399; }
 .news__post { *zoom: 1; }
 .news__post:after { content: " "; display: table; clear: both; }
-.news__post img { float: left; margin-right: 30px; }
+.news__post img { float: left; margin-right: 30px; width: 200px; height: 135px; }
 @media only screen and (max-width: 550px) { .news__post img { width: 100%; } }
 .news__post p { text-align: justify; padding-top: 10px; font-size: 14px; color: #666666; }
 .news__post p a { color: #666666; }
 .news__text p { width: 100%; text-align: justify; padding-top: 10px; font-size: 14px; color: #666666; }
-.news__text img { float: left; margin-right: 30px; }
+.news__text img { float: left; margin-right: 30px; width: 200px; height: 135px; }
 @media only screen and (max-width: 550px) { .news__text img { width: 100%; margin-bottom: 20px; } }
 
 .btn_news { text-align: center; }
