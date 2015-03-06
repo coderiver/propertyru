@@ -1015,8 +1015,10 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .popup-out { position: relative; display: inline-block; vertical-align: middle; }
 
 .popup__prev_btn .slick-prev { left: -80px; }
+@media only screen and (max-width: 550px) { .popup__prev_btn .slick-prev { position: absolute; left: -15px; top: 50%; } }
 
 .popup__next_btn .slick-next { right: -80px; }
+@media only screen and (max-width: 550px) { .popup__next_btn .slick-next { position: absolute; right: -15px; top: 50%; } }
 
 .news h5 { margin: 25px 0; font-size: 24px; font-weight: bold; color: #333333; }
 .news__item { margin-bottom: 40px; }
