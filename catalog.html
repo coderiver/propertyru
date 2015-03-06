@@ -509,14 +509,16 @@
 						<span>Всего: 12 объектов</span>
 						</div>
 					</div>
-					<div class="container__header_item">
-						<div class="container__header_entry">
-						<span class="sort">Сортировать по</span>
-						<select name="" id="" class="input_item input_item_w_150">
-							<option value=""></option>
-							<option value="параметр">параметр</option>
-						</select>
-						</div>
+					<div class="input_item select js-select ">
+						<span class="select__text js-select-text">сортировать по</span>
+						<i class="select"></i>
+						<input type="hidden" class="js-select-input" value="0">
+						<ul class="select__list js-select-list">
+							<li class="ui-menu-item" data-id="0">параметр 1</li>
+							<li class="ui-menu-item" data-id="2">параметр 2</li>
+							<li class="ui-menu-item" data-id="3">параметр 3</li>
+							<li class="ui-menu-item" data-id="4">параметр 4</li>
+						</ul>
 					</div>
 					<div class="container__header_item">
 						<div class="container__header_entry container__header_entry_nav">
