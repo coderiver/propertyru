@@ -51,5 +51,11 @@ head.ready(function() {
 		$('.company__nav').toggleClass('is-open');
 	});
 
+    $('.newbuilding-slider__inn').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+    });
+
 });
 

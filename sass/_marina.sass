@@ -3,18 +3,17 @@
 .company
 	padding: 35px 0
 	color: #333
-	background: #ECF0F1 
 	+clr
 	+tablet
-		margin: 0 5% 
+		padding: 35px 5% 
+	&_bg
+		background: #ECF0F1
 	&__sidebar
 		width: percentage(300/1170) 
 		float: left
 		+tablet
 			float: none
 			width: 100%
-		&.is-fixed
-			width: 24% 
 	&__nav
 		+tablet
 			display: none
@@ -41,6 +40,8 @@
 		font-size: 24px
 		color: #333
 		text-decoration: none
+		+r(1200)
+			font-size: 22px
 		span
 			display: inline-block
 			vertical-align: middle
@@ -104,22 +105,12 @@
 			margin: 25px 0
 			font-weight: bold
 			font-size: 24px
-		p
-			margin-bottom: 25px
-			text-align: justify
-			color: #666 
-			font-size: 14px
-		.content_slider_wrapper
-			// height: 330px 
-			// +mobile
-				// height: auto
 	&__btn
 		display: none
 		height: 50px
 		position: relative
 		background: #FFF
-		// border: 1px solid #333
-		+box-shadow(0 0 0 1px #333)
+		border: 1px solid #333
 		cursor: pointer
 		a
 			font-weight: bold
@@ -396,14 +387,12 @@
 .obj-slider
 	&__top
 		.obj-slide
-			width: 100% !important  
 			+vertical
 			img
 				display: inline-block
 				vertical-align: middle
 				max-height: 100%
 				max-width: 100%  
-				width: 100%  
 	&__bottom
 		padding: 20px 17px 25px
 		position: relative
@@ -444,7 +433,6 @@
 // news.html
 
 .news
-	max-width: 930px
 	h5
 		margin: 25px 0
 		font-size: 24px
@@ -469,17 +457,13 @@
 			margin-right: 30px
 			+mobile
 				width: 100% 
-		p
-			float: left
-			width: percentage(670/930) 
+		p 
 			text-align: justify
 			padding-top: 10px
 			font-size: 14px
 			color: #666
-			span
-				text-decoration: underline	
-			+mobile
-				width: 100% 	
+			a
+				color: #666	
 	&__text
 		p
 			width: 100% 
@@ -525,6 +509,9 @@
 	&__question
 		width: 475px
 		margin-bottom: 40px
+		+mobile
+			width: 100% 
+			margin: 0
 		h4
 			font-size: 24px
 			color: $purple
@@ -541,7 +528,7 @@
 					height: 45px 
 					background-color: #E5E5E5
 					margin-bottom: 20px 
-					padding-left: 15px 
+					padding: 0 15px 
 					+box-shadow(inset 0 0 5px #bcbcbc) 
 					+placeholder-color(#666)
 					+box
@@ -551,7 +538,7 @@
 					width: 100%  
 					height: 160px
 					resize: none
-					padding: 10px 0 0 15px
+					padding: 10px 15px
 					border: none 
 					background-color: #E5E5E5
 					+box-shadow(inset 0 0 5px #bcbcbc) 
@@ -561,7 +548,7 @@
 						font-family: 'Open Sans'
 					+r(400)
 						height: 70px 
-						margin-bottom: 5px 
+						margin-bottom: -5px 
 			&__captcha
 				input
 					width: 40% 
@@ -569,14 +556,19 @@
 					height: 45px
 					background-color: #E5E5E5
 					margin-bottom: 20px 
-					padding-left: 15px 
+					padding: 0 15px 
 					+box-shadow(inset 0 0 5px #bcbcbc) 
 					+placeholder-color(#666)
 					+box
+					+mobile
+						width: 55%
+						padding: 0 5px
 				p
 					font-size: 30px
 					vertical-align: top
 					margin: 0 50px
+					+mobile
+						margin: 0 10px
 				button
 					display: inline-block
 					height: 45px
@@ -602,8 +594,12 @@
 					height: 45px
 					background-color: $purple 
 					color: #FFF
+					+mobile
+						width: 100% 
 				p
 					float: right
+					+mobile
+						float: none
 					
 
 // newbuilding.html
@@ -677,5 +673,14 @@
 					width: 50%
 				+mobile
 					width: 100% 					
+.item_about_add
+	i
+		display: inline-block
+		position: relative
+		top: 2px
+i.heart_p
+	+s(heart_p)
 .item__favourite
 	float: right
+	line-height: 25px
+	padding-right: 15px	

@@ -872,12 +872,12 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 
 .inn.s-width { max-width: 1170px; }
 
-.company { padding: 35px 0; color: #333333; background: #ecf0f1; *zoom: 1; }
+.company { padding: 35px 0; color: #333333; *zoom: 1; }
 .company:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 1024px) { .company { margin: 0 5%; } }
+@media only screen and (max-width: 1024px) { .company { padding: 35px 5%; } }
+.company_bg { background: #ecf0f1; }
 .company__sidebar { width: 25.64103%; float: left; }
 @media only screen and (max-width: 1024px) { .company__sidebar { float: none; width: 100%; } }
-.company__sidebar.is-fixed { width: 24%; }
 @media only screen and (max-width: 1024px) { .company__nav { display: none; } }
 @media only screen and (max-width: 1024px) { .company__nav.is-open { display: block; padding: 10px 20px; background: white; border: 1px solid #333333; border-top: none; } }
 .company__item { margin-bottom: 35px; }
@@ -885,6 +885,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .company__item.is-active span:before { content: ""; display: none; }
 .company__item.is-active span:after { content: ""; display: inline-block; }
 .company__title { font-weight: bold; font-size: 24px; color: #333333; text-decoration: none; }
+@media only screen and (max-width: 1200px) { .company__title { font-size: 22px; } }
 .company__title span { display: inline-block; vertical-align: middle; padding-right: 10px; margin-bottom: -3px; }
 .company__title span:before { content: ""; display: inline-block; background: url('../img/icons-s7d34548c3b.png') 0 -1351px no-repeat; width: 24px; height: 24px; }
 .company__title span:after { content: ""; display: none; background: url('../img/icons-s7d34548c3b.png') 0 -1385px no-repeat; width: 24px; height: 24px; }
@@ -904,8 +905,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .company__main { width: 74.35897%; float: left; }
 @media only screen and (max-width: 1024px) { .company__main { float: none; width: 100%; } }
 .company__wrap h5 { margin: 25px 0; font-weight: bold; font-size: 24px; }
-.company__wrap p { margin-bottom: 25px; text-align: justify; color: #666666; font-size: 14px; }
-.company__btn { display: none; height: 50px; position: relative; background: white; -moz-box-shadow: 0 0 0 1px #333333; -webkit-box-shadow: 0 0 0 1px #333333; box-shadow: 0 0 0 1px #333333; cursor: pointer; }
+.company__btn { display: none; height: 50px; position: relative; background: white; border: 1px solid #333333; cursor: pointer; }
 .company__btn a { font-weight: bold; font-size: 24px; color: #333333; text-decoration: none; display: inline-block; margin: 7px 15px; }
 .company__btn button { position: absolute; top: 17px; right: 17px; background: url('../img/icons-s7d34548c3b.png') 0 -1064px no-repeat; width: 21px; height: 17px; }
 @media only screen and (max-width: 1024px) { .company__btn { display: block; } }
@@ -985,9 +985,9 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .object__special { padding: 12px 0; width: 47%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 1; color: #333333; background: #ffff66; text-align: center; text-transform: uppercase; }
 @media only screen and (max-width: 550px) { .object__special { width: 100%; } }
 
-.obj-slider__top .obj-slide { width: 100% !important; text-align: center; font-size: 0; }
+.obj-slider__top .obj-slide { text-align: center; font-size: 0; }
 .obj-slider__top .obj-slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.obj-slider__top .obj-slide img { display: inline-block; vertical-align: middle; max-height: 100%; max-width: 100%; width: 100%; }
+.obj-slider__top .obj-slide img { display: inline-block; vertical-align: middle; max-height: 100%; max-width: 100%; }
 .obj-slider__bottom { padding: 20px 17px 25px; position: relative; }
 .obj-slider__bottom .obj-slide { text-align: center; min-width: 156px; }
 .obj-slider__prev, .obj-slider__next { position: absolute; top: 55px; z-index: 200; }
@@ -1008,7 +1008,6 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 
 .popup__next_btn .slick-next { right: -80px; }
 
-.news { max-width: 930px; }
 .news h5 { margin: 25px 0; font-size: 24px; font-weight: bold; color: #333333; }
 .news__item { margin-bottom: 40px; }
 .news__item p { display: block; font-size: 12px; color: black; }
@@ -1017,9 +1016,8 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .news__post:after { content: " "; display: table; clear: both; }
 .news__post img { float: left; margin-right: 30px; }
 @media only screen and (max-width: 550px) { .news__post img { width: 100%; } }
-.news__post p { float: left; width: 72.04301%; text-align: justify; padding-top: 10px; font-size: 14px; color: #666666; }
-.news__post p span { text-decoration: underline; }
-@media only screen and (max-width: 550px) { .news__post p { width: 100%; } }
+.news__post p { text-align: justify; padding-top: 10px; font-size: 14px; color: #666666; }
+.news__post p a { color: #666666; }
 .news__text p { width: 100%; text-align: justify; padding-top: 10px; font-size: 14px; color: #666666; }
 .news__text img { float: left; margin-right: 30px; }
 @media only screen and (max-width: 550px) { .news__text img { width: 100%; margin-bottom: 20px; } }
@@ -1031,14 +1029,15 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .faq__item h4 { display: block; font-size: 18px; color: #993399; font-weight: normal; margin-bottom: 30px; }
 .faq__item span { display: block; text-align: justify; font-size: 14px; color: #666666; margin-bottom: 30px; }
 .faq__question { width: 475px; margin-bottom: 40px; }
+@media only screen and (max-width: 550px) { .faq__question { width: 100%; margin: 0; } }
 .faq__question h4 { font-size: 24px; color: #993399; font-weight: normal; margin-bottom: 20px; }
 .faq__question .question { line-height: 45px; }
 .faq__question .question p { display: inline-block; height: 45px; }
-.faq__question .question__input input { width: 100%; height: 45px; background-color: #e5e5e5; margin-bottom: 20px; padding-left: 15px; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.faq__question .question__input input { width: 100%; height: 45px; background-color: #e5e5e5; margin-bottom: 20px; padding: 0 15px; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .faq__question .question__input input:-moz-placeholder, .faq__question .question__input input::-moz-placeholder { color: #666666; opacity: 1; }
 .faq__question .question__input input::-webkit-input-placeholder { color: #666666; }
 @media only screen and (max-width: 400px) { .faq__question .question__input input { margin-bottom: 10px; } }
-.faq__question .question__input textarea { width: 100%; height: 160px; resize: none; padding: 10px 0 0 15px; border: none; background-color: #e5e5e5; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.faq__question .question__input textarea { width: 100%; height: 160px; resize: none; padding: 10px 15px; border: none; background-color: #e5e5e5; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .faq__question .question__input textarea:-moz-placeholder, .faq__question .question__input textarea::-moz-placeholder { color: #666666; opacity: 1; }
 .faq__question .question__input textarea::-webkit-input-placeholder { color: #666666; }
 .faq__question .question__input textarea:-ms-input-placeholder { font-family: "Open Sans"; }
@@ -1046,11 +1045,13 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .faq__question .question__input textarea::-moz-placeholder { font-family: "Open Sans"; }
 .faq__question .question__input textarea::-webkit-input-placeholder { font-family: "Open Sans"; }
 .faq__question .question__input textarea::placeholder { font-family: "Open Sans"; }
-@media only screen and (max-width: 400px) { .faq__question .question__input textarea { height: 70px; margin-bottom: 5px; } }
-.faq__question .question__captcha input { width: 40%; display: inline-block; height: 45px; background-color: #e5e5e5; margin-bottom: 20px; padding-left: 15px; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 400px) { .faq__question .question__input textarea { height: 70px; margin-bottom: -5px; } }
+.faq__question .question__captcha input { width: 40%; display: inline-block; height: 45px; background-color: #e5e5e5; margin-bottom: 20px; padding: 0 15px; -moz-box-shadow: inset 0 0 5px #bcbcbc; -webkit-box-shadow: inset 0 0 5px #bcbcbc; box-shadow: inset 0 0 5px #bcbcbc; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .faq__question .question__captcha input:-moz-placeholder, .faq__question .question__captcha input::-moz-placeholder { color: #666666; opacity: 1; }
 .faq__question .question__captcha input::-webkit-input-placeholder { color: #666666; }
+@media only screen and (max-width: 550px) { .faq__question .question__captcha input { width: 55%; padding: 0 5px; } }
 .faq__question .question__captcha p { font-size: 30px; vertical-align: top; margin: 0 50px; }
+@media only screen and (max-width: 550px) { .faq__question .question__captcha p { margin: 0 10px; } }
 .faq__question .question__captcha button { display: inline-block; height: 45px; background-color: transparent; height: 100%; }
 .faq__question .question__captcha button span { font-size: 14px; text-decoration: underline; }
 .faq__question .question__captcha button i { display: none; }
@@ -1059,7 +1060,9 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .faq__question .question__submit { *zoom: 1; }
 .faq__question .question__submit:after { content: " "; display: table; clear: both; }
 .faq__question .question__submit input { width: 40%; display: inline-block; height: 45px; background-color: #993399; color: white; }
+@media only screen and (max-width: 550px) { .faq__question .question__submit input { width: 100%; } }
 .faq__question .question__submit p { float: right; }
+@media only screen and (max-width: 550px) { .faq__question .question__submit p { float: none; } }
 
 .newbuilding section h5 { margin: 25px 0; font-size: 24px; font-weight: bold; color: #993399; }
 .newbuilding__slider .newbuilding-slider { position: relative; }
@@ -1080,7 +1083,11 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .newbuilding__objects .objects-wrap .item { width: 50%; } }
 @media only screen and (max-width: 550px) { .newbuilding__objects .objects-wrap .item { width: 100%; } }
 
-.item__favourite { float: right; }
+.item_about_add i { display: inline-block; position: relative; top: 2px; }
+
+i.heart_p { background: url('../img/icons-s7d34548c3b.png') 0 -444px no-repeat; width: 16px; height: 14px; }
+
+.item__favourite { float: right; line-height: 25px; padding-right: 15px; }
 
 .out.team .header__mid { -moz-box-shadow: 0 4px 4px -3px #d0d3d4; -webkit-box-shadow: 0 4px 4px -3px #d0d3d4; box-shadow: 0 4px 4px -3px #d0d3d4; }
 
