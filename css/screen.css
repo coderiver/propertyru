@@ -617,7 +617,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .team { padding: 45px 0 0 0; }
 
 .team__slider { max-height: 330px; }
-@media only screen and (max-width: 550px) { .team__slider { max-height: none; } }
+@media only screen and (max-width: 1024px) { .team__slider { max-height: none; } }
 
 .form_catalog .base_top { *zoom: 1; }
 .form_catalog .base_top:after { content: " "; display: table; clear: both; }
@@ -877,6 +877,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 1024px) { .company { padding: 35px 5%; } }
 .company_bg { background: #ecf0f1; }
 .company__sidebar { width: 25.64103%; float: left; }
+.company__sidebar.is-fixed { margin-top: 30px; }
 @media only screen and (max-width: 1024px) { .company__sidebar { float: none; width: 100%; } }
 @media only screen and (max-width: 1024px) { .company__nav { display: none; } }
 @media only screen and (max-width: 1024px) { .company__nav.is-open { display: block; padding: 10px 20px; background: white; border: 1px solid #333333; border-top: none; } }
@@ -1125,8 +1126,10 @@ i.heart_p { background: url('../img/icons-s7d34548c3b.png') 0 -444px no-repeat; 
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry select { display: inline-block; } }
 @media only screen and (max-width: 550px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry select { display: block; } }
 @media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry { line-height: 1.4em; } }
+@media only screen and (max-width: 550px) { .content-box-catalog .content_box__main .container__header_item .container__header_entry { line-height: 2.9em; } }
 .content-box-catalog .content_box__main .base__form.is-fixed { width: 61.5%; z-index: 3; }
 .content-box-catalog .content_box__main .base__form.is-fixed .base__form_main { padding: 20px 20px; margin-top: 0; }
+@media only screen and (max-width: 1024px) { .content-box-catalog .content_box__main .base__form.is-fixed { width: 100%; } }
 .content-box-catalog .content_box__main .base__form_main { margin-top: 20px; padding: 35px 20px; }
 .content-box-catalog .content_box__main .base__form .base_top_text { width: 35%; }
 .content-box-catalog .content_box__main .base__form .input_item { font-family: "Open Sans"; font-size: 14px; }
