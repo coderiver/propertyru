@@ -63,7 +63,7 @@
 	padding: 0 18px 53px
 	///////////////////
 	+mobile
-		padding: 0 0 53px 
+		padding: 0 10px 53px 10px
 	.base_bottom_area, .base_bottom_price, .base_top_area, .base_top_price
 		.input_item
 			text-align: center
@@ -212,8 +212,6 @@
 			width: 100%
 .form__commerce
 	display: none
-	+r(550)
-		width: 90% 
 	.base_top_text
 		width: 37%
 		+r(1290)
@@ -693,7 +691,7 @@
 				background-color: #FF6
 				color: #333
 				overflow: hidden
-				font-size: 12px 
+				font-size: 14px 
 				-ms-text-overflow: ellipsis
 				text-overflow: ellipsis
 			&_descr
@@ -842,6 +840,8 @@
 	width: 100% 
 	padding: 0 50px
 	+box 
+	+mobile
+		padding: 0 25px 
 	.slider__main
 		overflow: hidden
 		&_in
@@ -979,10 +979,10 @@
 		border-color: #FFF 
 .team
 	padding: 45px 0 0 0
-.team__slider
-	max-height: 330px 
-	+mobile
-		max-height: none
+// .team__slider
+// 	max-height: 330px 
+// 	+mobile
+// 		max-height: none
 
 .form_catalog
 	.base_top
