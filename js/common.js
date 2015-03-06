@@ -187,30 +187,30 @@ head.ready(function() {
 		containerHeaderNav($(this));
 	});
 	$(".container__header_nav_loc").click(function() {
-	if($(this).find('span').hasClass('is-active')) {
-		$(this).find('span').removeClass('is-active');
-	}
+	
 		containerHeaderNav($(this));
 
 	});
 	function containerHeaderNav (el) {
-		el.find('span').addClass('is-active');
+		el.find('span').toggleClass('is-active');
 		if($(".container__header_nav_marked span").hasClass('is-active')) {
-		$(".container__header_nav_marked span").find('i').removeClass('inf').addClass('inf_wh');
-		$('.content').addClass('list');
+			$(".container__header_nav_marked span").find('i').removeClass('inf').addClass('inf_wh');
+			$('.content').addClass('list');
 		}
 		else  {
 			$(".container__header_nav_marked span").find('i').removeClass('inf_wh').addClass('inf');
 			$('.content').removeClass('list');
 		}
+
 		if($(".container__header_nav_cards span").hasClass('is-active')) {
-		$(".container__header_nav_cards span").find('i').removeClass('sqr').addClass('sqr_wh');
+			$(".container__header_nav_cards span").find('i').removeClass('sqr').addClass('sqr_wh');
 		}
 		else {
 			$(".container__header_nav_cards span").find('i').removeClass('sqr_wh').addClass('sqr');
 		}
+
 		if($(".container__header_nav_loc span").hasClass('is-active')) {
-		$(".container__header_nav_loc span").find('i').removeClass('loc_b').addClass('loc_wh');
+			$(".container__header_nav_loc span").find('i').removeClass('loc_b').addClass('loc_wh');
 			$('.content__map').addClass('is-visible');
 		}
 		else {
