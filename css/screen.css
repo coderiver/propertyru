@@ -771,8 +771,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
   .popup .popup__info { margin-bottom: 20px; }
   .popup .popup__special { font-size: 12px; }
   .popup .popup__sticker h2 { font-size: 15px; line-height: 1.2; } }
-@media only screen and (max-width: 550px) { .popup .popup__next_btn .slick-next { right: -18px !important; }
-  .popup .popup__prev_btn .slick-prev { left: -18px !important; } }
+@media only screen and (max-width: 550px) { .popup .p-slider__bottom { padding: 20px 25px 25px 12px; } }
 .popup__row { margin: 0 -15px; text-align: left; display: inline-block; *zoom: 1; }
 .popup__row:after { content: " "; display: table; clear: both; }
 .popup__box { width: 50%; padding: 0 15px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -829,9 +828,9 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 @media only screen and (max-width: 550px) { .popup__special { width: 100%; } }
 
 .popup-wrap .slick-prev { background: url('../img/icons-s7d34548c3b.png') 0 -780px no-repeat; width: 48px; height: 48px; position: absolute; left: 20px; top: 50%; cursor: pointer; }
-@media only screen and (max-width: 550px) { .popup-wrap .slick-prev { left: 10px; width: 0px; height: 0px; border-style: solid; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; } }
+@media only screen and (max-width: 550px) { .popup-wrap .slick-prev { background: none; left: 10px; width: 0px; height: 0px; border-style: solid; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; } }
 .popup-wrap .slick-next { background: url('../img/icons-s7d34548c3b.png') 0 -1263px no-repeat; width: 48px; height: 48px; position: absolute; right: 20px; top: 50%; cursor: pointer; }
-@media only screen and (max-width: 550px) { .popup-wrap .slick-next { right: 10px; width: 0px; height: 0px; border-style: solid; border-width: 10px 0 10px 10px; border-color: transparent transparent transparent white; } }
+@media only screen and (max-width: 550px) { .popup-wrap .slick-next { background: none; right: 10px; width: 0px; height: 0px; border-style: solid; border-width: 10px 0 10px 10px; border-color: transparent transparent transparent white; } }
 
 .p-slider__top .p-slide { text-align: center; font-size: 0; }
 .p-slider__top .p-slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
