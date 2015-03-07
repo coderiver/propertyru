@@ -57,5 +57,10 @@ head.ready(function() {
         arrows: true
     });
 
+    var $copyItems2 = $('.news .news__item');
+    $('#show_more2').click(function() {
+        $copyItems2.clone('true').appendTo('.news__wrap');
+    });
+
 });
 
