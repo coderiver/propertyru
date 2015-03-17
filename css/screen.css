@@ -133,9 +133,9 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .header__mid { padding-bottom: 35px; margin-top: 56px; -moz-box-shadow: 0 0 1; -webkit-box-shadow: 0 0 1; box-shadow: 0 0 1; }
 
 .header__mid-logo { display: table-cell; width: 25%; float: left; }
-@media only screen and (max-width: 1024px) { .header__mid-logo { width: 100%; text-align: center; } }
+@media only screen and (max-width: 1215px) { .header__mid-logo { width: 100%; text-align: center; } }
 .header__mid-logo button { margin-top: 35px; }
-@media only screen and (max-width: 1024px) { .header__mid-logo button { width: auto; padding-left: 43px; padding-right: 10px; } }
+@media only screen and (max-width: 1215px) { .header__mid-logo button { width: auto; padding-left: 43px; padding-right: 10px; } }
 
 .btn_show { position: relative; padding-left: 40px; padding-right: 10px; font-size: 14px; min-width: 210px; width: auto; }
 @media only screen and (max-width: 550px) { .btn_show { padding-left: 0; } }
@@ -143,14 +143,14 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 @media only screen and (max-width: 550px) { .btn_show i { display: none; } }
 
 .header__mid-about { display: table-cell; width: 48%; float: left; padding-top: 20px; }
-@media only screen and (max-width: 1024px) { .header__mid-about { width: 100%; text-align: center; padding-left: 0; } }
+@media only screen and (max-width: 1215px) { .header__mid-about { width: 100%; text-align: center; padding-left: 0; } }
 .header__mid-about p { font-weight: 300; font-size: 24px; line-height: 1.2em; margin-left: 0.7%; }
 @media only screen and (max-width: 1024px) { .header__mid-about p { margin-left: 0; } }
 .header__mid-about_btns { margin-top: 34px; }
 .header__mid-about_btns .header__mid-about_btn { margin-right: 2%; width: 150px; min-width: 130px; max-width: 200px; }
 
 .header__mid-call { padding-top: 11px; display: table-cell; float: right; }
-@media only screen and (max-width: 1024px) { .header__mid-call { width: 100%; text-align: center; } }
+@media only screen and (max-width: 1215px) { .header__mid-call { width: 100%; text-align: center; } }
 .header__mid-call .number__h { font-size: 32px; }
 .header__mid-call .number__foo { font-size: 14px; color: #999b9e; }
 .header__mid-call_btns { margin-top: 36px; }
