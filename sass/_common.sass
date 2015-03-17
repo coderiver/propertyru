@@ -129,6 +129,9 @@ select
 =tablet
 	+r(1024)
 		@content
+=tablet_p
+	+r(930)
+		@content
 =mobile
 	+r(550)
 		@content
@@ -744,14 +747,18 @@ body
 		right: 0
 		top: 0
 		z-index: 1 
-
+.select__text_wrap
+	overflow: hidden 
 .select__text
 	display: inline-block
 	vertical-align: middle
 	line-height: 32px
 	color: #666
-	padding-left: 6%
+	padding-left: 14px
 	white-space: nowrap
+.input_curr
+	span
+		padding-left: 8% 
 .select__list
 	position: absolute
 	top: 33px 
@@ -768,7 +775,7 @@ body
 		display: block
 		cursor: pointer
 		width: 100% 
-		padding: 7px 0 
+		padding: 7px 
 
 .custom-combobox
 	+placeholder-color(#666)
