@@ -40,10 +40,16 @@ head.ready(function() {
 		
 		$('.item_about_add').click(function() {
 			if($(this).find('i').hasClass('heart_pr')) {
-				$(this).find('i').removeClass('heart_pr').addClass('heart_b')
+				$(this).find('i').removeClass('heart_pr').addClass('heart')
 			}
-			else	$(this).find('i').removeClass('heart_b').addClass('heart_pr');
-		})
+			else	$(this).find('i').removeClass('heart').addClass('heart_pr');
+		});
+		$('.object__btn').click(function() {
+			if($(this).find('i').hasClass('heart_p')) {
+				$(this).find('i').removeClass('heart_p').addClass('heart')
+			}
+			else	$(this).find('i').removeClass('heart').addClass('heart_p');
+		});
 		$('.popup__like').click(function(event) {
 			$(this).toggleClass('is-active');
 			return false;

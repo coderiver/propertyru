@@ -366,7 +366,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .base_bottom_in:after { content: " "; display: table; clear: both; }
 .base_bottom_in * { display: inline-block; }
 .base_bottom_item { width: 33%; }
-.base_bottom_item .input_item { width: 18%; }
+.base_bottom_item .input_item { width: 15%; }
 .base_bottom_area p { margin-right: 4%; }
 .base_bottom_area p:last-child { margin-right: 0; }
 .base_bottom_area .input_item { margin-right: 2%; }
@@ -553,7 +553,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 .item_cover input { color: white; width: auto; min-width: inherit; display: inline-block; padding: 0 20px; margin-top: 150px; font-family: "Open Sans"; font-weight: 300; }
 .item_cover a { text-decoration: none; margin-top: 25px; margin-bottom: 10px; font-size: 14px; display: block; }
 .item_cover p { font-weight: 700; font-size: 24px; }
-.item_cover .item_about_add { cursor: pointer; display: block; text-align: left; margin-left: 24%; margin-top: 25px; color: white; }
+.item_cover .item_about_add { cursor: pointer; display: block; text-align: left; margin-left: 24%; margin-top: 25px; color: #96c833; }
 .item_cover .item_about_add i { display: inline-block; position: relative; top: 2px; }
 .item:hover .item_cover, .item.is-touched .item_cover { display: block; }
 .item__img { width: 100%; position: relative; line-height: 0; *zoom: 1; }
@@ -696,7 +696,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; line-height
 
 .call { background-image: url("../img/dot_bg.png"); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding: 50px 0; text-align: center; }
 .call__heading { color: white; font-weight: 300; font-size: 46px; padding-bottom: 30px; }
-.call__heading b { font-weight: 700; }
+.call__heading b { font-weight: 700; white-space: nowrap; }
 @media only screen and (max-width: 550px) { .call__heading b { display: block; font-size: 40px; } }
 .call .btn_bd { color: white; border-color: white; }
 
@@ -1026,7 +1026,7 @@ h3.team_name { font-size: 30px !important; font-family: "Open Sans"; line-height
 .object__btns { margin-bottom: 20px; *zoom: 1; }
 .object__btns:after { content: " "; display: table; clear: both; }
 .object__btn { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 18px; color: white; background: #993399; padding: 9px 19px 10px; display: inline-block; text-decoration: none; margin: 0 20px 20px 0; float: left; }
-.object__btn span { display: inline-block; margin-right: 10px; background: url('../img/icons-s7d34548c3b.png') 0 -444px no-repeat; width: 16px; height: 14px; }
+.object__btn i { margin-right: 10px; }
 .object__social { font-size: 0; float: left; padding: 7px 0 4px; margin-bottom: 20px; }
 @media only screen and (max-width: 1100px) { .object__social { float: none; clear: both; } }
 .object__social li { display: inline-block; margin: 0 0 3px 3px; }
