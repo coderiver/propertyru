@@ -1149,10 +1149,6 @@ i.heart_p { background: url('../img/icons-s7d34548c3b.png') 0 -444px no-repeat; 
 .content-box-catalog .content_box__main .base__form .base_top_text { width: 30%; }
 .content-box-catalog .content_box__main .base__form .input_item { font-family: "Open Sans"; font-size: 14px; }
 .content-box-catalog .content_box__main .base__form .input_ind { text-indent: 5%; }
-<<<<<<< HEAD
-=======
-.content-box-catalog .content_box__main .base__form .select__text { color: #999999; }
->>>>>>> 4d8a5b8b1b5d0f7fd40f24dcf4df3e092c5e6168
 .content-box-catalog .content_box__main .base__form .base_top_input { width: 70%; text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; text-align-last: justify; }
 .content-box-catalog .content_box__main .base__form .base_top_input:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 .content-box-catalog .content_box__main .base__form .base_bottom { margin-top: 35px; }
