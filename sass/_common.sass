@@ -195,23 +195,12 @@ body
 			width: 48%
 			padding: 10px 0
 			float: left
-		.t-right
-			text-align: right
-			margin-left: 0
-			+r(500)
-				text-align: left
 	+r(500)
 		margin-top: 105px 
 		li
 			width: 100%
-			text-align: center
 			text-align: left
 			margin: 0
-		.t-right
-			text-align: center
-			+r(500)
-				text-align: left
-				margin-left: 20px 
 	li
 		display: inline-block
 		margin-left: 20px
@@ -239,6 +228,11 @@ body
 				color: $green
 		input[type="text"]
 			cursor: text
+		+tablet
+			margin-left: 60px
+		&.nav__search
+			text-align: center
+			margin: 0
 .menu_txt
 	color: #666 
 	font-size: 14px 
@@ -282,8 +276,7 @@ body
 	display: table-cell
 	width: 48%
 	float: left
-	padding-top: 20px 
-	padding-left: 2% 
+	padding-top: 20px
 	+tablet
 		width: 100% 
 		text-align: center
@@ -307,7 +300,6 @@ body
 .header__mid-call
 	padding-top: 11px
 	display: table-cell
-	width: 24%
 	float: right
 	+tablet
 		width: 100% 
@@ -484,7 +476,7 @@ body
 	padding-bottom: 70px  
 	+box-shadow(0 7px 10px 0px  rgba(#555, .8)) 
 	+mobile
-		text-align: center
+		text-align: left
 	+tablet
 		padding-bottom: 10px
 	&__line
@@ -493,6 +485,7 @@ body
 		background-color: $green  
 	&-entry
 		position: relative
+		margin-left: 20px
 	&__header
 		font-size: 18px 
 		color: #333 
@@ -507,7 +500,7 @@ body
 		font-size: 14px 
 		color: #333
 	.btn
-		width: 80%
+		width: auto
 		+mobile
 			max-width: 200px 
 .pop-up-menu__company
@@ -552,8 +545,12 @@ body
 				top: 9px 
 				&.mail
 					top: 7px
+			&:last-child
+				margin-right: 0
 .pop-up-menu-entry__map
 	padding-top: 83px 
+	text-align: center
+	margin: 0
 	height: 221px 
 	+tablet
 		padding-top: 20px 

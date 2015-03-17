@@ -25,7 +25,8 @@
 		display: block
 	&:before
 		+r(1100)
-			display: none
+			display: none !important
+	
 
 .popup
 	margin: 0 auto
@@ -38,6 +39,27 @@
 	min-width: 300px 
 	+r(1100)
 		max-width: 500px
+	+r(690)
+		max-width: 320px
+		.popup__text h2
+			font-size: 16px
+		.popup__top
+			padding-bottom: 15px
+		.popup__price
+			font-size: 24px
+		.popup__list
+			margin-bottom: 20px
+		.popup__info
+			margin-bottom: 20px
+		.popup__special
+			font-size: 12px
+		.popup__sticker h2
+			font-size: 15px
+			line-height: 1.2
+	+r(550)
+		.p-slider__bottom
+			padding: 20px 25px 25px 12px
+
 	&__row
 		margin: 0 -15px
 		text-align: left 
@@ -103,6 +125,11 @@
 			line-height: 18px
 			color: #993399
 			margin-right: 18px 
+		+r(600)
+			right: 10px 
+			top: 20px 
+			span
+				display: none
 	&__list
 		margin-bottom: 35px
 		li
@@ -144,6 +171,9 @@
 			right: 0
 			margin-top: -7px
 			+s(heart_p)
+		&.is-active
+			&:before
+				+s(heart_pr)
 	&__price
 		+p-bold
 		font-size: 30px
@@ -229,6 +259,7 @@
 		top: 50%
 		cursor: pointer
 		+r(550)
+			background: none
 			left: 10px 
 			+arr(10, 20, #fff, l)
 	.slick-next
@@ -238,6 +269,7 @@
 		top: 50%
 		cursor: pointer
 		+r(550)
+			background: none
 			right: 10px 
 			+arr(10, 20, #fff, r)	
  		
@@ -294,7 +326,7 @@
 
 .v-select
 	+box-shadow(0 0 0 1px #cdcdcd)
-	height: 32px
+	min-height: 32px
 	width: 22%
 	display: inline-block
 	vertical-align: top

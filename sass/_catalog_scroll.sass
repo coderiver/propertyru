@@ -47,32 +47,34 @@
 						display: block
 				+tablet
 					line-height: 1.4em 
+				+mobile
+					line-height: 2.9em
 			
 		.base__form
 			&.is-fixed
-				width: 61.5%
+				width: 63.2%
 				z-index: 3
 				.base__form_main
 					padding: 20px 20px 
 					margin-top: 0 
+				+r(1024)
+					width: 100%
 			&_main
 				margin-top: 20px 
 				padding: 35px 20px
 			.base_top_text
-				width: 35%
+				width: 30%
 			.input_item
 				font-family: 'Open Sans'
 				font-size: 14px 
 			.input_ind
 				text-indent: 5% 
-			.select__text
-				color: #999 
 			.base_top_input
 				// width: 65% 
-				width: 100% 
+				width: 70% 
 				+justify
-				+tablet
-					width: 100%
+				// +tablet
+				// 	width: 100%
 			.base_bottom
 				margin-top: 35px
 				&_item
@@ -94,19 +96,19 @@
 					.form__submit
 						width: 10%
 						+box-shadow(0 0 0 1px #333) 
-				+mobile
-					margin-top: 0px
-					.input_item
-						width: 100% 
+				// +mobile
+				// 	margin-top: 0px
+				// 	.input_item
+				// 		width: 100% 
 			.base_bottom_item
-				+tablet
-					width: 100%
+				// +tablet
+				// 	width: 100%
 			
 			.base_bottom_submit
 				// width: 100% 
 				// margin-bottom: 0 
-				+tablet
-					width: 100%
+				// +tablet
+				// 	width: 100%
 				.input_item_search
 					// width: auto
 					// max-width: 150px 

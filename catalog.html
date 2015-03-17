@@ -148,7 +148,7 @@
 			<div class="base__form js-fixed-form">
 				<!--begin base__form_main -->
 				<div class="base__form_main">
-					<form action="" class="form">
+					<!-- <form action="" class="form">
 						<div class="base_top">
 								<div class="base_top_input">
 									<div class="base_input_select input_item select js-select ">
@@ -226,8 +226,8 @@
 								<input type="submit" value="Найти" class="form__submit input_item caps">
 							</div>
 						</div>
-					</form>
-<!-- 				<form action="" class="form">
+					</form> -->
+				<form action="" class="form form_catalog">
 					<div class="base_top">
 							<div class="base_top_text">
 								<p class="txt_purple is-active">Аренда</p>
@@ -469,6 +469,7 @@
 								<input type="text" class="input_item input_from">
 								<p>до</p>
 								<input type="text" class="input_item">
+								<p>м<sup>2</sup></p>
 							</div>
 							<div class="base_bottom_price base_bottom_item">
 								<p>Стоимость</p>
@@ -493,7 +494,7 @@
 							</div>
 						</div>
 					</div>
-				</form> -->
+				</form> 
 				</div>
 				<!--end base__form_main -->
 			</div>
@@ -503,32 +504,39 @@
 			<div class="content "><div class="content_in">
 				<!-- BEGIN container  -->
 				<div class="container__header">
-				
-					<div class="container__header_item">
-						<div class="container__header_entry">
-						<span>Всего: 12 объектов</span>
-						</div>
+			<div class="l">
+				<div class="l-col1">
+					<div class="container__header_entry">
+					<span>Всего: 12 объектов</span>
 					</div>
-					<div class="container__header_item">
-						<div class="container__header_entry">
-						<span class="sort">Сортировать по</span>
-						<select name="" id="" class="input_item input_item_w_150">
-							<option value=""></option>
-							<option value="параметр">параметр</option>
-						</select>
-						</div>
-					</div>
-					<div class="container__header_item">
-						<div class="container__header_entry container__header_entry_nav">
-						<ul class="container__header_nav">
-							<li class="container__header_nav_marked"><span><i class="inf"></i></span></li>
-							<li class="container__header_nav_cards"><span class="is-active"><i class="sqr_wh"></i></span></li>
-							<li class="container__header_nav_loc"><span><i class="loc_b"></i></span></li>
-						</ul>
-						<span>показать на карте</span>
+				</div>
+				<div class="l-col3">
+					<div class="container__header_entry">
+						<div class="input_item select js-select ">
+							<span class="select__text js-select-text">сортировать по</span>
+							<i class="select"></i>
+							<input type="hidden" class="js-select-input" value="0">
+							<ul class="select__list js-select-list">
+								<li class="ui-menu-item" data-id="0">параметр 1</li>
+								<li class="ui-menu-item" data-id="2">параметр 2</li>
+								<li class="ui-menu-item" data-id="3">параметр 3</li>
+								<li class="ui-menu-item" data-id="4">параметр 4</li>
+							</ul>
 						</div>
 					</div>
 				</div>
+				<div class="l-col4">
+					<div class="container__header_entry container__header_entry_nav">
+					<ul class="container__header_nav">
+						<li class="container__header_nav_marked"><span><i class="inf"></i></span></li>
+						<li class="container__header_nav_cards"><span class="is-active"><i class="sqr_wh"></i></span></li>
+						<li class="container__header_nav_loc"><span><i class="loc_b"></i></span></li>
+					</ul>
+					<span>показать на карте</span>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 	
 				<div class="content__map"><div id="ymap"></div></div>
@@ -540,7 +548,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -585,7 +593,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -630,7 +638,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -675,7 +683,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -720,7 +728,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -765,7 +773,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -810,7 +818,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -855,7 +863,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -900,7 +908,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -945,7 +953,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -990,7 +998,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -1035,7 +1043,7 @@
 								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 								<a href="#">перейти на подробную <br> страницу объекта</a>
 								<p class="item_cover_id">id:934</p>
-								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
 								<div class="item__info">
@@ -1113,7 +1121,7 @@
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
-							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
 							<div class="item__info">
@@ -1158,7 +1166,7 @@
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
-							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
 							<div class="item__info">
@@ -1203,7 +1211,7 @@
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
-							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
 							<div class="item__info">
@@ -1248,7 +1256,7 @@
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
-							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
 							<div class="item__info">
@@ -1293,7 +1301,7 @@
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
-							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
 							<div class="item__info">
@@ -1338,7 +1346,7 @@
 							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 							<a href="#">перейти на подробную <br> страницу объекта</a>
 							<p class="item_cover_id">id:934</p>
-							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
 							<div class="item__info">
@@ -1440,6 +1448,7 @@
 					<li><a href="#">Юридическое сопровождение</a></li>
 					<li><a href="#">Оценка недвижимости</a></li>
 					<li><a href="#">Реклама и продвижение</a></li>
+					<li><a href="#">Дополнительные услуги</a></li>
 				</ul>
 			</div>
 		</div></div>
@@ -1530,7 +1539,7 @@
 						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 						<a href="#">перейти на подробную <br> страницу объекта</a>
 						<p class="item_cover_id">id:934</p>
-						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
 						<div class="item__info">
@@ -1575,7 +1584,7 @@
 						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 						<a href="#">перейти на подробную <br> страницу объекта</a>
 						<p class="item_cover_id">id:934</p>
-						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
 						<div class="item__info">
@@ -1620,7 +1629,7 @@
 						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 						<a href="#">перейти на подробную <br> страницу объекта</a>
 						<p class="item_cover_id">id:934</p>
-						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
 						<div class="item__info">
@@ -1665,7 +1674,7 @@
 						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
 						<a href="#">перейти на подробную <br> страницу объекта</a>
 						<p class="item_cover_id">id:934</p>
-						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
+						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
 						<div class="item__info">
@@ -1705,7 +1714,7 @@
 		<!-- END item -->		
 </div>
 <div class="popup-wrap js-wrap">
-	<div class="popup__prev_btn popup__btn popup__bt"><input type="button" class="slick-prev"></div>
+	<div class="popup-out">
 		<div class="popup js-popup">
 			<div class="popup__row">
 				<div class="popup__box is-right">
@@ -1775,16 +1784,16 @@
 								data-cycle-caption=".p-slider__conter"
 								data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt=""/>
+									<img src="img/item_big.jpg" alt="">
 								</div>
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt="">
+									<img src="img/item_big.jpg" alt="">
 								</div>
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt="">
+									<img src="img/item_big.jpg" alt="">
 								</div>
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt="">
+									<img src="img/item_big.jpg" alt="">
 								</div>
 							</div>
 						</div>
@@ -1799,10 +1808,10 @@
 								 data-allow-wrap="false"
 								 data-cycle-slides="> div"
 								 >
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
 							</div>
 						</div>
 					</div>
@@ -1880,16 +1889,16 @@
 								data-cycle-caption=".p-slider__conter"
 								data-cycle-caption-template="{{slideNum}} / {{slideCount}}">
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt=""/>
+									<img src="img/item_big.jpg" alt="">
 								</div>
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt="">
+									<img src="img/item_big.jpg" alt="">
 								</div>
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt="">
+									<img src="img/item_big.jpg" alt="">
 								</div>
 								<div class="p-slide">
-									<img src="http://placecage.com/500/330" alt="">
+									<img src="img/item_big.jpg" alt="">
 								</div>
 							</div>
 						</div>
@@ -1904,10 +1913,10 @@
 								 data-allow-wrap="false"
 								 data-cycle-slides="> div"
 								 >
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
-								<div class="p-slide"><img src="http://placecage.com/130/90" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
+								<div class="p-slide"><img src="img/item_thumb.png" alt=""></div>
 							</div>
 						</div>
 					</div>
@@ -1916,10 +1925,11 @@
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d287424.1771205895!2d37.63249495!3d55.749792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1424880048975" frameborder="0" style="border:0"></iframe>					
 					</div>
 				</div>			
-			</div>			
+			</div>	
 		</div>
-	<div class="popup__next_btn popup__btn popup__bt"><input type="button" class="slick-next"></div>
-		
+		<div class="popup__prev_btn"><input type="button" class="slick-prev"></div>	
+		<div class="popup__next_btn"><input type="button" class="slick-next"></div>
+	</div>
 </div>
 
 </div>
