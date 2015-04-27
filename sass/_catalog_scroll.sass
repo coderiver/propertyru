@@ -4,8 +4,8 @@
 	+box-shadow(0 4px 4px -3px #d0d3d4 inset)
 	
 	.content_box__main
+		width: 100% 
 		+tablet
-			width: 100% 
 			.breadcrumbs
 				margin-top: 20px
 				padding: 0 4% 
@@ -15,7 +15,7 @@
 			+tablet
 				padding: 0 4% 
 		.item
-			width: 33% 
+			width: 25% 
 			+r(1170)
 				width: 33%
 			+r(800)	
@@ -27,124 +27,233 @@
 				width: 100%
 				&__about
 					// padding-left: 5%
+		.container__header
+			+justify
 		.container__header_item
 			display: inline-block
-			width: 33%
+			// width: 33%
 			font-size: 0
+			position: relative
+			vertical-align: middle
 			+clr
-			margin-top: 10px
+			// margin-top: 10px
 			+tablet
-				width: 49% 
+				// width: 49% 
 			+mobile
 				width: 100% 
+				margin-top: 10px 
+			.container__header_entry_nav
+				text-align: right
+				float: none
+				+mobile
+					margin: 0
+					text-align: left
 			.container__header_entry
-				line-height: 40px
-				select
-					max-width: 150px
+				line-height: 32px
+				.input_item
+					min-width: 160px 
+					max-width: 200px
+					float: none
+					+r(1032)
+						margin-top: 0
 					+tablet
 						display: inline-block
 					+mobile
 						display: block
 				+tablet
 					line-height: 1.4em 
+					padding-left: 0 
 				+mobile
-					line-height: 2.9em
+					line-height: 1.9em
 			
 		.base__form
 			&.is-fixed
-				width: 63.2%
+				width: 85.7%
 				z-index: 3
 				.base__form_main
-					padding: 20px 20px 
+					padding: 40px 20px 20px 
 					margin-top: 0 
+				.base__form_minimize
+					display: block
+				+r(1158)
+					width: 84.9% 
 				+r(1024)
 					width: 100%
 			&_main
-				margin-top: 20px 
-				padding: 35px 20px
-			.base_top_text
-				width: 30%
-			.input_item
-				font-family: 'Open Sans'
-				font-size: 14px 
-			.input_ind
-				text-indent: 5% 
-			.base_top_input
-				// width: 65% 
-				width: 70% 
-				+justify
-				// +tablet
-				// 	width: 100%
-			.base_bottom
-				margin-top: 35px
-				&_item
-					font-size: 14px
-				&_price
-					width: 47% 
-					.input_item
-						// width: 16%
-				&_submit
-					// width: 20% 
-				&_in
-					+justify
-					// width: 100%
-					font-size: 0
-					padding-left: 0 
-					.input_item
-						width: 20%  
-						
-					.form__submit
-						width: 10%
-						+box-shadow(0 0 0 1px #333) 
-				// +mobile
-				// 	margin-top: 0px
-				// 	.input_item
-				// 		width: 100% 
-			.base_bottom_item
-				// +tablet
-				// 	width: 100%
-			
-			.base_bottom_submit
-				// width: 100% 
-				// margin-bottom: 0 
-				// +tablet
-				// 	width: 100%
-				.input_item_search
-					// width: auto
-					// max-width: 150px 
-					// margin-left: 0
-	.company__sidebar
-		.company__btn
-			z-index: 5 
-			+mobile
-		&.is-fixed
-			width: 21% 
-			.company__btn
-				a
-					display: none 
-		.company__item
-			position: relative
-			margin: 0 0 35px 30px 
-			span
+				&.p_rem
+					padding: 30px 0 0 !important
+					padding-top: 15px !important 
+			&_minimize
+				width: 100% 
+				display: none
+				height: 35px 
 				position: absolute
-				left: -30px 
-			.company__content
-				margin-left: 0
-				li.caps
-					padding-top: 20px
-					&:hover
-						background-color: transparent 
-		.company__banner
-			margin-bottom: 20px
-	.content-box-catalog__text
-		padding-top: 50px
-		p
-			color: #333
-			text-align: justify
-			padding-bottom: 20px 
-		p.content-box-catalog__text_heading
-			font-size: 24px
-			font-weight: 700 
-			text-align: left
+				background-color: $green
+				top: 0px 
+				left: 0px
+				cursor: pointer
+				z-index: 2 
+				text-align: center
+				// margin: -1px 
+				// padding: -1px 
+				p
+					// position: absolute
+					// right: 20px
+					line-height: 35px
+					// position: relative
+					// text-align: center
+					// margin: 0 auto 
+					span
+						// padding-left: 10px 
+						// position: absolute
+						// padding-left: 5px
+				i
+					position: absolute
+					// right: 20px
+					// line-height: 35px
+					top: 50%
+					+translate(0 ,-50%)
+					&.animate
+						transition: .5s
+						transform: rotateX(180deg) translateY(50%)
+					&.animate-r
+						transition: .5s
+						transform: rotateX(360deg) translateY(-50%)
+					&.coll-icon-r
+						right: 20px
+					&.coll-icon-l
+						left: 20px 
+				+box-shadow(0 1px 0 0px #cdcdcd inset)
+				+r(720)
+					display: none
+			
+
+				
+	// 		&_main
+	// 			margin-top: 20px 
+	// 			padding: 40px 20px
+	// 			position: relative
+				
+	// 			// display: none
+	// 			+r(720)
+	// 				padding: 10 10px 53px 10px 
+	// 			
+	// 				// margin-bottom: 20px 
+	// 		.base_top_text
+	// 			width: 30%
+	// 		.input_item
+	// 			font-family: 'Open Sans'
+	// 			font-size: 14px 
+	// 		.input_ind
+	// 			text-indent: 5% 
+	// 		.base_top_input
+	// 			// width: 65% 
+	// 			width: 70% 
+	// 			+justify
+	// 			// +tablet
+	// 			// 	width: 100%
+	// 			+r(720)
+	// 				width: 100% 
+	// 		.base_bottom
+	// 			margin-top: 20px
+	// 			&_item
+	// 				font-size: 14px
+	// 				.input_item
+	// 					+r(720)
+	// 						margin-bottom: 0
+	// 			&_area
+	// 				width: 33% 
+	// 			&_price
+	// 				width: 41% 
+	// 				// text-align: right
+	// 				+r(720)
+	// 					text-align: left
+	// 					// width: 16%
+	// 			// &_submit
+	// 				// width: 100% 
+	// 			&_in
+	// 				+justify
+	// 				// width: 100%
+	// 				font-size: 0
+	// 				padding-left: 0 
+	// 				.input_item
+	// 					width: 48%  
+						
+	// 				.form__submit
+	// 					width: 10%
+	// 					+box-shadow(0 0 0 1px #333) 
+	// 			// +mobile
+	// 			// 	margin-top: 0px
+	// 			// 	.input_item
+	// 			// 		width: 100% 
+	// 		.base_bottom_item
+	// 			// +tablet
+	// 			// 	width: 100%
+			
+	// 		.base_bottom_submit
+	// 			// width: 100% 
+	// 			// margin-bottom: 0 
+	// 			// +tablet
+	// 			// 	width: 100%
+	// 			.input_item_search
+	// 				+r(720)
+	// 					margin-bottom: 20px
+	// 				// width: auto
+	// 				// max-width: 150px 
+	// 				// margin-left: 0
+	// // .company__sidebar
+	// // 	.company__btn
+	// // 		z-index: 5 
+	// // 		+mobile
+	// // 	&.is-fixed
+	// // 		width: 21% 
+	// // 		.company__btn
+	// // 			a
+	// // 				display: none 
+	// // 	.company__item
+	// // 		position: relative
+	// // 		margin: 0 0 35px 30px 
+	// // 		span
+	// // 			position: absolute
+	// // 			left: -30px 
+	// // 		.company__content
+	// // 			margin-left: 0
+	// // 			li.caps
+	// // 				padding-top: 20px
+	// // 				&:hover
+	// // 					background-color: transparent 
+	// 	.company__banner
+	// 		margin-bottom: 20px
+	// .content-box-catalog__text
+	// 	padding-top: 50px
+	// 	p
+	// 		color: #333
+	// 		text-align: justify
+	// 		padding-bottom: 20px 
+	// 	p.content-box-catalog__text_heading
+	// 		font-size: 24px
+	// 		font-weight: 700 
+	// 		text-align: left
 .js-wrap-form
 	position: relative
+.company__sidebar
+	.company__btn
+		z-index: 5 
+		+mobile
+	&.is-fixed
+		width: 21% 
+		.company__btn
+			a
+				display: none 
+	.company__item
+		position: relative
+		margin: 0 0 35px 30px 
+		span
+			position: absolute
+			left: -30px 
+		.company__content
+			margin-left: 0
+			li.caps
+				padding-top: 20px
+				&:hover
+					background-color: transparent 

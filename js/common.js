@@ -1,3 +1,6 @@
+// $(document).ready(function(){
+
+
 head.ready(function() {
 
 		$('.slider__main_in').slick({
@@ -36,6 +39,12 @@ head.ready(function() {
 					}
 				]
 		 });
+		$('.banner__slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+		  infinite: true,
+		});
 
 		
 		$('.item_about_add').click(function() {
@@ -68,14 +77,14 @@ head.ready(function() {
 	// });
 	//popUpMenu
 	var $popUpMenu = $(".pop-up-menu");
-	$('.humb').click(function() {
+	$('.js-popup-menu').click(function() {
 		if($popUpMenu.hasClass("is-visible")) {
-			$(this).css("background-color", "#4d4d4d");
+			$('.humb').css("background-color", "#4d4d4d");
 			$popUpMenu.removeClass("is-visible");
 			$('.pop-up-menu-entry__map').addClass('is-hidden');
 		}
 		else {
-			$(this).css("background-color", "#96c833");
+			$('.humb').css("background-color", "#96c833");
 			$popUpMenu.addClass("is-visible");
 			$('.pop-up-menu-entry__map').removeClass('is-hidden');
 		}
@@ -151,11 +160,17 @@ head.ready(function() {
 	}
 	else $(' .pop-up-menu__company .pop-up-menu_info').addClass('is-visible');
 	});
-	$('.pop-up-menu__service .pop-up-menu__header').click(function() {
-	if($('.pop-up-menu__service .pop-up-menu_info').hasClass('is-visible')) {
-		$(' .pop-up-menu__service .pop-up-menu_info').removeClass('is-visible');
+	$('.js-pop-obje').click(function() {
+	if($('.pop-obje').hasClass('is-visible')) {
+		$(' .pop-obje').removeClass('is-visible');
 	}
-	else $(' .pop-up-menu__service .pop-up-menu_info').addClass('is-visible');
+	else $(' .pop-obje').addClass('is-visible');
+	});
+		$('.js-pop-serv').click(function() {
+	if($('.pop-serv').hasClass('is-visible')) {
+		$(' .pop-serv').removeClass('is-visible');
+	}
+	else $(' .pop-serv').addClass('is-visible');
 	});
 	$('.pop-up-menu__contacts .pop-up-menu__header').click(function() {
 	if($('.pop-up-menu__contacts .pop-up-menu_info').hasClass('is-visible')) {
@@ -165,19 +180,33 @@ head.ready(function() {
 	});
 	$cover = $('.cover');
 	$popUpCallback = $('.pop-up-callback');
+	$popUpPresent = $('.pop-up-present');
 	$('.btn_recall').click(function() {
 		$('.pop-up-callback').addClass('is-visible');
 		$cover.addClass('is-visible');
 	});
+	//
+	$('.js-pop-up-present-open').click(function() {
+		$popUpPresent.addClass('is-visible');
+		$cover.addClass('is-visible');
+	});
 	$cover.click(function() {
 		if($popUpCallback.hasClass('is-visible'))	closeCallback();
+		else if($popUpPresent.hasClass('is-visible'))	closePresent();
 	});
+	//
 	$('.pop-up-callback__header_close').click(function() {
-		closeCallback();
-	})
+		if($popUpCallback.hasClass('is-visible'))	closeCallback();
+		else if($popUpPresent.hasClass('is-visible'))	closePresent();
+	});
 	function closeCallback() {
 		$cover.removeClass('is-visible');
 		$popUpCallback.removeClass('is-visible');
+	};
+	//
+	function closePresent() {
+		$cover.removeClass('is-visible');
+		$popUpPresent.removeClass('is-visible');
 	};
 	var $containerHeaderNav = $(".container__header_nav").find('span');
 	$(".container__header_nav_marked").click(function() {
@@ -383,7 +412,9 @@ head.ready(function() {
 			});
 		});
 
-		$('.js-popup-open').on('click', function() {
+		$('.js-popup-open').on('click', function(event) {
+			 if ($(event.target).closest("a, span").length) return;
+    
 		$('.js-wrap').addClass('is-active');
 			$('.popup').slick({
 				slidesToShow: 1,
@@ -392,13 +423,21 @@ head.ready(function() {
 				prevArrow: $('.popup-wrap .slick-prev'),
 				nextArrow: $('.popup-wrap .slick-next')
 			});
+    event.stopPropagation();
 		return false;
 	 });
-		$('.js-popup-close').on('click', function() {
+		$('.js-popup-close').on('click', function(event) {
+			if ($(event.target).closest(".slick-next, .slick-prev").length) return;
 			$('.js-wrap').removeClass('is-active');
+	    event.stopPropagation();
 			return false;
 		});
-		//select
+			$('.popup-wrap').on('click', function(event) {
+			if ($(event.target).closest(".slick-next, .slick-prev,.popup").length) return;
+			$('.js-wrap').removeClass('is-active');
+	    event.stopPropagation();
+			return false;
+		});
 	$(".js-select-list").hide();
 	$(".js-select").removeClass("is-active");
 	$(document).ready(function() {
@@ -449,14 +488,7 @@ head.ready(function() {
 		for (var selector in config) {
 			$(selector).chosen(config[selector]);
 		}
-	 //  var z=0;
-	 // $('.subw').click(function() {
-	 // 		z++;
-	 // 		if(z>=2) {
-	 // 			$(this).find('i').hide();
-	 // 		}
-	 // 		console.log(z);
-	 //
+
 	$(document).ready(function() {
 		$('body').mouseover(function() {
 	 if($('.subw .chosen-choices').find('li').hasClass('search-choice')) {
@@ -500,19 +532,113 @@ head.ready(function() {
 			  if ($('.js-wrap-form').length>0) {
 			 	if (scroll+40 >= $('.js-wrap-form').offset().top) {
 			 			$(".js-fixed-form").addClass("is-fixed");
+		 				$(".base__form_minimize").addClass('is-visible');
+		 				if($(".form_catalog").hasClass('is-visible') && $(".base__form_minimize").find('span').text() === 'Развернуть'){
+	 							$(".form_catalog").removeClass('is-visible');
+								$('.base__form_main').addClass('p_rem');
+
+		 				}
+		 				
 			 			if(scroll>botpos- ww - 43 - 35){
 			 				$(".js-fixed-form").addClass('is-abs');
 			 			}
 			 			else{
-			 				$(".js-fixed-form").removeClass('is-abs').addClass("is-fixed");
-			 			}
+			 				$(".js-fixed-form").removeClass('is-abs').addClass("is-fixed");}
+
 			 	} else {
 			 			$(".js-fixed-form").removeClass("is-fixed");
+		 				$(".base__form_minimize").removeClass('is-visible');
+						$('.form_catalog').addClass('is-visible');
+		 				if(	$('.base__form_main').hasClass('p_rem')) {
+							$('.base__form_main').removeClass('p_rem');
+		 				}
+
+
 			 	};
 			  };
 	 });
-	// $('.js-open-base').click(function) {
-		
-	// }
+
 	$(".js-sticky").sticky({topSpacing:50});
+	$('.new-select').select2({
+	  tags: true
+	})
+	;
+	var $newestDrop = $('.newest-select__drop-menu');
+	var $newestTxt	= $('.newest-select__txt');
+	var $checked = $('<i class="check-icon"></i>');
+	var $openDropDist = $('.js-drop-dist');
+	var $openDropSubw = $('.js-drop-subw');
+	var $openDrop = $('.js-drop');
+	var flag = false;
+	$('.newest-select i.select').click(function(){
+		$(this).siblings('.js-drop').trigger('click');
+	})
+	$openDrop.click(function(){
+		var $this = $(this);
+		var $drop = $this.siblings($newestDrop);
+		var $li = $drop.find('li');
+		if(!$drop.hasClass('is-visible')) {
+				$drop.addClass('is-visible');
+		} else {
+			$drop.removeClass('is-visible');
+		}
+	});
+//- CounterWidget
+var CounterWidget = function ($el) {
+    var count = 0;
+    var $clicker = $el.find('.ui-menu-item');
+    var $display = $el.find('.js-drop');
+
+    $clicker.on('click', function () {
+			if(!$(this).hasClass('checked')) {
+				$(this).addClass('checked');
+				$checked.clone().prependTo($(this));
+				count++;
+			} else {
+					$(this).removeClass('checked');
+					$(this).find('.check-icon').remove();
+					count--;
+				}
+        $display.val('Выбрано: ' + count);
+    });
+}
+$('.newest-select').each(function (index, el) {
+    new CounterWidget($(el));
 });
+//-end CounterWidget
+	$(document).click(function(){
+		if($(event.target).closest('.newest-select').length) return;
+		if($newestDrop.hasClass('is-visible'))	{$newestDrop.removeClass('is-visible');
+		$newestDrop.siblings('i.select').removeClass('is-visible');
+	}
+	    event.stopPropagation();
+
+		});
+	
+
+	$('.js-minimize-form').click(function() {
+		if(!$('.form_catalog').hasClass('is-visible')){
+				$('.form_catalog').addClass('is-visible');
+				$(this).find('.minimize__action').text('Свернуть');
+				$(this).find('i').removeClass('animate').addClass('animate-r');
+			$('.base__form_main').removeClass('p_rem');
+
+		}
+		else { 
+			$('.form_catalog').removeClass('is-visible');
+			$(this).find('.minimize__action').text('Развернуть');
+			$(this).find('i').addClass('animate').removeClass('animate-r');
+			$('.base__form_main').addClass('p_rem');
+
+		}
+	});
+
+window.addEventListener("keydown", function(e){
+		if (e.keyCode == 27 && $('.js-wrap').hasClass('is-active')) {
+      $('.js-popup-close').click();
+			console.log("A");
+		}
+	}, true);
+
+});
+// })

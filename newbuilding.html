@@ -15,18 +15,18 @@
 <div class="out">
 	<!-- BEGIN header  -->
 	<div class="header">
-		<div class="header__menu"><div class="inn">
-			<div class="humb menu_i">
+		<div class="header__menu header__menu-main"><div class="inn">
+			<div class="humb menu_i js-popup-menu">
 				<div></div>
 				<div></div>
 				<div></div>
 			</div>
-			<span class="caps menu_i menu_txt">меню</span>
+			<span class="caps menu_i menu_txt js-popup-menu">меню</span>
 			<ul class="nav">
 				<li><a href="#" ><i class="loc"></i>Лубянский пр-д, д. 25, стр. 2</a></li>
-				<li class="t-right"><a href="#"><i class="map"></i>карта сайта</a></li>
+				<li><a href="#"><i class="map"></i>карта сайта</a></li>
 				<li><i class="heart"></i>избранное: <a href="#" ><span class="txt_green"> 2   объекта</span></a></li>
-				<li class="t-right"><input type="text" name="search" id="search" class="btn search btn_w_250 menu_i" placeholder="поиск недвижимости" onfocus="this.placeholder = ''" onblur="this.placeholder = 'поиск недвижимости'"></li>
+				<li class="nav__search"><input type="text" name="search" id="search" class="btn search btn_w_250 menu_i" placeholder="поиск недвижимости" onfocus="this.placeholder = ''" onblur="this.placeholder = 'поиск недвижимости'"></li>
 			</ul>
 			<div class="circle">
 				<div></div>
@@ -63,43 +63,72 @@
 	<!-- BEGIN company -->
 	<div class="company company_bg">
 		<div class="inn">
-			<div class="company__sidebar">
-				<div class="company__btn">
-					<a href="#">Меню</a>
-					<button></button>
-				</div>
-				<ul class="company__nav">
-					<li class="company__item">
-						<a class="company__title" href="#"><span></span>О КОМПАНИИ<i></i></a>
-						<ul class="company__content">
-							<li><a href="#">история бренда</a></li>
-							<li><a href="#">новости</a></li>
-							<li><a href="#">команда</a></li>
-							<li><a href="#">faq</a></li>
-							<li><a href="#">вакансии</a></li>
-							<li><a href="#">партнеры</a></li>
-						</ul>
-					</li>
-					<li class="company__item">
-						<a class="company__title" href="#"><span></span>УСЛУГИ<i></i></a>
-						<ul class="company__content">
-							<li><a href="#">наши услуги</a></li>
-							<li><a href="#">предлагаем</a></li>
-							<li><a href="#">попробуйте</a></li>
-						</ul>
-					</li>
-					<li class="company__item">
-						<a class="company__title" href="#"><span></span>КОНТАКТЫ<i></i></a>
-						<ul class="company__content">
-							<li><a href="#">номер</a></li>
-							<li><a href="#">адресс</a></li>
-						</ul>
-					</li>
-				</ul>
-				<div class="company__banner">
-					<img src="img/company_banner.jpg" alt="">
-				</div>
+			<div class="company__sidebar dn">
+			<div class="company__btn">
+				<a href="#">Меню</a>
+				<button></button>
 			</div>
+			<ul class="company__nav">
+				<li class="company__item">
+					<a class="company__title" href="#"><span></span>КОММЕРЧЕСКАЯ НЕДВИЖИМОСТЬ<i></i></a>
+					<ul class="company__content">
+							<li class="txt_purple caps">Аренда</li>
+							<li><a href="#">торговое помещение</a></li>
+							<li><a href="#">офис</a></li>
+							<li><a href="#">площадь свободного назначения</a></li>
+							<li><a href="#">отдельно стоящие здание</a></li>
+							<li><a href="#">общепит</a></li>
+							<li><a href="#">автобизнес</a></li>
+							<li><a href="#">под услуги</a></li>
+							<li><a href="#">складское помещение</a></li>
+							<li class="txt_purple caps">Продажа</li>
+							<li><a href="#">торговое помещение</a></li>
+							<li><a href="#">офис</a></li>
+							<li><a href="#">площадь свободного назначения</a></li>
+							<li><a href="#">отдельно стоящие здание</a></li>
+							<li class="txt_purple caps">Арендный бизнес</li>
+					</ul>
+				</li>
+				<li class="company__item">
+					<a class="company__title" href="#"><span></span>ЖИЛАЯ НЕДВИЖИМОСТЬ<i></i></a>
+					<ul class="company__content">
+						<li class="txt_purple caps">Аренда</li>
+						<li><a href="#">1-комнактная квартира и студия</a></li>
+						<li><a href="#">2-комнактная квартира</a></li>
+						<li><a href="#">3-комнактная квартира</a></li>
+						<li><a href="#">4-комнактная квартира</a></li>
+						<li><a href="#">многокомнатная квартира</a></li>
+						<li class="txt_purple caps">Продажа</li>
+						<li><a href="#">1-комнактная квартира и студия</a></li>
+						<li><a href="#">2-комнактная квартира</a></li>
+						<li><a href="#">3-комнактная квартира</a></li>
+						<li><a href="#">4-комнактная квартира</a></li>
+						<li><a href="#">многокомнатная квартира</a></li>
+						<li class="txt_purple caps">Посуточная аренда</li>
+					</ul>
+				</li>
+				<li class="company__item">
+					<a class="company__title" href="#"><span></span>ЗАГОРОДНАЯ НЕДВИЖИМОСТЬ<i></i></a>
+					<ul class="company__content">
+						<li class="caps txt_purple">Аренда и продажа</li>
+						<li><a href="#">дома и участки в МО</a></li>
+						<li><a href="#">коттеджные поселки в МО</a></li>
+						<li><a href="#">таунхаусы в МО</a></li>
+					</ul>
+				</li>
+				<li class="company__item">
+					<a class="company__title" href="#"><span></span>НОВОВСТРОЙКИ<i></i></a>
+					<ul class="company__content">
+						<li class="caps txt_purple">Продажа</li>
+						<li><a href="#">жк рублево</a></li>
+						<li><a href="#">жк весна</a></li>
+						<li><a href="#">жк альбатрос</a></li>
+						<li><a href="#">жк новое бутово</a></li>
+						<li><a href="#">все новостройки</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 			<div class="company__main">
 				<div class="breadcrumbs">
 					<a href="#">Главная</a> >
@@ -147,10 +176,10 @@
 							<!-- BEGIN item  -->
 							<div class="item">
 								<div class="item__inner">
-									<div class="item_cover">
-										<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-										<a href="#">перейти на подробную <br> страницу объекта</a>
-										<p class="item_cover_id">id:934</p>
+									<div class="item_cover js-popup-open">
+										<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+										<a href="#">перейти на страницу <br> объекта</a>
+										<!-- <p class="item_cover_id">id:934</p> -->
 										<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 									</div>
 									<div class="item__img">
@@ -192,10 +221,10 @@
 							<!-- BEGIN item  -->
 							<div class="item">
 								<div class="item__inner">
-									<div class="item_cover">
-										<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-										<a href="#">перейти на подробную <br> страницу объекта</a>
-										<p class="item_cover_id">id:934</p>
+									<div class="item_cover js-popup-open">
+										<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+										<a href="#">перейти на страницу <br> объекта</a>
+										<!-- <p class="item_cover_id">id:934</p> -->
 										<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 									</div>
 									<div class="item__img">
@@ -237,10 +266,10 @@
 							<!-- BEGIN item  -->
 							<div class="item">
 								<div class="item__inner">
-									<div class="item_cover">
-										<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-										<a href="#">перейти на подробную <br> страницу объекта</a>
-										<p class="item_cover_id">id:934</p>
+									<div class="item_cover js-popup-open">
+										<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+										<a href="#">перейти на страницу <br> объекта</a>
+										<!-- <p class="item_cover_id">id:934</p> -->
 										<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 									</div>
 									<div class="item__img">
@@ -282,10 +311,10 @@
 							<!-- BEGIN item  -->
 							<div class="item">
 								<div class="item__inner">
-									<div class="item_cover">
-										<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-										<a href="#">перейти на подробную <br> страницу объекта</a>
-										<p class="item_cover_id">id:934</p>
+									<div class="item_cover js-popup-open">
+										<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+										<a href="#">перейти на страницу <br> объекта</a>
+										<!-- <p class="item_cover_id">id:934</p> -->
 										<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 									</div>
 									<div class="item__img">
@@ -327,10 +356,10 @@
 							<!-- BEGIN item  -->
 							<div class="item">
 								<div class="item__inner">
-									<div class="item_cover">
-										<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-										<a href="#">перейти на подробную <br> страницу объекта</a>
-										<p class="item_cover_id">id:934</p>
+									<div class="item_cover js-popup-open">
+										<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+										<a href="#">перейти на страницу <br> объекта</a>
+										<!-- <p class="item_cover_id">id:934</p> -->
 										<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 									</div>
 									<div class="item__img">
@@ -372,10 +401,10 @@
 							<!-- BEGIN item  -->
 							<div class="item">
 								<div class="item__inner">
-									<div class="item_cover">
-										<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-										<a href="#">перейти на подробную <br> страницу объекта</a>
-										<p class="item_cover_id">id:934</p>
+									<div class="item_cover js-popup-open">
+										<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+										<a href="#">перейти на страницу <br> объекта</a>
+										<!-- <p class="item_cover_id">id:934</p> -->
 										<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 									</div>
 									<div class="item__img">
@@ -435,10 +464,10 @@
 	  	    <!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -480,10 +509,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -525,10 +554,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -570,10 +599,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -615,10 +644,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -660,10 +689,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -751,24 +780,28 @@
 				
 			</div>
 		</div></div>
-		<div class="l-col2"><div class="pop-up-menu-entry pop-up-menu__service">
-			<h4 class="pop-up-menu__header caps">Услуги</h4>
-			<div class="pop-up-menu_info pop-up-service_in">
+				<div class="l-col2"><div class="pop-up-menu-entry pop-up-menu__service">
+			<h4 class="pop-up-menu__header caps js-pop-obje">Каталог объектов</h4>
+			<div class="pop-up-menu_info pop-up-catalog_in pop-obje">
 				<ul class="pop-up-menu__service_nav">
 					<li><a href="#" class="txt_purple">Коммерческая недвижимость</a></li>
 					<li><a href="#" class="txt_purple">Жилая недвижимость</a></li>
 					<li><a href="#" class="txt_purple">Загородная недвижимость</a></li>
 					<li><a href="#" class="txt_purple">Новостройки</a></li>
 				</ul>
-				<ul class="pop-up-menu__service_foot">
-					<li><a href="#">Управление недвижимостью</a></li>
-					<li><a href="#">Юридическое сопровождение</a></li>
-					<li><a href="#">Оценка недвижимости</a></li>
-					<li><a href="#">Реклама и продвижение</a></li>
-					<li><a href="#">Дополнительные услуги</a></li>
-				</ul>
+				</div>
+				<h4 class="pop-up-menu__header caps js-pop-serv">Услуги</h4>
+				<div class="pop-up-menu_info pop-up-service_in pop-serv">
+					<ul class="pop-up-menu__service_foot">
+						<li><a href="#">Управление недвижимостью</a></li>
+						<li><a href="#">Юридическое сопровождение</a></li>
+						<li><a href="#">Оценка недвижимости</a></li>
+						<li><a href="#">Реклама и продвижение</a></li>
+						<li><a href="#">Дополнительные услуги</a></li>
+					</ul>
+				</div>
 			</div>
-		</div></div>
+		</div>
 		<div class="l-col3"><div class="pop-up-menu-entry pop-up-menu__contacts">
 			<h4 class="pop-up-menu__header caps">Контакты</h4>
 			<div class="pop-up-menu_info pop-up-contacts_in">
@@ -807,28 +840,15 @@
 		<p class="pop-up-callback__main_text">
 			Если по какой либо причина Вы не можете нам позвонить, то воспользуйтесь online услугой Обратный звонок. Просто укажите свое имя, контактный номер, удобное время для званка и мы Вам перезвоним.
 		</p>
-		<form action="">
+				<form action="">
 			<div class="pop-up-callback__main_input">
 				<input type="text" class="pop-up-callback__input_item" placeholder="Имя*">
 				<input type="text" class="pop-up-callback__input_item" placeholder="Телефон*">
-				<input type="text" class="pop-up-callback__input_item" placeholder="E-mail*">
 				<textarea name="info" class="pop-up-callback__input_item
-				pop-up-callback__input_item_t-area" placeholder="Удобная дата / время для звонка / комментарий*"></textarea>
+				pop-up-callback__input_item_t-area" placeholder="Удобная дата / время для звонка / комментарий"></textarea>
 			</div>
-<!-- 			<div class="pop-up-callback__main_captcha">
-				<div class="pop-up-callback__main_captcha_input ">
-					<input class="pop-up-callback__input_item" type="text" placeholder="Введите код с картинки">
-				</div>
-				<div class="pop-up-callback__main_captcha_numb">
-					<p class="txt_purple">1245</p>
-				</div>
-				<div class="pop-up-callback__main_captcha_refresh">
-				<button type="button" class="txt_purple"><span>обновить</span><i class="refresh"></i></button>
-				</div>
-			</div> -->
 			<div class="pop-up-callback__main_submit">
 				<input type="submit" value="отправить заявку" class="caps">
-
 				<p>*-обязательные поля для заполнения</p>
 			</div>
 		</form>
@@ -852,10 +872,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 					</div>
 					<div class="item__img">
@@ -897,10 +917,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 					</div>
 					<div class="item__img">
@@ -942,10 +962,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 					</div>
 					<div class="item__img">
@@ -987,10 +1007,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_b"></i></span>
 					</div>
 					<div class="item__img">
@@ -1030,7 +1050,7 @@
 			</div>
 		<!-- END item -->		
 </div>
-<div class="popup-wrap js-wrap">
+<div class="popup-wrap js-wrap js-popup-close">
 	<div class="popup-out">
 		<div class="popup js-popup">
 			<div class="popup__row">

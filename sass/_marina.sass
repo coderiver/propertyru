@@ -11,6 +11,8 @@
 	&__sidebar
 		width: percentage(300/1170) 
 		float: left
+		&.dn
+			display: none
 		&.is-fixed
 			margin-top: 30px
 		+tablet
@@ -153,6 +155,13 @@
 	+tablet
 		margin: 0 2% 
 		text-align: left
+	.company__sidebar
+		display: none
+	.content_box__main
+		+tablet
+			width: 100% !important 
+		+r(720)
+			width: 100% !important 
 	&__top
 		position: relative
 		h3
@@ -174,12 +183,20 @@
 	background: #fff
 	position: relative
 	min-width: 300px 
+	margin-top: 20px 
+	overflow: hidden
 	+r(1100)
 		max-width: 500px
+	// +r_min(1640)
+	// 	text-align: center
+	// 	background-color: transparent 
 	&__row
 		margin: 0 -15px
 		text-align: left 
 		display: inline-block
+		// max-width: 1062px
+		
+
 		+clr
 	&__box
 		width: 50%
@@ -242,15 +259,16 @@
 				span
 					margin: 0
 	&__info
-		margin-top: 100px
+		// margin-top: 100px
 		+clr
 		+tablet
 			margin-top: 0
 			text-align: center
 		.brocker
-			width: percentage(240/500)
+			width: 48%
 			margin-left: 20px
 			float: left
+			text-align: center
 			+tablet
 				float: none
 				display: inline-block
@@ -261,10 +279,10 @@
 				vertical-align: top
 				+s(brocker)
 			&__text
-				display: inline-block
+				// display: inline-block
 				font-size: 18px
-				width: percentage(190/290)
-				margin-left: 15px
+				// width: percentage(190/290)
+				// margin-left: 15px
 				+tablet
 					margin: 0
 					width: 100% 
@@ -279,27 +297,33 @@
 					color: $purple
 					font-weight: bold
 					display: block
+					white-space: nowrap
 		.presentation
 			width: percentage(220/500)
 			float: right
+			text-align: center
 			+tablet
 				float: none
 				display: inline-block
 			&__icon
-				display: inline-block
+				display: block
 				+s(presentation)
+				margin: 0 auto 
+
 			&__text
-				display: inline-block
+				// display: inline-block
 				font-size: 18px
-				width: percentage(140/250)
-				margin-left: 15px
+				// width: percentage(140/250)
+				// margin-left: 15px
 				+tablet
 					margin: 0
 					width: 100% 
 					display: block
 					text-align: center
-				a
+				span
 					color: $purple 
+					text-decoration: underline
+					cursor: pointer 
 	&__price
 		margin-bottom: 40px
 		span
@@ -353,7 +377,7 @@
 				&.is-plus
 					+s(is-plus)  
 	&__sticker
-		padding: 9px 30px
+		padding: 9px 25px
 		width: 53%
 		+box
 		background: #993399  
@@ -398,6 +422,7 @@
 				vertical-align: middle
 				max-height: 100%
 				max-width: 100%  
+				width: 100% 
 	&__bottom
 		padding: 20px 17px 25px
 		position: relative
@@ -430,18 +455,18 @@
 	position: relative
 	display: inline-block
 	vertical-align: middle
-.popup__prev_btn .slick-prev
-	left: -80px
-	+mobile
-		position: absolute
-		left: -15px
-		top: 50%
-.popup__next_btn .slick-next
-	right: -80px
-	+mobile
-		position: absolute
-		right: -15px
-		top: 50%
+	.slick-prev
+		left: -80px
+		+mobile
+			position: absolute
+			left: -15px
+			top: 50%
+	.slick-next
+		right: -80px
+		+mobile
+			position: absolute
+			right: -15px
+			top: 50%
 		
 
 // news.html

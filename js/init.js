@@ -1,4 +1,5 @@
 head.load("js/lib/jquery.js", 
+					'trans_banner/jquery.easing.1.3.min.js',
 					"js/lib/cycle.js",
 					"js/lib/chosen.jquery.js",
 					"js/lib/cycle.carousel.js",
@@ -11,4 +12,5 @@ head.load("js/lib/jquery.js",
 					"js/jquery-ui.min.js",
 					"js/marina.js",
 					"js/lib/sticky.js",
+					"js/lib/select2.js",
 					"js/common.js");

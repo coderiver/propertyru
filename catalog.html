@@ -16,18 +16,19 @@
 <div class="out">
 	<!-- BEGIN header  -->
 	<div class="header">
-		<div class="header__menu"><div class="inn">
-			<div class="humb menu_i">
+		
+		<div class="header__menu header__menu-main"><div class="inn">
+			<div class="humb menu_i js-popup-menu">
 				<div></div>
 				<div></div>
 				<div></div>
 			</div>
-			<span class="caps menu_i menu_txt">меню</span>
+			<span class="caps menu_i menu_txt js-popup-menu">меню</span>
 			<ul class="nav">
 				<li><a href="#" ><i class="loc"></i>Лубянский пр-д, д. 25, стр. 2</a></li>
-				<li class="t-right"><a href="#"><i class="map"></i>карта сайта</a></li>
+				<li><a href="#"><i class="map"></i>карта сайта</a></li>
 				<li><i class="heart"></i>избранное: <a href="#" ><span class="txt_green"> 2   объекта</span></a></li>
-				<li class="t-right"><input type="text" name="search" id="search" class="btn search btn_w_250 menu_i" placeholder="поиск недвижимости" onfocus="this.placeholder = ''" onblur="this.placeholder = 'поиск недвижимости'"></li>
+				<li class="nav__search"><input type="text" name="search" id="search" class="btn search btn_w_250 menu_i" placeholder="поиск недвижимости" onfocus="this.placeholder = ''" onblur="this.placeholder = 'поиск недвижимости'"></li>
 			</ul>
 			<div class="circle">
 				<div></div>
@@ -64,7 +65,7 @@
 	<div class="content-box content-box-catalog"><div class="inn">
 		<!--begin company__sidebar -->
 		<div class="js-wrap">
-		<div class="company__sidebar js-fixed">
+		<div class="company__sidebar dn">
 			<div class="company__btn">
 				<a href="#">Меню</a>
 				<button></button>
@@ -147,87 +148,11 @@
 			<div class="js-wrap-form">
 			<div class="base__form js-fixed-form">
 				<!--begin base__form_main -->
-				<div class="base__form_main">
-					<!-- <form action="" class="form">
-						<div class="base_top">
-								<div class="base_top_input">
-									<div class="base_input_select input_item select js-select ">
-										<span class="select__text js-select-text">параметр</span>
-										<i class="select"></i>
-										<input type="hidden" class="js-select-input" value="0">
-										<ul class="select__list js-select-list">
-											<li class="ui-menu-item" data-id="0">параметр 1</li>
-											<li class="ui-menu-item" data-id="2">параметр 2</li>
-											<li class="ui-menu-item" data-id="3">параметр 3</li>
-											<li class="ui-menu-item" data-id="4">параметр 4</li>
-										</ul>
-									</div>
-									<div class="base_input_select input_item select js-select ">
-										<span class="select__text js-select-text">параметр</span>
-										<i class="select"></i>
-										<input type="hidden" class="js-select-input" value="0">
-										<ul class="select__list js-select-list">
-											<li class="ui-menu-item" data-id="0">параметр 1</li>
-											<li class="ui-menu-item" data-id="2">параметр 2</li>
-											<li class="ui-menu-item" data-id="3">параметр 3</li>
-											<li class="ui-menu-item" data-id="4">параметр 4</li>
-										</ul>
-									</div>
-									<div class="base_input_select input_item select js-select ">
-										<span class="select__text js-select-text">параметр</span>
-										<i class="select"></i>
-										<input type="hidden" class="js-select-input" value="0">
-										<ul class="select__list js-select-list">
-											<li class="ui-menu-item" data-id="0">параметр 1</li>
-											<li class="ui-menu-item" data-id="2">параметр 2</li>
-											<li class="ui-menu-item" data-id="3">параметр 3</li>
-											<li class="ui-menu-item" data-id="4">параметр 4</li>
-										</ul>
-									</div>
-									<div class="base_input_select input_item select js-select ">
-										<span class="select__text js-select-text">параметр</span>
-										<i class="select"></i>
-										<input type="hidden" class="js-select-input" value="0">
-										<ul class="select__list js-select-list">
-											<li class="ui-menu-item" data-id="0">параметр 1</li>
-											<li class="ui-menu-item" data-id="2">параметр 2</li>
-											<li class="ui-menu-item" data-id="3">параметр 3</li>
-											<li class="ui-menu-item" data-id="4">параметр 4</li>
-										</ul>
-									</div>
-								</div>
-						</div>
-						<div class="base_bottom">
-							<div class="base_bottom_in">
-								<div class="base_input_select input_item select js-select ">
-									<span class="select__text js-select-text">параметр</span>
-									<i class="select"></i>
-									<input type="hidden" class="js-select-input" value="0">
-									<ul class="select__list js-select-list">
-										<li class="ui-menu-item" data-id="0">параметр 1</li>
-										<li class="ui-menu-item" data-id="2">параметр 2</li>
-										<li class="ui-menu-item" data-id="3">параметр 3</li>
-										<li class="ui-menu-item" data-id="4">параметр 4</li>
-									</ul>
-								</div>
-								<div class="base_input_select input_item select js-select ">
-									<span class="select__text js-select-text">параметр</span>
-									<i class="select"></i>
-									<input type="hidden" class="js-select-input" value="0">
-									<ul class="select__list js-select-list">
-										<li class="ui-menu-item" data-id="0">параметр 1</li>
-										<li class="ui-menu-item" data-id="2">параметр 2</li>
-										<li class="ui-menu-item" data-id="3">параметр 3</li>
-										<li class="ui-menu-item" data-id="4">параметр 4</li>
-									</ul>
-								</div>
-								<input type="text" class="input_item input_ind" placeholder="параметр">
-								<input type="text" class="input_item input_ind" placeholder="параметр">
-								<input type="submit" value="Найти" class="form__submit input_item caps">
-							</div>
-						</div>
-					</form> -->
-				<form action="" class="form form_catalog">
+				<div class="base__form_main ">
+				<div class="base__form_minimize js-minimize-form">
+					<i class="coll-icon coll-icon-l"></i><p>Поиск по параметрам - <span class="minimize__action">Свернуть</span></p><i class="coll-icon coll-icon-r"></i>
+				</div>
+				<form action="" class="form form__commerce form_catalog is-visible ">
 					<div class="base_top">
 							<div class="base_top_text">
 								<p class="txt_purple is-active">Аренда</p>
@@ -235,230 +160,232 @@
 								<p class="txt_purple">Арендный бизнес</p>
 							</div>
 							<div class="base_top_input">
-								<div class="ui-widget v-select">
-									<select class="combobox" placeholder="назначение">
-										<option value=""></option>
-										<option value="ActionScript">ActionScript</option>
-										<option value="AppleScript">AppleScript</option>
-										<option value="Asp">Asp</option>
-										<option value="BASIC">BASIC</option>
-										<option value="C">C</option>
-										<option value="C++">C++</option>
-									</select>
-								</div>
-								<div class="ui-widget v-select region">
+
+								<div class="newest-select input_item">
 									<i class="select"></i>
-									<select data-placeholder="округ" class="chosen-select" multiple tabindex="4" placeholder="округ" style="width: 100%">
-										<option value=""></option>
-										<option value="ЦАО">ЦАО</option>
-										<option value="ЮЗАО">ЮЗАО</option>
-										<option value="ЮАО">ЮАО</option>
-										<option value="ЗАО">ЗАО</option>
-										<option value="ЮВАО">ЮВАО</option>
-										<option value="СЗАО">СЗАО</option>
-										<option value="САО">САО</option>
-										<option value="ВАО">ВАО</option>
-										<option value="СВАО">СВАО</option>
-										<option value="ТиНАО">ТиНАО</option>
-									</select>
+									<input type="button" class="js-drop js-drop-dist newest-select__txt" value="назначение">
+									<ul class="newest-select__drop-menu">
+										<li class="ui-menu-item">параметр 1</li>
+										<li class="ui-menu-item">параметр 2</li>
+										<li class="ui-menu-item">параметр 3</li>
+										<li class="ui-menu-item">параметр 4</li>
+										<li class="ui-menu-item">параметр 5</li>
 								</div>
-								<div class="ui-widget v-select subw">
+
+								<div class="newest-select input_item">
 									<i class="select"></i>
-									<select data-placeholder="метро" class="chosen-select" multiple tabindex="4" placeholder="метро" style="width: 100%">
-										<option value=""></option>
-										<option value="188">Авиамоторная</option>
-										<option value="47">Автозаводская</option>
-										<option value="134">Академическая</option>
-										<option value="124">Алексеевская</option>
-										<option value="229">Алма-Атинская</option>
-										<option value="55">Алтуфьево</option>
-										<option value="78">Аннино</option>
-										<option value="204">Арбатская</option>
-										<option value="216">Арбатская</option>
-										<option value="38">Аэропорт</option>
-										<option value="120">Бабушкинская</option>
-										<option value="198">Багратионовская</option>
-										<option value="151">Баррикадная</option>
-										<option value="219">Бауманская</option>
-										<option value="149">Беговая</option>
-										<option value="40">Белорусская</option>
-										<option value="88">Белорусская</option>
-										<option value="138">Беляево</option>
-										<option value="56">Бибирево</option>
-										<option value="22">Библиотека имени Ленина</option>
-										<option value="235">Борисово</option>
-										<option value="66">Боровицкая</option>
-										<option value="122">Ботанический Сад</option>
-										<option value="180">Братиславская</option>
-										<option value="82">Бульвар адмирала Ушаковка</option>
-										<option value="79">Бульвар Дмитрия Донского</option>
-										<option value="33">Бульвар Рокоссовского</option>
-										<option value="84">Бунинская аллея</option>
-										<option value="186">Варшавская</option>
-										<option value="123">ВДНХ</option>
-										<option value="58">Владыкино</option>
-										<option value="35">Водный стадион</option>
-										<option value="36">Войковская</option>
-										<option value="157">Волгоградский проспект</option>
-										<option value="178">Волжская</option>
-										<option value="206">Волоколамская</option>
-										<option value="236">Воробьевы Горы</option>
-										<option value="239">Выстовочная</option>
-										<option value="161">Выхино</option>
-										<option value="240">Деловой центр</option>
-										<option value="39">Динамо</option>
-										<option value="61">Дмитровская</option>
-										<option value="96">Добрынинская</option>
-										<option value="53">Домодедовская</option>
-										<option value="169">Достоевская</option>
-										<option value="175">Дубровка</option>
-										<option value="232">Жулебино</option>
-										<option value="238">Зябликово</option>
-										<option value="224">Измайловская</option>
-										<option value="137">Калужская</option>
-										<option value="50">Кантемировская</option>
-										<option value="185">Каховская</option>
-										<option value="49">Каширская</option>
-										<option value="85">Киевская</option>
-										<option value="108">Киевская</option>
-										<option value="202">Киевская</option>
-										<option value="129">Китай-город</option>
-										<option value="154">Китай-город</option>
-										<option value="176">Кожуховская</option>
-										<option value="48">Коломенская</option>
-										<option value="27">Комсомольская</option>
-										<option value="92">Комсомольская</option>
-										<option value="139">Коньково</option>
-										<option value="54">Красногвардейская</option>
-										<option value="86">Краснопресненская</option>
-										<option value="29">Красносельская</option>
-										<option value="26">Красные ворота</option>
-										<option value="174">Крестьянская Застава</option>
-										<option value="20">Кропоткинская</option>
-										<option value="210">Крылатское</option>
-										<option value="153">Кузнецкий Мост</option>
-										<option value="159">Кузьминки</option>
-										<option value="105">Кунцевская</option>
-										<option value="195">Кунцевская</option>
-										<option value="93">Курская</option>
-										<option value="111">Курская</option>
-										<option value="200">Кутузовская</option>
-										<option value="133">Ленинский Проспект</option>
-										<option value="234">Лермонтовский проспект</option>
-										<option value="24">Лубянка</option>
-										<option value="179">Люблино</option>
-										<option value="2">Марксистская</option>
-										<option value="168">Марьина роща</option>
-										<option value="181">Марьино</option>
-										<option value="42">Маяковская</option>
-										<option value="119">Медведково</option>
-										<option value="237">Международная</option>
-										<option value="63">Менделеевская</option>
-										<option value="205">Митино</option>
-										<option value="211">Молодежная</option>
-										<option value="208">Мякинино</option>
-										<option value="70">Нагатинская</option>
-										<option value="71">Нагорная</option>
-										<option value="72">Нахимовский проспект</option>
-										<option value="192">Новогиреево</option>
-										<option value="233">Новокосино</option>
-										<option value="45">Новокузнецкая</option>
-										<option value="89">Новослободская</option>
-										<option value="142">Новоясеневская</option>
-										<option value="136">Новые Черемушки</option>
-										<option value="97">Октябрьская</option>
-										<option value="131">Октябрьская</option>
-										<option value="147">Октябрьское Поле</option>
-										<option value="52">Орехово</option>
-										<option value="57">Отрадное</option>
-										<option value="23">Охотный ряд</option>
-										<option value="46">Павелецкая</option>
-										<option value="95">Павелецкая</option>
-										<option value="17">Парк Культуры</option>
-										<option value="98">Парк культуры</option>
-										<option value="213">Парк победы</option>
-										<option value="223">Партизанская</option>
-										<option value="225">Первомайская</option>
-										<option value="193">Перово</option>
-										<option value="59">Петровско-разумовская</option>
-										<option value="177">Печатники</option>
-										<option value="196">Пионерская</option>
-										<option value="143">Планерная</option>
-										<option value="4">Площадь Ильича</option>
-										<option value="217">Площадь революции</option>
-										<option value="148">Полежаевская</option>
-										<option value="67">Полянка</option>
-										<option value="76">Пражская</option>
-										<option value="31">Преображенская площадь</option>
-										<option value="156">Пролетарская</option>
-										<option value="13">Проспект Вернадского</option>
-										<option value="91">Проспект мира</option>
-										<option value="126">Проспект мира</option>
-										<option value="135">Профсоюзная</option>
-										<option value="152">Пушкинская</option>
-										<option value="230">Пятницкое шоссе</option>
-										<option value="34">Речной вокзал</option>
-										<option value="125">Рижская</option>
-										<option value="173">Римская</option>
-										<option value="160">Рязанский проспект</option>
-										<option value="62">Савеловская</option>
-										<option value="121">Свиблово</option>
-										<option value="73">Севастопольская</option>
-										<option value="221">Семеновская</option>
-										<option value="68">Серпуховская</option>
-										<option value="212">Славянский бульвар</option>
-										<option value="203">Смоленская</option>
-										<option value="215">Смоленская</option>
-										<option value="37">Сокол</option>
-										<option value="30">Сокольники</option>
-										<option value="241">Спартак</option>
-										<option value="15">Спортивная</option>
-										<option value="171">Сретенский бульвар</option>
-										<option value="209">Строгино</option>
-										<option value="201">Студенческая</option>
-										<option value="127">Сухаревская</option>
-										<option value="144">Сходненская</option>
-										<option value="94">Таганская</option>
-										<option value="155">Таганская</option>
-										<option value="43">Тверская</option>
-										<option value="44">Театральная</option>
-										<option value="158">Текстильщики</option>
-										<option value="140">Теплый Стан</option>
-										<option value="60">Тимирязевская</option>
-										<option value="130">Третьяковская</option>
-										<option value="194">Третьяковская</option>
-										<option value="242">Тропарево</option>
-										<option value="170">Трубная</option>
-										<option value="69">Тульская</option>
-										<option value="128">Тургеневская</option>
-										<option value="145">Тушинская</option>
-										<option value="77">Ул. Академика Янгеля</option>
-										<option value="150">Улица 1905 года</option>
-										<option value="83">Улица Горчакова</option>
-										<option value="81">Улица Скобелевская</option>
-										<option value="80">Улица Старокачаловская</option>
-										<option value="14">Университет</option>
-										<option value="197">Филевский парк</option>
-										<option value="199">Фили</option>
-										<option value="19">Фрунзенская</option>
-										<option value="51">Царицыно</option>
-										<option value="64">Цветной бульвар</option>
-										<option value="32">Черкизовская</option>
-										<option value="74">Чертановская</option>
-										<option value="65">Чеховская</option>
-										<option value="25">Чистые пруды</option>
-										<option value="172">Чкаловская</option>
-										<option value="132">Шаболовская</option>
-										<option value="231">Шипиловская</option>
-										<option value="3">Шоссе энтузиастов</option>
-										<option value="226">Щелковская</option>
-										<option value="146">Щукинская</option>
-										<option value="220">Электрозаводская</option>
-										<option value="12">Юго-западная</option>
-										<option value="75">Южная</option>
-										<option value="141">Ясенево</option>
-									</select>
+									
+									<input type="button" class="js-drop js-drop-dist newest-select__txt" value="округ">
+									<ul class="newest-select__drop-menu">
+										<li class="ui-menu-item">ЦАО</li>
+										<li class="ui-menu-item">ЮЗАО</li>
+										<li class="ui-menu-item">ЮАО</li>
+										<li class="ui-menu-item">ЗАО</li>
+										<li class="ui-menu-item">ЮВАО</li>
+										<li class="ui-menu-item">СЗАО</li>
+										<li class="ui-menu-item">САО</li>
+										<li class="ui-menu-item">ВАО</li>
+										<li class="ui-menu-item">СВАО</li>
+										<li class="ui-menu-item">ТиНАО</li>
 								</div>
+							 <div class="newest-select input_item">
+									<i class="select"></i>
+									
+									<input type="button" class="js-drop js-drop-subw newest-select__txt" value="метро">
+									<ul class="newest-select__drop-menu">
+										<li class="ui-menu-item">Авиамоторная</li>
+										<li class="ui-menu-item">Автозаводская</li>
+										<li class="ui-menu-item">Академическая</li>
+										<li class="ui-menu-item">Алексеевская</li>
+										<li class="ui-menu-item">Алма-Атинская</li>
+										<li class="ui-menu-item">Алтуфьево</li>
+										<li class="ui-menu-item">Аннино</li>
+										<li class="ui-menu-item">Арбатская</li>
+										<li class="ui-menu-item">Арбатская</li>
+										<li class="ui-menu-item">Аэропорт</li>
+										<li class="ui-menu-item">Бабушкинская</li>
+										<li class="ui-menu-item">Багратионовская</li>
+										<li class="ui-menu-item">Баррикадная</li>
+										<li class="ui-menu-item">Бауманская</li>
+										<li class="ui-menu-item">Беговая</li>
+										<li class="ui-menu-item">Белорусская</li>
+										<li class="ui-menu-item">Белорусская</li>
+										<li class="ui-menu-item">Беляево</li>
+										<li class="ui-menu-item">Бибирево</li>
+										<li class="ui-menu-item">Библиотека имени Ленина</li>
+										<li class="ui-menu-item">Борисово</li>
+										<li class="ui-menu-item">Боровицкая</li>
+										<li class="ui-menu-item">Ботанический Сад</li>
+										<li class="ui-menu-item">Братиславская</li>
+										<li class="ui-menu-item">Бульвар адмирала Ушаковка</li>
+										<li class="ui-menu-item">Бульвар Дмитрия Донского</li>
+										<li class="ui-menu-item">Бульвар Рокоссовского</li>
+										<li class="ui-menu-item">Бунинская аллея</li>
+										<li class="ui-menu-item">Варшавская</li>
+										<li class="ui-menu-item">ВДНХ</li>
+										<li class="ui-menu-item">Владыкино</li>
+										<li class="ui-menu-item">Водный стадион</li>
+										<li class="ui-menu-item">Войковская</li>
+										<li class="ui-menu-item">Волгоградский проспект</li>
+										<li class="ui-menu-item">Волжская</li>
+										<li class="ui-menu-item">Волоколамская</li>
+										<li class="ui-menu-item">Воробьевы Горы</li>
+										<li class="ui-menu-item">Выстовочная</li>
+										<li class="ui-menu-item">Выхино</li>
+										<li class="ui-menu-item">Деловой центр</li>
+										<li class="ui-menu-item">Динамо</li>
+										<li class="ui-menu-item">Дмитровская</li>
+										<li class="ui-menu-item">Добрынинская</li>
+										<li class="ui-menu-item">Домодедовская</li>
+										<li class="ui-menu-item">Достоевская</li>
+										<li class="ui-menu-item">Дубровка</li>
+										<li class="ui-menu-item">Жулебино</li>
+										<li class="ui-menu-item">Зябликово</li>
+										<li class="ui-menu-item">Измайловская</li>
+										<li class="ui-menu-item">Калужская</li>
+										<li class="ui-menu-item">Кантемировская</li>
+										<li class="ui-menu-item">Каховская</li>
+										<li class="ui-menu-item">Каширская</li>
+										<li class="ui-menu-item">Киевская</li>
+										<li class="ui-menu-item">Киевская</li>
+										<li class="ui-menu-item">Киевская</li>
+										<li class="ui-menu-item">Китай-город</li>
+										<li class="ui-menu-item">Китай-город</li>
+										<li class="ui-menu-item">Кожуховская</li>
+										<li class="ui-menu-item">Коломенская</li>
+										<li class="ui-menu-item">Комсомольская</li>
+										<li class="ui-menu-item">Комсомольская</li>
+										<li class="ui-menu-item">Коньково</li>
+										<li class="ui-menu-item">Красногвардейская</li>
+										<li class="ui-menu-item">Краснопресненская</li>
+										<li class="ui-menu-item">Красносельская</li>
+										<li class="ui-menu-item">Красные ворота</li>
+										<li class="ui-menu-item">Крестьянская Застава</li>
+										<li class="ui-menu-item">Кропоткинская</li>
+										<li class="ui-menu-item">Крылатское</li>
+										<li class="ui-menu-item">Кузнецкий Мост</li>
+										<li class="ui-menu-item">Кузьминки</li>
+										<li class="ui-menu-item">Кунцевская</li>
+										<li class="ui-menu-item">Кунцевская</li>
+										<li class="ui-menu-item">Курская</li>
+										<li class="ui-menu-item">Курская</li>
+										<li class="ui-menu-item">Кутузовская</li>
+										<li class="ui-menu-item">Ленинский Проспект</li>
+										<li class="ui-menu-item">Лермонтовский проспект</li>
+										<li class="ui-menu-item">Лубянка</li>
+										<li class="ui-menu-item">Люблино</li>
+										<li class="ui-menu-item">Марксистская</li>
+										<li class="ui-menu-item">Марьина роща</li>
+										<li class="ui-menu-item">Марьино</li>
+										<li class="ui-menu-item">Маяковская</li>
+										<li class="ui-menu-item">Медведково</li>
+										<li class="ui-menu-item">Международная</li>
+										<li class="ui-menu-item">Менделеевская</li>
+										<li class="ui-menu-item">Митино</li>
+										<li class="ui-menu-item">Молодежная</li>
+										<li class="ui-menu-item">Мякинино</li>
+										<li class="ui-menu-item">Нагатинская</li>
+										<li class="ui-menu-item">Нагорная</li>
+										<li class="ui-menu-item">Нахимовский проспект</li>
+										<li class="ui-menu-item">Новогиреево</li>
+										<li class="ui-menu-item">Новокосино</li>
+										<li class="ui-menu-item">Новокузнецкая</li>
+										<li class="ui-menu-item">Новослободская</li>
+										<li class="ui-menu-item">Новоясеневская</li>
+										<li class="ui-menu-item">Новые Черемушки</li>
+										<li class="ui-menu-item">Октябрьская</li>
+										<li class="ui-menu-item">Октябрьская</li>
+										<li class="ui-menu-item">Октябрьское Поле</li>
+										<li class="ui-menu-item">Орехово</li>
+										<li class="ui-menu-item">Отрадное</li>
+										<li class="ui-menu-item">Охотный ряд</li>
+										<li class="ui-menu-item">Павелецкая</li>
+										<li class="ui-menu-item">Павелецкая</li>
+										<li class="ui-menu-item">Парк Культуры</li>
+										<li class="ui-menu-item">Парк культуры</li>
+										<li class="ui-menu-item">Парк победы</li>
+										<li class="ui-menu-item">Партизанская</li>
+										<li class="ui-menu-item">Первомайская</li>
+										<li class="ui-menu-item">Перово</li>
+										<li class="ui-menu-item">Петровско-разумовская</li>
+										<li class="ui-menu-item">Печатники</li>
+										<li class="ui-menu-item">Пионерская</li>
+										<li class="ui-menu-item">Планерная</li>
+										<li class="ui-menu-item">Площадь Ильича</li>
+										<li class="ui-menu-item">Площадь революции</li>
+										<li class="ui-menu-item">Полежаевская</li>
+										<li class="ui-menu-item">Полянка</li>
+										<li class="ui-menu-item">Пражская</li>
+										<li class="ui-menu-item">Преображенская площадь</li>
+										<li class="ui-menu-item">Пролетарская</li>
+										<li class="ui-menu-item">Проспект Вернадского</li>
+										<li class="ui-menu-item">Проспект мира</li>
+										<li class="ui-menu-item">Проспект мира</li>
+										<li class="ui-menu-item">Профсоюзная</li>
+										<li class="ui-menu-item">Пушкинская</li>
+										<li class="ui-menu-item">Пятницкое шоссе</li>
+										<li class="ui-menu-item">Речной вокзал</li>
+										<li class="ui-menu-item">Рижская</li>
+										<li class="ui-menu-item">Римская</li>
+										<li class="ui-menu-item">Рязанский проспект</li>
+										<li class="ui-menu-item">Савеловская</li>
+										<li class="ui-menu-item">Свиблово</li>
+										<li class="ui-menu-item">Севастопольская</li>
+										<li class="ui-menu-item">Семеновская</li>
+										<li class="ui-menu-item">Серпуховская</li>
+										<li class="ui-menu-item">Славянский бульвар</li>
+										<li class="ui-menu-item">Смоленская</li>
+										<li class="ui-menu-item">Смоленская</li>
+										<li class="ui-menu-item">Сокол</li>
+										<li class="ui-menu-item">Сокольники</li>
+										<li class="ui-menu-item">Спартак</li>
+										<li class="ui-menu-item">Спортивная</li>
+										<li class="ui-menu-item">Сретенский бульвар</li>
+										<li class="ui-menu-item">Строгино</li>
+										<li class="ui-menu-item">Студенческая</li>
+										<li class="ui-menu-item">Сухаревская</li>
+										<li class="ui-menu-item">Сходненская</li>
+										<li class="ui-menu-item">Таганская</li>
+										<li class="ui-menu-item">Таганская</li>
+										<li class="ui-menu-item">Тверская</li>
+										<li class="ui-menu-item">Театральная</li>
+										<li class="ui-menu-item">Текстильщики</li>
+										<li class="ui-menu-item">Теплый Стан</li>
+										<li class="ui-menu-item">Тимирязевская</li>
+										<li class="ui-menu-item">Третьяковская</li>
+										<li class="ui-menu-item">Третьяковская</li>
+										<li class="ui-menu-item">Тропарево</li>
+										<li class="ui-menu-item">Трубная</li>
+										<li class="ui-menu-item">Тульская</li>
+										<li class="ui-menu-item">Тургеневская</li>
+										<li class="ui-menu-item">Тушинская</li>
+										<li class="ui-menu-item">Ул. Академика Янгеля</li>
+										<li class="ui-menu-item">Улица 1905 года</li>
+										<li class="ui-menu-item">Улица Горчакова</li>
+										<li class="ui-menu-item">Улица Скобелевская</li>
+										<li class="ui-menu-item">Улица Старокачаловская</li>
+										<li class="ui-menu-item">Университет</li>
+										<li class="ui-menu-item">Филевский парк</li>
+										<li class="ui-menu-item">Фили</li>
+										<li class="ui-menu-item">Фрунзенская</li>
+										<li class="ui-menu-item">Царицыно</li>
+										<li class="ui-menu-item">Цветной бульвар</li>
+										<li class="ui-menu-item">Черкизовская</li>
+										<li class="ui-menu-item">Чертановская</li>
+										<li class="ui-menu-item">Чеховская</li>
+										<li class="ui-menu-item">Чистые пруды</li>
+										<li class="ui-menu-item">Чкаловская</li>
+										<li class="ui-menu-item">Шаболовская</li>
+										<li class="ui-menu-item">Шипиловская</li>
+										<li class="ui-menu-item">Шоссе энтузиастов</li>
+										<li class="ui-menu-item">Щелковская</li>
+										<li class="ui-menu-item">Щукинская</li>
+										<li class="ui-menu-item">Электрозаводская</li>
+										<li class="ui-menu-item">Юго-западная</li>
+										<li class="ui-menu-item">Южная</li>
+										<li class="ui-menu-item">Ясенево</li>
+								</div>
+							
 							</div>
 					</div>
 					<div class="base_bottom">
@@ -494,26 +421,25 @@
 							</div>
 						</div>
 					</div>
-				</form> 
+				</form>
 				</div>
-				<!--end base__form_main -->
-			</div>
 			</div>
 			<!-- END base  -->
 			<!-- BEGIN content  -->
 			<div class="content "><div class="content_in">
 				<!-- BEGIN container  -->
 				<div class="container__header">
-			<div class="l">
-				<div class="l-col1">
+				<div class="container__header_item">
 					<div class="container__header_entry">
 					<span>Всего: 12 объектов</span>
 					</div>
 				</div>
-				<div class="l-col3">
+				<div class="container__header_item">
 					<div class="container__header_entry">
 						<div class="input_item select js-select ">
+						<div class="select__text_wrap">
 							<span class="select__text js-select-text">сортировать по</span>
+							</div>
 							<i class="select"></i>
 							<input type="hidden" class="js-select-input" value="0">
 							<ul class="select__list js-select-list">
@@ -525,7 +451,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="l-col4">
+				<div class="container__header_item">
 					<div class="container__header_entry container__header_entry_nav">
 					<ul class="container__header_nav">
 						<li class="container__header_nav_marked"><span><i class="inf"></i></span></li>
@@ -535,7 +461,6 @@
 					<span>показать на карте</span>
 					</div>
 				</div>
-			</div>
 		</div>
 		
 	
@@ -544,10 +469,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -589,10 +514,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -634,10 +559,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -679,10 +604,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -724,10 +649,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -769,10 +694,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -814,10 +739,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -859,10 +784,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -904,10 +829,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -949,10 +874,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -994,10 +919,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -1039,10 +964,10 @@
 					<!-- BEGIN item  -->
 					<div class="item">
 						<div class="item__inner">
-							<div class="item_cover">
-								<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-								<a href="#">перейти на подробную <br> страницу объекта</a>
-								<p class="item_cover_id">id:934</p>
+							<div class="item_cover js-popup-open">
+								<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+								<a href="#">перейти на страницу <br> объекта</a>
+								<!-- <p class="item_cover_id">id:934</p> -->
 								<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 							</div>
 							<div class="item__img">
@@ -1117,10 +1042,10 @@
 					<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -1162,10 +1087,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -1207,10 +1132,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -1252,10 +1177,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -1297,10 +1222,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -1342,10 +1267,10 @@
 			<!-- BEGIN item  -->
 				<div class="item">
 					<div class="item__inner">
-						<div class="item_cover">
-							<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-							<a href="#">перейти на подробную <br> страницу объекта</a>
-							<p class="item_cover_id">id:934</p>
+						<div class="item_cover js-popup-open">
+							<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+							<a href="#">перейти на страницу <br> объекта</a>
+							<!-- <p class="item_cover_id">id:934</p> -->
 							<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 						</div>
 						<div class="item__img">
@@ -1434,24 +1359,28 @@
 				
 			</div>
 		</div></div>
-		<div class="l-col2"><div class="pop-up-menu-entry pop-up-menu__service">
-			<h4 class="pop-up-menu__header caps">Услуги</h4>
-			<div class="pop-up-menu_info pop-up-service_in">
+				<div class="l-col2"><div class="pop-up-menu-entry pop-up-menu__service">
+			<h4 class="pop-up-menu__header caps js-pop-obje">Каталог объектов</h4>
+			<div class="pop-up-menu_info pop-up-catalog_in pop-obje">
 				<ul class="pop-up-menu__service_nav">
 					<li><a href="#" class="txt_purple">Коммерческая недвижимость</a></li>
 					<li><a href="#" class="txt_purple">Жилая недвижимость</a></li>
 					<li><a href="#" class="txt_purple">Загородная недвижимость</a></li>
 					<li><a href="#" class="txt_purple">Новостройки</a></li>
 				</ul>
-				<ul class="pop-up-menu__service_foot">
-					<li><a href="#">Управление недвижимостью</a></li>
-					<li><a href="#">Юридическое сопровождение</a></li>
-					<li><a href="#">Оценка недвижимости</a></li>
-					<li><a href="#">Реклама и продвижение</a></li>
-					<li><a href="#">Дополнительные услуги</a></li>
-				</ul>
+				</div>
+				<h4 class="pop-up-menu__header caps js-pop-serv">Услуги</h4>
+				<div class="pop-up-menu_info pop-up-service_in pop-serv">
+					<ul class="pop-up-menu__service_foot">
+						<li><a href="#">Управление недвижимостью</a></li>
+						<li><a href="#">Юридическое сопровождение</a></li>
+						<li><a href="#">Оценка недвижимости</a></li>
+						<li><a href="#">Реклама и продвижение</a></li>
+						<li><a href="#">Дополнительные услуги</a></li>
+					</ul>
+				</div>
 			</div>
-		</div></div>
+		</div>
 		<div class="l-col3"><div class="pop-up-menu-entry pop-up-menu__contacts">
 			<h4 class="pop-up-menu__header caps">Контакты</h4>
 			<div class="pop-up-menu_info pop-up-contacts_in">
@@ -1494,24 +1423,11 @@
 			<div class="pop-up-callback__main_input">
 				<input type="text" class="pop-up-callback__input_item" placeholder="Имя*">
 				<input type="text" class="pop-up-callback__input_item" placeholder="Телефон*">
-				<input type="text" class="pop-up-callback__input_item" placeholder="E-mail*">
 				<textarea name="info" class="pop-up-callback__input_item
-				pop-up-callback__input_item_t-area" placeholder="Удобная дата / время для звонка / комментарий*"></textarea>
+				pop-up-callback__input_item_t-area" placeholder="Удобная дата / время для звонка / комментарий"></textarea>
 			</div>
-<!-- 			<div class="pop-up-callback__main_captcha">
-				<div class="pop-up-callback__main_captcha_input ">
-					<input class="pop-up-callback__input_item" type="text" placeholder="Введите код с картинки">
-				</div>
-				<div class="pop-up-callback__main_captcha_numb">
-					<p class="txt_purple">1245</p>
-				</div>
-				<div class="pop-up-callback__main_captcha_refresh">
-				<button type="button" class="txt_purple"><span>обновить</span><i class="refresh"></i></button>
-				</div>
-			</div> -->
 			<div class="pop-up-callback__main_submit">
 				<input type="submit" value="отправить заявку" class="caps">
-
 				<p>*-обязательные поля для заполнения</p>
 			</div>
 		</form>
@@ -1535,10 +1451,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
@@ -1580,10 +1496,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
@@ -1625,10 +1541,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
@@ -1670,10 +1586,10 @@
 		<!-- BEGIN item  -->
 			<div class="item">
 				<div class="item__inner">
-					<div class="item_cover">
-						<input type="button" value="в новом окне" class="caps btn_bd js-popup-open">
-						<a href="#">перейти на подробную <br> страницу объекта</a>
-						<p class="item_cover_id">id:934</p>
+					<div class="item_cover js-popup-open">
+						<input type="button" value="подробнее" class="caps btn_bd js-popup-open">
+						<a href="#">перейти на страницу <br> объекта</a>
+						<!-- <p class="item_cover_id">id:934</p> -->
 						<span id="add_h" class=" item_about_add">избранное <i id="heart_ch" class="heart_pr"></i></span>
 					</div>
 					<div class="item__img">
@@ -1713,7 +1629,7 @@
 			</div>
 		<!-- END item -->		
 </div>
-<div class="popup-wrap js-wrap">
+<div class="popup-wrap js-wrap js-popup-close">
 	<div class="popup-out">
 		<div class="popup js-popup">
 			<div class="popup__row">
